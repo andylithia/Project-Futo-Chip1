@@ -82,7 +82,7 @@ module user_proj_example #(
     wire valid;
     wire [3:0] wstrb;
     wire [31:0] la_write;
-
+    /*
     // WB MI A
     assign valid = wbs_cyc_i && wbs_stb_i; 
     assign wstrb = wbs_sel_i & {4{wbs_we_i}};
@@ -103,7 +103,34 @@ module user_proj_example #(
     // Assuming LA probes [65:64] are for controlling the count clk & reset  
     assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
+    */
+    /*
+    (* keep *) wire [7:0] t;
+    (* keep *) lfsr_prbs_gen #(
+        .LFSR_WIDTH(8),
+        .LFSR_POLY(8'hBE),
+        .LFSR_INIT(8'hEF)
+    ) u_PRBS (
+        .clk     (wb_clk_i),
+        .rst_n   (!wb_rst_i),
+        .enable  (1'b1),
+        .data_out(t)
+    );
+    assign la_data_out[0] = t[7];
+    */
 
+    
+    injector u_inj(
+        .enable(io_in[0]),
+        .trim_p(io_in[4:1]),
+        .trim_n(io_in[8:5]),
+        .latch (io_in[9]),
+        .signal(la_write),
+        .outp  (la_data_out[32]),
+        .outn  (la_data_out[33])
+    );
+    
+    /*
     counter #(
         .BITS(BITS)
     ) counter(
@@ -118,8 +145,11 @@ module user_proj_example #(
         .la_input(la_data_in[63:32]),
         .count(count)
     );
+    */
 
 endmodule
+
+
 
 module counter #(
     parameter BITS = 32

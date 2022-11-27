@@ -1,0 +1,1541 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "user_proj_example")
+ (DATE "Sun Nov 27 03:13:56 2022")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.3.2")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "user_proj_example")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT io_in[0] input1.I (0.087:0.087:0.087) (0.047:0.047:0.047))
+    (INTERCONNECT io_in[0] ANTENNA_input1_I.I (0.087:0.087:0.087) (0.047:0.047:0.047))
+    (INTERCONNECT io_in[1] input2.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[1] ANTENNA_input2_I.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[2] input3.I (0.091:0.091:0.091) (0.050:0.050:0.050))
+    (INTERCONNECT io_in[2] ANTENNA_input3_I.I (0.091:0.091:0.091) (0.049:0.049:0.049))
+    (INTERCONNECT io_in[3] input4.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[3] ANTENNA_input4_I.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[4] input5.I (0.101:0.101:0.101) (0.055:0.055:0.055))
+    (INTERCONNECT io_in[4] ANTENNA_input5_I.I (0.101:0.101:0.101) (0.055:0.055:0.055))
+    (INTERCONNECT io_in[5] input6.I (0.084:0.084:0.084) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[5] ANTENNA_input6_I.I (0.084:0.084:0.084) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[6] input7.I (0.126:0.126:0.126) (0.069:0.069:0.069))
+    (INTERCONNECT io_in[6] ANTENNA_input7_I.I (0.126:0.126:0.126) (0.069:0.069:0.069))
+    (INTERCONNECT io_in[7] input8.I (0.125:0.125:0.125) (0.068:0.068:0.068))
+    (INTERCONNECT io_in[7] ANTENNA_input8_I.I (0.125:0.125:0.125) (0.068:0.068:0.068))
+    (INTERCONNECT io_in[8] input9.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[8] ANTENNA_input9_I.I (0.083:0.083:0.083) (0.045:0.045:0.045))
+    (INTERCONNECT io_in[9] input10.I (0.086:0.086:0.086) (0.047:0.047:0.047))
+    (INTERCONNECT io_in[9] ANTENNA_input10_I.I (0.086:0.086:0.086) (0.046:0.046:0.046))
+    (INTERCONNECT _030_.ZN fanout14.I (0.000:0.000:0.000))
+    (INTERCONNECT _031_.Z _032_.I (0.000:0.000:0.000))
+    (INTERCONNECT _032_.Z u_inj\.nsijn.I (0.000:0.000:0.000))
+    (INTERCONNECT _032_.Z u_inj\.psijp.I (0.000:0.000:0.000))
+    (INTERCONNECT _033_.Q u_inj\.gen_TRIM\[0\]\.ptrimn.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _033_.Q u_inj\.gen_TRIM\[0\]\.ptrimp.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _034_.Q u_inj\.gen_TRIM\[1\]\.ptrimn.EN (0.000:0.000:0.000))
+    (INTERCONNECT _034_.Q u_inj\.gen_TRIM\[1\]\.ptrimp.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _035_.Q u_inj\.gen_TRIM\[2\]\.ptrimn.EN (0.000:0.000:0.000))
+    (INTERCONNECT _035_.Q u_inj\.gen_TRIM\[2\]\.ptrimp.EN (0.000:0.000:0.000))
+    (INTERCONNECT _036_.Q u_inj\.gen_TRIM\[3\]\.ptrimn.EN (0.000:0.000:0.000))
+    (INTERCONNECT _036_.Q u_inj\.gen_TRIM\[3\]\.ptrimp.EN (0.000:0.000:0.000))
+    (INTERCONNECT _037_.Q u_inj\.gen_TRIM\[0\]\.ntrimn.EN (0.000:0.000:0.000))
+    (INTERCONNECT _037_.Q u_inj\.gen_TRIM\[0\]\.ntrimp.EN (0.000:0.000:0.000))
+    (INTERCONNECT _038_.Q u_inj\.gen_TRIM\[1\]\.ntrimn.EN (0.000:0.000:0.000))
+    (INTERCONNECT _038_.Q u_inj\.gen_TRIM\[1\]\.ntrimp.EN (0.000:0.000:0.000))
+    (INTERCONNECT _039_.Q u_inj\.gen_TRIM\[2\]\.ntrimn.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _039_.Q u_inj\.gen_TRIM\[2\]\.ntrimp.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _040_.Q u_inj\.gen_TRIM\[3\]\.ntrimn.EN (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT _040_.Q u_inj\.gen_TRIM\[3\]\.ntrimp.EN (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.psijn_215.Z u_inj\.psijn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdp_16.ZN u_inj\.gen_PD\[0\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdn_17.ZN u_inj\.gen_PD\[1\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdp_18.ZN u_inj\.gen_PD\[1\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdn_19.ZN u_inj\.gen_PD\[2\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdp_20.ZN u_inj\.gen_PD\[2\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdn_21.ZN u_inj\.gen_PD\[3\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdp_22.ZN u_inj\.gen_PD\[3\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdn_23.ZN u_inj\.gen_PD\[4\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdp_24.ZN u_inj\.gen_PD\[4\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdn_25.ZN u_inj\.gen_PD\[5\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdp_26.ZN u_inj\.gen_PD\[5\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdn_27.ZN u_inj\.gen_PD\[6\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdp_28.ZN u_inj\.gen_PD\[6\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdn_29.ZN u_inj\.gen_PD\[7\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdp_30.ZN u_inj\.gen_PD\[7\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimn_31.ZN u_inj\.gen_TRIM\[0\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimp_32.ZN u_inj\.gen_TRIM\[0\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimn_33.ZN u_inj\.gen_TRIM\[1\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimp_34.ZN u_inj\.gen_TRIM\[1\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimn_35.ZN u_inj\.gen_TRIM\[2\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimp_36.ZN u_inj\.gen_TRIM\[2\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimn_37.ZN u_inj\.gen_TRIM\[3\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimp_38.ZN u_inj\.gen_TRIM\[3\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.siginv_39.ZN u_inj\.siginv.I (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_40.ZN la_data_out[0] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_41.ZN la_data_out[1] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_42.ZN la_data_out[2] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_43.ZN la_data_out[3] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_44.ZN la_data_out[4] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_45.ZN la_data_out[5] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_46.ZN la_data_out[6] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_47.ZN la_data_out[7] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_48.ZN la_data_out[8] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_49.ZN la_data_out[9] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_50.ZN la_data_out[10] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_51.ZN la_data_out[11] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_52.ZN la_data_out[12] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_53.ZN la_data_out[13] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_54.ZN la_data_out[14] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_55.ZN la_data_out[15] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_56.ZN la_data_out[16] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_57.ZN la_data_out[17] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_58.ZN la_data_out[18] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_59.ZN la_data_out[19] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_60.ZN la_data_out[20] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_61.ZN la_data_out[21] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_62.ZN la_data_out[22] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_63.ZN la_data_out[23] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_64.ZN la_data_out[24] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_65.ZN la_data_out[25] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_66.ZN la_data_out[26] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_67.ZN la_data_out[27] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_68.ZN la_data_out[28] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_69.ZN la_data_out[29] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_70.ZN la_data_out[30] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_71.ZN la_data_out[31] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_72.ZN la_data_out[34] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_73.ZN la_data_out[35] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_74.ZN la_data_out[36] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_75.ZN la_data_out[37] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_76.ZN la_data_out[38] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_77.ZN la_data_out[39] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_78.ZN la_data_out[40] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_79.ZN la_data_out[41] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_80.ZN la_data_out[42] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_81.ZN la_data_out[43] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_82.ZN la_data_out[44] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_83.ZN la_data_out[45] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_84.ZN la_data_out[46] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_85.ZN la_data_out[47] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_86.ZN la_data_out[48] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_87.ZN la_data_out[49] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_88.ZN la_data_out[50] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_89.ZN la_data_out[51] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_90.ZN la_data_out[52] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_91.ZN la_data_out[53] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_92.ZN la_data_out[54] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_93.ZN la_data_out[55] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_94.ZN la_data_out[56] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_95.ZN la_data_out[57] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_96.ZN la_data_out[58] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_97.ZN la_data_out[59] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_98.ZN la_data_out[60] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_99.ZN la_data_out[61] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_100.ZN la_data_out[62] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_101.ZN la_data_out[63] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_102.ZN irq[0] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_103.ZN irq[1] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_104.ZN irq[2] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_105.ZN io_out[0] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_106.ZN io_out[1] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_107.ZN io_out[2] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_108.ZN io_out[3] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_109.ZN io_out[4] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_110.ZN io_out[5] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_111.ZN io_out[6] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_112.ZN io_out[7] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_113.ZN io_out[8] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_114.ZN io_out[9] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_115.ZN io_out[10] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_116.ZN io_out[11] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_117.ZN io_out[12] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_118.ZN io_out[13] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_119.ZN io_out[14] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_120.ZN io_out[15] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_121.ZN io_out[16] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_122.ZN io_out[17] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_123.ZN io_out[18] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_124.ZN io_out[19] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_125.ZN io_out[20] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_126.ZN io_out[21] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_127.ZN io_out[22] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_128.ZN io_out[23] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_129.ZN io_out[24] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_130.ZN io_out[25] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_131.ZN io_out[26] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_132.ZN io_out[27] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_133.ZN io_out[28] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_134.ZN io_out[29] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_135.ZN io_out[30] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_136.ZN io_out[31] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_137.ZN io_out[32] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_138.ZN io_out[33] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_139.ZN io_out[34] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_140.ZN io_out[35] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_141.ZN io_out[36] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_142.ZN io_out[37] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_143.ZN io_oeb[0] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_144.ZN io_oeb[1] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_145.ZN io_oeb[2] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_146.ZN io_oeb[3] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_147.ZN io_oeb[4] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_148.ZN io_oeb[5] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_149.ZN io_oeb[6] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_150.ZN io_oeb[7] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_151.ZN io_oeb[8] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_152.ZN io_oeb[9] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_153.ZN io_oeb[10] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_154.ZN io_oeb[11] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_155.ZN io_oeb[12] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_156.ZN io_oeb[13] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_157.ZN io_oeb[14] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_158.ZN io_oeb[15] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_159.ZN io_oeb[16] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_160.ZN io_oeb[17] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_161.ZN io_oeb[18] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_162.ZN io_oeb[19] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_163.ZN io_oeb[20] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_164.ZN io_oeb[21] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_165.ZN io_oeb[22] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_166.ZN io_oeb[23] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_167.ZN io_oeb[24] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_168.ZN io_oeb[25] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_169.ZN io_oeb[26] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_170.ZN io_oeb[27] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_171.ZN io_oeb[28] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_172.ZN io_oeb[29] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_173.ZN io_oeb[30] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_174.ZN io_oeb[31] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_175.ZN io_oeb[32] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_176.ZN io_oeb[33] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_177.ZN io_oeb[34] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_178.ZN io_oeb[35] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_179.ZN io_oeb[36] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_180.ZN io_oeb[37] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_181.ZN wbs_ack_o (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_182.ZN wbs_dat_o[0] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_183.ZN wbs_dat_o[1] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_184.ZN wbs_dat_o[2] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_185.ZN wbs_dat_o[3] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_186.ZN wbs_dat_o[4] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_187.ZN wbs_dat_o[5] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_188.ZN wbs_dat_o[6] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_189.ZN wbs_dat_o[7] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_190.ZN wbs_dat_o[8] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_191.ZN wbs_dat_o[9] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_192.ZN wbs_dat_o[10] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_193.ZN wbs_dat_o[11] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_194.ZN wbs_dat_o[12] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_195.ZN wbs_dat_o[13] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_196.ZN wbs_dat_o[14] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_197.ZN wbs_dat_o[15] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_198.ZN wbs_dat_o[16] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_199.ZN wbs_dat_o[17] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_200.ZN wbs_dat_o[18] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_201.ZN wbs_dat_o[19] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_202.ZN wbs_dat_o[20] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_203.ZN wbs_dat_o[21] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_204.ZN wbs_dat_o[22] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_205.ZN wbs_dat_o[23] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_206.ZN wbs_dat_o[24] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_207.ZN wbs_dat_o[25] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_208.ZN wbs_dat_o[26] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_209.ZN wbs_dat_o[27] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_210.ZN wbs_dat_o[28] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_211.ZN wbs_dat_o[29] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_212.ZN wbs_dat_o[30] (0.000:0.000:0.000))
+    (INTERCONNECT user_proj_example_213.ZN wbs_dat_o[31] (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.nsijp_214.Z u_inj\.nsijp.I (0.000:0.000:0.000))
+    (INTERCONNECT _242_.Z la_data_out[32] (0.000:0.000:0.000))
+    (INTERCONNECT _243_.Z la_data_out[33] (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[1\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[2\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[3\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[4\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[5\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[6\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PD\[7\]\.pdp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.gen_PU\[0\]\.pun.ZN _243_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[0\]\.pun.ZN ANTENNA__243__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[0\]\.pup.ZN _242_.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[0\]\.pup.ZN ANTENNA__242__I.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[10\]\.pun.ZN _243_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[10\]\.pun.ZN ANTENNA__243__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[10\]\.pup.ZN _242_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[10\]\.pup.ZN ANTENNA__242__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[11\]\.pun.ZN _243_.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[11\]\.pun.ZN ANTENNA__243__I.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[11\]\.pup.ZN _242_.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[11\]\.pup.ZN ANTENNA__242__I.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[12\]\.pun.ZN _243_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[12\]\.pun.ZN ANTENNA__243__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[12\]\.pup.ZN _242_.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[12\]\.pup.ZN ANTENNA__242__I.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[13\]\.pun.ZN _243_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[13\]\.pun.ZN ANTENNA__243__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[13\]\.pup.ZN _242_.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[13\]\.pup.ZN ANTENNA__242__I.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT u_inj\.gen_PU\[14\]\.pun.ZN _243_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[14\]\.pun.ZN ANTENNA__243__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[14\]\.pup.ZN _242_.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[14\]\.pup.ZN ANTENNA__242__I.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[15\]\.pun.ZN _243_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[15\]\.pun.ZN ANTENNA__243__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[15\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[15\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[16\]\.pun.ZN _243_.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[16\]\.pun.ZN ANTENNA__243__I.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[16\]\.pup.ZN _242_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[16\]\.pup.ZN ANTENNA__242__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[17\]\.pun.ZN _243_.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[17\]\.pun.ZN ANTENNA__243__I.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[17\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[17\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[18\]\.pun.ZN _243_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[18\]\.pun.ZN ANTENNA__243__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[18\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[18\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[1\]\.pun.ZN _243_.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[1\]\.pun.ZN ANTENNA__243__I.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[1\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[1\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[2\]\.pun.ZN _243_.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[2\]\.pun.ZN ANTENNA__243__I.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT u_inj\.gen_PU\[2\]\.pup.ZN _242_.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[2\]\.pup.ZN ANTENNA__242__I.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[3\]\.pun.ZN _243_.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[3\]\.pun.ZN ANTENNA__243__I.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[3\]\.pup.ZN _242_.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[3\]\.pup.ZN ANTENNA__242__I.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[4\]\.pun.ZN _243_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[4\]\.pun.ZN ANTENNA__243__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[4\]\.pup.ZN _242_.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[4\]\.pup.ZN ANTENNA__242__I.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_PU\[5\]\.pun.ZN _243_.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[5\]\.pun.ZN ANTENNA__243__I.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[5\]\.pup.ZN _242_.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[5\]\.pup.ZN ANTENNA__242__I.I (0.015:0.015:0.015) (0.015:0.015:0.015))
+    (INTERCONNECT u_inj\.gen_PU\[6\]\.pun.ZN _243_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[6\]\.pun.ZN ANTENNA__243__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[6\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[6\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[7\]\.pun.ZN _243_.I (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT u_inj\.gen_PU\[7\]\.pun.ZN ANTENNA__243__I.I (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT u_inj\.gen_PU\[7\]\.pup.ZN _242_.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[7\]\.pup.ZN ANTENNA__242__I.I (0.010:0.010:0.010) (0.010:0.010:0.010))
+    (INTERCONNECT u_inj\.gen_PU\[8\]\.pun.ZN _243_.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[8\]\.pun.ZN ANTENNA__243__I.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_PU\[8\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[8\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[9\]\.pun.ZN _243_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[9\]\.pun.ZN ANTENNA__243__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_PU\[9\]\.pup.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_PU\[9\]\.pup.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimn.ZN _243_.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimn.ZN ANTENNA__243__I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimp.ZN _242_.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ntrimp.ZN ANTENNA__242__I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ptrimn.ZN _243_.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ptrimn.ZN ANTENNA__243__I.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ptrimp.ZN _242_.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT u_inj\.gen_TRIM\[0\]\.ptrimp.ZN ANTENNA__242__I.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimn.ZN _243_.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimn.ZN ANTENNA__243__I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimp.ZN _242_.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ntrimp.ZN ANTENNA__242__I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ptrimn.ZN _243_.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ptrimn.ZN ANTENNA__243__I.I (0.014:0.014:0.014) (0.014:0.014:0.014))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ptrimp.ZN _242_.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_TRIM\[1\]\.ptrimp.ZN ANTENNA__242__I.I (0.013:0.013:0.013) (0.013:0.013:0.013))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimn.ZN _243_.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimn.ZN ANTENNA__243__I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimp.ZN _242_.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ntrimp.ZN ANTENNA__242__I.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ptrimn.ZN _243_.I (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ptrimn.ZN ANTENNA__243__I.I (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ptrimp.ZN _242_.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_TRIM\[2\]\.ptrimp.ZN ANTENNA__242__I.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimn.ZN _243_.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimn.ZN ANTENNA__243__I.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimp.ZN _242_.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ntrimp.ZN ANTENNA__242__I.I (0.001:0.001:0.001))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ptrimn.ZN _243_.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ptrimn.ZN ANTENNA__243__I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ptrimp.ZN _242_.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.gen_TRIM\[3\]\.ptrimp.ZN ANTENNA__242__I.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT u_inj\.nsijn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.nsijn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.nsijp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.nsijp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.psijn.ZN _243_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.psijn.ZN ANTENNA__243__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.psijp.ZN _242_.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.psijp.ZN ANTENNA__242__I.I (0.000:0.000:0.000))
+    (INTERCONNECT u_inj\.siginv.ZN _031_.A2 (0.000:0.000:0.000))
+    (INTERCONNECT input1.Z _030_.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input1.Z ANTENNA__030__I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input2.Z _033_.D (0.000:0.000:0.000))
+    (INTERCONNECT input3.Z _034_.D (0.000:0.000:0.000))
+    (INTERCONNECT input4.Z _035_.D (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input4.Z ANTENNA__035__D.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input5.Z _036_.D (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT input5.Z ANTENNA__036__D.I (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT input6.Z _037_.D (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input6.Z ANTENNA__037__D.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input7.Z _038_.D (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input7.Z ANTENNA__038__D.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT input8.Z _039_.D (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT input8.Z ANTENNA__039__D.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input9.Z _040_.D (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT input9.Z ANTENNA__040__D.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT input10.Z _033_.CLK (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z _034_.CLK (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z _035_.CLK (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z _036_.CLK (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT input10.Z _037_.CLK (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT input10.Z _038_.CLK (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z _039_.CLK (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT input10.Z _040_.CLK (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT input10.Z ANTENNA__040__CLK.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT input10.Z ANTENNA__039__CLK.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT input10.Z ANTENNA__038__CLK.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z ANTENNA__037__CLK.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT input10.Z ANTENNA__036__CLK.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT input10.Z ANTENNA__035__CLK.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT input10.Z ANTENNA__034__CLK.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT input10.Z ANTENNA__033__CLK.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[0\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[10\]\.pup.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[12\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[13\]\.pup.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[14\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[15\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[16\]\.pup.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[17\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[18\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[1\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[2\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[4\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[5\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[6\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[7\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z u_inj\.gen_PU\[8\]\.pup.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[8\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[7\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[6\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[5\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[4\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[2\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[1\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[18\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[17\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[16\]\.pup_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[15\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[14\]\.pup_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[13\]\.pup_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[12\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[10\]\.pup_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout11.Z ANTENNA_u_inj\.gen_PU\[0\]\.pup_I.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[0\]\.pun.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[10\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[11\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[12\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[13\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[14\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[15\]\.pun.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[16\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[17\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[18\]\.pun.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[1\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[2\]\.pun.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[3\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[4\]\.pun.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[5\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z u_inj\.gen_PU\[6\]\.pun.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[6\]\.pun_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[5\]\.pun_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[4\]\.pun_I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[3\]\.pun_I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[2\]\.pun_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[1\]\.pun_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[18\]\.pun_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[17\]\.pun_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[16\]\.pun_I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[15\]\.pun_I.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[14\]\.pun_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[13\]\.pun_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[12\]\.pun_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[11\]\.pun_I.I (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[10\]\.pun_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout12.Z ANTENNA_u_inj\.gen_PU\[0\]\.pun_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[9\]\.pup.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout13.Z fanout11.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[11\]\.pup.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[3\]\.pup.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[7\]\.pun.I (0.000:0.000:0.000) (0.000:0.000:0.000))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[8\]\.pun.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout13.Z u_inj\.gen_PU\[9\]\.pun.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout13.Z fanout12.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z _031_.A1 (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[0\]\.ptrimn.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[0\]\.ptrimp.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[1\]\.ptrimn.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[1\]\.ptrimp.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z fanout13.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[2\]\.ptrimn.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[2\]\.ptrimp.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[3\]\.ptrimn.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z u_inj\.gen_TRIM\[3\]\.ptrimp.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[3\]\.ptrimp_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[3\]\.ptrimn_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[2\]\.ptrimp_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[2\]\.ptrimn_I.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT fanout14.Z ANTENNA_fanout13_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[1\]\.ptrimp_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[1\]\.ptrimn_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[0\]\.ptrimp_I.I (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z ANTENNA_u_inj\.gen_TRIM\[0\]\.ptrimn_I.I (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT fanout14.Z ANTENNA__031__A1.I (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT u_inj\.gen_PD\[0\]\.pdn_15.ZN u_inj\.gen_PD\[0\]\.pdn.I (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_1")
+  (INSTANCE _030_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.225:0.225:0.225) (0.197:0.197:0.197))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__or2_1")
+  (INSTANCE _031_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 Z (0.000:0.000:0.000))
+    (IOPATH A2 Z (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE _032_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _033_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.468:1.468:1.468) (1.282:1.282:1.282))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.146:0.146:0.146))
+    (SETUP (negedge D) (posedge CLK) (0.158:0.158:0.158))
+    (HOLD (posedge D) (posedge CLK) (0.160:0.160:0.160))
+    (HOLD (negedge D) (posedge CLK) (0.263:0.263:0.263))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _034_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.437:1.437:1.437) (1.264:1.264:1.264))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.131:0.131:0.131))
+    (SETUP (negedge D) (posedge CLK) (0.142:0.142:0.142))
+    (HOLD (posedge D) (posedge CLK) (0.167:0.167:0.167))
+    (HOLD (negedge D) (posedge CLK) (0.277:0.277:0.277))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _035_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.435:1.435:1.435) (1.262:1.262:1.262))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.185:0.185:0.185))
+    (SETUP (negedge D) (posedge CLK) (0.228:0.228:0.228))
+    (HOLD (posedge D) (posedge CLK) (0.150:0.150:0.150))
+    (HOLD (negedge D) (posedge CLK) (0.201:0.201:0.201))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _036_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.436:1.436:1.436) (1.263:1.263:1.263))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.169:0.169:0.169))
+    (SETUP (negedge D) (posedge CLK) (0.193:0.193:0.193))
+    (HOLD (posedge D) (posedge CLK) (0.153:0.153:0.153))
+    (HOLD (negedge D) (posedge CLK) (0.231:0.231:0.231))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _037_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.449:1.449:1.449) (1.271:1.271:1.271))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.194:0.194:0.194))
+    (SETUP (negedge D) (posedge CLK) (0.249:0.249:0.249))
+    (HOLD (posedge D) (posedge CLK) (0.148:0.148:0.148))
+    (HOLD (negedge D) (posedge CLK) (0.183:0.183:0.183))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _038_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.428:1.428:1.428) (1.258:1.258:1.258))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.190:0.190:0.190))
+    (SETUP (negedge D) (posedge CLK) (0.240:0.240:0.240))
+    (HOLD (posedge D) (posedge CLK) (0.149:0.149:0.149))
+    (HOLD (negedge D) (posedge CLK) (0.191:0.191:0.191))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _039_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.498:1.498:1.498) (1.301:1.301:1.301))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.213:0.213:0.213))
+    (SETUP (negedge D) (posedge CLK) (0.405:0.405:0.405))
+    (HOLD (posedge D) (posedge CLK) (0.155:0.155:0.155))
+    (HOLD (negedge D) (posedge CLK) (0.052:0.052:0.052))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__dffq_1")
+  (INSTANCE _040_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH CLK Q (1.515:1.515:1.515) (1.311:1.311:1.311))
+   )
+  )
+  (TIMINGCHECK
+    (SETUP (posedge D) (posedge CLK) (0.215:0.215:0.215))
+    (SETUP (negedge D) (posedge CLK) (0.440:0.440:0.440))
+    (HOLD (posedge D) (posedge CLK) (0.157:0.157:0.157))
+    (HOLD (negedge D) (posedge CLK) (0.023:0.023:0.023))
+    (WIDTH (posedge CLK) (4.669:4.669:4.669))
+    (WIDTH (negedge CLK) (6.121:6.121:6.121))
+    (PERIOD CLK (12.170:12.170:12.170))
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE _242_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE _243_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[0\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[0\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[1\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[1\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[2\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[2\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[3\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[3\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[4\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[4\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[5\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[5\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[6\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[6\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[7\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.gen_PD\[7\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[0\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[0\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[10\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[10\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[11\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[11\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[12\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[12\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[13\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[13\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[14\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[14\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[15\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[15\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[16\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[16\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[17\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[17\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[18\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[18\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[1\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[1\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[2\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[2\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[3\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[3\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[4\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[4\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[5\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[5\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[6\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.130:0.130:0.130) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[6\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[7\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[7\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[8\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[8\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.129:0.129:0.129) (0.080:0.080:0.080))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[9\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkinv_2")
+  (INSTANCE u_inj\.gen_PU\[9\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.115:0.115:0.115) (0.082:0.082:0.082))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[0\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.247:0.247:0.247) (0.301:0.301:0.301))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[0\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.247:0.247:0.247) (0.301:0.301:0.301))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[0\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.308:0.308:0.308))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[0\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.308:0.308:0.308))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[1\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.243:0.243:0.243) (0.294:0.294:0.294))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[1\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.243:0.243:0.243) (0.294:0.294:0.294))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[1\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.245:0.245:0.245) (0.297:0.297:0.297))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[1\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.245:0.245:0.245) (0.297:0.297:0.297))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[2\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.256:0.256:0.256) (0.318:0.318:0.318))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[2\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.256:0.256:0.256) (0.318:0.318:0.318))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[2\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.296:0.296:0.296))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[2\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.296:0.296:0.296))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[3\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.259:0.259:0.259) (0.324:0.324:0.324))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[3\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.259:0.259:0.259) (0.324:0.324:0.324))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[3\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.246:0.246:0.246) (0.299:0.299:0.299))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE u_inj\.gen_TRIM\[3\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.246:0.246:0.246) (0.299:0.299:0.299))
+    (IOPATH I ZN (0.757:0.757:0.757) (0.600:0.600:0.600))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.nsijn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.nsijp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.psijn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE u_inj\.psijp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_2")
+  (INSTANCE u_inj\.siginv)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input1)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.456:0.456:0.456) (0.417:0.417:0.417))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input2)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.338:0.338:0.338) (0.312:0.312:0.312))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input3)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.282:0.282:0.282) (0.260:0.260:0.260))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input4)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.514:0.514:0.514) (0.468:0.468:0.468))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input5)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.445:0.445:0.445) (0.408:0.408:0.408))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input6)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.559:0.559:0.559) (0.507:0.507:0.507))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input7)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.554:0.554:0.554) (0.502:0.502:0.502))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input8)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.893:0.893:0.893) (0.795:0.795:0.795))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1")
+  (INSTANCE input9)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.950:0.950:0.950) (0.845:0.845:0.845))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE input10)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (1.793:1.793:1.793) (1.193:1.193:1.193))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE fanout11)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.678:0.678:0.678) (0.679:0.679:0.679))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE fanout12)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.683:0.683:0.683) (0.684:0.684:0.684))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_3")
+  (INSTANCE fanout13)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.719:0.719:0.719) (0.759:0.759:0.759))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2")
+  (INSTANCE fanout14)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.791:0.791:0.791) (0.768:0.768:0.768))
+   )
+  )
+ )
+)

@@ -12,24 +12,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # SPDX-License-Identifier: Apache-2.0
-
+set script_dir [file dirname [file normalize [info script]]]
 set ::env(PDK) "gf180mcuC"
 set ::env(STD_CELL_LIBRARY) "gf180mcu_fd_sc_mcu7t5v0"
 
 set ::env(DESIGN_NAME) user_proj_example
 
+#set ::env(EXTRA_LEFS) "\
+#	/home/andylithia/openmpw/pdk_1/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef"
+
+#set ::env(EXTRA_GDS_FILES) "\
+#	/home/andylithia/openmpw/pdk_1/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds"
+
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v \
+	$::env(DESIGN_DIR)/../../verilog/rtl/lfsr_prbs_gen.v \
+	$::env(DESIGN_DIR)/../../verilog/rtl/lfsr.v \
+	$::env(DESIGN_DIR)/../../verilog/rtl/injector.v"
+
+## Synthesis
+set ::env(SYNTH_READ_BLACKBOX_LIB) 1
+set ::env(SYNTH_USE_PG_PINS_DEFINES) "USE_POWER_PINS"
+# set ::env(SYNTH_STRATEGY) "DELAY 0"
+set ::env(SYNTH_EXTRA_MAPPING_FILE) $script_dir/yosys_mapping.v
+
 
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "wb_clk_i"
-set ::env(CLOCK_NET) "counter.clk"
-set ::env(CLOCK_PERIOD) "24.0"
+# set ::env(CLOCK_NET) "counter.clk"
+set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 900 600"
+set ::env(DIE_AREA) "0 0 900 100"
 
 set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
@@ -38,7 +54,7 @@ set ::env(PL_TARGET_DENSITY) 0.45
 
 set ::env(FP_CORE_UTIL) 40
 
-set ::env(SYNTH_MAX_FANOUT) 4
+set ::env(SYNTH_MAX_FANOUT) 16
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
