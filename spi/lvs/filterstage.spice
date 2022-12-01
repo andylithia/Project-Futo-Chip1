@@ -1,0 +1,886 @@
+* NGSPICE file created from filterstage.ext - technology: gf180mcuC
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__inv_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__inv_1 I ZN VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_32 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_2 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_4 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_8 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_64 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_16 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__endcap abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__endcap VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__filltie abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__filltie VDD VSS
+.ends
+
+.subckt filterstage nbusin_nshunt nbusout nseries_gy nseries_gygy nshunt_gy pbusin_pshunt
++ pbusout pseries_gy pseries_gygy pshunt_gy vdd vss
+Xu_shuntgy.u_nauta_r.gen_T\[5\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_13_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_13_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_104 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_FB\[2\].fbp pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[9\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[9\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_4 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[5\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_FB\[0\].fbp pseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_176 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_r.gen_FB\[0\].fbn nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_67 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_seriesgy.u_nauta_f.gen_X\[4\].crossn pseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_X\[4\].crossp pbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_T\[1\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_142 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xu_nauta_series_f2.gen_X\[3\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_FB\[2\].fbn pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_T\[5\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_116 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_57 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_T\[5\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_159 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[9\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_119 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r2.gen_T\[1\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_X\[4\].crossn pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_r.gen_FB\[1\].fbp pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_122 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[7\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_FB\[3\].fbp nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_90 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_15_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_seriesgy.u_nauta_f.gen_T\[1\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_T\[1\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_X\[2\].crossn pshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_13_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[5\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_128 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_10_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_seriesgy.u_nauta_f.gen_T\[9\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_FB\[1\].fbn pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_90 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[3\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_134 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_57 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_FB\[0\].fbp pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_X\[4\].crossp nseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_T\[1\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_177 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_11_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xu_nauta_series_r1.gen_FB\[2\].fbp nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_T\[5\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_184 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_15 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_117 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_X\[4\].crossp nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_121 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[8\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_146 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_4 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r1.gen_T\[7\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_FB\[0\].fbn pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_6_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[1\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_X\[2\].crossp nshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_27 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_129 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_FB\[1\].fbp nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[4\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_133 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f2.gen_T\[6\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_158 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[3\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_FB\[3\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_13_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_13_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xu_seriesgy.u_nauta_r.gen_T\[0\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_39 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_131 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[2\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_12_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_10_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[9\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_9 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[8\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_FB\[0\].fbp nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_94 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_FB\[3\].fbn pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_X\[0\].crossn nbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_0 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_f.gen_T\[5\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_FB\[2\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_143 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[4\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_nauta_series_f2.gen_T\[6\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_13_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_39 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_116 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_FB\[3\].fbn pbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_X\[2\].crossn nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_84 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_X\[1\].crossn nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_93 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[8\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_FB\[3\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_104 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[1\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_FB\[2\].fbn pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_1 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_13_129 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_83 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[0\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_12_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_8_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[2\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_X\[2\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[9\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_103 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_84 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_FB\[1\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_128 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_T\[8\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[4\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_96 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_30 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_FB\[3\].fbp nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_FB\[2\].fbn pbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_X\[0\].crossn pseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_X\[0\].crossp pbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_7_95 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_51 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_FB\[2\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_T\[5\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_115 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_FB\[1\].fbn pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[4\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_96 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[8\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_9 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_X\[0\].crossn pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_FB\[3\].fbp nbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_T\[0\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_X\[1\].crossp pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_X\[2\].crossp pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_FB\[0\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[8\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[1\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_FB\[2\].fbp nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_3 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_16_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_12_153 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_FB\[1\].fbn pbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_T\[0\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_X\[2\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[4\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_127 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_171 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_seriesgy.u_nauta_r.gen_FB\[1\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_13_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xu_seriesgy.u_nauta_f.gen_T\[8\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_T\[8\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_FB\[0\].fbn pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_X\[3\].crossn nbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_T\[4\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_X\[2\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_FB\[2\].fbp nbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_10_52 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_X\[0\].crossp nseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_16_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_15_184 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_64 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_4 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_r.gen_T\[0\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_12_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_12_165 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_8_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[4\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_FB\[1\].fbp nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[4\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_X\[4\].crossn nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_FB\[0\].fbn pbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_X\[0\].crossp nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_131 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[8\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_T\[0\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_FB\[0\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_10_64 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_nauta_series_r1.gen_T\[6\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_15_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XPHY_5 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_seriesgy.u_nauta_f.gen_T\[0\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_FB\[1\].fbp nbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_T\[0\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_181 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_r.gen_T\[4\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_184 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_seriesgy.u_nauta_f.gen_T\[8\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_1_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_seriesgy.u_nauta_f.gen_X\[3\].crossn pseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_FB\[0\].fbp nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_X\[3\].crossp pbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_12 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[2\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_X\[2\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_77 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_33 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_r.gen_X\[3\].crossn pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_12_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_101 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_r.gen_T\[0\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_seriesgy.u_nauta_f.gen_T\[4\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_4_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_FB\[0\].fbp nbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_X\[4\].crossp pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[7\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_FB\[3\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_X\[1\].crossn pshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[9\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_99 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[6\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_15_176 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XPHY_7 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_16_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_89 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_12_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[0\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_109 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_153 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_175 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_13_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_101 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[3\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[5\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[2\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_X\[3\].crossp nseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_36 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_10_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f2.gen_FB\[2\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_15_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_57 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_X\[3\].crossp nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_12_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_4_165 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[1\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_T\[8\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_FB\[3\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_T\[7\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_1_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_f2.gen_T\[9\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_X\[1\].crossp nshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_68 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_9 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_16_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_12_159 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_119 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f2.gen_FB\[1\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_181 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[4\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_4_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[3\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[5\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_91 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_71 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_10_58 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_47 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f2.gen_FB\[2\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r2.gen_T\[7\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_12_116 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[0\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_7_131 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_112 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_4_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[1\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_X\[4\].crossn pshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_FB\[0\].fbn nseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[8\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_5_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_T\[7\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_10_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XTAP_61 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_50 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_r2.gen_T\[3\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_93 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_27 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_16_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f2.gen_FB\[1\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[4\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_102 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r1.gen_X\[1\].crossn nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_X\[0\].crossn nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[3\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_171 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_r.gen_T\[7\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_18 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_62 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_51 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_40 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_4_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_15_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_nauta_series_r2.gen_T\[7\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_seriesgy.u_nauta_r.gen_X\[1\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_39 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_16_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_12_129 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_118 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_11_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_7_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_T\[0\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_93 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_X\[4\].crossp nshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_FB\[0\].fbp pseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_T\[3\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_T\[7\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[7\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_74 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_63 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_52 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_41 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_r2.gen_T\[3\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_84 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_14_171 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_12_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_11_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_101 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[9\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_61 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_159 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_12_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_1_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[3\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_X\[1\].crossp pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_X\[0\].crossp pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[3\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_51 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[7\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_75 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_64 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_53 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_seriesgy.u_nauta_r.gen_X\[1\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[5\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_X\[2\].crossn nbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_X\[1\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_119 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_T\[3\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[7\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_76 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_65 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_43 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_r1.gen_T\[1\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_2_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_nauta_series_r1.gen_X\[4\].crossn nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[9\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_X\[3\].crossn nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_117 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[3\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_142 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_153 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_64 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_97 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_X\[4\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_77 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_55 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_44 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_seriesgy.u_nauta_r.gen_T\[6\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[8\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[5\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_163 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_14_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_seriesgy.u_nauta_f.gen_X\[2\].crossn pseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_129 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_X\[2\].crossp pbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_X\[1\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_121 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_165 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xu_shuntgy.u_nauta_f.gen_FB\[3\].fbn nshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_T\[2\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_67 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_56 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_f2.gen_T\[4\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[1\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_X\[2\].crossn pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_88 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_99 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_14_175 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_X\[4\].crossp pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_7_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_X\[3\].crossp pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_43 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_133 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_X\[0\].crossn pshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_177 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_5_33 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[0\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[7\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_68 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_seriesgy.u_nauta_r.gen_X\[4\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_57 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_35 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_46 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_seriesgy.u_nauta_r.gen_T\[6\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_30 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_2_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[8\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_FB\[2\].fbn nshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_132 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_14_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_11_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_X\[4\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_99 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_55 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_seriesgy.u_nauta_f.gen_X\[2\].crossp nseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[3\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[2\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_shuntgy.u_nauta_f.gen_FB\[3\].fbp pshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_58 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_36 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_47 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_f2.gen_T\[4\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_31 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_r.gen_X\[2\].crossp nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_11_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_7_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_67 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r2.gen_T\[6\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_f.gen_FB\[1\].fbn nshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_121 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_f.gen_X\[0\].crossp nshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_57 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_T\[0\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_shuntgy.u_nauta_f.gen_T\[7\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XPHY_32 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_nauta_series_f1.gen_T\[6\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_FB\[2\].fbp pshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_101 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_nauta_series_f2.gen_X\[4\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_90 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[2\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_7_119 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_133 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_103 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_FB\[0\].fbn nshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[3\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_14_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XTAP_38 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_nauta_series_f1.gen_T\[2\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_33 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_11 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_r.gen_T\[6\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_14_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_14_124 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_9_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_shuntgy.u_nauta_f.gen_X\[3\].crossn pshunt_gy nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_T\[6\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_171 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_f.gen_FB\[1\].fbp pshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_131 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_115 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_159 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_15 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_r.gen_T\[2\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_39 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_6_91 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XPHY_12 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_23 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_9_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xu_seriesgy.u_nauta_f.gen_T\[6\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f1.gen_T\[6\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_14_136 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r2.gen_T\[2\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_173 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_140 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_117 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_X\[0\].crossn nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_6_143 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[8\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_91 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_FB\[0\].fbp pshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_127 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_27 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_T\[2\].thrun pseries_gy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_T\[2\].thrup pbusin_pshunt nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_X\[0\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_13 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_shuntgy.u_nauta_r.gen_T\[6\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_11_129 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_f.gen_X\[3\].crossp nshunt_gy pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[4\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_103 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_83 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_39 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_14_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xu_shuntgy.u_nauta_r.gen_T\[2\].thrup pshunt_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_25 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_seriesgy.u_nauta_f.gen_T\[6\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r1.gen_T\[0\].thrun pseries_gy pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_8_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[9\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_X\[0\].crossp pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_T\[8\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_115 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_170 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_93 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_95 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_seriesgy.u_nauta_f.gen_FB\[3\].fbn nseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_T\[2\].thrup nseries_gy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_X\[0\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_15 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_6_61 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_15_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_7_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_seriesgy.u_nauta_r.gen_T\[5\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_110 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_51 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_84 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_X\[1\].crossn nbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[7\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[4\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_175 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_153 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_f2.gen_X\[0\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_8_18 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_6_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_127 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_27 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_6_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r1.gen_X\[3\].crossn nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_FB\[2\].fbn nseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_T\[1\].thrun nseries_gygy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_X\[2\].crossn nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[3\].thrun nbusout nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_T\[0\].thrup nseries_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_155 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_122 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_63 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_T\[9\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_96 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_10_165 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_51 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_r.gen_X\[3\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_seriesgy.u_nauta_f.gen_FB\[3\].fbp pseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_15_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XPHY_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_17 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_6_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_FB\[3\].fbn nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[6\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_14_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xu_seriesgy.u_nauta_r.gen_T\[5\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_13_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_9_167 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_134 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_X\[1\].crossp pbusout nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[7\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_FB\[1\].fbn nseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_X\[1\].crossn pseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_X\[0\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_140 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_184 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_9_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_63 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_X\[1\].crossn pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r2.gen_T\[9\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[2\].thrun pbusin_pshunt nshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_29 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XPHY_18 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_seriesgy.u_nauta_r.gen_T\[1\].thrup pseries_gygy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_15_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xu_seriesgy.u_nauta_f.gen_FB\[2\].fbp pseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_X\[3\].crossp pbusin_pshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f1.gen_X\[2\].crossp pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_T\[3\].thrup nbusin_nshunt pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_9_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_98 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_10_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_shuntgy.u_nauta_r.gen_FB\[2\].fbn nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_149 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_T\[9\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_152 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_nauta_series_r2.gen_T\[5\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_r.gen_X\[3\].crossp nseries_gy pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_FB\[0\].fbn nseries_gygy nseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_77 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_43 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_19 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_nauta_series_r2.gen_X\[4\].crossn nbusout pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_f2.gen_X\[3\].crossn pseries_gy nseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_FB\[3\].fbp pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[6\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_13_187 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_13_121 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_nauta_series_f1.gen_T\[5\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_X\[1\].crossp nseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_33 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_10_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_shuntgy.u_nauta_r.gen_T\[9\].thrun nshunt_gy nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_seriesgy.u_nauta_f.gen_FB\[1\].fbp pseries_gygy pseries_gygy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_10_179 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xu_nauta_series_r2.gen_T\[1\].thrun nseries_gy pbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_161 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_109 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_164 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_98 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_9_65 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_shuntgy.u_nauta_r.gen_FB\[1\].fbn nbusin_nshunt nbusin_nshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_89 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_r2.gen_T\[9\].thrup pseries_gy nbusout vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_r.gen_X\[1\].crossp nbusin_nshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_nauta_series_r1.gen_FB\[3\].fbn pbusin_pshunt pbusin_pshunt vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_shuntgy.u_nauta_f.gen_T\[2\].thrup nbusin_nshunt pshunt_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_13_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_6_99 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_55 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_16_185 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_16_174 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_nauta_series_f1.gen_T\[1\].thrun pbusout pseries_gy vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+.ends
+

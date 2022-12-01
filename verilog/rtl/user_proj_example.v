@@ -120,11 +120,11 @@ module user_proj_example #(
     */
 
     
-    injector u_inj(
-        .enable(io_in[0]),
-        .trim_p(io_in[4:1]),
-        .trim_n(io_in[8:5]),
-        .latch (io_in[9]),
+    (* keep *) injector u_inj(
+        .enable(la_data_in[0]),
+        .trim_p(la_data_in[4:1]),
+        .trim_n(la_data_in[8:5]),
+        .latch (la_data_in[9]),
         .signal(la_write),
         .outp  (la_data_out[32]),
         .outn  (la_data_out[33])

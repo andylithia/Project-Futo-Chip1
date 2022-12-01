@@ -1,0 +1,112 @@
+library (injector) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1ohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 30;
+  slew_lower_threshold_pct_fall : 30;
+  slew_upper_threshold_pct_rise : 70;
+  slew_upper_threshold_pct_fall : 70;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 3.30;
+
+  type ("trim_n") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+  type ("trim_p") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+
+  cell ("injector") {
+    pin("enable") {
+      direction : input;
+      capacitance : 0.0096;
+    }
+    pin("outn") {
+      direction : inout;
+      capacitance : 0.0958;
+    }
+    pin("outp") {
+      direction : inout;
+      capacitance : 0.0958;
+    }
+    pin("signal") {
+      direction : input;
+      capacitance : 0.0137;
+    }
+    pin("vdd") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("vss") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    bus("trim_n") {
+      bus_type : trim_n;
+      direction : input;
+      capacitance : 0.0000;
+    pin("trim_n[3]") {
+      direction : input;
+      capacitance : 0.0151;
+    }
+    pin("trim_n[2]") {
+      direction : input;
+      capacitance : 0.0158;
+    }
+    pin("trim_n[1]") {
+      direction : input;
+      capacitance : 0.0150;
+    }
+    pin("trim_n[0]") {
+      direction : input;
+      capacitance : 0.0135;
+    }
+    }
+    bus("trim_p") {
+      bus_type : trim_p;
+      direction : input;
+      capacitance : 0.0000;
+    pin("trim_p[3]") {
+      direction : input;
+      capacitance : 0.0158;
+    }
+    pin("trim_p[2]") {
+      direction : input;
+      capacitance : 0.0131;
+    }
+    pin("trim_p[1]") {
+      direction : input;
+      capacitance : 0.0132;
+    }
+    pin("trim_p[0]") {
+      direction : input;
+      capacitance : 0.0131;
+    }
+    }
+  }
+
+}

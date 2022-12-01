@@ -1,9 +1,9 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1669518838
+timestamp 1669676131
 << obsm1 >>
-rect 672 855 89400 8329
+rect 672 855 89400 8262
 << metal2 >>
 rect 672 9600 728 10000
 rect 1456 9600 1512 10000
@@ -421,7 +421,6 @@ rect 86408 0 86464 400
 rect 86688 0 86744 400
 rect 86968 0 87024 400
 << obsm2 >>
-rect 758 9570 1426 9600
 rect 1542 9570 2210 9600
 rect 2326 9570 2994 9600
 rect 3110 9570 3778 9600
@@ -535,8 +534,8 @@ rect 86998 9570 87666 9600
 rect 87782 9570 88450 9600
 rect 88566 9570 89234 9600
 rect 89350 9570 89386 9600
-rect 686 430 89386 9570
-rect 686 400 2938 430
+rect 1470 430 89386 9570
+rect 1470 400 2938 430
 rect 3054 400 3218 430
 rect 3334 400 3498 430
 rect 3614 400 3778 430
@@ -839,7 +838,7 @@ rect 86494 400 86658 430
 rect 86774 400 86938 430
 rect 87054 400 89386 430
 << obsm3 >>
-rect 1073 1554 89391 8246
+rect 4825 854 89391 8246
 << metal4 >>
 rect 11673 1538 11833 8262
 rect 22754 1538 22914 8262
@@ -1700,8 +1699,8 @@ port 417 nsew signal input
 string FIXED_BBOX 0 0 90000 10000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 642518
-string GDS_FILE /home/andylithia/openmpw/Project-Futo-Chip1/openlane/user_proj_example/runs/22_11_26_22_13/results/signoff/user_proj_example.magic.gds
-string GDS_START 94304
+string GDS_END 637308
+string GDS_FILE /home/andylithia/openmpw/Project-Futo-Chip1/openlane/user_proj_example/runs/22_11_28_17_54/results/signoff/user_proj_example.magic.gds
+string GDS_START 93888
 << end >>
 

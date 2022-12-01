@@ -1,0 +1,262 @@
+* NGSPICE file created from captune_1p.ext - technology: gf180mcuC
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_16 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__aoi21_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__aoi21_1 A1 A2 B ZN VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_2 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_8 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_4 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_32 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__endcap abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__endcap VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__filltie abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__filltie VDD VSS
+.ends
+
+.subckt captune_1p cap tune[0] tune[10] tune[11] tune[12] tune[13] tune[14] tune[15]
++ tune[16] tune[17] tune[18] tune[19] tune[1] tune[20] tune[21] tune[22] tune[23]
++ tune[24] tune[25] tune[26] tune[27] tune[28] tune[29] tune[2] tune[30] tune[31]
++ tune[32] tune[33] tune[34] tune[35] tune[36] tune[37] tune[38] tune[39] tune[3]
++ tune[40] tune[41] tune[42] tune[43] tune[44] tune[45] tune[46] tune[47] tune[48]
++ tune[49] tune[4] tune[50] tune[51] tune[52] tune[53] tune[54] tune[55] tune[56]
++ tune[57] tune[58] tune[59] tune[5] tune[60] tune[61] tune[62] tune[63] tune[6] tune[7]
++ tune[8] tune[9] vdd vss
+XFILLER_6_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xgen_cap\[56\].u_cap tune[56] tune[56] cap gen_cap\[56\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[52\].u_cap tune[52] tune[52] cap gen_cap\[52\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[47\].u_cap tune[47] tune[47] cap gen_cap\[47\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[43\].u_cap tune[43] tune[43] cap gen_cap\[43\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[8\].u_cap tune[8] tune[8] cap gen_cap\[8\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[38\].u_cap tune[38] tune[38] cap gen_cap\[38\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_6_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_6_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xgen_cap\[4\].u_cap tune[4] tune[4] cap gen_cap\[4\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[34\].u_cap tune[34] tune[34] cap gen_cap\[34\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_5_133 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_2_147 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_103 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[0\].u_cap tune[0] tune[0] cap gen_cap\[0\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_6_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_1_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[29\].u_cap tune[29] tune[29] cap gen_cap\[29\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[30\].u_cap tune[30] tune[30] cap gen_cap\[30\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_137 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_50 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[25\].u_cap tune[25] tune[25] cap gen_cap\[25\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XPHY_0 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_5_113 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_127 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_40 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_95 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[21\].u_cap tune[21] tune[21] cap gen_cap\[21\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XPHY_1 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_2_117 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[16\].u_cap tune[16] tune[16] cap gen_cap\[16\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_30 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_85 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[12\].u_cap tune[12] tune[12] cap gen_cap\[12\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[59\].u_cap tune[59] tune[59] cap gen_cap\[59\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[60\].u_cap tune[60] tune[60] cap gen_cap\[60\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XPHY_3 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[55\].u_cap tune[55] tune[55] cap gen_cap\[55\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_4 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_150 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_87 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xgen_cap\[51\].u_cap tune[51] tune[51] cap gen_cap\[51\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XPHY_5 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[46\].u_cap tune[46] tune[46] cap gen_cap\[46\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_140 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_55 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XPHY_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[42\].u_cap tune[42] tune[42] cap gen_cap\[42\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_130 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_45 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[7\].u_cap tune[7] tune[7] cap gen_cap\[7\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[37\].u_cap tune[37] tune[37] cap gen_cap\[37\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xgen_cap\[3\].u_cap tune[3] tune[3] cap gen_cap\[3\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XPHY_7 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_120 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[33\].u_cap tune[33] tune[33] cap gen_cap\[33\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XPHY_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[28\].u_cap tune[28] tune[28] cap gen_cap\[28\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_6_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XPHY_9 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[24\].u_cap tune[24] tune[24] cap gen_cap\[24\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_1_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[19\].u_cap tune[19] tune[19] cap gen_cap\[19\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[20\].u_cap tune[20] tune[20] cap gen_cap\[20\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_115 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[15\].u_cap tune[15] tune[15] cap gen_cap\[15\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[63\].u_cap tune[63] tune[63] cap gen_cap\[63\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_2_93 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[11\].u_cap tune[11] tune[11] cap gen_cap\[11\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_1_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[58\].u_cap tune[58] tune[58] cap gen_cap\[58\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_4_103 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_30 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_6_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[54\].u_cap tune[54] tune[54] cap gen_cap\[54\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[49\].u_cap tune[49] tune[49] cap gen_cap\[49\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xgen_cap\[50\].u_cap tune[50] tune[50] cap gen_cap\[50\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_151 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XTAP_31 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[45\].u_cap tune[45] tune[45] cap gen_cap\[45\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_105 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XTAP_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[41\].u_cap tune[41] tune[41] cap gen_cap\[41\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_2_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xgen_cap\[6\].u_cap tune[6] tune[6] cap gen_cap\[6\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_142 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XTAP_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[36\].u_cap tune[36] tune[36] cap gen_cap\[36\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[2\].u_cap tune[2] tune[2] cap gen_cap\[2\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XTAP_23 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[32\].u_cap tune[32] tune[32] cap gen_cap\[32\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_4_108 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_141 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[27\].u_cap tune[27] tune[27] cap gen_cap\[27\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XTAP_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_2_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_89 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xgen_cap\[23\].u_cap tune[23] tune[23] cap gen_cap\[23\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XTAP_25 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[18\].u_cap tune[18] tune[18] cap gen_cap\[18\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_2_24 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_79 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_151 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_68 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XPHY_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xgen_cap\[14\].u_cap tune[14] tune[14] cap gen_cap\[14\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XTAP_15 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_2_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[62\].u_cap tune[62] tune[62] cap gen_cap\[62\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_3_144 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XTAP_27 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_5_36 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xgen_cap\[10\].u_cap tune[10] tune[10] cap gen_cap\[10\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XTAP_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_0_136 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XPHY_11 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_2_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_142 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[57\].u_cap tune[57] tune[57] cap gen_cap\[57\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_5_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_126 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XPHY_12 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XTAP_17 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xgen_cap\[53\].u_cap tune[53] tune[53] cap gen_cap\[53\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_2_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_135 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[48\].u_cap tune[48] tune[48] cap gen_cap\[48\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_116 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_13 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XTAP_29 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XTAP_18 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_3_82 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_3_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_125 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xgen_cap\[44\].u_cap tune[44] tune[44] cap gen_cap\[44\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[9\].u_cap tune[9] tune[9] cap gen_cap\[9\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XTAP_19 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_6_123 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_115 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_50 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[39\].u_cap tune[39] tune[39] cap gen_cap\[39\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[40\].u_cap tune[40] tune[40] cap gen_cap\[40\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[5\].u_cap tune[5] tune[5] cap gen_cap\[5\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_107 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_6_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_3_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_40 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[35\].u_cap tune[35] tune[35] cap gen_cap\[35\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[1\].u_cap tune[1] tune[1] cap gen_cap\[1\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[31\].u_cap tune[31] tune[31] cap gen_cap\[31\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_6_136 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_30 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_139 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_106 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[26\].u_cap tune[26] tune[26] cap gen_cap\[26\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_97 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_3_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_104 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_151 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xgen_cap\[22\].u_cap tune[22] tune[22] cap gen_cap\[22\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_76 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_87 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_127 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_5_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_98 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_3_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xgen_cap\[17\].u_cap tune[17] tune[17] cap gen_cap\[17\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[13\].u_cap tune[13] tune[13] cap gen_cap\[13\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Xgen_cap\[61\].u_cap tune[61] tune[61] cap gen_cap\[61\].u_cap/ZN vdd vss gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+XFILLER_0_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_78 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+.ends
+

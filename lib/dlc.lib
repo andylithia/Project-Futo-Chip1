@@ -1,0 +1,193 @@
+library (dlc) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1ohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 30;
+  slew_lower_threshold_pct_fall : 30;
+  slew_upper_threshold_pct_rise : 70;
+  slew_upper_threshold_pct_fall : 70;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 3.30;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_10) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_2) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_3) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_4) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_5) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_6) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_7) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_8) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+  lu_table_template(template_9) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.00341,  0.01187,  0.02804,  0.05322,  0.08855,  0.13500,  0.19360,  0.26510,  0.35030");
+  }
+
+  cell ("dlc") {
+    pin("clk") {
+      direction : input;
+      capacitance : 0.0147;
+    }
+    pin("clko") {
+      direction : output;
+      capacitance : 0.0729;
+      timing() {
+        related_pin : "clk";
+        timing_sense : negative_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("0.45268,0.49104,0.60708,0.82493,1.16419,1.63984,2.26519,3.05284,4.01319,5.15955");
+	}
+	rise_transition(template_1) {
+          values("0.11979,0.17154,0.35413,0.73642,1.33429,2.17265,3.27465,4.66400,6.35935,8.38165");
+	}
+	cell_fall(template_2) {
+          values("0.40918,0.44471,0.53887,0.67448,0.86461,1.12533,1.46949,1.90218,2.43087,3.06087");
+	}
+	fall_transition(template_2) {
+          values("0.11673,0.15178,0.24500,0.41521,0.70553,1.13800,1.71569,2.44338,3.33300,4.39131");
+	}
+      }
+    }
+    pin("latch") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("on") {
+      direction : output;
+      capacitance : 0.1245;
+      timing() {
+        related_pin : "sdi";
+        timing_type : combinational;
+	cell_rise(template_3) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	rise_transition(template_3) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	cell_fall(template_4) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	fall_transition(template_4) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+      }
+      timing() {
+        related_pin : "sig";
+        timing_type : combinational;
+	cell_rise(template_7) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	rise_transition(template_7) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	cell_fall(template_8) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	fall_transition(template_8) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+      }
+    }
+    pin("op") {
+      direction : output;
+      capacitance : 0.1245;
+      timing() {
+        related_pin : "sdi";
+        timing_type : combinational;
+	cell_rise(template_5) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	rise_transition(template_5) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	cell_fall(template_6) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	fall_transition(template_6) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+      }
+      timing() {
+        related_pin : "sig";
+        timing_type : combinational;
+	cell_rise(template_9) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	rise_transition(template_9) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	cell_fall(template_10) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+	fall_transition(template_10) {
+          values("-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan,-nan");
+	}
+      }
+    }
+    pin("rst") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("sdi") {
+      direction : input;
+      capacitance : 0.0772;
+    }
+    pin("sig") {
+      direction : input;
+      capacitance : 0.0691;
+    }
+    pin("vdd") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("vss") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+  }
+
+}

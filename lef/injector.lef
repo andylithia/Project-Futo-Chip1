@@ -1,0 +1,168 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO injector
+  CLASS BLOCK ;
+  FOREIGN injector ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 60.000 ;
+  PIN enable
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 14.560 4.000 15.120 ;
+    END
+  END enable
+  PIN outn
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 96.000 44.240 100.000 44.800 ;
+    END
+  END outn
+  PIN outp
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 96.000 14.560 100.000 15.120 ;
+    END
+  END outp
+  PIN signal
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 44.240 4.000 44.800 ;
+    END
+  END signal
+  PIN trim_n[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 12.320 0.000 12.880 4.000 ;
+    END
+  END trim_n[0]
+  PIN trim_n[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.960 0.000 37.520 4.000 ;
+    END
+  END trim_n[1]
+  PIN trim_n[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 61.600 0.000 62.160 4.000 ;
+    END
+  END trim_n[2]
+  PIN trim_n[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 86.240 0.000 86.800 4.000 ;
+    END
+  END trim_n[3]
+  PIN trim_p[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 12.320 56.000 12.880 60.000 ;
+    END
+  END trim_p[0]
+  PIN trim_p[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.960 56.000 37.520 60.000 ;
+    END
+  END trim_p[1]
+  PIN trim_p[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 61.600 56.000 62.160 60.000 ;
+    END
+  END trim_p[2]
+  PIN trim_p[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 86.240 56.000 86.800 60.000 ;
+    END
+  END trim_p[3]
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 16.700 15.380 18.300 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 38.260 15.380 39.860 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 59.820 15.380 61.420 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 81.380 15.380 82.980 43.420 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 27.480 15.380 29.080 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 49.040 15.380 50.640 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 70.600 15.380 72.200 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 92.160 15.380 93.760 43.420 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 93.760 43.420 ;
+      LAYER Metal2 ;
+        RECT 9.100 55.700 12.020 56.000 ;
+        RECT 13.180 55.700 36.660 56.000 ;
+        RECT 37.820 55.700 61.300 56.000 ;
+        RECT 62.460 55.700 85.940 56.000 ;
+        RECT 87.100 55.700 93.620 56.000 ;
+        RECT 9.100 4.300 93.620 55.700 ;
+        RECT 9.100 4.000 12.020 4.300 ;
+        RECT 13.180 4.000 36.660 4.300 ;
+        RECT 37.820 4.000 61.300 4.300 ;
+        RECT 62.460 4.000 85.940 4.300 ;
+        RECT 87.100 4.000 93.620 4.300 ;
+      LAYER Metal3 ;
+        RECT 4.300 43.940 95.700 44.660 ;
+        RECT 4.000 15.420 96.000 43.940 ;
+        RECT 4.300 14.700 95.700 15.420 ;
+  END
+END injector
+END LIBRARY
+

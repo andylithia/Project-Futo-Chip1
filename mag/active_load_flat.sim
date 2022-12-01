@@ -1,0 +1,282 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x outn outp vss vss l=120 w=164 x=10060 y=7608 nmos_6p0
+x nbus vdd pbus vdd l=100 w=244 x=2608 y=3988 pmos_6p0
+x nbus vss outp vss l=120 w=164 x=5836 y=6040 nmos_6p0
+x a_8300_8215# a_8212_8312# vdd vdd l=200 w=244 x=8300 y=8312 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=4828 y=7908 nmos_6p0
+x a_7068_7080# a_6980_7124# vdd vdd l=200 w=244 x=7068 y=7124 pmos_6p0
+x a_9532_8215# a_9444_8312# vdd vdd l=200 w=244 x=9532 y=8312 pmos_6p0
+x nbus vss pbus vss l=120 w=164 x=3820 y=6040 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2812 y=7908 nmos_6p0
+x a_8860_7080# a_8772_7124# vdd vdd l=200 w=244 x=8860 y=7124 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=6508 y=6040 nmos_6p0
+x a_9016_6876# vss outxor vss l=120 w=164 x=9568 y=6340 nmos_6p0
+x outn vss outn vss l=120 w=164 x=9980 y=4472 nmos_6p0
+x a_8748_5079# a_8660_5176# vdd vdd l=200 w=244 x=8748 y=5176 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=3932 y=6340 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=3932 y=3204 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2476 y=6040 nmos_6p0
+x nbus vss outp vss l=120 w=164 x=8300 y=4772 nmos_6p0
+x a_9980_8215# a_9892_8312# vdd vdd l=200 w=244 x=9980 y=8312 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=4604 y=6340 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=4604 y=3204 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2588 y=6340 nmos_6p0
+x nbus vss pbus vss l=120 w=164 x=3148 y=6040 nmos_6p0
+x a_6868_5556# vss a_6956_5512# vss l=200 w=164 x=6956 y=6040 nmos_6p0
+x pbus vss nbus vss l=120 w=164 x=2588 y=3204 nmos_6p0
+x outn outn vdd vdd l=100 w=244 x=8044 y=3608 pmos_6p0
+x a_6084_5176# vss a_6172_5079# vss l=200 w=164 x=6172 y=4772 nmos_6p0
+x a_6060_8215# a_5972_8312# vdd vdd l=200 w=244 x=6060 y=8312 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=5724 y=6340 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=5724 y=3204 nmos_6p0
+x a_1604_7124# vss a_1692_7080# vss l=200 w=164 x=1692 y=7608 nmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=4848 y=5176 pmos_6p0
+x a_6420_8312# vss a_6508_8215# vss l=200 w=164 x=6508 y=7908 nmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=2832 y=5176 pmos_6p0
+x outpn outxor a_9912_6340# vss l=120 w=164 x=9792 y=6340 nmos_6p0
+x nbus vdd pbus vdd l=100 w=244 x=3504 y=5176 pmos_6p0
+x outn outnn vdd vdd l=100 w=244 x=10060 y=5556 pmos_6p0
+x a_6868_8312# vss a_6956_8215# vss l=200 w=164 x=6956 y=7908 nmos_6p0
+x a_7428_7124# vss a_7516_7080# vss l=200 w=164 x=7516 y=7608 nmos_6p0
+x a_1604_8312# vss a_1692_8215# vss l=200 w=164 x=1692 y=7908 nmos_6p0
+x a_8860_3944# a_8772_3988# vdd vdd l=200 w=244 x=8860 y=3988 pmos_6p0
+x nbus vdd pbus vdd l=100 w=244 x=3952 y=3988 pmos_6p0
+x a_7428_6744# vss a_7516_6647# vss l=200 w=164 x=7516 y=6340 nmos_6p0
+x a_5052_3944# a_4964_3988# vdd vdd l=200 w=244 x=5052 y=3988 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=4176 y=8312 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=3484 y=7608 nmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=4624 y=3988 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2160 y=8312 pmos_6p0
+x a_5524_8312# vss a_5612_8215# vss l=200 w=164 x=5612 y=7908 nmos_6p0
+x a_7876_7124# vss a_7964_7080# vss l=200 w=164 x=7964 y=7608 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=4156 y=7608 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=4176 y=7124 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2140 y=7608 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2160 y=7124 pmos_6p0
+x a_7876_6744# vss a_7964_6647# vss l=200 w=164 x=7964 y=6340 nmos_6p0
+x outnn a_9912_6340# vss vss l=120 w=164 x=9976 y=6340 nmos_6p0
+x a_8660_8312# vss a_8748_8215# vss l=200 w=164 x=8748 y=7908 nmos_6p0
+x a_6532_7124# vss a_6620_7080# vss l=200 w=164 x=6620 y=7608 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=4492 y=6040 nmos_6p0
+x pbus vss outn vss l=120 w=164 x=8636 y=3204 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=3484 y=7908 nmos_6p0
+x nbus vss outp vss l=120 w=164 x=7740 y=6040 nmos_6p0
+x outp vss outp vss l=120 w=164 x=6620 y=3204 nmos_6p0
+x pbus vdd outn vdd l=100 w=244 x=5744 y=3988 pmos_6p0
+x a_6172_5079# a_6084_5176# vdd vdd l=200 w=244 x=6172 y=5176 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=5164 y=6040 nmos_6p0
+x pbus vss nbus vss l=120 w=164 x=1916 y=4472 nmos_6p0
+x a_6956_5512# a_6868_5556# vdd vdd l=200 w=244 x=6956 y=5556 pmos_6p0
+x nbus vss outp vss l=120 w=164 x=8412 y=6040 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=4156 y=7908 nmos_6p0
+x a_7316_8312# vss a_7404_8215# vss l=200 w=164 x=7404 y=7908 nmos_6p0
+x outp vdd outp vdd l=100 w=244 x=6416 y=3988 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=5744 y=5176 pmos_6p0
+x outpn a_9688_6744# outxor vdd l=100 w=244 x=9792 y=6744 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2140 y=7908 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=1936 y=6744 pmos_6p0
+x outp vdd outp vdd l=100 w=244 x=6976 y=5176 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=3260 y=6340 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=3260 y=3204 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2608 y=6744 pmos_6p0
+x outn vdd outp vdd l=100 w=244 x=7648 y=5176 pmos_6p0
+x a_8772_5556# vss a_8860_5512# vss l=200 w=164 x=8860 y=6040 nmos_6p0
+x a_7764_8312# vss a_7852_8215# vss l=200 w=164 x=7852 y=7908 nmos_6p0
+x a_8324_7124# vss a_8412_7080# vss l=200 w=164 x=8412 y=7608 nmos_6p0
+x a_7516_6647# a_7428_6744# vdd vdd l=200 w=244 x=7516 y=6744 pmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=2608 y=3608 pmos_6p0
+x outn vss outn vss l=120 w=164 x=8412 y=6340 nmos_6p0
+x outpn a_9016_6876# vss vss l=120 w=72 x=9308 y=6365 nmos_6p0
+x nbus pbus vss vss l=120 w=164 x=1996 y=3204 nmos_6p0
+x a_6980_7124# vss a_7068_7080# vss l=200 w=164 x=7068 y=7608 nmos_6p0
+x pbus vss pbus vss l=120 w=164 x=6396 y=6340 nmos_6p0
+x a_7964_6647# a_7876_6744# vdd vdd l=200 w=244 x=7964 y=6744 pmos_6p0
+x a_8772_7124# vss a_8860_7080# vss l=200 w=164 x=8860 y=7608 nmos_6p0
+x pbus pbus vdd vdd l=100 w=244 x=5580 y=7124 pmos_6p0
+x outnn a_9016_6876# a_9204_6876# vdd l=100 w=112 x=9104 y=6876 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=1824 y=5556 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=7068 y=6340 nmos_6p0
+x pbus pbus vdd vdd l=100 w=244 x=6252 y=7124 pmos_6p0
+x a_9444_3608# vss a_9532_3511# vss l=200 w=164 x=9532 y=3204 nmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=4176 y=5176 pmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=2160 y=5176 pmos_6p0
+x a_8212_8312# vss a_8300_8215# vss l=200 w=164 x=8300 y=7908 nmos_6p0
+x outp vss outn vss l=120 w=164 x=9980 y=3204 nmos_6p0
+x a_6084_3608# vss a_6172_3511# vss l=200 w=164 x=6172 y=3204 nmos_6p0
+x outn vdd outn vdd l=100 w=244 x=9328 y=5176 pmos_6p0
+x a_9444_8312# vss a_9532_8215# vss l=200 w=164 x=9532 y=7908 nmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=3280 y=3988 pmos_6p0
+x pbus vdd outn vdd l=100 w=244 x=7760 y=3988 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=4828 y=4772 nmos_6p0
+x nbus pbus vdd vdd l=100 w=244 x=1996 y=3608 pmos_6p0
+x nbus vss pbus vss l=120 w=164 x=3932 y=4472 nmos_6p0
+x a_9892_8312# vss a_9980_8215# vss l=200 w=164 x=9980 y=7908 nmos_6p0
+x pbus vss nbus vss l=120 w=164 x=2812 y=4772 nmos_6p0
+x pbus vdd outn vdd l=100 w=244 x=8432 y=3988 pmos_6p0
+x outp vss outn vss l=120 w=164 x=7292 y=3204 nmos_6p0
+x outn vdd outn vdd l=100 w=244 x=10000 y=3988 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=4604 y=4472 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=3952 y=6744 pmos_6p0
+x a_9016_6876# vdd a_9688_6744# vdd l=100 w=244 x=9588 y=6744 pmos_6p0
+x nbus vss pbus vss l=120 w=164 x=2588 y=4472 nmos_6p0
+x outn outp vdd vdd l=100 w=244 x=10060 y=7124 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=3952 y=3608 pmos_6p0
+x outp vdd outp vdd l=100 w=244 x=7088 y=3988 pmos_6p0
+x outp outpn vss vss l=120 w=164 x=10060 y=4772 nmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=4624 y=6744 pmos_6p0
+x a_9532_3511# a_9444_3608# vdd vdd l=200 w=244 x=9532 y=3608 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=4624 y=3608 pmos_6p0
+x a_8860_5512# a_8772_5556# vdd vdd l=200 w=244 x=8860 y=5556 pmos_6p0
+x a_5972_8312# vss a_6060_8215# vss l=200 w=164 x=6060 y=7908 nmos_6p0
+x pbus vss outn vss l=120 w=164 x=5724 y=4472 nmos_6p0
+x nbus vdd outp vdd l=100 w=244 x=8320 y=5176 pmos_6p0
+x nbus vdd outp vdd l=100 w=244 x=5856 y=5556 pmos_6p0
+x a_6508_8215# a_6420_8312# vdd vdd l=200 w=244 x=6508 y=8312 pmos_6p0
+x a_6172_3511# a_6084_3608# vdd vdd l=200 w=244 x=6172 y=3608 pmos_6p0
+x nbus vdd pbus vdd l=100 w=244 x=3840 y=5556 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=5744 y=6744 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=5744 y=3608 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=6528 y=5556 pmos_6p0
+x a_6956_8215# a_6868_8312# vdd vdd l=200 w=244 x=6956 y=8312 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=4512 y=5556 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=6416 y=6744 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2496 y=5556 pmos_6p0
+x a_1692_8215# a_1604_8312# vdd vdd l=200 w=244 x=1692 y=8312 pmos_6p0
+x pbus vss pbus vss l=120 w=164 x=5724 y=4772 nmos_6p0
+x nbus vdd pbus vdd l=100 w=244 x=3168 y=5556 pmos_6p0
+x a_5612_8215# a_5524_8312# vdd vdd l=200 w=244 x=5612 y=8312 pmos_6p0
+x a_1692_7080# a_1604_7124# vdd vdd l=200 w=244 x=1692 y=7124 pmos_6p0
+x outp vss outp vss l=120 w=164 x=6956 y=4772 nmos_6p0
+x outnn vss a_9016_6876# vss l=120 w=72 x=9084 y=6365 nmos_6p0
+x a_1604_5176# vss a_1692_5079# vss l=200 w=164 x=1692 y=4772 nmos_6p0
+x outn vss outp vss l=120 w=164 x=7628 y=4772 nmos_6p0
+x nbus vss nbus vss l=120 w=164 x=1804 y=6040 nmos_6p0
+x a_8748_8215# a_8660_8312# vdd vdd l=200 w=244 x=8748 y=8312 pmos_6p0
+x a_7516_7080# a_7428_7124# vdd vdd l=200 w=244 x=7516 y=7124 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=1916 y=6340 nmos_6p0
+x outp outpn vdd vdd l=100 w=244 x=10060 y=5176 pmos_6p0
+x outnn outxor a_9688_6744# vdd l=100 w=244 x=9996 y=6744 pmos_6p0
+x a_7404_8215# a_7316_8312# vdd vdd l=200 w=244 x=7404 y=8312 pmos_6p0
+x pbus pbus vss vss l=120 w=164 x=5580 y=7608 nmos_6p0
+x a_8660_5176# vss a_8748_5079# vss l=200 w=164 x=8748 y=4772 nmos_6p0
+x nbus vss pbus vss l=120 w=164 x=3484 y=4772 nmos_6p0
+x a_7964_7080# a_7876_7124# vdd vdd l=200 w=244 x=7964 y=7124 pmos_6p0
+x pbus vdd outn vdd l=100 w=244 x=8656 y=3608 pmos_6p0
+x pbus pbus vss vss l=120 w=164 x=6252 y=7608 nmos_6p0
+x outp vdd outp vdd l=100 w=244 x=6640 y=3608 pmos_6p0
+x pbus vss nbus vss l=120 w=164 x=4156 y=4772 nmos_6p0
+x a_7852_8215# a_7764_8312# vdd vdd l=200 w=244 x=7852 y=8312 pmos_6p0
+x pbus vss nbus vss l=120 w=164 x=3260 y=4472 nmos_6p0
+x a_6620_7080# a_6532_7124# vdd vdd l=200 w=244 x=6620 y=7124 pmos_6p0
+x outp vdd outn vdd l=100 w=244 x=7312 y=3608 pmos_6p0
+x pbus vss nbus vss l=120 w=164 x=2140 y=4772 nmos_6p0
+x pbus vss outn vss l=120 w=164 x=7740 y=4472 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=3280 y=6744 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=3280 y=3608 pmos_6p0
+x outn vss outn vss l=120 w=164 x=9308 y=4772 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=4848 y=8312 pmos_6p0
+x outpn a_9204_6876# vdd vdd l=100 w=112 x=9308 y=6876 pmos_6p0
+x pbus vss outn vss l=120 w=164 x=8412 y=4472 nmos_6p0
+x outp vss outp vss l=120 w=164 x=6396 y=4472 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2832 y=8312 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=4828 y=7608 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=4848 y=7124 pmos_6p0
+x outn outnn vss vss l=120 w=164 x=10060 y=6040 nmos_6p0
+x outn vdd outn vdd l=100 w=244 x=8432 y=6744 pmos_6p0
+x outp vss outp vss l=120 w=164 x=7068 y=4472 nmos_6p0
+x a_1692_5079# a_1604_5176# vdd vdd l=200 w=244 x=1692 y=5176 pmos_6p0
+x nbus vdd outp vdd l=100 w=244 x=7760 y=5556 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=3504 y=8312 pmos_6p0
+x nbus vss nbus vss l=120 w=164 x=2812 y=7608 nmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=2832 y=7124 pmos_6p0
+x outn outn vss vss l=120 w=164 x=8044 y=3204 nmos_6p0
+x outp vdd outn vdd l=100 w=244 x=10000 y=3608 pmos_6p0
+x a_8772_3988# vss a_8860_3944# vss l=200 w=164 x=8860 y=4472 nmos_6p0
+x a_4964_3988# vss a_5052_3944# vss l=200 w=164 x=5052 y=4472 nmos_6p0
+x pbus vdd nbus vdd l=100 w=244 x=1936 y=3988 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=5184 y=5556 pmos_6p0
+x nbus vdd nbus vdd l=100 w=244 x=3504 y=7124 pmos_6p0
+x a_8412_7080# a_8324_7124# vdd vdd l=200 w=244 x=8412 y=7124 pmos_6p0
+x pbus vdd pbus vdd l=100 w=244 x=7088 y=6744 pmos_6p0
+x nbus vdd outp vdd l=100 w=244 x=8432 y=5556 pmos_6p0
+C outp vdd 2.79
+C outp outn 2.09
+C pbus vdd 5.47
+C nbus pbus 4.17
+C nbus vdd 5.46
+C outn vdd 2.39
+R outxor 38
+R outpn 160
+R outnn 161
+C outp GND 6.09
+R outp 1103
+C outn GND 5.91
+R outn 1100
+C pbus GND 16.82
+R pbus 3171
+C nbus GND 16.68
+R nbus 3170
+C vdd GND 101.68
+R vdd 59493
+R vss 3480
+R a_9444_3608# 32
+R a_6084_3608# 32
+R a_9532_3511# 27
+R a_6172_3511# 27
+R a_8860_3944# 27
+R a_5052_3944# 27
+R a_8772_3988# 32
+R a_4964_3988# 32
+R a_8660_5176# 32
+R a_6084_5176# 32
+R a_1604_5176# 32
+R a_8748_5079# 27
+R a_6172_5079# 27
+R a_1692_5079# 27
+R a_8860_5512# 27
+R a_6956_5512# 27
+R a_8772_5556# 32
+R a_6868_5556# 32
+R a_9912_6340# 16
+R a_9688_6744# 55
+R a_7876_6744# 32
+R a_7428_6744# 32
+R a_9016_6876# 72
+R a_7964_6647# 27
+R a_7516_6647# 27
+R a_8860_7080# 27
+R a_8412_7080# 27
+R a_7964_7080# 27
+R a_7516_7080# 27
+R a_7068_7080# 27
+R a_6620_7080# 27
+R a_1692_7080# 27
+R a_8772_7124# 32
+R a_8324_7124# 32
+R a_7876_7124# 32
+R a_7428_7124# 32
+R a_6980_7124# 32
+R a_6532_7124# 32
+R a_1604_7124# 32
+R a_9892_8312# 32
+R a_9444_8312# 32
+R a_8660_8312# 32
+R a_8212_8312# 32
+R a_7764_8312# 32
+R a_7316_8312# 32
+R a_6868_8312# 32
+R a_6420_8312# 32
+R a_5972_8312# 32
+R a_5524_8312# 32
+R a_1604_8312# 32
+R a_9980_8215# 27
+R a_9532_8215# 27
+R a_8748_8215# 27
+R a_8300_8215# 27
+R a_7852_8215# 27
+R a_7404_8215# 27
+R a_6956_8215# 27
+R a_6508_8215# 27
+R a_6060_8215# 27
+R a_5612_8215# 27
+R a_1692_8215# 27

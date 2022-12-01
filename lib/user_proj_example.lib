@@ -254,43 +254,43 @@ library (user_proj_example) {
     }
     pin("io_in[9]") {
       direction : input;
-      capacitance : 0.0062;
+      capacitance : 0.0000;
     }
     pin("io_in[8]") {
       direction : input;
-      capacitance : 0.0060;
+      capacitance : 0.0000;
     }
     pin("io_in[7]") {
       direction : input;
-      capacitance : 0.0091;
+      capacitance : 0.0000;
     }
     pin("io_in[6]") {
       direction : input;
-      capacitance : 0.0091;
+      capacitance : 0.0000;
     }
     pin("io_in[5]") {
       direction : input;
-      capacitance : 0.0060;
+      capacitance : 0.0000;
     }
     pin("io_in[4]") {
       direction : input;
-      capacitance : 0.0073;
+      capacitance : 0.0000;
     }
     pin("io_in[3]") {
       direction : input;
-      capacitance : 0.0060;
+      capacitance : 0.0000;
     }
     pin("io_in[2]") {
       direction : input;
-      capacitance : 0.0066;
+      capacitance : 0.0000;
     }
     pin("io_in[1]") {
       direction : input;
-      capacitance : 0.0060;
+      capacitance : 0.0000;
     }
     pin("io_in[0]") {
       direction : input;
-      capacitance : 0.0063;
+      capacitance : 0.0000;
     }
     }
     bus("io_oeb") {
@@ -846,43 +846,43 @@ library (user_proj_example) {
     }
     pin("la_data_in[9]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0059;
     }
     pin("la_data_in[8]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0062;
     }
     pin("la_data_in[7]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0061;
     }
     pin("la_data_in[6]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0068;
     }
     pin("la_data_in[5]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0062;
     }
     pin("la_data_in[4]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0063;
     }
     pin("la_data_in[3]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0069;
     }
     pin("la_data_in[2]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0076;
     }
     pin("la_data_in[1]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0102;
     }
     pin("la_data_in[0]") {
       direction : input;
-      capacitance : 0.0000;
+      capacitance : 0.0103;
     }
     }
     bus("la_data_out") {

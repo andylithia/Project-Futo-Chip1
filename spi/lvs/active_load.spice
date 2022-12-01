@@ -1,0 +1,235 @@
+* NGSPICE file created from active_load.ext - technology: gf180mcuC
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_2 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_2 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fill_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fill_1 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__inv_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__inv_1 I ZN VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_32 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_4 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__endcap abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__endcap VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_8 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__xor2_1 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__xor2_1 A1 A2 Z VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__filltie abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__filltie VDD VSS
+.ends
+
+* Black-box entry subcircuit for gf180mcu_fd_sc_mcu7t5v0__fillcap_16 abstract view
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VSS
+.ends
+
+.subckt active_load nbus outn outnn outp outpn outxor pbus vdd vss
+XFILLER_0_68 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[1\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_T\[9\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_13 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[5\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_25 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_6_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_1_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[1\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_1_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_49 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_amp.gen_T\[3\].thrun pbus outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_X\[2\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_0 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_amp.gen_T\[3\].thrup nbus outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_7 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_X\[2\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_1 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_3_19 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[8\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_1_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_X\[5\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_75 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[4\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_3 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[0\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_1_32 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_4 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_load.gen_T\[8\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_54 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_4_32 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_load.gen_X\[5\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_T\[4\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_5 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[0\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_6 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XPHY_7 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_1_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_36 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_T\[2\].thrun pbus outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_4_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_1_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_1_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XPHY_9 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_2_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_4_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_4_26 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_amp.gen_T\[2\].thrup nbus outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_X\[1\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xoxor outpn outnn outxor vdd vss gf180mcu_fd_sc_mcu7t5v0__xor2_1
+Xu_load.gen_T\[7\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_X\[1\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_4_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[3\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoinvn outn outnn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_T\[11\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_T\[7\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_X\[4\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_62 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_5_40 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_amp.gen_FB\[3\].fbn outn outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_amp.gen_X\[1\].crossn outp outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_74 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[3\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoinvp outp outpn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_21 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_load.gen_T\[11\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_2_53 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_FB\[2\].fbn outn outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_X\[4\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_75 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XTAP_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_amp.gen_X\[1\].crossp outn outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_amp.gen_FB\[3\].fbp outp outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_2_65 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_amp.gen_FB\[1\].fbn outn outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_T\[1\].thrun pbus outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_FB\[2\].fbp outp outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_4_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_FB\[0\].fbn outn outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_FB\[3\].fbn pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_14 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_amp.gen_FB\[1\].fbp outp outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_46 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_T\[1\].thrup nbus outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_FB\[2\].fbn pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_46 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XPHY_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XTAP_15 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_amp.gen_FB\[0\].fbp outp outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_FB\[3\].fbp nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_2_69 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_X\[0\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_FB\[1\].fbn pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_0_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[6\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_11 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XFILLER_2_37 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_48 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_2_59 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_FB\[2\].fbp nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_T\[2\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_6_80 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XPHY_12 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+Xu_load.gen_FB\[0\].fbn pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XTAP_17 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_2_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[10\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_70 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+Xu_load.gen_X\[0\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_T\[6\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_16 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_FB\[1\].fbp nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XPHY_13 vdd vss gf180mcu_fd_sc_mcu7t5v0__endcap
+XTAP_18 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+XFILLER_2_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_60 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[2\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_50 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_load.gen_FB\[0\].fbp nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_5_28 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XTAP_19 vdd vss gf180mcu_fd_sc_mcu7t5v0__filltie
+Xu_load.gen_T\[10\].thrup nbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_load.gen_X\[3\].crossn nbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_8 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_amp.gen_X\[0\].crossn outp outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_62 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_72 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_3_73 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_X\[3\].crossp pbus nbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xu_amp.gen_T\[0\].thrun pbus outn vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_20 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_42 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_amp.gen_X\[0\].crossp outn outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_75 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_3_53 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_3_31 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_0_32 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_5_2 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xu_amp.gen_T\[0\].thrup nbus outp vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_43 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_10 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[9\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_3_66 vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_3_55 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_34 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_1
+XFILLER_0_56 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+XFILLER_6_22 vdd vss gf180mcu_fd_sc_mcu7t5v0__fill_2
+Xu_load.gen_T\[5\].thrun pbus pbus vdd vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+.ends
+

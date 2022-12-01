@@ -1,0 +1,5672 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "filterstage"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 nbusin_nshunt
+*2 nbusout
+*3 nseries_gy
+*4 nseries_gygy
+*5 nshunt_gy
+*6 pbusin_pshunt
+*7 pbusout
+*8 pseries_gy
+*9 pseries_gygy
+*10 pshunt_gy
+*11 FILLER_0_10
+*12 FILLER_0_103
+*13 FILLER_0_107
+*14 FILLER_0_115
+*15 FILLER_0_121
+*16 FILLER_0_127
+*17 FILLER_0_133
+*18 FILLER_0_139
+*19 FILLER_0_142
+*20 FILLER_0_147
+*21 FILLER_0_153
+*22 FILLER_0_159
+*23 FILLER_0_16
+*24 FILLER_0_165
+*25 FILLER_0_171
+*26 FILLER_0_177
+*27 FILLER_0_185
+*28 FILLER_0_187
+*29 FILLER_0_2
+*30 FILLER_0_22
+*31 FILLER_0_28
+*32 FILLER_0_34
+*33 FILLER_0_37
+*34 FILLER_0_42
+*35 FILLER_0_48
+*36 FILLER_0_54
+*37 FILLER_0_60
+*38 FILLER_0_66
+*39 FILLER_0_72
+*40 FILLER_0_77
+*41 FILLER_0_83
+*42 FILLER_0_89
+*43 FILLER_0_95
+*44 FILLER_10_105
+*45 FILLER_10_108
+*46 FILLER_10_113
+*47 FILLER_10_117
+*48 FILLER_10_123
+*49 FILLER_10_129
+*50 FILLER_10_135
+*51 FILLER_10_141
+*52 FILLER_10_147
+*53 FILLER_10_153
+*54 FILLER_10_159
+*55 FILLER_10_165
+*56 FILLER_10_171
+*57 FILLER_10_175
+*58 FILLER_10_179
+*59 FILLER_10_187
+*60 FILLER_10_2
+*61 FILLER_10_34
+*62 FILLER_10_37
+*63 FILLER_10_45
+*64 FILLER_10_47
+*65 FILLER_10_52
+*66 FILLER_10_58
+*67 FILLER_10_64
+*68 FILLER_10_68
+*69 FILLER_10_73
+*70 FILLER_10_79
+*71 FILLER_10_85
+*72 FILLER_10_93
+*73 FILLER_10_99
+*74 FILLER_11_105
+*75 FILLER_11_117
+*76 FILLER_11_123
+*77 FILLER_11_129
+*78 FILLER_11_135
+*79 FILLER_11_141
+*80 FILLER_11_144
+*81 FILLER_11_149
+*82 FILLER_11_155
+*83 FILLER_11_161
+*84 FILLER_11_167
+*85 FILLER_11_173
+*86 FILLER_11_181
+*87 FILLER_11_185
+*88 FILLER_11_187
+*89 FILLER_11_2
+*90 FILLER_11_66
+*91 FILLER_11_70
+*92 FILLER_11_73
+*93 FILLER_12_101
+*94 FILLER_12_105
+*95 FILLER_12_108
+*96 FILLER_12_116
+*97 FILLER_12_118
+*98 FILLER_12_123
+*99 FILLER_12_129
+*100 FILLER_12_135
+*101 FILLER_12_141
+*102 FILLER_12_147
+*103 FILLER_12_153
+*104 FILLER_12_159
+*105 FILLER_12_165
+*106 FILLER_12_173
+*107 FILLER_12_179
+*108 FILLER_12_187
+*109 FILLER_12_2
+*110 FILLER_12_34
+*111 FILLER_12_37
+*112 FILLER_13_105
+*113 FILLER_13_121
+*114 FILLER_13_129
+*115 FILLER_13_135
+*116 FILLER_13_141
+*117 FILLER_13_144
+*118 FILLER_13_149
+*119 FILLER_13_155
+*120 FILLER_13_187
+*121 FILLER_13_2
+*122 FILLER_13_66
+*123 FILLER_13_70
+*124 FILLER_13_73
+*125 FILLER_14_101
+*126 FILLER_14_105
+*127 FILLER_14_108
+*128 FILLER_14_124
+*129 FILLER_14_132
+*130 FILLER_14_136
+*131 FILLER_14_141
+*132 FILLER_14_147
+*133 FILLER_14_163
+*134 FILLER_14_171
+*135 FILLER_14_175
+*136 FILLER_14_179
+*137 FILLER_14_187
+*138 FILLER_14_2
+*139 FILLER_14_34
+*140 FILLER_14_37
+*141 FILLER_15_137
+*142 FILLER_15_141
+*143 FILLER_15_144
+*144 FILLER_15_176
+*145 FILLER_15_184
+*146 FILLER_15_2
+*147 FILLER_15_66
+*148 FILLER_15_70
+*149 FILLER_15_73
+*150 FILLER_16_104
+*151 FILLER_16_107
+*152 FILLER_16_139
+*153 FILLER_16_142
+*154 FILLER_16_174
+*155 FILLER_16_177
+*156 FILLER_16_185
+*157 FILLER_16_187
+*158 FILLER_16_2
+*159 FILLER_16_34
+*160 FILLER_16_37
+*161 FILLER_16_69
+*162 FILLER_16_72
+*163 FILLER_1_101
+*164 FILLER_1_107
+*165 FILLER_1_113
+*166 FILLER_1_119
+*167 FILLER_1_12
+*168 FILLER_1_125
+*169 FILLER_1_131
+*170 FILLER_1_137
+*171 FILLER_1_141
+*172 FILLER_1_144
+*173 FILLER_1_149
+*174 FILLER_1_155
+*175 FILLER_1_161
+*176 FILLER_1_167
+*177 FILLER_1_173
+*178 FILLER_1_179
+*179 FILLER_1_18
+*180 FILLER_1_185
+*181 FILLER_1_187
+*182 FILLER_1_2
+*183 FILLER_1_24
+*184 FILLER_1_30
+*185 FILLER_1_36
+*186 FILLER_1_42
+*187 FILLER_1_48
+*188 FILLER_1_54
+*189 FILLER_1_6
+*190 FILLER_1_60
+*191 FILLER_1_66
+*192 FILLER_1_70
+*193 FILLER_1_73
+*194 FILLER_1_78
+*195 FILLER_1_84
+*196 FILLER_1_90
+*197 FILLER_1_94
+*198 FILLER_1_96
+*199 FILLER_2_10
+*200 FILLER_2_105
+*201 FILLER_2_108
+*202 FILLER_2_116
+*203 FILLER_2_122
+*204 FILLER_2_128
+*205 FILLER_2_134
+*206 FILLER_2_140
+*207 FILLER_2_146
+*208 FILLER_2_152
+*209 FILLER_2_158
+*210 FILLER_2_16
+*211 FILLER_2_164
+*212 FILLER_2_170
+*213 FILLER_2_176
+*214 FILLER_2_179
+*215 FILLER_2_184
+*216 FILLER_2_2
+*217 FILLER_2_22
+*218 FILLER_2_28
+*219 FILLER_2_34
+*220 FILLER_2_37
+*221 FILLER_2_42
+*222 FILLER_2_48
+*223 FILLER_2_54
+*224 FILLER_2_60
+*225 FILLER_2_66
+*226 FILLER_2_72
+*227 FILLER_2_78
+*228 FILLER_2_84
+*229 FILLER_2_88
+*230 FILLER_2_93
+*231 FILLER_2_99
+*232 FILLER_3_103
+*233 FILLER_3_109
+*234 FILLER_3_115
+*235 FILLER_3_121
+*236 FILLER_3_127
+*237 FILLER_3_133
+*238 FILLER_3_139
+*239 FILLER_3_141
+*240 FILLER_3_144
+*241 FILLER_3_149
+*242 FILLER_3_15
+*243 FILLER_3_155
+*244 FILLER_3_161
+*245 FILLER_3_167
+*246 FILLER_3_173
+*247 FILLER_3_179
+*248 FILLER_3_185
+*249 FILLER_3_187
+*250 FILLER_3_2
+*251 FILLER_3_21
+*252 FILLER_3_27
+*253 FILLER_3_33
+*254 FILLER_3_39
+*255 FILLER_3_4
+*256 FILLER_3_45
+*257 FILLER_3_51
+*258 FILLER_3_57
+*259 FILLER_3_63
+*260 FILLER_3_69
+*261 FILLER_3_73
+*262 FILLER_3_78
+*263 FILLER_3_84
+*264 FILLER_3_9
+*265 FILLER_3_90
+*266 FILLER_3_96
+*267 FILLER_3_98
+*268 FILLER_4_10
+*269 FILLER_4_102
+*270 FILLER_4_108
+*271 FILLER_4_112
+*272 FILLER_4_117
+*273 FILLER_4_123
+*274 FILLER_4_129
+*275 FILLER_4_135
+*276 FILLER_4_141
+*277 FILLER_4_147
+*278 FILLER_4_153
+*279 FILLER_4_159
+*280 FILLER_4_16
+*281 FILLER_4_165
+*282 FILLER_4_171
+*283 FILLER_4_175
+*284 FILLER_4_179
+*285 FILLER_4_184
+*286 FILLER_4_2
+*287 FILLER_4_22
+*288 FILLER_4_28
+*289 FILLER_4_34
+*290 FILLER_4_37
+*291 FILLER_4_42
+*292 FILLER_4_48
+*293 FILLER_4_54
+*294 FILLER_4_60
+*295 FILLER_4_66
+*296 FILLER_4_72
+*297 FILLER_4_78
+*298 FILLER_4_84
+*299 FILLER_4_90
+*300 FILLER_4_96
+*301 FILLER_5_103
+*302 FILLER_5_109
+*303 FILLER_5_115
+*304 FILLER_5_121
+*305 FILLER_5_127
+*306 FILLER_5_133
+*307 FILLER_5_139
+*308 FILLER_5_141
+*309 FILLER_5_144
+*310 FILLER_5_149
+*311 FILLER_5_15
+*312 FILLER_5_155
+*313 FILLER_5_161
+*314 FILLER_5_167
+*315 FILLER_5_173
+*316 FILLER_5_179
+*317 FILLER_5_187
+*318 FILLER_5_2
+*319 FILLER_5_21
+*320 FILLER_5_27
+*321 FILLER_5_33
+*322 FILLER_5_39
+*323 FILLER_5_4
+*324 FILLER_5_45
+*325 FILLER_5_51
+*326 FILLER_5_57
+*327 FILLER_5_59
+*328 FILLER_5_64
+*329 FILLER_5_70
+*330 FILLER_5_73
+*331 FILLER_5_79
+*332 FILLER_5_85
+*333 FILLER_5_9
+*334 FILLER_5_91
+*335 FILLER_5_97
+*336 FILLER_6_10
+*337 FILLER_6_105
+*338 FILLER_6_108
+*339 FILLER_6_113
+*340 FILLER_6_119
+*341 FILLER_6_125
+*342 FILLER_6_131
+*343 FILLER_6_137
+*344 FILLER_6_143
+*345 FILLER_6_149
+*346 FILLER_6_155
+*347 FILLER_6_16
+*348 FILLER_6_161
+*349 FILLER_6_167
+*350 FILLER_6_173
+*351 FILLER_6_179
+*352 FILLER_6_187
+*353 FILLER_6_2
+*354 FILLER_6_22
+*355 FILLER_6_28
+*356 FILLER_6_34
+*357 FILLER_6_37
+*358 FILLER_6_43
+*359 FILLER_6_49
+*360 FILLER_6_55
+*361 FILLER_6_61
+*362 FILLER_6_67
+*363 FILLER_6_73
+*364 FILLER_6_79
+*365 FILLER_6_85
+*366 FILLER_6_91
+*367 FILLER_6_99
+*368 FILLER_7_10
+*369 FILLER_7_101
+*370 FILLER_7_107
+*371 FILLER_7_113
+*372 FILLER_7_119
+*373 FILLER_7_125
+*374 FILLER_7_131
+*375 FILLER_7_137
+*376 FILLER_7_14
+*377 FILLER_7_141
+*378 FILLER_7_144
+*379 FILLER_7_149
+*380 FILLER_7_155
+*381 FILLER_7_16
+*382 FILLER_7_161
+*383 FILLER_7_167
+*384 FILLER_7_173
+*385 FILLER_7_181
+*386 FILLER_7_185
+*387 FILLER_7_187
+*388 FILLER_7_2
+*389 FILLER_7_21
+*390 FILLER_7_27
+*391 FILLER_7_33
+*392 FILLER_7_39
+*393 FILLER_7_45
+*394 FILLER_7_51
+*395 FILLER_7_57
+*396 FILLER_7_59
+*397 FILLER_7_64
+*398 FILLER_7_70
+*399 FILLER_7_73
+*400 FILLER_7_77
+*401 FILLER_7_83
+*402 FILLER_7_89
+*403 FILLER_7_95
+*404 FILLER_8_105
+*405 FILLER_8_108
+*406 FILLER_8_113
+*407 FILLER_8_119
+*408 FILLER_8_125
+*409 FILLER_8_131
+*410 FILLER_8_137
+*411 FILLER_8_143
+*412 FILLER_8_149
+*413 FILLER_8_155
+*414 FILLER_8_161
+*415 FILLER_8_167
+*416 FILLER_8_173
+*417 FILLER_8_179
+*418 FILLER_8_18
+*419 FILLER_8_184
+*420 FILLER_8_2
+*421 FILLER_8_22
+*422 FILLER_8_28
+*423 FILLER_8_34
+*424 FILLER_8_37
+*425 FILLER_8_43
+*426 FILLER_8_49
+*427 FILLER_8_55
+*428 FILLER_8_61
+*429 FILLER_8_67
+*430 FILLER_8_73
+*431 FILLER_8_79
+*432 FILLER_8_85
+*433 FILLER_8_93
+*434 FILLER_8_99
+*435 FILLER_9_104
+*436 FILLER_9_110
+*437 FILLER_9_116
+*438 FILLER_9_122
+*439 FILLER_9_128
+*440 FILLER_9_134
+*441 FILLER_9_140
+*442 FILLER_9_144
+*443 FILLER_9_149
+*444 FILLER_9_155
+*445 FILLER_9_161
+*446 FILLER_9_167
+*447 FILLER_9_173
+*448 FILLER_9_179
+*449 FILLER_9_185
+*450 FILLER_9_187
+*451 FILLER_9_2
+*452 FILLER_9_34
+*453 FILLER_9_39
+*454 FILLER_9_45
+*455 FILLER_9_51
+*456 FILLER_9_57
+*457 FILLER_9_63
+*458 FILLER_9_65
+*459 FILLER_9_70
+*460 FILLER_9_73
+*461 FILLER_9_79
+*462 FILLER_9_85
+*463 FILLER_9_91
+*464 FILLER_9_93
+*465 FILLER_9_98
+*466 PHY_0
+*467 PHY_1
+*468 PHY_10
+*469 PHY_11
+*470 PHY_12
+*471 PHY_13
+*472 PHY_14
+*473 PHY_15
+*474 PHY_16
+*475 PHY_17
+*476 PHY_18
+*477 PHY_19
+*478 PHY_2
+*479 PHY_20
+*480 PHY_21
+*481 PHY_22
+*482 PHY_23
+*483 PHY_24
+*484 PHY_25
+*485 PHY_26
+*486 PHY_27
+*487 PHY_28
+*488 PHY_29
+*489 PHY_3
+*490 PHY_30
+*491 PHY_31
+*492 PHY_32
+*493 PHY_33
+*494 PHY_4
+*495 PHY_5
+*496 PHY_6
+*497 PHY_7
+*498 PHY_8
+*499 PHY_9
+*500 TAP_34
+*501 TAP_35
+*502 TAP_36
+*503 TAP_37
+*504 TAP_38
+*505 TAP_39
+*506 TAP_40
+*507 TAP_41
+*508 TAP_42
+*509 TAP_43
+*510 TAP_44
+*511 TAP_45
+*512 TAP_46
+*513 TAP_47
+*514 TAP_48
+*515 TAP_49
+*516 TAP_50
+*517 TAP_51
+*518 TAP_52
+*519 TAP_53
+*520 TAP_54
+*521 TAP_55
+*522 TAP_56
+*523 TAP_57
+*524 TAP_58
+*525 TAP_59
+*526 TAP_60
+*527 TAP_61
+*528 TAP_62
+*529 TAP_63
+*530 TAP_64
+*531 TAP_65
+*532 TAP_66
+*533 TAP_67
+*534 TAP_68
+*535 TAP_69
+*536 TAP_70
+*537 TAP_71
+*538 TAP_72
+*539 TAP_73
+*540 TAP_74
+*541 TAP_75
+*542 TAP_76
+*543 TAP_77
+*544 TAP_78
+*545 TAP_79
+*546 TAP_80
+*547 u_nauta_series_f1\.gen_FB\[0\]\.fbn
+*548 u_nauta_series_f1\.gen_FB\[0\]\.fbp
+*549 u_nauta_series_f1\.gen_FB\[1\]\.fbn
+*550 u_nauta_series_f1\.gen_FB\[1\]\.fbp
+*551 u_nauta_series_f1\.gen_FB\[2\]\.fbn
+*552 u_nauta_series_f1\.gen_FB\[2\]\.fbp
+*553 u_nauta_series_f1\.gen_FB\[3\]\.fbn
+*554 u_nauta_series_f1\.gen_FB\[3\]\.fbp
+*555 u_nauta_series_f1\.gen_T\[0\]\.thrun
+*556 u_nauta_series_f1\.gen_T\[0\]\.thrup
+*557 u_nauta_series_f1\.gen_T\[1\]\.thrun
+*558 u_nauta_series_f1\.gen_T\[1\]\.thrup
+*559 u_nauta_series_f1\.gen_T\[2\]\.thrun
+*560 u_nauta_series_f1\.gen_T\[2\]\.thrup
+*561 u_nauta_series_f1\.gen_T\[3\]\.thrun
+*562 u_nauta_series_f1\.gen_T\[3\]\.thrup
+*563 u_nauta_series_f1\.gen_T\[4\]\.thrun
+*564 u_nauta_series_f1\.gen_T\[4\]\.thrup
+*565 u_nauta_series_f1\.gen_T\[5\]\.thrun
+*566 u_nauta_series_f1\.gen_T\[5\]\.thrup
+*567 u_nauta_series_f1\.gen_T\[6\]\.thrun
+*568 u_nauta_series_f1\.gen_T\[6\]\.thrup
+*569 u_nauta_series_f1\.gen_T\[7\]\.thrun
+*570 u_nauta_series_f1\.gen_T\[7\]\.thrup
+*571 u_nauta_series_f1\.gen_T\[8\]\.thrun
+*572 u_nauta_series_f1\.gen_T\[8\]\.thrup
+*573 u_nauta_series_f1\.gen_T\[9\]\.thrun
+*574 u_nauta_series_f1\.gen_T\[9\]\.thrup
+*575 u_nauta_series_f1\.gen_X\[0\]\.crossn
+*576 u_nauta_series_f1\.gen_X\[0\]\.crossp
+*577 u_nauta_series_f1\.gen_X\[1\]\.crossn
+*578 u_nauta_series_f1\.gen_X\[1\]\.crossp
+*579 u_nauta_series_f1\.gen_X\[2\]\.crossn
+*580 u_nauta_series_f1\.gen_X\[2\]\.crossp
+*581 u_nauta_series_f1\.gen_X\[3\]\.crossn
+*582 u_nauta_series_f1\.gen_X\[3\]\.crossp
+*583 u_nauta_series_f1\.gen_X\[4\]\.crossn
+*584 u_nauta_series_f1\.gen_X\[4\]\.crossp
+*585 u_nauta_series_f2\.gen_FB\[0\]\.fbn
+*586 u_nauta_series_f2\.gen_FB\[0\]\.fbp
+*587 u_nauta_series_f2\.gen_FB\[1\]\.fbn
+*588 u_nauta_series_f2\.gen_FB\[1\]\.fbp
+*589 u_nauta_series_f2\.gen_FB\[2\]\.fbn
+*590 u_nauta_series_f2\.gen_FB\[2\]\.fbp
+*591 u_nauta_series_f2\.gen_FB\[3\]\.fbn
+*592 u_nauta_series_f2\.gen_FB\[3\]\.fbp
+*593 u_nauta_series_f2\.gen_T\[0\]\.thrun
+*594 u_nauta_series_f2\.gen_T\[0\]\.thrup
+*595 u_nauta_series_f2\.gen_T\[1\]\.thrun
+*596 u_nauta_series_f2\.gen_T\[1\]\.thrup
+*597 u_nauta_series_f2\.gen_T\[2\]\.thrun
+*598 u_nauta_series_f2\.gen_T\[2\]\.thrup
+*599 u_nauta_series_f2\.gen_T\[3\]\.thrun
+*600 u_nauta_series_f2\.gen_T\[3\]\.thrup
+*601 u_nauta_series_f2\.gen_T\[4\]\.thrun
+*602 u_nauta_series_f2\.gen_T\[4\]\.thrup
+*603 u_nauta_series_f2\.gen_T\[5\]\.thrun
+*604 u_nauta_series_f2\.gen_T\[5\]\.thrup
+*605 u_nauta_series_f2\.gen_T\[6\]\.thrun
+*606 u_nauta_series_f2\.gen_T\[6\]\.thrup
+*607 u_nauta_series_f2\.gen_T\[7\]\.thrun
+*608 u_nauta_series_f2\.gen_T\[7\]\.thrup
+*609 u_nauta_series_f2\.gen_T\[8\]\.thrun
+*610 u_nauta_series_f2\.gen_T\[8\]\.thrup
+*611 u_nauta_series_f2\.gen_T\[9\]\.thrun
+*612 u_nauta_series_f2\.gen_T\[9\]\.thrup
+*613 u_nauta_series_f2\.gen_X\[0\]\.crossn
+*614 u_nauta_series_f2\.gen_X\[0\]\.crossp
+*615 u_nauta_series_f2\.gen_X\[1\]\.crossn
+*616 u_nauta_series_f2\.gen_X\[1\]\.crossp
+*617 u_nauta_series_f2\.gen_X\[2\]\.crossn
+*618 u_nauta_series_f2\.gen_X\[2\]\.crossp
+*619 u_nauta_series_f2\.gen_X\[3\]\.crossn
+*620 u_nauta_series_f2\.gen_X\[3\]\.crossp
+*621 u_nauta_series_f2\.gen_X\[4\]\.crossn
+*622 u_nauta_series_f2\.gen_X\[4\]\.crossp
+*623 u_nauta_series_r1\.gen_FB\[0\]\.fbn
+*624 u_nauta_series_r1\.gen_FB\[0\]\.fbp
+*625 u_nauta_series_r1\.gen_FB\[1\]\.fbn
+*626 u_nauta_series_r1\.gen_FB\[1\]\.fbp
+*627 u_nauta_series_r1\.gen_FB\[2\]\.fbn
+*628 u_nauta_series_r1\.gen_FB\[2\]\.fbp
+*629 u_nauta_series_r1\.gen_FB\[3\]\.fbn
+*630 u_nauta_series_r1\.gen_FB\[3\]\.fbp
+*631 u_nauta_series_r1\.gen_T\[0\]\.thrun
+*632 u_nauta_series_r1\.gen_T\[0\]\.thrup
+*633 u_nauta_series_r1\.gen_T\[1\]\.thrun
+*634 u_nauta_series_r1\.gen_T\[1\]\.thrup
+*635 u_nauta_series_r1\.gen_T\[2\]\.thrun
+*636 u_nauta_series_r1\.gen_T\[2\]\.thrup
+*637 u_nauta_series_r1\.gen_T\[3\]\.thrun
+*638 u_nauta_series_r1\.gen_T\[3\]\.thrup
+*639 u_nauta_series_r1\.gen_T\[4\]\.thrun
+*640 u_nauta_series_r1\.gen_T\[4\]\.thrup
+*641 u_nauta_series_r1\.gen_T\[5\]\.thrun
+*642 u_nauta_series_r1\.gen_T\[5\]\.thrup
+*643 u_nauta_series_r1\.gen_T\[6\]\.thrun
+*644 u_nauta_series_r1\.gen_T\[6\]\.thrup
+*645 u_nauta_series_r1\.gen_T\[7\]\.thrun
+*646 u_nauta_series_r1\.gen_T\[7\]\.thrup
+*647 u_nauta_series_r1\.gen_T\[8\]\.thrun
+*648 u_nauta_series_r1\.gen_T\[8\]\.thrup
+*649 u_nauta_series_r1\.gen_T\[9\]\.thrun
+*650 u_nauta_series_r1\.gen_T\[9\]\.thrup
+*651 u_nauta_series_r1\.gen_X\[0\]\.crossn
+*652 u_nauta_series_r1\.gen_X\[0\]\.crossp
+*653 u_nauta_series_r1\.gen_X\[1\]\.crossn
+*654 u_nauta_series_r1\.gen_X\[1\]\.crossp
+*655 u_nauta_series_r1\.gen_X\[2\]\.crossn
+*656 u_nauta_series_r1\.gen_X\[2\]\.crossp
+*657 u_nauta_series_r1\.gen_X\[3\]\.crossn
+*658 u_nauta_series_r1\.gen_X\[3\]\.crossp
+*659 u_nauta_series_r1\.gen_X\[4\]\.crossn
+*660 u_nauta_series_r1\.gen_X\[4\]\.crossp
+*661 u_nauta_series_r2\.gen_FB\[0\]\.fbn
+*662 u_nauta_series_r2\.gen_FB\[0\]\.fbp
+*663 u_nauta_series_r2\.gen_FB\[1\]\.fbn
+*664 u_nauta_series_r2\.gen_FB\[1\]\.fbp
+*665 u_nauta_series_r2\.gen_FB\[2\]\.fbn
+*666 u_nauta_series_r2\.gen_FB\[2\]\.fbp
+*667 u_nauta_series_r2\.gen_FB\[3\]\.fbn
+*668 u_nauta_series_r2\.gen_FB\[3\]\.fbp
+*669 u_nauta_series_r2\.gen_T\[0\]\.thrun
+*670 u_nauta_series_r2\.gen_T\[0\]\.thrup
+*671 u_nauta_series_r2\.gen_T\[1\]\.thrun
+*672 u_nauta_series_r2\.gen_T\[1\]\.thrup
+*673 u_nauta_series_r2\.gen_T\[2\]\.thrun
+*674 u_nauta_series_r2\.gen_T\[2\]\.thrup
+*675 u_nauta_series_r2\.gen_T\[3\]\.thrun
+*676 u_nauta_series_r2\.gen_T\[3\]\.thrup
+*677 u_nauta_series_r2\.gen_T\[4\]\.thrun
+*678 u_nauta_series_r2\.gen_T\[4\]\.thrup
+*679 u_nauta_series_r2\.gen_T\[5\]\.thrun
+*680 u_nauta_series_r2\.gen_T\[5\]\.thrup
+*681 u_nauta_series_r2\.gen_T\[6\]\.thrun
+*682 u_nauta_series_r2\.gen_T\[6\]\.thrup
+*683 u_nauta_series_r2\.gen_T\[7\]\.thrun
+*684 u_nauta_series_r2\.gen_T\[7\]\.thrup
+*685 u_nauta_series_r2\.gen_T\[8\]\.thrun
+*686 u_nauta_series_r2\.gen_T\[8\]\.thrup
+*687 u_nauta_series_r2\.gen_T\[9\]\.thrun
+*688 u_nauta_series_r2\.gen_T\[9\]\.thrup
+*689 u_nauta_series_r2\.gen_X\[0\]\.crossn
+*690 u_nauta_series_r2\.gen_X\[0\]\.crossp
+*691 u_nauta_series_r2\.gen_X\[1\]\.crossn
+*692 u_nauta_series_r2\.gen_X\[1\]\.crossp
+*693 u_nauta_series_r2\.gen_X\[2\]\.crossn
+*694 u_nauta_series_r2\.gen_X\[2\]\.crossp
+*695 u_nauta_series_r2\.gen_X\[3\]\.crossn
+*696 u_nauta_series_r2\.gen_X\[3\]\.crossp
+*697 u_nauta_series_r2\.gen_X\[4\]\.crossn
+*698 u_nauta_series_r2\.gen_X\[4\]\.crossp
+*699 u_seriesgy\.u_nauta_f\.gen_FB\[0\]\.fbn
+*700 u_seriesgy\.u_nauta_f\.gen_FB\[0\]\.fbp
+*701 u_seriesgy\.u_nauta_f\.gen_FB\[1\]\.fbn
+*702 u_seriesgy\.u_nauta_f\.gen_FB\[1\]\.fbp
+*703 u_seriesgy\.u_nauta_f\.gen_FB\[2\]\.fbn
+*704 u_seriesgy\.u_nauta_f\.gen_FB\[2\]\.fbp
+*705 u_seriesgy\.u_nauta_f\.gen_FB\[3\]\.fbn
+*706 u_seriesgy\.u_nauta_f\.gen_FB\[3\]\.fbp
+*707 u_seriesgy\.u_nauta_f\.gen_T\[0\]\.thrun
+*708 u_seriesgy\.u_nauta_f\.gen_T\[0\]\.thrup
+*709 u_seriesgy\.u_nauta_f\.gen_T\[1\]\.thrun
+*710 u_seriesgy\.u_nauta_f\.gen_T\[1\]\.thrup
+*711 u_seriesgy\.u_nauta_f\.gen_T\[2\]\.thrun
+*712 u_seriesgy\.u_nauta_f\.gen_T\[2\]\.thrup
+*713 u_seriesgy\.u_nauta_f\.gen_T\[3\]\.thrun
+*714 u_seriesgy\.u_nauta_f\.gen_T\[3\]\.thrup
+*715 u_seriesgy\.u_nauta_f\.gen_T\[4\]\.thrun
+*716 u_seriesgy\.u_nauta_f\.gen_T\[4\]\.thrup
+*717 u_seriesgy\.u_nauta_f\.gen_T\[5\]\.thrun
+*718 u_seriesgy\.u_nauta_f\.gen_T\[5\]\.thrup
+*719 u_seriesgy\.u_nauta_f\.gen_T\[6\]\.thrun
+*720 u_seriesgy\.u_nauta_f\.gen_T\[6\]\.thrup
+*721 u_seriesgy\.u_nauta_f\.gen_T\[7\]\.thrun
+*722 u_seriesgy\.u_nauta_f\.gen_T\[7\]\.thrup
+*723 u_seriesgy\.u_nauta_f\.gen_T\[8\]\.thrun
+*724 u_seriesgy\.u_nauta_f\.gen_T\[8\]\.thrup
+*725 u_seriesgy\.u_nauta_f\.gen_T\[9\]\.thrun
+*726 u_seriesgy\.u_nauta_f\.gen_T\[9\]\.thrup
+*727 u_seriesgy\.u_nauta_f\.gen_X\[0\]\.crossn
+*728 u_seriesgy\.u_nauta_f\.gen_X\[0\]\.crossp
+*729 u_seriesgy\.u_nauta_f\.gen_X\[1\]\.crossn
+*730 u_seriesgy\.u_nauta_f\.gen_X\[1\]\.crossp
+*731 u_seriesgy\.u_nauta_f\.gen_X\[2\]\.crossn
+*732 u_seriesgy\.u_nauta_f\.gen_X\[2\]\.crossp
+*733 u_seriesgy\.u_nauta_f\.gen_X\[3\]\.crossn
+*734 u_seriesgy\.u_nauta_f\.gen_X\[3\]\.crossp
+*735 u_seriesgy\.u_nauta_f\.gen_X\[4\]\.crossn
+*736 u_seriesgy\.u_nauta_f\.gen_X\[4\]\.crossp
+*737 u_seriesgy\.u_nauta_r\.gen_FB\[0\]\.fbn
+*738 u_seriesgy\.u_nauta_r\.gen_FB\[0\]\.fbp
+*739 u_seriesgy\.u_nauta_r\.gen_FB\[1\]\.fbn
+*740 u_seriesgy\.u_nauta_r\.gen_FB\[1\]\.fbp
+*741 u_seriesgy\.u_nauta_r\.gen_FB\[2\]\.fbn
+*742 u_seriesgy\.u_nauta_r\.gen_FB\[2\]\.fbp
+*743 u_seriesgy\.u_nauta_r\.gen_FB\[3\]\.fbn
+*744 u_seriesgy\.u_nauta_r\.gen_FB\[3\]\.fbp
+*745 u_seriesgy\.u_nauta_r\.gen_T\[0\]\.thrun
+*746 u_seriesgy\.u_nauta_r\.gen_T\[0\]\.thrup
+*747 u_seriesgy\.u_nauta_r\.gen_T\[1\]\.thrun
+*748 u_seriesgy\.u_nauta_r\.gen_T\[1\]\.thrup
+*749 u_seriesgy\.u_nauta_r\.gen_T\[2\]\.thrun
+*750 u_seriesgy\.u_nauta_r\.gen_T\[2\]\.thrup
+*751 u_seriesgy\.u_nauta_r\.gen_T\[3\]\.thrun
+*752 u_seriesgy\.u_nauta_r\.gen_T\[3\]\.thrup
+*753 u_seriesgy\.u_nauta_r\.gen_T\[4\]\.thrun
+*754 u_seriesgy\.u_nauta_r\.gen_T\[4\]\.thrup
+*755 u_seriesgy\.u_nauta_r\.gen_T\[5\]\.thrun
+*756 u_seriesgy\.u_nauta_r\.gen_T\[5\]\.thrup
+*757 u_seriesgy\.u_nauta_r\.gen_T\[6\]\.thrun
+*758 u_seriesgy\.u_nauta_r\.gen_T\[6\]\.thrup
+*759 u_seriesgy\.u_nauta_r\.gen_T\[7\]\.thrun
+*760 u_seriesgy\.u_nauta_r\.gen_T\[7\]\.thrup
+*761 u_seriesgy\.u_nauta_r\.gen_T\[8\]\.thrun
+*762 u_seriesgy\.u_nauta_r\.gen_T\[8\]\.thrup
+*763 u_seriesgy\.u_nauta_r\.gen_T\[9\]\.thrun
+*764 u_seriesgy\.u_nauta_r\.gen_T\[9\]\.thrup
+*765 u_seriesgy\.u_nauta_r\.gen_X\[0\]\.crossn
+*766 u_seriesgy\.u_nauta_r\.gen_X\[0\]\.crossp
+*767 u_seriesgy\.u_nauta_r\.gen_X\[1\]\.crossn
+*768 u_seriesgy\.u_nauta_r\.gen_X\[1\]\.crossp
+*769 u_seriesgy\.u_nauta_r\.gen_X\[2\]\.crossn
+*770 u_seriesgy\.u_nauta_r\.gen_X\[2\]\.crossp
+*771 u_seriesgy\.u_nauta_r\.gen_X\[3\]\.crossn
+*772 u_seriesgy\.u_nauta_r\.gen_X\[3\]\.crossp
+*773 u_seriesgy\.u_nauta_r\.gen_X\[4\]\.crossn
+*774 u_seriesgy\.u_nauta_r\.gen_X\[4\]\.crossp
+*775 u_shuntgy\.u_nauta_f\.gen_FB\[0\]\.fbn
+*776 u_shuntgy\.u_nauta_f\.gen_FB\[0\]\.fbp
+*777 u_shuntgy\.u_nauta_f\.gen_FB\[1\]\.fbn
+*778 u_shuntgy\.u_nauta_f\.gen_FB\[1\]\.fbp
+*779 u_shuntgy\.u_nauta_f\.gen_FB\[2\]\.fbn
+*780 u_shuntgy\.u_nauta_f\.gen_FB\[2\]\.fbp
+*781 u_shuntgy\.u_nauta_f\.gen_FB\[3\]\.fbn
+*782 u_shuntgy\.u_nauta_f\.gen_FB\[3\]\.fbp
+*783 u_shuntgy\.u_nauta_f\.gen_T\[0\]\.thrun
+*784 u_shuntgy\.u_nauta_f\.gen_T\[0\]\.thrup
+*785 u_shuntgy\.u_nauta_f\.gen_T\[1\]\.thrun
+*786 u_shuntgy\.u_nauta_f\.gen_T\[1\]\.thrup
+*787 u_shuntgy\.u_nauta_f\.gen_T\[2\]\.thrun
+*788 u_shuntgy\.u_nauta_f\.gen_T\[2\]\.thrup
+*789 u_shuntgy\.u_nauta_f\.gen_T\[3\]\.thrun
+*790 u_shuntgy\.u_nauta_f\.gen_T\[3\]\.thrup
+*791 u_shuntgy\.u_nauta_f\.gen_T\[4\]\.thrun
+*792 u_shuntgy\.u_nauta_f\.gen_T\[4\]\.thrup
+*793 u_shuntgy\.u_nauta_f\.gen_T\[5\]\.thrun
+*794 u_shuntgy\.u_nauta_f\.gen_T\[5\]\.thrup
+*795 u_shuntgy\.u_nauta_f\.gen_T\[6\]\.thrun
+*796 u_shuntgy\.u_nauta_f\.gen_T\[6\]\.thrup
+*797 u_shuntgy\.u_nauta_f\.gen_T\[7\]\.thrun
+*798 u_shuntgy\.u_nauta_f\.gen_T\[7\]\.thrup
+*799 u_shuntgy\.u_nauta_f\.gen_T\[8\]\.thrun
+*800 u_shuntgy\.u_nauta_f\.gen_T\[8\]\.thrup
+*801 u_shuntgy\.u_nauta_f\.gen_T\[9\]\.thrun
+*802 u_shuntgy\.u_nauta_f\.gen_T\[9\]\.thrup
+*803 u_shuntgy\.u_nauta_f\.gen_X\[0\]\.crossn
+*804 u_shuntgy\.u_nauta_f\.gen_X\[0\]\.crossp
+*805 u_shuntgy\.u_nauta_f\.gen_X\[1\]\.crossn
+*806 u_shuntgy\.u_nauta_f\.gen_X\[1\]\.crossp
+*807 u_shuntgy\.u_nauta_f\.gen_X\[2\]\.crossn
+*808 u_shuntgy\.u_nauta_f\.gen_X\[2\]\.crossp
+*809 u_shuntgy\.u_nauta_f\.gen_X\[3\]\.crossn
+*810 u_shuntgy\.u_nauta_f\.gen_X\[3\]\.crossp
+*811 u_shuntgy\.u_nauta_f\.gen_X\[4\]\.crossn
+*812 u_shuntgy\.u_nauta_f\.gen_X\[4\]\.crossp
+*813 u_shuntgy\.u_nauta_r\.gen_FB\[0\]\.fbn
+*814 u_shuntgy\.u_nauta_r\.gen_FB\[0\]\.fbp
+*815 u_shuntgy\.u_nauta_r\.gen_FB\[1\]\.fbn
+*816 u_shuntgy\.u_nauta_r\.gen_FB\[1\]\.fbp
+*817 u_shuntgy\.u_nauta_r\.gen_FB\[2\]\.fbn
+*818 u_shuntgy\.u_nauta_r\.gen_FB\[2\]\.fbp
+*819 u_shuntgy\.u_nauta_r\.gen_FB\[3\]\.fbn
+*820 u_shuntgy\.u_nauta_r\.gen_FB\[3\]\.fbp
+*821 u_shuntgy\.u_nauta_r\.gen_T\[0\]\.thrun
+*822 u_shuntgy\.u_nauta_r\.gen_T\[0\]\.thrup
+*823 u_shuntgy\.u_nauta_r\.gen_T\[1\]\.thrun
+*824 u_shuntgy\.u_nauta_r\.gen_T\[1\]\.thrup
+*825 u_shuntgy\.u_nauta_r\.gen_T\[2\]\.thrun
+*826 u_shuntgy\.u_nauta_r\.gen_T\[2\]\.thrup
+*827 u_shuntgy\.u_nauta_r\.gen_T\[3\]\.thrun
+*828 u_shuntgy\.u_nauta_r\.gen_T\[3\]\.thrup
+*829 u_shuntgy\.u_nauta_r\.gen_T\[4\]\.thrun
+*830 u_shuntgy\.u_nauta_r\.gen_T\[4\]\.thrup
+*831 u_shuntgy\.u_nauta_r\.gen_T\[5\]\.thrun
+*832 u_shuntgy\.u_nauta_r\.gen_T\[5\]\.thrup
+*833 u_shuntgy\.u_nauta_r\.gen_T\[6\]\.thrun
+*834 u_shuntgy\.u_nauta_r\.gen_T\[6\]\.thrup
+*835 u_shuntgy\.u_nauta_r\.gen_T\[7\]\.thrun
+*836 u_shuntgy\.u_nauta_r\.gen_T\[7\]\.thrup
+*837 u_shuntgy\.u_nauta_r\.gen_T\[8\]\.thrun
+*838 u_shuntgy\.u_nauta_r\.gen_T\[8\]\.thrup
+*839 u_shuntgy\.u_nauta_r\.gen_T\[9\]\.thrun
+*840 u_shuntgy\.u_nauta_r\.gen_T\[9\]\.thrup
+*841 u_shuntgy\.u_nauta_r\.gen_X\[0\]\.crossn
+*842 u_shuntgy\.u_nauta_r\.gen_X\[0\]\.crossp
+*843 u_shuntgy\.u_nauta_r\.gen_X\[1\]\.crossn
+*844 u_shuntgy\.u_nauta_r\.gen_X\[1\]\.crossp
+*845 u_shuntgy\.u_nauta_r\.gen_X\[2\]\.crossn
+*846 u_shuntgy\.u_nauta_r\.gen_X\[2\]\.crossp
+*847 u_shuntgy\.u_nauta_r\.gen_X\[3\]\.crossn
+*848 u_shuntgy\.u_nauta_r\.gen_X\[3\]\.crossp
+*849 u_shuntgy\.u_nauta_r\.gen_X\[4\]\.crossn
+*850 u_shuntgy\.u_nauta_r\.gen_X\[4\]\.crossp
+
+*PORTS
+nbusin_nshunt I
+nbusout I
+nseries_gy I
+nseries_gygy I
+nshunt_gy I
+pbusin_pshunt I
+pbusout I
+pseries_gy I
+pseries_gygy I
+pshunt_gy I
+
+*D_NET *1 0.0483561
+*CONN
+*P nbusin_nshunt I
+*I *630:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *654:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *630:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *815:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *815:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *660:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *628:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *628:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *652:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *827:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *844:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *839:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *823:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *794:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *790:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *831:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *825:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *653:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *850:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *659:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *646:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *594:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *598:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *644:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *632:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *634:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *642:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *640:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *638:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *650:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *636:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *604:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *606:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *596:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *608:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *648:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *600:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *610:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *602:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *843:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *612:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *819:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *819:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *626:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *626:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *813:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *835:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *656:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *845:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *841:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *847:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *837:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *829:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *658:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *813:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *817:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *817:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *624:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *657:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *624:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *848:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *651:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *655:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *821:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *846:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *833:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *796:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *842:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *786:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *802:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *798:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *792:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *784:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *800:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *788:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *849:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 nbusin_nshunt 0.00172369
+2 *630:ZN 0
+3 *654:ZN 7.84826e-05
+4 *630:I 0
+5 *815:ZN 0
+6 *815:I 7.08837e-06
+7 *660:ZN 0
+8 *628:ZN 1.35705e-05
+9 *628:I 0
+10 *652:ZN 0
+11 *827:ZN 8.29379e-05
+12 *844:I 0
+13 *839:ZN 0
+14 *823:ZN 0
+15 *794:I 0.000150284
+16 *790:I 0.000112238
+17 *831:ZN 0
+18 *825:ZN 4.92788e-05
+19 *653:I 0
+20 *850:I 6.97734e-05
+21 *659:I 7.35693e-05
+22 *646:ZN 0
+23 *594:I 0.000112053
+24 *598:I 0.000129951
+25 *644:ZN 0
+26 *632:ZN 0
+27 *634:ZN 1.50908e-05
+28 *642:ZN 0
+29 *640:ZN 1.74157e-05
+30 *638:ZN 6.46019e-05
+31 *650:ZN 0
+32 *636:ZN 0
+33 *604:I 0.000118582
+34 *606:I 4.77455e-05
+35 *596:I 0
+36 *608:I 0
+37 *648:ZN 9.34409e-05
+38 *600:I 7.52006e-05
+39 *610:I 0
+40 *602:I 0
+41 *843:ZN 0
+42 *612:I 2.42518e-05
+43 *819:ZN 0
+44 *819:I 0
+45 *626:ZN 1.33906e-05
+46 *626:I 0
+47 *813:ZN 0
+48 *835:ZN 0.000335712
+49 *656:ZN 6.84559e-05
+50 *845:ZN 4.77081e-05
+51 *841:ZN 5.30303e-05
+52 *847:ZN 0
+53 *837:ZN 0
+54 *829:ZN 5.36097e-05
+55 *658:ZN 8.62409e-05
+56 *813:I 4.59583e-05
+57 *817:ZN 0
+58 *817:I 0
+59 *624:ZN 1.93603e-05
+60 *657:I 0.000102604
+61 *624:I 0
+62 *848:I 0
+63 *651:I 2.88702e-05
+64 *655:I 0
+65 *821:ZN 0.000109029
+66 *846:I 0
+67 *833:ZN 7.37161e-05
+68 *796:I 3.0087e-05
+69 *842:I 0
+70 *786:I 0
+71 *802:I 2.53858e-05
+72 *798:I 0
+73 *792:I 0.000114301
+74 *784:I 0
+75 *800:I 0.000216633
+76 *788:I 0
+77 *849:ZN 0
+78 *1:623 0.000106915
+79 *1:617 7.12869e-05
+80 *1:609 6.89766e-05
+81 *1:602 0.000157784
+82 *1:584 4.85641e-05
+83 *1:566 0.000194396
+84 *1:558 0.000232243
+85 *1:526 0.000336878
+86 *1:518 0.000138733
+87 *1:510 0.000159839
+88 *1:508 0.000387893
+89 *1:506 0.000318367
+90 *1:502 0.000156755
+91 *1:499 2.43187e-05
+92 *1:497 0.000246469
+93 *1:449 0.000324371
+94 *1:443 0.000166832
+95 *1:433 0.000149786
+96 *1:421 7.42695e-05
+97 *1:409 0.000137685
+98 *1:401 5.75483e-05
+99 *1:398 0.000199346
+100 *1:379 0.000126456
+101 *1:377 0.000157666
+102 *1:375 8.29374e-05
+103 *1:361 0.000124627
+104 *1:359 0.000232735
+105 *1:351 0.000151603
+106 *1:343 0.000156891
+107 *1:329 0.000103134
+108 *1:327 0.000105285
+109 *1:321 0.000114644
+110 *1:317 0.000155474
+111 *1:311 7.66273e-05
+112 *1:303 8.94817e-05
+113 *1:301 0.000119802
+114 *1:295 6.13497e-05
+115 *1:289 0.000109778
+116 *1:253 0.000653694
+117 *1:238 0.000154481
+118 *1:222 0.000314521
+119 *1:210 0.000488827
+120 *1:208 0.000422691
+121 *1:198 0.000328844
+122 *1:192 0.000338474
+123 *1:184 0.000241748
+124 *1:179 0.000161812
+125 *1:154 0.000121964
+126 *1:152 0.000282727
+127 *1:149 0.000304124
+128 *1:139 0.000205375
+129 *1:136 0.000243386
+130 *1:116 0.000155079
+131 *1:115 7.49197e-05
+132 *1:95 0.000144846
+133 *1:93 5.1769e-05
+134 *1:55 0.000173839
+135 *1:32 0.000424711
+136 *1:27 0.000255368
+137 *1:25 0.000203823
+138 *1:23 0.000132191
+139 *1:19 9.77253e-05
+140 *1:12 0.00188107
+141 *1:8 0.00022788
+142 *1:6 0.000145482
+143 *1:5 0.000125568
+144 nbusin_nshunt *828:ZN 1.84127e-05
+145 nbusin_nshunt *10:208 0.000265962
+146 nbusin_nshunt *10:226 8.9762e-05
+147 *594:I *547:I 0
+148 *594:I *594:ZN 6.13757e-05
+149 *598:I *598:ZN 0.000122752
+150 *598:I *644:I 0.000245503
+151 *598:I *8:237 2.76191e-05
+152 *600:I *600:ZN 0.000777207
+153 *604:I *570:ZN 6.13757e-05
+154 *604:I *646:I 0.000184127
+155 *604:I *3:61 6.90477e-06
+156 *604:I *3:69 6.90477e-06
+157 *604:I *3:72 0.00012434
+158 *604:I *3:76 0.000808207
+159 *604:I *3:94 0.000184127
+160 *604:I *3:120 0.000135027
+161 *606:I *598:ZN 1.38095e-05
+162 *606:I *600:ZN 6.90231e-05
+163 *606:I *8:237 0.000675133
+164 *628:ZN *6:19 2.07143e-05
+165 *634:ZN *3:69 1.38095e-05
+166 *634:ZN *3:128 0
+167 *638:ZN *3:61 0.000225045
+168 *638:ZN *3:69 6.13758e-05
+169 *638:ZN *3:120 8.95063e-06
+170 *640:ZN *3:23 0.000245503
+171 *640:ZN *3:25 0.000552382
+172 *648:ZN *646:I 0
+173 *648:ZN *8:93 6.26544e-05
+174 *651:I *828:ZN 5.37038e-05
+175 *651:I *6:65 0.000675133
+176 *654:ZN *637:I 6.13757e-05
+177 *654:ZN *6:259 6.26544e-05
+178 *656:ZN *570:I 0
+179 *656:ZN *656:I 0.000675133
+180 *656:ZN *6:389 0.000306879
+181 *656:ZN *8:116 0.000184127
+182 *657:I *6:15 0.000140653
+183 *657:I *6:19 0.000159577
+184 *658:ZN *6:304 0.000552382
+185 *658:ZN *6:310 0.000491006
+186 *658:ZN *6:318 2.45503e-05
+187 *659:I *843:I 0.000184127
+188 *659:I *6:615 6.13758e-05
+189 *790:I nshunt_gy 0.00042963
+190 *790:I *800:ZN 2.14815e-05
+191 *790:I *5:143 0.000306879
+192 *792:I *807:I 0
+193 *792:I *830:ZN 2.07232e-05
+194 *794:I nshunt_gy 0.000593299
+195 *794:I *791:I 6.44445e-05
+196 *794:I *794:ZN 0.000116102
+197 *794:I *839:I 4.91006e-05
+198 *794:I *5:27 0
+199 *800:I *783:I 0.000225045
+200 *800:I *789:I 9.20636e-06
+201 *800:I *825:I 6.13757e-05
+202 *800:I *836:ZN 6.13758e-05
+203 *800:I *5:143 0
+204 *800:I *5:148 2.07232e-05
+205 *800:I *5:153 0.000103616
+206 *800:I *6:125 0
+207 *800:I *6:139 4.19646e-05
+208 *800:I *6:146 2.79764e-05
+209 *802:I *786:ZN 3.06879e-06
+210 *802:I *10:65 0
+211 *813:I *6:253 1.22751e-05
+212 *813:I *6:259 6.13757e-05
+213 *821:ZN *6:41 0.000184127
+214 *821:ZN *6:90 0
+215 *821:ZN *6:94 0
+216 *821:ZN *6:120 6.13757e-05
+217 *825:ZN *814:ZN 2.07143e-05
+218 *825:ZN *831:I 0
+219 *827:ZN *785:I 0.000675133
+220 *827:ZN *823:I 0
+221 *827:ZN *839:I 3.06879e-06
+222 *827:ZN *6:310 8.95063e-06
+223 *827:ZN *6:318 2.04586e-05
+224 *829:ZN *785:I 4.14286e-05
+225 *829:ZN *787:I 2.14815e-05
+226 *833:ZN *842:ZN 6.90477e-05
+227 *835:ZN pseries_gy 2.04586e-05
+228 *835:ZN *564:ZN 2.76191e-05
+229 *835:ZN *570:I 0.000306879
+230 *835:ZN *641:ZN 0.000204586
+231 *835:ZN *835:I 1.22751e-05
+232 *835:ZN *6:405 0.000124339
+233 *835:ZN *6:412 0.000269402
+234 *835:ZN *6:435 6.21697e-05
+235 *835:ZN *6:440 9.8457e-05
+236 *835:ZN *6:442 2.07143e-05
+237 *835:ZN *8:116 0
+238 *835:ZN *8:126 9.8457e-05
+239 *841:ZN *645:ZN 8.05557e-05
+240 *841:ZN *841:I 0.000552382
+241 *841:ZN *6:377 1.84127e-05
+242 *845:ZN *645:ZN 3.68254e-05
+243 *850:I *843:I 0.000184127
+244 *850:I *6:9 1.79013e-05
+245 *850:I *6:11 0
+246 *850:I *6:615 0.000171852
+247 *1:6 *6:36 0
+248 *1:6 *6:46 1.81328e-05
+249 *1:8 *6:46 8.15977e-05
+250 *1:12 *10:219 2.79764e-05
+251 *1:19 *842:ZN 1.02293e-05
+252 *1:19 *10:208 0.000306879
+253 *1:19 *10:214 0
+254 *1:23 *786:ZN 2.04586e-05
+255 *1:23 *842:ZN 0.000225045
+256 *1:23 *10:200 7.59525e-05
+257 *1:23 *10:208 6.44445e-05
+258 *1:25 *830:ZN 6.21429e-05
+259 *1:25 *842:ZN 3.68254e-05
+260 *1:25 *10:71 0.000265962
+261 *1:25 *10:184 1.84127e-05
+262 *1:25 *10:200 8.95063e-06
+263 *1:27 *798:ZN 8.95063e-05
+264 *1:27 *10:65 0.000225045
+265 *1:27 *10:71 4.09172e-05
+266 *1:27 *10:184 6.13757e-06
+267 *1:32 *798:ZN 8.95063e-06
+268 *1:32 *826:ZN 4.52646e-05
+269 *1:32 *6:139 4.89586e-05
+270 *1:32 *6:188 0.000310849
+271 *1:32 *10:57 0.000675133
+272 *1:32 *10:65 8.18344e-05
+273 *1:32 *10:87 0
+274 *1:32 *10:104 0
+275 *1:32 *10:178 9.20636e-06
+276 *1:55 *830:ZN 0.000227955
+277 *1:93 *828:ZN 0.00042963
+278 *1:95 *828:ZN 0.000184127
+279 *1:95 *842:ZN 9.8457e-05
+280 *1:116 *828:ZN 8.05557e-05
+281 *1:116 *6:41 0.000552381
+282 *1:116 *6:59 0.000122751
+283 *1:116 *6:65 0.000368254
+284 *1:136 *652:I 0
+285 *1:136 *6:36 0
+286 *1:139 *848:ZN 0.00042963
+287 *1:139 *6:25 2.68519e-05
+288 *1:139 *6:65 7.59525e-05
+289 *1:149 *840:ZN 0
+290 *1:149 *6:19 1.79013e-05
+291 *1:149 *6:25 0.000613757
+292 *1:149 *6:27 0
+293 *1:149 *6:65 0
+294 *1:152 *10:256 0
+295 *1:192 *6:19 0
+296 *1:192 *8:181 2.45503e-05
+297 *1:198 *631:ZN 0
+298 *1:198 *637:I 7.77426e-05
+299 *1:198 *643:I 4.91006e-05
+300 *1:198 *645:ZN 0
+301 *1:198 *6:259 0.000204586
+302 *1:198 *8:99 0
+303 *1:198 *8:107 0
+304 *1:198 *8:181 8.9762e-05
+305 *1:208 *645:ZN 0
+306 *1:210 *645:ZN 0
+307 *1:210 *841:I 0.000225045
+308 *1:210 *6:288 6.13757e-06
+309 *1:210 *6:304 1.79013e-05
+310 *1:222 *627:ZN 0
+311 *1:222 *629:I 0
+312 *1:222 *785:I 0.000388713
+313 *1:222 *787:I 0
+314 *1:222 *6:310 5.80512e-05
+315 *1:222 *6:318 0.000102293
+316 *1:222 *6:351 0
+317 *1:222 *6:371 0
+318 *1:222 *6:377 0
+319 *1:238 *627:ZN 2.07143e-05
+320 *1:253 *631:ZN 0
+321 *1:253 *6:262 0
+322 *1:253 *6:380 0.000103616
+323 *1:253 *6:405 6.21697e-05
+324 *1:253 *6:551 0
+325 *1:253 *6:562 0
+326 *1:253 *8:112 2.48679e-05
+327 *1:289 *6:9 2.68519e-05
+328 *1:295 *6:9 2.27602e-05
+329 *1:301 *6:9 6.90477e-06
+330 *1:301 *6:615 0
+331 *1:311 *631:I 0
+332 *1:311 *659:ZN 0
+333 *1:311 *6:615 0
+334 *1:317 *659:ZN 0
+335 *1:321 *8:93 2.04586e-05
+336 *1:327 *8:93 4.09172e-05
+337 *1:329 *600:ZN 2.68519e-05
+338 *1:329 *8:214 0.00042963
+339 *1:343 *600:ZN 6.90477e-06
+340 *1:351 *600:ZN 2.76191e-05
+341 *1:359 *600:ZN 2.68519e-05
+342 *1:361 *600:ZN 3.45239e-05
+343 *1:361 *644:I 9.20636e-06
+344 *1:361 *8:214 0
+345 *1:361 *8:231 0.000306879
+346 *1:361 *8:237 0.000245503
+347 *1:375 *644:I 1.38095e-05
+348 *1:375 *646:I 0.000122751
+349 *1:375 *3:128 6.13757e-05
+350 *1:377 *646:I 0.00110476
+351 *1:377 *3:120 0.000675133
+352 *1:377 *3:128 9.82012e-05
+353 *1:379 *646:I 0.000122751
+354 *1:379 *3:120 0.000184127
+355 *1:398 *3:72 0.000145063
+356 *1:401 *3:69 6.13757e-05
+357 *1:401 *3:120 2.68519e-05
+358 *1:401 *3:239 0
+359 *1:409 *3:239 6.90477e-06
+360 *1:421 *743:I 1.22751e-05
+361 *1:421 *3:23 0.000122751
+362 *1:421 *3:29 0
+363 *1:421 *3:241 3.06879e-05
+364 *1:433 *743:I 2.07143e-05
+365 *1:433 *3:120 5.37038e-05
+366 *1:433 *3:239 0
+367 *1:443 *743:I 2.07143e-05
+368 *1:443 *766:I 0
+369 *1:443 *3:120 2.68519e-05
+370 *1:443 *3:128 0.000204586
+371 *1:449 *594:ZN 1.84127e-05
+372 *1:449 *644:I 0.000675133
+373 *1:449 *766:I 9.20636e-06
+374 *1:449 *3:128 3.68254e-05
+375 *1:497 *652:I 0
+376 *1:502 *6:25 0.000122751
+377 *1:506 *6:25 0.000102293
+378 *1:506 *6:29 5.52382e-05
+379 *1:508 *6:29 1.22751e-05
+380 *1:508 *6:90 1.53439e-05
+381 *1:508 *6:94 2.45503e-05
+382 *1:508 *6:224 2.68519e-05
+383 *1:508 *6:239 6.13758e-05
+384 *1:508 *6:253 8.28573e-05
+385 *1:508 *6:259 0
+386 *1:508 *6:288 3.06879e-06
+387 *1:508 *6:290 2.45503e-05
+388 *1:510 *814:ZN 6.90477e-06
+389 *1:518 *821:I 0
+390 *1:518 *823:I 0.000204586
+391 *1:518 *825:I 9.8457e-05
+392 *1:526 *791:I 4.91006e-05
+393 *1:526 *823:I 0.000552381
+394 *1:526 *825:I 3.45239e-05
+395 *1:526 *831:I 0.000196402
+396 *1:526 *839:I 4.47532e-05
+397 *1:526 *5:143 0.000613757
+398 *1:558 *823:I 9.8457e-05
+399 *1:558 *6:245 2.07143e-05
+400 *1:558 *6:290 3.68254e-05
+401 *1:558 *6:310 6.44267e-05
+402 *1:566 *818:I 9.20636e-06
+403 *1:566 *823:I 0
+404 *1:566 *6:310 8.18343e-05
+405 *1:566 *6:318 6.13758e-05
+406 *1:584 *6:25 0.000204586
+407 *1:602 *652:I 0
+*RES
+1 *849:ZN *1:5 9 
+2 *1:5 *1:6 0.45 
+3 *1:6 *1:8 0.99 
+4 *1:8 *1:12 5.49 
+5 *1:12 *1:19 0.81 
+6 *1:19 *1:23 1.44 
+7 *1:23 *1:25 1.53 
+8 *1:25 *1:27 1.17 
+9 *1:27 *1:32 7.2 
+10 *1:32 *788:I 9 
+11 *1:32 *800:I 11.79 
+12 *1:27 *784:I 4.5 
+13 *1:25 *1:55 5.49 
+14 *1:55 *792:I 10.17 
+15 *1:55 *798:I 9 
+16 *1:25 *802:I 4.77 
+17 *1:23 *786:I 4.5 
+18 *1:19 *842:I 4.5 
+19 *1:12 nbusin_nshunt 19.845 
+20 *1:8 *1:93 5.13 
+21 *1:93 *1:95 1.17 
+22 *1:95 *796:I 4.77 
+23 *1:95 *833:ZN 5.76 
+24 *1:93 *846:I 4.5 
+25 *1:6 *1:115 4.5 
+26 *1:115 *1:116 1.53 
+27 *1:116 *821:ZN 6.12 
+28 *1:116 *655:I 4.5 
+29 *1:115 *651:I 5.49 
+30 *1:5 *1:136 0.81 
+31 *1:136 *1:139 5.49 
+32 *1:139 *848:I 4.5 
+33 *1:139 *1:149 2.07 
+34 *1:149 *1:152 5.67 
+35 *1:152 *1:154 4.5 
+36 *1:154 *624:I 4.5 
+37 *1:154 *657:I 6.66 
+38 *1:154 *624:ZN 4.77 
+39 *1:152 *1:179 5.67 
+40 *1:179 *817:I 4.5 
+41 *1:179 *1:184 0.27 
+42 *1:184 *817:ZN 4.5 
+43 *1:184 *1:192 1.26 
+44 *1:192 *1:198 3.51 
+45 *1:198 *813:I 5.22 
+46 *1:198 *1:208 0.63 
+47 *1:208 *1:210 2.07 
+48 *1:210 *658:ZN 6.48 
+49 *1:210 *1:222 3.24 
+50 *1:222 *829:ZN 5.13 
+51 *1:222 *837:ZN 4.5 
+52 *1:210 *847:ZN 4.5 
+53 *1:210 *1:238 0.63 
+54 *1:238 *841:ZN 5.85 
+55 *1:238 *845:ZN 5.13 
+56 *1:208 *1:253 6.75 
+57 *1:253 *656:ZN 10.35 
+58 *1:253 *835:ZN 13.77 
+59 *1:198 *813:ZN 4.5 
+60 *1:192 *626:I 4.5 
+61 *1:192 *626:ZN 4.77 
+62 *1:184 *1:289 1.8 
+63 *1:289 *819:I 4.5 
+64 *1:289 *1:295 0.27 
+65 *1:295 *819:ZN 4.5 
+66 *1:295 *1:301 0.63 
+67 *1:301 *1:303 0.45 
+68 *1:303 *612:I 5.49 
+69 *1:303 *1:311 0.63 
+70 *1:311 *843:ZN 4.5 
+71 *1:311 *1:317 0.27 
+72 *1:317 *1:321 1.44 
+73 *1:321 *602:I 4.5 
+74 *1:321 *1:327 0.63 
+75 *1:327 *1:329 1.35 
+76 *1:329 *610:I 4.5 
+77 *1:329 *600:I 6.3 
+78 *1:327 *1:343 0.27 
+79 *1:343 *648:ZN 5.49 
+80 *1:343 *1:351 0.45 
+81 *1:351 *608:I 4.5 
+82 *1:351 *1:359 1.44 
+83 *1:359 *1:361 1.17 
+84 *1:361 *596:I 4.5 
+85 *1:361 *606:I 5.67 
+86 *1:359 *1:375 0.9 
+87 *1:375 *1:377 1.71 
+88 *1:377 *1:379 0.27 
+89 *1:379 *604:I 15.3 
+90 *1:379 *636:ZN 4.5 
+91 *1:377 *1:398 9.99 
+92 *1:398 *1:401 0.54 
+93 *1:401 *650:ZN 4.5 
+94 *1:401 *1:409 0.45 
+95 *1:409 *638:ZN 6.03 
+96 *1:409 *1:421 0.99 
+97 *1:421 *640:ZN 5.67 
+98 *1:421 *642:ZN 4.5 
+99 *1:398 *1:433 0.63 
+100 *1:433 *634:ZN 4.77 
+101 *1:433 *1:443 1.44 
+102 *1:443 *632:ZN 4.5 
+103 *1:443 *1:449 1.35 
+104 *1:449 *644:ZN 4.5 
+105 *1:449 *598:I 6.3 
+106 *1:449 *594:I 5.94 
+107 *1:375 *646:ZN 4.5 
+108 *1:317 *659:I 6.03 
+109 *1:301 *850:I 6.3 
+110 *1:149 *653:I 4.5 
+111 *1:136 *1:497 0.99 
+112 *1:497 *1:499 4.5 
+113 *1:499 *1:502 0.45 
+114 *1:502 *1:506 1.53 
+115 *1:506 *1:508 2.61 
+116 *1:508 *1:510 0.63 
+117 *1:510 *825:ZN 5.13 
+118 *1:510 *1:518 1.35 
+119 *1:518 *831:ZN 4.5 
+120 *1:518 *1:526 1.98 
+121 *1:526 *790:I 6.21 
+122 *1:526 *794:I 7.11 
+123 *1:508 *823:ZN 4.5 
+124 *1:508 *1:558 1.98 
+125 *1:558 *839:ZN 4.5 
+126 *1:558 *1:566 1.44 
+127 *1:566 *844:I 4.5 
+128 *1:566 *827:ZN 5.76 
+129 *1:506 *652:ZN 4.5 
+130 *1:502 *1:584 1.08 
+131 *1:584 *628:I 4.5 
+132 *1:584 *628:ZN 4.77 
+133 *1:499 *660:ZN 4.5 
+134 *1:497 *1:602 5.49 
+135 *1:602 *815:I 4.95 
+136 *1:602 *1:609 0.27 
+137 *1:609 *815:ZN 4.5 
+138 *1:609 *1:617 1.26 
+139 *1:617 *630:I 4.5 
+140 *1:617 *1:623 0.27 
+141 *1:623 *654:ZN 6.75 
+142 *1:623 *630:ZN 4.5 
+*END
+
+*D_NET *2 0.0195721
+*CONN
+*P nbusout I
+*I *694:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *695:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *611:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *691:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *609:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *690:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *599:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *666:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *692:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *601:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *666:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *605:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *607:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *662:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *662:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *603:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *668:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *668:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *684:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *664:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *664:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *593:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *597:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *682:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *678:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *680:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *674:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *676:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *672:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *670:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *686:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *688:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *697:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *696:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *689:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *693:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *595:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *698:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 nbusout 0.000903573
+2 *694:ZN 0
+3 *695:I 1.33906e-05
+4 *611:I 0
+5 *691:I 5.23755e-05
+6 *609:I 0
+7 *690:ZN 0.0001186
+8 *599:I 0
+9 *666:ZN 0
+10 *692:ZN 7.28765e-05
+11 *601:I 3.79499e-05
+12 *666:I 0
+13 *605:I 0
+14 *607:I 0.000163427
+15 *662:ZN 0
+16 *662:I 0
+17 *603:I 4.32283e-05
+18 *668:I 0
+19 *668:ZN 0
+20 *684:ZN 0
+21 *664:ZN 0
+22 *664:I 0
+23 *593:I 0.000131432
+24 *597:I 0.000165027
+25 *682:ZN 0
+26 *678:ZN 0
+27 *680:ZN 0
+28 *674:ZN 4.94993e-05
+29 *676:ZN 0
+30 *672:ZN 0
+31 *670:ZN 0
+32 *686:ZN 0.000118366
+33 *688:ZN 0
+34 *697:I 6.52063e-05
+35 *696:ZN 0
+36 *689:I 9.57504e-05
+37 *693:I 0
+38 *595:I 2.67812e-05
+39 *698:ZN 0.000212735
+40 *2:251 0.000202338
+41 *2:243 0.000139692
+42 *2:225 0.000151322
+43 *2:207 0.000220563
+44 *2:187 7.38835e-05
+45 *2:179 0.000104144
+46 *2:173 0.000127882
+47 *2:155 0.000153749
+48 *2:154 7.67109e-05
+49 *2:138 0.00022533
+50 *2:132 0.00010393
+51 *2:127 4.36265e-05
+52 *2:115 9.09446e-05
+53 *2:110 4.14453e-05
+54 *2:96 0.000194807
+55 *2:91 0.000224221
+56 *2:87 0.000286902
+57 *2:85 0.00028458
+58 *2:83 0.00025417
+59 *2:80 0.000137492
+60 *2:76 4.97029e-05
+61 *2:74 0.000112826
+62 *2:72 5.28996e-05
+63 *2:70 0.000115258
+64 *2:68 0.000187277
+65 *2:67 0.000118673
+66 *2:38 0.000195524
+67 *2:28 0.00019034
+68 *2:19 0.000234554
+69 *2:17 0.00020448
+70 *2:15 0.000188063
+71 *2:9 0.00126164
+72 *593:I *3:789 0
+73 *593:I *8:675 3.37566e-05
+74 *593:I *8:681 6.13757e-06
+75 *597:I *682:I 0.000122751
+76 *601:I *3:822 6.13758e-05
+77 *603:I *677:I 0.000306879
+78 *603:I *3:822 3.45239e-05
+79 *603:I *7:122 0.000122752
+80 *607:I *3:789 0
+81 *607:I *3:802 4.83334e-05
+82 *674:ZN *674:I 0.000675133
+83 *674:ZN *682:I 6.90477e-05
+84 *674:ZN *8:585 0.000245503
+85 *674:ZN *8:681 3.45239e-05
+86 *686:ZN *670:I 6.21697e-05
+87 *689:I *671:I 6.34487e-05
+88 *689:I *689:ZN 0.000552382
+89 *689:I *7:180 6.13758e-05
+90 *689:I *7:184 2.04586e-05
+91 *689:I *7:261 0
+92 *689:I *8:840 2.17539e-05
+93 *690:ZN *3:802 0.00042963
+94 *690:ZN *7:7 0
+95 *692:ZN *679:I 6.90477e-06
+96 *692:ZN *679:ZN 1.22751e-05
+97 *692:ZN *692:I 0.00042963
+98 *692:ZN *694:I 0
+99 *692:ZN *3:822 2.68519e-05
+100 *697:I *3:808 2.76191e-05
+101 *697:I *7:7 0.000184127
+102 *697:I *7:93 0.000613757
+103 *2:9 *7:104 4.7822e-05
+104 *2:9 *7:174 0.000122751
+105 *2:9 *7:176 0.00014321
+106 *2:9 *7:242 6.13757e-06
+107 *2:15 *679:ZN 4.47532e-05
+108 *2:15 *7:104 8.26283e-05
+109 *2:17 *694:I 0.000306879
+110 *2:17 *7:93 6.13758e-05
+111 *2:17 *7:99 0.000163669
+112 *2:17 *7:104 0.000122752
+113 *2:19 *611:ZN 4.47532e-05
+114 *2:19 *3:808 6.26544e-05
+115 *2:19 *7:93 0.000327337
+116 *2:28 *671:I 0.000227955
+117 *2:28 *3:871 2.07232e-05
+118 *2:38 *671:I 0.000124302
+119 *2:38 *7:180 0.000204586
+120 *2:67 *3:816 2.09823e-05
+121 *2:67 *3:871 0
+122 *2:67 *7:104 0
+123 *2:67 *7:106 0
+124 *2:67 *7:108 0
+125 *2:74 *3:816 0.000552381
+126 *2:76 *3:822 0
+127 *2:83 *3:792 0
+128 *2:85 *684:I 0
+129 *2:85 *3:792 0
+130 *2:91 *670:I 0
+131 *2:96 *681:I 0.000675133
+132 *2:96 *686:I 0
+133 *2:115 *8:585 0.000675133
+134 *2:115 *8:681 7.59525e-05
+135 *2:132 *8:681 0.000675133
+136 *2:138 *682:I 0.000675133
+137 *2:138 *8:681 0.000245503
+138 *2:173 *3:816 9.20636e-06
+139 *2:179 *3:816 4.2963e-05
+140 *2:179 *3:822 8.95063e-06
+141 *2:187 *3:822 2.68519e-05
+142 *2:207 *3:802 6.21429e-05
+143 *2:225 *694:I 0
+144 *2:225 *3:816 0.000163669
+145 *2:225 *3:822 3.58025e-05
+146 *2:243 *611:ZN 4.91006e-05
+147 *2:243 *3:808 7.36509e-05
+148 *2:251 *3:802 0.000491006
+149 *2:251 *3:808 0.000306879
+*RES
+1 *698:ZN *2:9 6.93 
+2 *2:9 *2:15 10.8 
+3 *2:15 *2:17 1.53 
+4 *2:17 *2:19 1.53 
+5 *2:19 *595:I 4.77 
+6 *2:19 *2:28 5.49 
+7 *2:28 *693:I 9 
+8 *2:28 *2:38 6.12 
+9 *2:38 *689:I 15.39 
+10 *2:38 *696:ZN 4.5 
+11 *2:19 *697:I 5.94 
+12 *2:17 *2:67 9.99 
+13 *2:67 *2:68 0.45 
+14 *2:68 *2:70 0.63 
+15 *2:70 *2:72 0.27 
+16 *2:72 *2:74 1.17 
+17 *2:74 *2:76 0.27 
+18 *2:76 *2:80 0.72 
+19 *2:80 *2:83 5.49 
+20 *2:83 *2:85 1.17 
+21 *2:85 *2:87 1.17 
+22 *2:87 *2:91 5.67 
+23 *2:91 *688:ZN 4.5 
+24 *2:91 *2:96 0.99 
+25 *2:96 *686:ZN 14.67 
+26 *2:96 *670:ZN 4.5 
+27 *2:87 *2:110 4.5 
+28 *2:110 *672:ZN 4.5 
+29 *2:110 *2:115 0.99 
+30 *2:115 *676:ZN 4.5 
+31 *2:115 *674:ZN 5.85 
+32 *2:85 *2:127 4.5 
+33 *2:127 *680:ZN 4.5 
+34 *2:127 *2:132 0.99 
+35 *2:132 *678:ZN 4.5 
+36 *2:132 *2:138 1.35 
+37 *2:138 *682:ZN 4.5 
+38 *2:138 *597:I 6.57 
+39 *2:83 *2:154 4.5 
+40 *2:154 *2:155 0.27 
+41 *2:155 *593:I 5.94 
+42 *2:155 *664:I 4.5 
+43 *2:154 *664:ZN 4.5 
+44 *2:154 *2:173 0.99 
+45 *2:173 *684:ZN 4.5 
+46 *2:173 *2:179 1.35 
+47 *2:179 *668:ZN 4.5 
+48 *2:179 *2:187 0.54 
+49 *2:187 *668:I 4.5 
+50 *2:187 *603:I 6.03 
+51 *2:80 *662:I 4.5 
+52 *2:76 *662:ZN 4.5 
+53 *2:74 *2:207 1.53 
+54 *2:207 *607:I 6.3 
+55 *2:207 *605:I 4.5 
+56 *2:72 *666:I 4.5 
+57 *2:70 *2:225 1.17 
+58 *2:225 *601:I 5.13 
+59 *2:225 *692:ZN 5.49 
+60 *2:70 *666:ZN 4.5 
+61 *2:68 *2:243 1.53 
+62 *2:243 *599:I 4.5 
+63 *2:243 *2:251 1.62 
+64 *2:251 *690:ZN 5.94 
+65 *2:251 *609:I 4.5 
+66 *2:68 *691:I 5.49 
+67 *2:67 *611:I 4.5 
+68 *2:17 *695:I 4.77 
+69 *2:15 *694:ZN 4.5 
+70 *2:9 nbusout 12.915 
+*END
+
+*D_NET *3 0.0685137
+*CONN
+*P nseries_gy I
+*I *589:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *589:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *675:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *687:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *607:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *614:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *622:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *593:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *609:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *599:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *671:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *595:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *611:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *601:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *679:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *685:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *677:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *603:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *597:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *605:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *770:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *615:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *774:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *768:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *582:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *579:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *583:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *772:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *581:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *765:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *681:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *616:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *613:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *771:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *620:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *619:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *767:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *578:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *584:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *580:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *577:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *741:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *673:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *669:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *757:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *753:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *759:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *755:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *751:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *718:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *749:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *747:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *763:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *745:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *761:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *683:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *741:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *548:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *548:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *585:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *585:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *550:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *550:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *587:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *587:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *554:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *554:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *618:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *591:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *591:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *726:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *710:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *720:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *712:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *722:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *575:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *617:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *576:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *621:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *769:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *552:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *739:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *739:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *766:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *743:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *743:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *642:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *640:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *566:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *562:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *737:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *737:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *574:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *716:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *714:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *724:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *708:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *558:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *572:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *644:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *632:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *634:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *646:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *636:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *570:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *648:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *560:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *650:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *638:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *568:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *564:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *556:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *552:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *773:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 nseries_gy 0.000601851
+2 *589:ZN 2.25652e-05
+3 *589:I 0
+4 *675:I 0.000141954
+5 *687:I 0
+6 *607:ZN 5.57291e-05
+7 *614:I 0
+8 *622:I 0
+9 *593:ZN 0
+10 *609:ZN 5.15402e-05
+11 *599:ZN 0
+12 *671:I 0.000498678
+13 *595:ZN 0
+14 *611:ZN 2.5325e-05
+15 *601:ZN 0
+16 *679:I 0.000142166
+17 *685:I 0.000110042
+18 *677:I 8.60173e-05
+19 *603:ZN 0
+20 *597:ZN 7.74973e-05
+21 *605:ZN 0
+22 *770:I 0
+23 *615:ZN 0
+24 *774:I 4.05821e-05
+25 *768:I 0
+26 *582:ZN 0
+27 *579:I 7.27366e-05
+28 *583:I 0.000116624
+29 *772:I 0
+30 *581:I 0
+31 *765:ZN 0
+32 *681:I 0.000344113
+33 *616:I 0
+34 *613:ZN 0
+35 *771:ZN 3.5462e-05
+36 *620:I 0
+37 *619:ZN 0
+38 *767:ZN 4.18582e-05
+39 *578:ZN 0
+40 *584:ZN 0
+41 *580:ZN 4.7031e-05
+42 *577:I 1.35705e-05
+43 *741:ZN 0
+44 *673:I 1.30382e-05
+45 *669:I 9.64871e-05
+46 *757:ZN 0
+47 *753:ZN 0.00012373
+48 *759:ZN 0.000117881
+49 *755:ZN 0
+50 *751:ZN 0
+51 *718:I 3.87911e-05
+52 *749:ZN 0
+53 *747:ZN 0
+54 *763:ZN 4.06499e-05
+55 *745:ZN 0
+56 *761:ZN 8.25763e-05
+57 *683:I 0
+58 *741:I 0
+59 *548:ZN 1.72646e-05
+60 *548:I 1.33906e-05
+61 *585:ZN 0
+62 *585:I 0
+63 *550:ZN 0
+64 *550:I 6.6013e-06
+65 *587:ZN 0
+66 *587:I 4.40775e-05
+67 *554:ZN 0
+68 *554:I 5.31434e-06
+69 *618:I 3.57423e-05
+70 *591:ZN 1.36851e-05
+71 *591:I 0
+72 *726:I 0
+73 *710:I 0.000136368
+74 *720:I 2.0683e-05
+75 *712:I 1.03109e-05
+76 *722:I 1.4633e-05
+77 *575:I 8.60438e-05
+78 *617:ZN 0
+79 *576:ZN 0.000100936
+80 *621:ZN 4.83777e-05
+81 *769:ZN 4.23879e-05
+82 *552:ZN 0
+83 *739:ZN 0
+84 *739:I 3.46747e-05
+85 *766:I 0.000146808
+86 *743:I 2.97588e-05
+87 *743:ZN 0
+88 *642:I 0
+89 *640:I 0
+90 *566:ZN 0
+91 *562:ZN 2.42774e-05
+92 *737:ZN 2.23177e-05
+93 *737:I 2.7496e-05
+94 *574:ZN 0
+95 *716:I 0
+96 *714:I 2.24162e-06
+97 *724:I 0
+98 *708:I 0
+99 *558:ZN 6.91198e-05
+100 *572:ZN 1.36899e-05
+101 *644:I 5.5758e-05
+102 *632:I 0
+103 *634:I 0
+104 *646:I 0.000115629
+105 *636:I 0
+106 *570:ZN 7.46554e-05
+107 *648:I 0.000103125
+108 *560:ZN 7.23082e-05
+109 *650:I 0
+110 *638:I 0
+111 *568:ZN 0
+112 *564:ZN 9.13758e-05
+113 *556:ZN 5.87609e-05
+114 *552:I 0
+115 *773:ZN 0
+116 *3:943 5.22529e-05
+117 *3:934 0.000261282
+118 *3:925 0.00019812
+119 *3:913 0.000146552
+120 *3:906 0.000272149
+121 *3:871 0.00056567
+122 *3:843 0.000289564
+123 *3:832 8.60173e-05
+124 *3:823 0.000162025
+125 *3:822 0.000222418
+126 *3:816 0.000403075
+127 *3:808 0.000366142
+128 *3:805 0.00013386
+129 *3:802 8.18236e-05
+130 *3:799 0.00018335
+131 *3:792 0.000274288
+132 *3:789 0.000362493
+133 *3:785 0.000333235
+134 *3:780 0.000166452
+135 *3:778 0.000124704
+136 *3:771 9.20208e-05
+137 *3:759 0.000119909
+138 *3:754 0.000175197
+139 *3:741 7.27366e-05
+140 *3:739 0.000103422
+141 *3:725 0.000155858
+142 *3:719 0.000106245
+143 *3:714 0.000189511
+144 *3:686 0.000137459
+145 *3:684 0.000483387
+146 *3:680 0.000179182
+147 *3:671 0.000141906
+148 *3:669 0.000153772
+149 *3:662 0.000169674
+150 *3:612 0.000239802
+151 *3:582 0.000117881
+152 *3:580 0.000229989
+153 *3:573 0.000167403
+154 *3:564 0.000204381
+155 *3:561 0.000196134
+156 *3:552 0.000177765
+157 *3:541 0.000153863
+158 *3:532 0.000296546
+159 *3:515 0.000193656
+160 *3:509 0.000439031
+161 *3:507 0.000296898
+162 *3:502 0.000138812
+163 *3:497 0.000138812
+164 *3:491 5.8026e-05
+165 *3:477 7.69122e-05
+166 *3:475 0.000135528
+167 *3:469 8.48072e-05
+168 *3:463 7.73327e-05
+169 *3:455 7.41605e-05
+170 *3:447 0.000103175
+171 *3:433 0.000142368
+172 *3:431 0.000175898
+173 *3:425 1.82139e-05
+174 *3:417 7.92039e-05
+175 *3:415 0.000103988
+176 *3:414 0.000234658
+177 *3:374 0.000317082
+178 *3:358 0.000287946
+179 *3:350 0.000275188
+180 *3:344 0.000301754
+181 *3:340 0.000167402
+182 *3:338 6.93559e-05
+183 *3:336 9.77546e-05
+184 *3:333 0.000272938
+185 *3:318 8.60438e-05
+186 *3:316 0.000227473
+187 *3:311 0.000204558
+188 *3:308 0.000119411
+189 *3:306 0.000156449
+190 *3:289 0.000149314
+191 *3:287 0.000113936
+192 *3:263 6.12074e-05
+193 *3:241 5.63031e-05
+194 *3:239 0.000234554
+195 *3:207 0.000131452
+196 *3:177 0.000717903
+197 *3:171 0.000259725
+198 *3:167 0.000291439
+199 *3:163 0.000198297
+200 *3:161 0.000192436
+201 *3:151 0.000153358
+202 *3:143 6.31592e-05
+203 *3:142 0.000160737
+204 *3:128 0.000128541
+205 *3:120 0.000186859
+206 *3:94 8.78263e-05
+207 *3:93 0.0001288
+208 *3:76 0.000277453
+209 *3:72 0.000170939
+210 *3:69 0.000219686
+211 *3:61 8.47696e-05
+212 *3:55 0.000142337
+213 *3:40 0.000264332
+214 *3:37 0.0001919
+215 *3:29 0.000144722
+216 *3:25 0.000163112
+217 *3:23 0.00010355
+218 *3:21 0.000150637
+219 *3:19 0.000155114
+220 *3:11 8.95424e-05
+221 *3:9 6.86317e-05
+222 *3:8 0.000174786
+223 *3:5 0.000135934
+224 nseries_gy *9:66 8.95063e-06
+225 nseries_gy *9:72 0.000265962
+226 nseries_gy *9:74 0
+227 nseries_gy *9:161 8.18344e-05
+228 *554:I *8:481 3.68254e-05
+229 *556:ZN *556:I 0.000675133
+230 *556:ZN *558:I 9.8457e-05
+231 *556:ZN *562:I 1.22751e-05
+232 *558:ZN *558:I 4.14286e-05
+233 *560:ZN *647:ZN 0.00014321
+234 *560:ZN *8:95 4.47532e-05
+235 *560:ZN *8:99 6.90477e-06
+236 *562:ZN *562:I 0.000368145
+237 *564:ZN *556:I 3.45239e-05
+238 *564:ZN *6:412 2.07232e-05
+239 *564:ZN *6:435 0.000207232
+240 *564:ZN *6:440 0.000306879
+241 *564:ZN *6:464 4.14464e-05
+242 *564:ZN *8:125 7.6935e-05
+243 *570:ZN *6:415 0
+244 *572:ZN *6:480 2.04586e-05
+245 *575:I *8:446 0.000225045
+246 *575:I *8:471 0.000102293
+247 *575:I *8:479 6.90477e-05
+248 *576:ZN *578:I 5.60053e-05
+249 *576:ZN *8:39 3.83598e-05
+250 *576:ZN *8:43 0
+251 *576:ZN *8:61 8.5926e-05
+252 *576:ZN *8:419 4.14286e-05
+253 *579:I *569:ZN 6.21429e-05
+254 *579:I *579:ZN 9.20636e-06
+255 *579:I *8:11 6.90477e-06
+256 *579:I *8:631 0.000184127
+257 *579:I *8:633 0.000675133
+258 *580:ZN *8:479 7.36509e-05
+259 *580:ZN *8:633 6.26544e-05
+260 *583:I *8:567 0.000116358
+261 *583:I *8:579 2.04586e-05
+262 *583:I *8:669 9.8457e-05
+263 *583:I *8:675 3.58025e-05
+264 *587:I *8:491 6.13757e-05
+265 *587:I *8:497 2.07143e-05
+266 *587:I *8:514 3.06879e-06
+267 *597:ZN *681:ZN 0.000161641
+268 *607:ZN *690:I 2.76191e-05
+269 *621:ZN *578:I 1.22751e-05
+270 *621:ZN *8:39 2.07143e-05
+271 *621:ZN *8:43 6.21429e-05
+272 *644:I *8:231 3.45239e-05
+273 *644:I *8:237 3.45239e-05
+274 *648:I *560:I 0
+275 *648:I *8:93 0.000135027
+276 *648:I *8:95 2.45503e-05
+277 *669:I *7:28 0.000136773
+278 *669:I *8:739 6.90477e-06
+279 *669:I *8:741 6.13757e-06
+280 *671:I *7:245 0
+281 *671:I *7:261 2.76191e-05
+282 *671:I *7:266 0.000117863
+283 *671:I *7:271 6.13757e-05
+284 *671:I *8:840 0
+285 *673:I *683:ZN 0.000122751
+286 *673:I *7:31 6.13757e-05
+287 *675:I *7:13 3.45239e-05
+288 *675:I *7:20 2.68519e-05
+289 *675:I *7:184 0
+290 *675:I *7:188 2.04586e-05
+291 *675:I *8:739 6.13757e-06
+292 *675:I *8:825 4.47532e-05
+293 *677:I *677:ZN 0.000122751
+294 *677:I *7:122 0.000920636
+295 *679:I *679:ZN 6.13757e-05
+296 *679:I *692:I 1.22751e-05
+297 *679:I *7:108 3.73018e-05
+298 *679:I *7:110 0.000136773
+299 *679:I *7:112 2.48679e-05
+300 *681:I *674:I 0.000107408
+301 *681:I *686:I 0
+302 *681:I *688:I 0.000265889
+303 *681:I *8:567 0.000306879
+304 *681:I *8:579 0.000107408
+305 *681:I *8:585 0.00014321
+306 *685:I *677:ZN 2.07143e-05
+307 *685:I *692:I 0.000306879
+308 *685:I *7:122 9.66668e-05
+309 *710:I *723:I 0
+310 *710:I *761:I 0
+311 *710:I *8:503 0
+312 *710:I *9:190 4.09172e-05
+313 *714:I *716:ZN 6.13758e-05
+314 *718:I *718:ZN 0.000920636
+315 *718:I *4:126 6.13757e-06
+316 *718:I *4:280 0.000306879
+317 *718:I *4:288 0.000245503
+318 *720:I *9:190 6.13758e-05
+319 *722:I *9:72 9.20636e-06
+320 *737:I *562:I 1.22751e-05
+321 *737:I *756:ZN 1.22751e-05
+322 *737:I *8:43 2.04586e-05
+323 *739:I *8:61 0
+324 *753:ZN *753:I 0.000436023
+325 *753:ZN *4:244 8.18344e-05
+326 *753:ZN *9:9 6.13757e-05
+327 *753:ZN *9:12 2.48679e-05
+328 *759:ZN pbusout 0
+329 *759:ZN *753:I 1.22751e-05
+330 *759:ZN *759:I 0.00153439
+331 *759:ZN *4:258 0.000306879
+332 *761:ZN *709:ZN 3.68254e-05
+333 *761:ZN *730:I 0.000116614
+334 *761:ZN *761:I 0.000601482
+335 *761:ZN *4:62 1.38095e-05
+336 *761:ZN *4:77 6.13758e-05
+337 *763:ZN *747:I 2.04586e-05
+338 *763:ZN *4:21 6.90477e-05
+339 *763:ZN *4:62 0.000675133
+340 *766:I *766:ZN 3.68254e-05
+341 *766:I *8:71 0
+342 *767:ZN *578:I 0.000245503
+343 *767:ZN *8:419 0.00042963
+344 *767:ZN *8:438 0.000306879
+345 *767:ZN *8:544 4.14286e-05
+346 *769:ZN *8:39 6.13757e-05
+347 *769:ZN *8:61 7.36509e-05
+348 *771:ZN *613:I 0.000552382
+349 *774:I *8:5 0.000675133
+350 *774:I *8:661 6.21429e-05
+351 *774:I *8:669 6.13758e-05
+352 *3:8 *8:38 6.21697e-05
+353 *3:9 *8:63 0
+354 *3:25 *562:I 6.90477e-06
+355 *3:29 *562:I 3.06879e-05
+356 *3:40 *6:464 0.000227955
+357 *3:40 *6:477 6.21697e-05
+358 *3:55 *570:I 3.06879e-05
+359 *3:76 *604:ZN 0.000435189
+360 *3:142 *574:I 6.21697e-05
+361 *3:142 *6:477 0.000248642
+362 *3:143 *558:I 4.91006e-05
+363 *3:143 *562:I 0.000306879
+364 *3:163 *558:I 0
+365 *3:163 *756:ZN 2.14815e-05
+366 *3:167 *558:I 0
+367 *3:167 *716:ZN 0.00057284
+368 *3:167 *756:I 1.22751e-05
+369 *3:167 *9:100 8.95063e-06
+370 *3:167 *9:111 2.68519e-05
+371 *3:167 *9:134 3.68254e-05
+372 *3:171 *716:ZN 0
+373 *3:171 *756:I 0
+374 *3:171 *9:88 2.04586e-05
+375 *3:171 *9:94 0.000122751
+376 *3:171 *9:100 6.90477e-06
+377 *3:171 *9:134 6.13758e-05
+378 *3:177 *756:I 0
+379 *3:207 *756:ZN 4.60318e-05
+380 *3:287 *8:38 0.000186509
+381 *3:306 *8:34 4.14464e-05
+382 *3:306 *8:38 0.000145063
+383 *3:311 *578:I 6.13757e-05
+384 *3:311 *756:ZN 2.07143e-05
+385 *3:311 *8:43 0
+386 *3:311 *8:438 0.000797884
+387 *3:311 *8:446 9.82012e-05
+388 *3:316 *756:ZN 0
+389 *3:316 *8:446 0.000552382
+390 *3:336 *8:446 2.68519e-05
+391 *3:336 *8:481 6.13757e-05
+392 *3:338 *8:446 8.95063e-06
+393 *3:338 *8:448 8.95063e-05
+394 *3:338 *8:481 0.000134983
+395 *3:340 *750:ZN 1.79013e-05
+396 *3:340 *8:448 8.95063e-06
+397 *3:340 *8:481 3.68254e-05
+398 *3:344 *748:I 5.37038e-05
+399 *3:344 *750:ZN 0.000265962
+400 *3:344 *8:481 8.28573e-05
+401 *3:344 *8:491 0
+402 *3:344 *9:161 8.95063e-05
+403 *3:344 *9:205 0.000135027
+404 *3:350 *9:72 6.57232e-05
+405 *3:350 *9:161 6.26544e-05
+406 *3:350 *9:205 3.68254e-05
+407 *3:358 *8:497 0
+408 *3:374 *8:497 0
+409 *3:374 *8:503 0
+410 *3:374 *9:190 0.000184127
+411 *3:415 *8:479 1.22751e-05
+412 *3:415 *8:481 4.91006e-05
+413 *3:415 *8:633 8.95063e-06
+414 *3:417 *8:481 0.000122751
+415 *3:433 *8:481 7.59525e-05
+416 *3:447 *577:ZN 0
+417 *3:447 *579:ZN 0
+418 *3:455 *579:ZN 0
+419 *3:463 *579:ZN 1.22751e-05
+420 *3:475 *569:ZN 0
+421 *3:491 *569:ZN 0
+422 *3:502 *569:I 0
+423 *3:507 *7:31 0
+424 *3:509 *754:I 0.000293836
+425 *3:509 *9:225 0.000920636
+426 *3:515 *709:ZN 0.000220953
+427 *3:515 *717:I 1.22751e-05
+428 *3:515 *4:62 3.45239e-05
+429 *3:515 *4:77 3.68254e-05
+430 *3:515 *9:225 0.000184127
+431 *3:532 *4:54 2.17594e-05
+432 *3:532 *4:65 1.55424e-05
+433 *3:532 *4:67 2.48679e-05
+434 *3:532 *8:761 0
+435 *3:532 *9:225 0.000186509
+436 *3:541 *4:47 3.10849e-06
+437 *3:541 *4:49 1.2434e-05
+438 *3:541 *4:54 3.10849e-06
+439 *3:552 *4:16 0.000186509
+440 *3:552 *4:21 0.000435189
+441 *3:552 *4:47 4.89586e-05
+442 *3:561 *718:ZN 4.14286e-05
+443 *3:561 *757:I 2.45503e-05
+444 *3:561 *4:7 3.06879e-06
+445 *3:561 *4:40 0.000184127
+446 *3:561 *4:124 2.65962e-05
+447 *3:561 *9:19 2.07143e-05
+448 *3:564 *4:16 6.99409e-06
+449 *3:564 *4:167 3.49455e-05
+450 *3:564 *9:19 9.32547e-06
+451 *3:573 *9:14 9.32547e-06
+452 *3:573 *9:19 6.21698e-06
+453 *3:580 *9:12 2.79764e-05
+454 *3:580 *9:14 1.2434e-05
+455 *3:612 *683:ZN 0.000552382
+456 *3:612 *754:I 1.79013e-05
+457 *3:612 *7:31 0
+458 *3:662 *8:30 4.14464e-05
+459 *3:662 *8:32 0.000165786
+460 *3:662 *8:34 6.21697e-05
+461 *3:669 *8:30 0.000227955
+462 *3:680 *580:I 0.000194357
+463 *3:680 *613:I 0
+464 *3:680 *8:467 1.53439e-05
+465 *3:680 *8:471 3.06879e-06
+466 *3:680 *8:544 2.14815e-05
+467 *3:680 *8:557 0.000306879
+468 *3:684 *616:ZN 1.22751e-05
+469 *3:684 *8:557 0.000122752
+470 *3:684 *8:567 8.18344e-05
+471 *3:714 *8:28 0.000165786
+472 *3:714 *8:30 6.21697e-05
+473 *3:719 *580:I 5.80512e-05
+474 *3:719 *8:557 3.68254e-05
+475 *3:719 *8:631 0.000306879
+476 *3:719 *8:655 0.000380529
+477 *3:719 *8:661 0.000102293
+478 *3:725 *8:557 7.16051e-05
+479 *3:725 *8:567 4.47532e-05
+480 *3:725 *8:661 0.000552382
+481 *3:725 *8:669 3.58025e-05
+482 *3:739 *8:26 4.14464e-05
+483 *3:739 *8:28 6.21697e-05
+484 *3:754 *8:26 0.000186509
+485 *3:759 *8:5 6.13758e-05
+486 *3:759 *8:9 0.000388713
+487 *3:759 *8:11 0.000306879
+488 *3:759 *8:631 2.76191e-05
+489 *3:759 *8:655 4.14286e-05
+490 *3:759 *8:661 4.47532e-05
+491 *3:771 *8:26 6.21697e-05
+492 *3:771 *8:701 4.14464e-05
+493 *3:778 *569:I 0
+494 *3:778 *8:701 0.000227955
+495 *3:785 *8:5 0.000103572
+496 *3:785 *8:9 1.84127e-05
+497 *3:785 *8:11 1.53439e-05
+498 *3:789 *8:669 3.68254e-05
+499 *3:789 *8:675 3.06879e-06
+500 *3:792 *622:ZN 0
+501 *3:822 *692:I 7.36509e-05
+502 *3:822 *7:122 8.5926e-05
+503 *3:823 *681:ZN 2.48679e-05
+504 *3:823 *7:112 8.70153e-05
+505 *3:843 *7:112 4.97357e-05
+506 *3:906 *569:I 0
+507 *3:906 *8:701 6.21697e-05
+508 *3:906 *8:708 0.000165786
+509 *3:913 *571:I 1.53439e-05
+510 *3:913 *614:ZN 0.00042963
+511 *3:913 *690:I 6.13757e-06
+512 *3:913 *7:21 0
+513 *3:913 *7:31 0
+514 *3:913 *7:69 1.53439e-05
+515 *3:925 *7:20 0.000808207
+516 *3:925 *7:28 7.6935e-05
+517 *3:925 *8:708 0.000103616
+518 *3:925 *8:721 0.000186509
+519 *3:934 *7:20 0.000186509
+520 *3:943 *8:799 0
+521 *593:I *3:789 0
+522 *598:I *644:I 0.000245503
+523 *601:I *3:822 6.13758e-05
+524 *603:I *677:I 0.000306879
+525 *603:I *3:822 3.45239e-05
+526 *604:I *570:ZN 6.13757e-05
+527 *604:I *646:I 0.000184127
+528 *604:I *3:61 6.90477e-06
+529 *604:I *3:69 6.90477e-06
+530 *604:I *3:72 0.00012434
+531 *604:I *3:76 0.000808207
+532 *604:I *3:94 0.000184127
+533 *604:I *3:120 0.000135027
+534 *607:I *3:789 0
+535 *607:I *3:802 4.83334e-05
+536 *634:ZN *3:69 1.38095e-05
+537 *634:ZN *3:128 0
+538 *638:ZN *3:61 0.000225045
+539 *638:ZN *3:69 6.13758e-05
+540 *638:ZN *3:120 8.95063e-06
+541 *640:ZN *3:23 0.000245503
+542 *640:ZN *3:25 0.000552382
+543 *648:ZN *646:I 0
+544 *689:I *671:I 6.34487e-05
+545 *690:ZN *3:802 0.00042963
+546 *692:ZN *679:I 6.90477e-06
+547 *692:ZN *3:822 2.68519e-05
+548 *697:I *3:808 2.76191e-05
+549 *835:ZN *564:ZN 2.76191e-05
+550 *1:361 *644:I 9.20636e-06
+551 *1:375 *644:I 1.38095e-05
+552 *1:375 *646:I 0.000122751
+553 *1:375 *3:128 6.13757e-05
+554 *1:377 *646:I 0.00110476
+555 *1:377 *3:120 0.000675133
+556 *1:377 *3:128 9.82012e-05
+557 *1:379 *646:I 0.000122751
+558 *1:379 *3:120 0.000184127
+559 *1:398 *3:72 0.000145063
+560 *1:401 *3:69 6.13757e-05
+561 *1:401 *3:120 2.68519e-05
+562 *1:401 *3:239 0
+563 *1:409 *3:239 6.90477e-06
+564 *1:421 *743:I 1.22751e-05
+565 *1:421 *3:23 0.000122751
+566 *1:421 *3:29 0
+567 *1:421 *3:241 3.06879e-05
+568 *1:433 *743:I 2.07143e-05
+569 *1:433 *3:120 5.37038e-05
+570 *1:433 *3:239 0
+571 *1:443 *743:I 2.07143e-05
+572 *1:443 *766:I 0
+573 *1:443 *3:120 2.68519e-05
+574 *1:443 *3:128 0.000204586
+575 *1:449 *644:I 0.000675133
+576 *1:449 *766:I 9.20636e-06
+577 *1:449 *3:128 3.68254e-05
+578 *2:19 *611:ZN 4.47532e-05
+579 *2:19 *3:808 6.26544e-05
+580 *2:28 *671:I 0.000227955
+581 *2:28 *3:871 2.07232e-05
+582 *2:38 *671:I 0.000124302
+583 *2:67 *3:816 2.09823e-05
+584 *2:67 *3:871 0
+585 *2:74 *3:816 0.000552381
+586 *2:76 *3:822 0
+587 *2:83 *3:792 0
+588 *2:85 *3:792 0
+589 *2:96 *681:I 0.000675133
+590 *2:173 *3:816 9.20636e-06
+591 *2:179 *3:816 4.2963e-05
+592 *2:179 *3:822 8.95063e-06
+593 *2:187 *3:822 2.68519e-05
+594 *2:207 *3:802 6.21429e-05
+595 *2:225 *3:816 0.000163669
+596 *2:225 *3:822 3.58025e-05
+597 *2:243 *611:ZN 4.91006e-05
+598 *2:243 *3:808 7.36509e-05
+599 *2:251 *3:802 0.000491006
+600 *2:251 *3:808 0.000306879
+*RES
+1 *773:ZN *3:5 9 
+2 *3:5 *3:8 5.31 
+3 *3:8 *3:9 0.45 
+4 *3:9 *3:11 0.27 
+5 *3:11 *552:I 4.5 
+6 *3:11 *3:19 0.99 
+7 *3:19 *3:21 0.81 
+8 *3:21 *3:23 0.54 
+9 *3:23 *3:25 1.17 
+10 *3:25 *3:29 1.26 
+11 *3:29 *556:ZN 5.85 
+12 *3:29 *3:37 4.5 
+13 *3:37 *3:40 5.67 
+14 *3:40 *564:ZN 15.48 
+15 *3:40 *568:ZN 4.5 
+16 *3:40 *3:55 1.17 
+17 *3:55 *638:I 4.5 
+18 *3:55 *3:61 1.17 
+19 *3:61 *650:I 4.5 
+20 *3:61 *3:69 0.72 
+21 *3:69 *3:72 5.31 
+22 *3:72 *3:76 6.03 
+23 *3:76 *560:ZN 5.67 
+24 *3:76 *648:I 6.03 
+25 *3:72 *3:93 4.5 
+26 *3:93 *3:94 0.27 
+27 *3:94 *570:ZN 5.76 
+28 *3:94 *636:I 4.5 
+29 *3:93 *646:I 6.75 
+30 *3:69 *3:120 2.34 
+31 *3:120 *634:I 4.5 
+32 *3:120 *3:128 1.62 
+33 *3:128 *632:I 4.5 
+34 *3:128 *644:I 5.85 
+35 *3:37 *3:142 5.85 
+36 *3:142 *3:143 0.81 
+37 *3:143 *572:ZN 4.77 
+38 *3:143 *3:151 0.45 
+39 *3:151 *558:ZN 5.76 
+40 *3:151 *3:161 0.63 
+41 *3:161 *3:163 0.81 
+42 *3:163 *3:167 1.98 
+43 *3:167 *3:171 1.8 
+44 *3:171 *708:I 4.5 
+45 *3:171 *3:177 1.17 
+46 *3:177 nseries_gy 6.345 
+47 *3:177 *724:I 4.5 
+48 *3:167 *714:I 4.77 
+49 *3:163 *716:I 4.5 
+50 *3:161 *574:ZN 4.5 
+51 *3:161 *3:207 1.35 
+52 *3:207 *737:I 4.95 
+53 *3:207 *737:ZN 4.77 
+54 *3:142 *562:ZN 5.13 
+55 *3:29 *566:ZN 4.5 
+56 *3:25 *640:I 4.5 
+57 *3:23 *642:I 4.5 
+58 *3:21 *3:239 0.72 
+59 *3:239 *3:241 0.45 
+60 *3:241 *743:ZN 4.5 
+61 *3:241 *743:I 5.22 
+62 *3:239 *766:I 6.3 
+63 *3:19 *3:263 0.72 
+64 *3:263 *739:I 5.22 
+65 *3:263 *739:ZN 4.5 
+66 *3:9 *552:ZN 4.5 
+67 *3:8 *769:ZN 5.49 
+68 *3:5 *3:287 0.81 
+69 *3:287 *3:289 4.5 
+70 *3:289 *621:ZN 5.49 
+71 *3:289 *576:ZN 6.03 
+72 *3:287 *3:306 0.81 
+73 *3:306 *3:308 4.5 
+74 *3:308 *3:311 1.98 
+75 *3:311 *3:316 5.76 
+76 *3:316 *3:318 4.5 
+77 *3:318 *617:ZN 4.5 
+78 *3:318 *575:I 6.21 
+79 *3:316 *3:333 0.63 
+80 *3:333 *3:336 4.95 
+81 *3:336 *3:338 0.99 
+82 *3:338 *3:340 0.27 
+83 *3:340 *3:344 3.06 
+84 *3:344 *3:350 1.89 
+85 *3:350 *722:I 4.77 
+86 *3:350 *3:358 1.17 
+87 *3:358 *712:I 4.77 
+88 *3:358 *3:374 10.6983 
+89 *3:374 *720:I 4.77 
+90 *3:374 *710:I 6.21 
+91 *3:344 *726:I 4.5 
+92 *3:340 *591:I 4.5 
+93 *3:338 *591:ZN 4.77 
+94 *3:336 *618:I 4.95 
+95 *3:333 *3:414 5.67 
+96 *3:414 *3:415 0.45 
+97 *3:415 *3:417 0.99 
+98 *3:417 *554:I 4.77 
+99 *3:417 *3:425 0.27 
+100 *3:425 *554:ZN 4.5 
+101 *3:425 *3:431 0.27 
+102 *3:431 *3:433 1.35 
+103 *3:433 *587:I 5.22 
+104 *3:433 *587:ZN 4.5 
+105 *3:431 *3:447 0.81 
+106 *3:447 *550:I 4.77 
+107 *3:447 *3:455 0.27 
+108 *3:455 *550:ZN 4.5 
+109 *3:455 *3:463 1.08 
+110 *3:463 *585:I 4.5 
+111 *3:463 *3:469 0.27 
+112 *3:469 *585:ZN 4.5 
+113 *3:469 *3:475 0.63 
+114 *3:475 *3:477 0.81 
+115 *3:477 *548:I 4.77 
+116 *3:477 *548:ZN 4.77 
+117 *3:475 *3:491 0.45 
+118 *3:491 *741:I 4.5 
+119 *3:491 *3:497 0.27 
+120 *3:497 *3:502 9.99 
+121 *3:502 *683:I 4.5 
+122 *3:502 *3:507 0.27 
+123 *3:507 *3:509 2.43 
+124 *3:509 *3:515 1.53 
+125 *3:515 *761:ZN 6.39 
+126 *3:515 *745:ZN 4.5 
+127 *3:509 *3:532 6.03 
+128 *3:532 *763:ZN 9.99 
+129 *3:532 *3:541 0.63 
+130 *3:541 *747:ZN 9 
+131 *3:541 *3:552 5.94 
+132 *3:552 *749:ZN 4.5 
+133 *3:552 *3:561 1.53 
+134 *3:561 *3:564 5.31 
+135 *3:564 *718:I 10.53 
+136 *3:564 *3:573 0.45 
+137 *3:573 *751:ZN 9 
+138 *3:573 *3:580 1.17 
+139 *3:580 *3:582 4.5 
+140 *3:582 *755:ZN 4.5 
+141 *3:582 *759:ZN 7.11 
+142 *3:580 *753:ZN 11.52 
+143 *3:561 *757:ZN 4.5 
+144 *3:507 *3:612 1.62 
+145 *3:612 *669:I 14.94 
+146 *3:612 *673:I 4.77 
+147 *3:497 *741:ZN 4.5 
+148 *3:415 *577:I 4.95 
+149 *3:414 *580:ZN 5.4 
+150 *3:311 *584:ZN 4.5 
+151 *3:308 *578:ZN 4.5 
+152 *3:308 *767:ZN 5.49 
+153 *3:306 *3:662 1.17 
+154 *3:662 *619:ZN 9 
+155 *3:662 *3:669 0.99 
+156 *3:669 *3:671 4.5 
+157 *3:671 *620:I 4.5 
+158 *3:671 *3:680 2.07 
+159 *3:680 *3:684 1.26 
+160 *3:684 *3:686 0.99 
+161 *3:686 *771:ZN 5.49 
+162 *3:686 *613:ZN 4.5 
+163 *3:684 *616:I 4.5 
+164 *3:684 *681:I 9.9 
+165 *3:680 *765:ZN 4.5 
+166 *3:669 *3:714 0.99 
+167 *3:714 *3:719 6.3 
+168 *3:719 *581:I 4.5 
+169 *3:719 *3:725 1.17 
+170 *3:725 *772:I 4.5 
+171 *3:725 *583:I 6.48 
+172 *3:714 *3:739 0.45 
+173 *3:739 *3:741 4.5 
+174 *3:741 *579:I 5.94 
+175 *3:741 *582:ZN 4.5 
+176 *3:739 *3:754 0.81 
+177 *3:754 *3:759 6.12 
+178 *3:759 *768:I 4.5 
+179 *3:759 *774:I 5.67 
+180 *3:754 *3:771 0.45 
+181 *3:771 *615:ZN 9 
+182 *3:771 *3:778 0.99 
+183 *3:778 *3:780 4.5 
+184 *3:780 *770:I 4.5 
+185 *3:780 *3:785 2.43 
+186 *3:785 *3:789 1.62 
+187 *3:789 *3:792 6.21 
+188 *3:792 *605:ZN 9 
+189 *3:792 *3:799 0.81 
+190 *3:799 *3:802 5.85 
+191 *3:802 *3:805 4.95 
+192 *3:805 *3:808 5.49 
+193 *3:808 *3:816 12.33 
+194 *3:816 *3:822 6.3 
+195 *3:822 *3:823 0.81 
+196 *3:823 *597:ZN 10.17 
+197 *3:823 *3:832 4.5 
+198 *3:832 *603:ZN 4.5 
+199 *3:832 *677:I 6.03 
+200 *3:822 *3:843 0.45 
+201 *3:843 *685:I 10.53 
+202 *3:843 *679:I 10.8 
+203 *3:816 *601:ZN 4.5 
+204 *3:808 *611:ZN 4.95 
+205 *3:805 *3:871 0.81 
+206 *3:871 *595:ZN 9 
+207 *3:871 *671:I 14.4 
+208 *3:802 *599:ZN 4.5 
+209 *3:799 *609:ZN 9.45 
+210 *3:789 *593:ZN 4.5 
+211 *3:785 *622:I 4.5 
+212 *3:778 *3:906 0.99 
+213 *3:906 *3:913 6.39 
+214 *3:913 *614:I 4.5 
+215 *3:913 *607:ZN 5.31 
+216 *3:906 *3:925 2.43 
+217 *3:925 *687:I 9 
+218 *3:925 *3:934 5.49 
+219 *3:934 *675:I 6.12 
+220 *3:934 *3:943 0.27 
+221 *3:943 *589:I 4.5 
+222 *3:943 *589:ZN 4.77 
+*END
+
+*D_NET *4 0.0215931
+*CONN
+*P nseries_gygy I
+*I *734:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *699:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *699:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *711:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *751:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *731:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *759:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *755:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *753:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *736:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *733:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *705:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *705:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *703:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *703:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *729:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *701:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *701:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *757:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *707:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *715:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *719:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *721:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *725:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *747:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *713:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *763:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *730:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *745:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *709:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *761:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *723:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *717:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *749:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *732:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *728:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *727:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *735:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 nseries_gygy 0.000593584
+2 *734:I 0
+3 *699:I 2.67812e-05
+4 *699:ZN 2.38655e-05
+5 *711:ZN 0
+6 *751:I 0
+7 *731:ZN 1.20181e-05
+8 *759:I 5.50853e-05
+9 *755:I 0
+10 *753:I 7.59866e-05
+11 *736:I 0
+12 *733:ZN 0
+13 *705:I 1.72334e-05
+14 *705:ZN 0
+15 *703:ZN 0
+16 *703:I 0
+17 *729:ZN 0
+18 *701:ZN 0
+19 *701:I 6.40373e-05
+20 *757:I 1.7092e-05
+21 *707:ZN 6.61905e-05
+22 *715:ZN 0
+23 *719:ZN 3.21622e-05
+24 *721:ZN 3.80309e-05
+25 *725:ZN 0
+26 *747:I 4.9023e-05
+27 *713:ZN 0
+28 *763:I 0
+29 *730:I 7.99971e-05
+30 *745:I 0
+31 *709:ZN 6.48196e-05
+32 *761:I 0.000117206
+33 *723:ZN 0.000160794
+34 *717:ZN 0
+35 *749:I 0
+36 *732:I 0
+37 *728:I 8.69756e-05
+38 *727:ZN 0
+39 *735:ZN 0.000115549
+40 *4:294 0.000192258
+41 *4:288 0.000236954
+42 *4:280 0.000189032
+43 *4:258 0.000154852
+44 *4:244 0.000125446
+45 *4:236 0.000102409
+46 *4:218 0.000638219
+47 *4:216 9.31135e-05
+48 *4:214 0.000164194
+49 *4:208 0.000107426
+50 *4:200 0.000170072
+51 *4:196 0.000108459
+52 *4:190 0.00021646
+53 *4:174 0.000117269
+54 *4:172 0.000201775
+55 *4:167 0.000122302
+56 *4:145 8.88433e-05
+57 *4:129 0.000169921
+58 *4:126 0.000172287
+59 *4:124 9.87054e-05
+60 *4:77 0.000205194
+61 *4:76 2.31685e-05
+62 *4:67 0.000241392
+63 *4:65 0.000203395
+64 *4:62 0.000162495
+65 *4:54 0.000199064
+66 *4:49 0.000121613
+67 *4:47 0.000147023
+68 *4:44 9.56601e-05
+69 *4:40 0.000124972
+70 *4:35 5.33622e-05
+71 *4:21 0.000203427
+72 *4:16 0.000200295
+73 *4:15 0.000155862
+74 *4:7 0.000144601
+75 *699:ZN *711:I 6.90477e-06
+76 *701:I *9:46 0
+77 *707:ZN *711:I 4.09172e-05
+78 *707:ZN *8:799 0.00042963
+79 *709:ZN *723:I 0
+80 *719:ZN *8:741 0.000675133
+81 *719:ZN *8:799 0.000135027
+82 *723:ZN *9:53 0
+83 *723:ZN *9:55 0
+84 *723:ZN *9:215 3.49705e-05
+85 *723:ZN *9:225 0.000125894
+86 *728:I *9:42 4.91006e-05
+87 *728:I *9:46 0.000135027
+88 *753:I pbusout 0.000920636
+89 *759:I pbusout 0
+90 *761:I *723:I 0
+91 *4:7 *9:42 4.47532e-05
+92 *4:7 *9:46 6.26544e-05
+93 *4:16 *9:42 0
+94 *4:21 *9:42 0
+95 *4:40 *718:ZN 0
+96 *4:44 *8:791 0.000306879
+97 *4:54 *717:I 8.5926e-05
+98 *4:54 *8:761 0.000347674
+99 *4:62 *717:I 2.76191e-05
+100 *4:62 *754:I 0
+101 *4:62 *754:ZN 0
+102 *4:62 *9:225 6.13757e-06
+103 *4:65 *9:49 0
+104 *4:65 *9:51 0
+105 *4:67 *9:51 0
+106 *4:67 *9:53 0
+107 *4:67 *9:225 6.99409e-06
+108 *4:124 *718:ZN 2.07143e-05
+109 *4:124 *8:791 0.000245503
+110 *4:126 *718:ZN 6.21429e-05
+111 *4:126 *8:791 0.000613757
+112 *4:126 *8:799 0.000184127
+113 *4:145 *8:799 0.000245503
+114 *4:172 *9:19 0.000184127
+115 *4:172 *9:32 0.000208634
+116 *4:172 *9:37 0.000184127
+117 *4:190 *9:32 0.000184127
+118 *4:190 *9:37 0.000184127
+119 *4:214 *9:9 1.38095e-05
+120 *4:244 pbusout 0.00104339
+121 *4:244 *9:9 0.000736509
+122 *4:258 *9:9 4.83334e-05
+123 *4:280 *718:ZN 0.000122752
+124 *4:280 *9:19 8.18343e-05
+125 *4:280 *9:32 0.000491006
+126 *4:294 *8:799 0
+127 *710:I *761:I 0
+128 *718:I *4:126 6.13757e-06
+129 *718:I *4:280 0.000306879
+130 *718:I *4:288 0.000245503
+131 *753:ZN *753:I 0.000436023
+132 *753:ZN *4:244 8.18344e-05
+133 *759:ZN *753:I 1.22751e-05
+134 *759:ZN *759:I 0.00153439
+135 *759:ZN *4:258 0.000306879
+136 *761:ZN *709:ZN 3.68254e-05
+137 *761:ZN *730:I 0.000116614
+138 *761:ZN *761:I 0.000601482
+139 *761:ZN *4:62 1.38095e-05
+140 *761:ZN *4:77 6.13758e-05
+141 *763:ZN *747:I 2.04586e-05
+142 *763:ZN *4:21 6.90477e-05
+143 *763:ZN *4:62 0.000675133
+144 *3:515 *709:ZN 0.000220953
+145 *3:515 *4:62 3.45239e-05
+146 *3:515 *4:77 3.68254e-05
+147 *3:532 *4:54 2.17594e-05
+148 *3:532 *4:65 1.55424e-05
+149 *3:532 *4:67 2.48679e-05
+150 *3:541 *4:47 3.10849e-06
+151 *3:541 *4:49 1.2434e-05
+152 *3:541 *4:54 3.10849e-06
+153 *3:552 *4:16 0.000186509
+154 *3:552 *4:21 0.000435189
+155 *3:552 *4:47 4.89586e-05
+156 *3:561 *757:I 2.45503e-05
+157 *3:561 *4:7 3.06879e-06
+158 *3:561 *4:40 0.000184127
+159 *3:561 *4:124 2.65962e-05
+160 *3:564 *4:16 6.99409e-06
+161 *3:564 *4:167 3.49455e-05
+*RES
+1 *735:ZN *4:7 6.3 
+2 *4:7 *727:ZN 4.5 
+3 *4:7 *4:15 5.49 
+4 *4:15 *4:16 0.81 
+5 *4:16 *4:21 6.3 
+6 *4:21 *728:I 6.48 
+7 *4:21 *732:I 4.5 
+8 *4:16 *4:35 4.5 
+9 *4:35 *749:I 4.5 
+10 *4:35 *4:40 1.35 
+11 *4:40 *4:44 0.72 
+12 *4:44 *4:47 5.31 
+13 *4:47 *4:49 0.45 
+14 *4:49 *4:54 5.94 
+15 *4:54 *717:ZN 4.5 
+16 *4:54 *4:62 1.98 
+17 *4:62 *4:65 4.95 
+18 *4:65 *4:67 0.81 
+19 *4:67 *723:ZN 11.07 
+20 *4:67 *4:76 4.5 
+21 *4:76 *4:77 0.45 
+22 *4:77 *761:I 6.03 
+23 *4:77 *709:ZN 5.31 
+24 *4:76 *745:I 4.5 
+25 *4:65 *730:I 10.53 
+26 *4:62 *763:I 4.5 
+27 *4:49 *713:ZN 9 
+28 *4:47 *747:I 10.17 
+29 *4:44 *725:ZN 4.5 
+30 *4:40 *4:124 0.72 
+31 *4:124 *4:126 1.17 
+32 *4:126 *4:129 5.31 
+33 *4:129 *721:ZN 9.45 
+34 *4:129 *719:ZN 9.99 
+35 *4:126 *4:145 0.45 
+36 *4:145 *715:ZN 4.5 
+37 *4:145 *707:ZN 5.58 
+38 *4:124 *757:I 4.77 
+39 *4:15 *4:167 4.95 
+40 *4:167 *4:172 2.25 
+41 *4:172 *4:174 0.63 
+42 *4:174 *701:I 5.22 
+43 *4:174 *701:ZN 4.5 
+44 *4:172 *4:190 1.26 
+45 *4:190 *729:ZN 4.5 
+46 *4:190 *4:196 0.63 
+47 *4:196 *4:200 0.72 
+48 *4:200 *703:I 4.5 
+49 *4:200 *4:208 0.54 
+50 *4:208 *703:ZN 4.5 
+51 *4:208 *4:214 0.99 
+52 *4:214 *4:216 0.45 
+53 *4:216 *4:218 0.45 
+54 *4:218 nseries_gygy 5.445 
+55 *4:218 *705:ZN 4.5 
+56 *4:216 *705:I 4.77 
+57 *4:214 *4:236 0.63 
+58 *4:236 *733:ZN 4.5 
+59 *4:236 *4:244 1.98 
+60 *4:244 *736:I 4.5 
+61 *4:244 *753:I 6.3 
+62 *4:200 *4:258 2.43 
+63 *4:258 *755:I 4.5 
+64 *4:258 *759:I 7.11 
+65 *4:196 *731:ZN 5.13 
+66 *4:190 *4:280 2.61 
+67 *4:280 *751:I 4.5 
+68 *4:280 *4:288 2.52 
+69 *4:288 *711:ZN 4.5 
+70 *4:288 *4:294 1.35 
+71 *4:294 *699:ZN 4.77 
+72 *4:294 *699:I 4.77 
+73 *4:167 *734:I 4.5 
+*END
+
+*D_NET *5 0.0270079
+*CONN
+*P nshunt_gy I
+*I *775:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *775:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *809:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *801:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *781:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *781:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *835:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *799:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *797:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *787:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *829:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *827:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *837:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *839:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *791:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *831:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *823:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *825:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *783:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *821:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *793:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *833:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *795:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *789:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *777:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *777:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *808:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *779:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *779:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *810:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *806:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *805:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *807:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *812:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *804:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *803:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *785:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *811:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 nshunt_gy 0.00049459
+2 *775:I 5.35624e-05
+3 *775:ZN 0
+4 *809:ZN 0
+5 *801:ZN 8.16148e-05
+6 *781:ZN 0
+7 *781:I 0
+8 *835:I 4.86132e-05
+9 *799:ZN 0
+10 *797:ZN 0
+11 *787:ZN 0
+12 *829:I 0
+13 *827:I 0
+14 *837:I 8.35978e-05
+15 *839:I 0.000129163
+16 *791:ZN 0
+17 *831:I 3.09513e-05
+18 *823:I 0.000113182
+19 *825:I 5.53197e-05
+20 *783:ZN 0
+21 *821:I 9.30387e-05
+22 *793:ZN 0
+23 *833:I 8.3361e-05
+24 *795:ZN 0
+25 *789:ZN 0
+26 *777:ZN 0
+27 *777:I 0
+28 *808:I 0
+29 *779:I 3.9609e-05
+30 *779:ZN 0
+31 *810:I 0
+32 *806:I 0
+33 *805:ZN 0.00021962
+34 *807:ZN 0
+35 *812:I 0
+36 *804:I 0
+37 *803:ZN 2.67812e-05
+38 *785:ZN 0
+39 *811:ZN 6.35017e-05
+40 *5:300 0.000165047
+41 *5:293 0.000111484
+42 *5:279 0.00010548
+43 *5:274 2.38655e-05
+44 *5:260 7.21753e-05
+45 *5:230 9.61267e-05
+46 *5:215 0.000129163
+47 *5:167 0.00011982
+48 *5:155 0.00018321
+49 *5:153 0.000255927
+50 *5:148 0.000184959
+51 *5:146 0.00017399
+52 *5:145 0.000176189
+53 *5:143 0.000119367
+54 *5:138 8.84154e-05
+55 *5:111 9.67168e-05
+56 *5:83 0.000425539
+57 *5:77 0.00033746
+58 *5:73 0.000239313
+59 *5:70 0.000155753
+60 *5:65 0.000119349
+61 *5:59 7.60074e-05
+62 *5:51 0.000200511
+63 *5:46 0.000243818
+64 *5:43 0.000181996
+65 *5:39 0.000233923
+66 *5:34 0.000216799
+67 *5:32 0.00058991
+68 *5:30 0.000165218
+69 *5:27 0.000166339
+70 *5:21 0.000133454
+71 *5:16 0.000138221
+72 *5:14 0.000184705
+73 *5:12 0.000162728
+74 *5:10 0.000112815
+75 *5:8 0.000143642
+76 *5:6 0.000151561
+77 nshunt_gy *794:ZN 1.38095e-05
+78 nshunt_gy *800:ZN 0
+79 *775:I *9:94 0
+80 *779:I *798:ZN 0
+81 *779:I *826:ZN 6.90477e-06
+82 *779:I *10:13 9.20636e-06
+83 *779:I *10:19 3.06879e-06
+84 *779:I *10:51 1.38095e-05
+85 *801:ZN pseries_gy 9.8457e-05
+86 *801:ZN *801:I 3.68254e-05
+87 *805:ZN *10:184 0.000306879
+88 *805:ZN *10:200 0.000527831
+89 *821:I *6:120 0.000797884
+90 *823:I *791:I 4.97357e-05
+91 *833:I *6:120 8.97374e-05
+92 *833:I *6:132 0.000202028
+93 *833:I *10:65 6.90477e-05
+94 *833:I *10:71 2.07143e-05
+95 *835:I pseries_gy 0.00104339
+96 *835:I *641:ZN 0
+97 *835:I *797:I 0.000368254
+98 *835:I *6:531 0.000211491
+99 *837:I *6:329 0
+100 *839:I *791:I 0.000163669
+101 *839:I *794:ZN 0
+102 *5:6 *811:I 0.000621698
+103 *5:8 *811:I 0.000186509
+104 *5:8 *10:142 0.000746038
+105 *5:10 *10:142 0.000497358
+106 *5:12 *10:142 0.000248679
+107 *5:14 *10:142 0.00136774
+108 *5:16 *10:142 0.000746038
+109 *5:21 *785:I 0.000102293
+110 *5:21 *794:ZN 4.47532e-05
+111 *5:21 *10:142 0.000808207
+112 *5:27 *785:I 0.00014321
+113 *5:30 *10:131 6.21143e-06
+114 *5:30 *10:142 2.48624e-05
+115 *5:32 *791:I 4.53321e-05
+116 *5:32 *10:131 2.48679e-05
+117 *5:34 *791:I 4.53321e-05
+118 *5:34 *10:131 1.2434e-05
+119 *5:39 *791:I 1.81328e-05
+120 *5:39 *808:ZN 4.14286e-05
+121 *5:39 *6:139 1.81328e-05
+122 *5:39 *6:146 5.43985e-05
+123 *5:39 *6:163 0.000145063
+124 *5:39 *10:104 6.21697e-05
+125 *5:39 *10:108 0.000457606
+126 *5:39 *10:115 2.17594e-05
+127 *5:39 *10:124 3.41934e-05
+128 *5:39 *10:131 9.32547e-06
+129 *5:43 *808:ZN 6.90477e-06
+130 *5:43 *10:108 0.000306879
+131 *5:46 *10:48 0
+132 *5:46 *10:87 0
+133 *5:46 *10:104 0
+134 *5:51 *808:ZN 3.06879e-06
+135 *5:51 *10:25 0.000102293
+136 *5:51 *10:41 0
+137 *5:51 *10:48 0
+138 *5:59 *808:ZN 3.06879e-05
+139 *5:59 *10:25 0.000204586
+140 *5:59 *10:51 8.95063e-06
+141 *5:65 *10:19 1.38095e-05
+142 *5:65 *10:51 2.68519e-05
+143 *5:70 pbusin_pshunt 4.89586e-05
+144 *5:70 pshunt_gy 0
+145 *5:70 *6:188 4.19646e-05
+146 *5:70 *10:22 0.000435189
+147 *5:70 *10:41 0.000310849
+148 *5:73 *10:13 0.000122751
+149 *5:73 *10:19 0.000294603
+150 *5:77 *792:ZN 8.18344e-05
+151 *5:77 *10:5 3.06879e-06
+152 *5:77 *10:13 0.000245503
+153 *5:83 *792:ZN 0.000225045
+154 *5:83 *10:184 3.98942e-05
+155 *5:111 *10:19 4.14286e-05
+156 *5:111 *10:51 8.05557e-05
+157 *5:143 *789:I 0.000184127
+158 *5:143 *800:ZN 3.06879e-06
+159 *5:143 *836:ZN 0
+160 *5:146 *791:I 3.73018e-05
+161 *5:146 *6:163 7.46036e-05
+162 *5:148 *6:163 9.94715e-05
+163 *5:153 *783:I 0.000306879
+164 *5:153 *788:ZN 1.22751e-05
+165 *5:153 *6:132 0
+166 *5:153 *6:136 0
+167 *5:153 *6:146 3.73018e-05
+168 *5:153 *6:163 3.73018e-05
+169 *5:155 *788:ZN 0
+170 *5:155 *6:120 0
+171 *5:167 *6:120 0
+172 *5:230 *785:I 0.000102293
+173 *5:260 pseries_gy 0.000675133
+174 *5:260 *797:I 0.000675133
+175 *790:I nshunt_gy 0.00042963
+176 *790:I *5:143 0.000306879
+177 *794:I nshunt_gy 0.000593299
+178 *794:I *839:I 4.91006e-05
+179 *794:I *5:27 0
+180 *800:I *825:I 6.13757e-05
+181 *800:I *5:143 0
+182 *800:I *5:148 2.07232e-05
+183 *800:I *5:153 0.000103616
+184 *825:ZN *831:I 0
+185 *827:ZN *823:I 0
+186 *827:ZN *839:I 3.06879e-06
+187 *835:ZN *835:I 1.22751e-05
+188 *1:518 *821:I 0
+189 *1:518 *823:I 0.000204586
+190 *1:518 *825:I 9.8457e-05
+191 *1:526 *823:I 0.000552381
+192 *1:526 *825:I 3.45239e-05
+193 *1:526 *831:I 0.000196402
+194 *1:526 *839:I 4.47532e-05
+195 *1:526 *5:143 0.000613757
+196 *1:558 *823:I 9.8457e-05
+197 *1:566 *823:I 0
+*RES
+1 *811:ZN *5:6 9.99 
+2 *5:6 *5:8 1.35 
+3 *5:8 *5:10 0.81 
+4 *5:10 *5:12 0.45 
+5 *5:12 *5:14 2.07 
+6 *5:14 *5:16 1.17 
+7 *5:16 *5:21 6.12 
+8 *5:21 *785:ZN 4.5 
+9 *5:21 *5:27 0.63 
+10 *5:27 *5:30 5.49 
+11 *5:30 *5:32 0.81 
+12 *5:32 *5:34 0.45 
+13 *5:34 *5:39 7.74 
+14 *5:39 *5:43 0.72 
+15 *5:43 *5:46 5.67 
+16 *5:46 *5:51 5.76 
+17 *5:51 *803:ZN 4.77 
+18 *5:51 *5:59 0.99 
+19 *5:59 *804:I 4.5 
+20 *5:59 *5:65 0.27 
+21 *5:65 *5:70 10.17 
+22 *5:70 *5:73 1.44 
+23 *5:73 *5:77 1.8 
+24 *5:77 *812:I 4.5 
+25 *5:77 *5:83 2.25 
+26 *5:83 *807:ZN 4.5 
+27 *5:83 *805:ZN 7.38 
+28 *5:73 *806:I 4.5 
+29 *5:70 *810:I 4.5 
+30 *5:65 *5:111 1.08 
+31 *5:111 *779:ZN 4.5 
+32 *5:111 *779:I 5.04 
+33 *5:46 *808:I 9 
+34 *5:43 *777:I 4.5 
+35 *5:39 *777:ZN 4.5 
+36 *5:34 *5:138 4.5 
+37 *5:138 *789:ZN 4.5 
+38 *5:138 *5:143 1.35 
+39 *5:143 *5:145 4.5 
+40 *5:145 *5:146 0.81 
+41 *5:146 *5:148 0.81 
+42 *5:148 *5:153 6.3 
+43 *5:153 *5:155 0.99 
+44 *5:155 *795:ZN 4.5 
+45 *5:155 *833:I 6.03 
+46 *5:153 *5:167 0.27 
+47 *5:167 *793:ZN 4.5 
+48 *5:167 *821:I 6.03 
+49 *5:148 *783:ZN 9 
+50 *5:146 *825:I 10.71 
+51 *5:145 *823:I 11.16 
+52 *5:143 *831:I 5.04 
+53 *5:32 nshunt_gy 9.945 
+54 *5:30 *5:215 4.5 
+55 *5:215 *791:ZN 4.5 
+56 *5:215 *839:I 6.39 
+57 *5:27 *5:230 0.45 
+58 *5:230 *837:I 14.67 
+59 *5:230 *827:I 4.5 
+60 *5:16 *829:I 9 
+61 *5:14 *787:ZN 9 
+62 *5:12 *797:ZN 9 
+63 *5:10 *5:260 5.49 
+64 *5:260 *799:ZN 4.5 
+65 *5:260 *835:I 6.3 
+66 *5:8 *5:274 4.5 
+67 *5:274 *781:I 4.5 
+68 *5:274 *5:279 0.27 
+69 *5:279 *781:ZN 4.5 
+70 *5:279 *801:ZN 5.76 
+71 *5:6 *5:293 4.5 
+72 *5:293 *809:ZN 4.5 
+73 *5:293 *5:300 1.26 
+74 *5:300 *775:ZN 4.5 
+75 *5:300 *775:I 5.22 
+*END
+
+*D_NET *6 0.043373
+*CONN
+*P pbusin_pshunt I
+*I *659:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *843:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *832:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *657:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *822:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *653:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *660:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *848:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *623:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *658:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *645:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *845:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *841:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *847:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *799:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *797:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *625:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *625:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *649:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *574:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *562:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *572:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *558:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *566:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *556:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *568:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *635:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *633:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *801:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *570:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *564:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *641:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *639:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *560:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *647:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *656:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *816:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *629:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *787:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *629:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *816:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *627:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *627:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *785:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *844:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *818:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *818:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *654:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *637:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *631:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *643:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *820:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *820:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *814:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *814:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *793:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *795:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *824:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *826:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *838:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *791:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *789:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *783:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *836:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *834:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *842:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *830:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *623:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *652:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *840:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *651:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *849:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *828:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *846:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *655:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *850:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 pbusin_pshunt 0.000332789
+2 *659:ZN 2.78055e-05
+3 *843:I 2.45248e-05
+4 *832:ZN 1.60362e-05
+5 *657:ZN 0
+6 *822:ZN 0
+7 *653:ZN 0
+8 *660:I 0
+9 *848:ZN 2.62183e-05
+10 *623:ZN 0
+11 *658:I 0
+12 *645:ZN 0.00015916
+13 *845:I 0
+14 *841:I 2.98877e-05
+15 *847:I 0
+16 *799:I 0
+17 *797:I 0.000101546
+18 *625:ZN 3.0087e-05
+19 *625:I 0
+20 *649:ZN 0
+21 *574:I 0.000114
+22 *562:I 9.63937e-05
+23 *572:I 0
+24 *558:I 9.80677e-05
+25 *566:I 0
+26 *556:I 4.04505e-05
+27 *568:I 0
+28 *635:ZN 0
+29 *633:ZN 0
+30 *801:I 0.000135675
+31 *570:I 8.93102e-05
+32 *564:I 0
+33 *641:ZN 9.08874e-05
+34 *639:ZN 0
+35 *560:I 2.38655e-05
+36 *647:ZN 6.81124e-05
+37 *656:I 2.48696e-05
+38 *816:ZN 0
+39 *629:ZN 0
+40 *787:I 0.000179504
+41 *629:I 3.28198e-05
+42 *816:I 1.33906e-05
+43 *627:ZN 1.8034e-05
+44 *627:I 0
+45 *785:I 0.000143018
+46 *844:ZN 0
+47 *818:ZN 0
+48 *818:I 1.58282e-05
+49 *654:I 0
+50 *637:ZN 0
+51 *631:ZN 0.000102166
+52 *643:ZN 0
+53 *820:ZN 0
+54 *820:I 0
+55 *814:ZN 1.95818e-05
+56 *814:I 0
+57 *793:I 0
+58 *795:I 0
+59 *824:ZN 0
+60 *826:ZN 0.000113073
+61 *838:ZN 0
+62 *791:I 0.000104321
+63 *789:I 1.49734e-05
+64 *783:I 4.35357e-05
+65 *836:ZN 0.000109288
+66 *834:ZN 0
+67 *842:ZN 0.00011316
+68 *830:ZN 0.000162854
+69 *623:I 0
+70 *652:I 8.88686e-05
+71 *840:ZN 0.000114843
+72 *651:ZN 0
+73 *849:I 0
+74 *828:ZN 0.000101122
+75 *846:ZN 0
+76 *655:ZN 0
+77 *850:ZN 0
+78 *6:615 0.000180932
+79 *6:562 0.00020393
+80 *6:551 0.000126429
+81 *6:544 0.000128241
+82 *6:531 0.000295547
+83 *6:515 3.0087e-05
+84 *6:513 0.000301296
+85 *6:480 0.000119424
+86 *6:479 0.00011775
+87 *6:477 0.000243416
+88 *6:466 4.04505e-05
+89 *6:464 0.000205694
+90 *6:442 0.000223943
+91 *6:440 0.000165131
+92 *6:437 7.6863e-05
+93 *6:435 0.000131707
+94 *6:415 0.000104278
+95 *6:414 0.000102701
+96 *6:412 0.000137336
+97 *6:405 0.000118402
+98 *6:389 0.000165532
+99 *6:382 9.84238e-05
+100 *6:380 4.87203e-05
+101 *6:377 0.000148235
+102 *6:371 0.000176131
+103 *6:351 0.000317128
+104 *6:344 0.000158317
+105 *6:342 0.000245127
+106 *6:331 1.8034e-05
+107 *6:329 0.000224171
+108 *6:318 0.00024999
+109 *6:310 9.57586e-05
+110 *6:304 0.000169292
+111 *6:302 5.33102e-05
+112 *6:290 6.69851e-05
+113 *6:288 0.000112348
+114 *6:262 0.000180969
+115 *6:259 0.000236909
+116 *6:253 0.000265149
+117 *6:251 0.000174545
+118 *6:245 6.16123e-05
+119 *6:239 0.00015308
+120 *6:224 2.82257e-05
+121 *6:221 0.000186985
+122 *6:188 0.00057514
+123 *6:163 0.000161735
+124 *6:148 0.000152824
+125 *6:146 6.09715e-05
+126 *6:139 7.62658e-05
+127 *6:136 0.000158055
+128 *6:132 0.000405884
+129 *6:125 0.000304266
+130 *6:120 0.000239708
+131 *6:97 0.00038284
+132 *6:95 0.000354264
+133 *6:94 0.000272196
+134 *6:90 0.000124716
+135 *6:65 0.000208448
+136 *6:59 0.00010326
+137 *6:46 0.000178882
+138 *6:41 0.000131062
+139 *6:36 8.95266e-05
+140 *6:33 0.000134748
+141 *6:31 2.53858e-05
+142 *6:29 0.000117127
+143 *6:27 0.000142804
+144 *6:25 0.000187467
+145 *6:19 0.000266174
+146 *6:15 0.00028249
+147 *6:11 0.000203616
+148 *6:9 0.000239461
+149 *6:4 0.000294167
+150 *631:ZN *637:I 9.06641e-06
+151 *631:ZN *643:I 2.68519e-05
+152 *631:ZN *8:93 0.000122752
+153 *631:ZN *8:95 0.000122752
+154 *631:ZN *8:99 0.000184127
+155 *631:ZN *8:157 5.43985e-05
+156 *631:ZN *8:181 9.82012e-05
+157 *641:ZN *8:116 2.76081e-05
+158 *645:ZN *8:107 0.000797884
+159 *647:ZN *8:99 0.000122751
+160 *656:I *8:116 2.45503e-05
+161 *783:I *788:ZN 4.47532e-05
+162 *791:I *794:ZN 6.90477e-06
+163 *801:I pseries_gy 8.5926e-05
+164 *801:I *8:126 0.000306879
+165 *826:ZN *798:ZN 2.45503e-05
+166 *826:ZN *10:13 8.74605e-05
+167 *826:ZN *10:178 0.000122751
+168 *828:ZN *10:226 1.22751e-05
+169 *828:ZN *10:232 0
+170 *830:ZN *796:ZN 2.71992e-05
+171 *830:ZN *10:184 0.000552382
+172 *832:ZN *10:261 0
+173 *836:ZN *788:ZN 4.47532e-05
+174 *836:ZN *800:ZN 8.5926e-05
+175 *836:ZN *10:108 9.8457e-05
+176 *842:ZN *786:ZN 0
+177 *842:ZN *10:71 0.000552382
+178 *6:11 *10:261 0
+179 *6:15 *10:245 0
+180 *6:15 *10:261 0.000184127
+181 *6:15 *10:267 8.95063e-06
+182 *6:19 *10:245 0
+183 *6:65 *10:226 9.20636e-06
+184 *6:97 *796:ZN 8.15977e-05
+185 *6:120 *10:71 0
+186 *6:132 *10:57 0.000225045
+187 *6:132 *10:65 0.000205097
+188 *6:136 *788:ZN 0
+189 *6:136 *808:ZN 0
+190 *6:136 *10:51 0.000552381
+191 *6:136 *10:57 6.13757e-05
+192 *6:139 *10:104 0.000227955
+193 *6:188 *10:41 6.21698e-06
+194 *6:188 *10:48 2.17594e-05
+195 *6:188 *10:87 9.32547e-06
+196 *6:259 *637:I 0
+197 *6:262 *637:I 0.000117863
+198 *6:377 *8:107 0.000184127
+199 *6:377 *8:116 1.38095e-05
+200 *6:380 *8:112 0.000310849
+201 *6:389 *8:99 1.22751e-05
+202 *6:389 *8:107 0.000171852
+203 *6:405 *8:112 0.000373019
+204 *6:412 *8:116 0
+205 *6:412 *8:125 0
+206 *6:440 pseries_gy 0
+207 *6:442 *8:126 0.000613757
+208 *6:531 pseries_gy 2.45503e-05
+209 *6:531 *8:116 0
+210 nbusin_nshunt *828:ZN 1.84127e-05
+211 *556:ZN *556:I 0.000675133
+212 *556:ZN *558:I 9.8457e-05
+213 *556:ZN *562:I 1.22751e-05
+214 *558:ZN *558:I 4.14286e-05
+215 *560:ZN *647:ZN 0.00014321
+216 *562:ZN *562:I 0.000368145
+217 *564:ZN *556:I 3.45239e-05
+218 *564:ZN *6:412 2.07232e-05
+219 *564:ZN *6:435 0.000207232
+220 *564:ZN *6:440 0.000306879
+221 *564:ZN *6:464 4.14464e-05
+222 *570:ZN *6:415 0
+223 *572:ZN *6:480 2.04586e-05
+224 *628:ZN *6:19 2.07143e-05
+225 *648:I *560:I 0
+226 *651:I *828:ZN 5.37038e-05
+227 *651:I *6:65 0.000675133
+228 *654:ZN *6:259 6.26544e-05
+229 *656:ZN *570:I 0
+230 *656:ZN *656:I 0.000675133
+231 *656:ZN *6:389 0.000306879
+232 *657:I *6:15 0.000140653
+233 *657:I *6:19 0.000159577
+234 *658:ZN *6:304 0.000552382
+235 *658:ZN *6:310 0.000491006
+236 *658:ZN *6:318 2.45503e-05
+237 *659:I *843:I 0.000184127
+238 *659:I *6:615 6.13758e-05
+239 *737:I *562:I 1.22751e-05
+240 *779:I *826:ZN 6.90477e-06
+241 *792:I *830:ZN 2.07232e-05
+242 *794:I *791:I 6.44445e-05
+243 *800:I *783:I 0.000225045
+244 *800:I *789:I 9.20636e-06
+245 *800:I *836:ZN 6.13758e-05
+246 *800:I *6:125 0
+247 *800:I *6:139 4.19646e-05
+248 *800:I *6:146 2.79764e-05
+249 *801:ZN *801:I 3.68254e-05
+250 *813:I *6:253 1.22751e-05
+251 *813:I *6:259 6.13757e-05
+252 *821:I *6:120 0.000797884
+253 *821:ZN *6:41 0.000184127
+254 *821:ZN *6:90 0
+255 *821:ZN *6:94 0
+256 *821:ZN *6:120 6.13757e-05
+257 *823:I *791:I 4.97357e-05
+258 *825:ZN *814:ZN 2.07143e-05
+259 *827:ZN *785:I 0.000675133
+260 *827:ZN *6:310 8.95063e-06
+261 *827:ZN *6:318 2.04586e-05
+262 *829:ZN *785:I 4.14286e-05
+263 *829:ZN *787:I 2.14815e-05
+264 *833:I *6:120 8.97374e-05
+265 *833:I *6:132 0.000202028
+266 *833:ZN *842:ZN 6.90477e-05
+267 *835:I *641:ZN 0
+268 *835:I *797:I 0.000368254
+269 *835:I *6:531 0.000211491
+270 *835:ZN *570:I 0.000306879
+271 *835:ZN *641:ZN 0.000204586
+272 *835:ZN *6:405 0.000124339
+273 *835:ZN *6:412 0.000269402
+274 *835:ZN *6:435 6.21697e-05
+275 *835:ZN *6:440 9.8457e-05
+276 *835:ZN *6:442 2.07143e-05
+277 *837:I *6:329 0
+278 *839:I *791:I 0.000163669
+279 *841:ZN *645:ZN 8.05557e-05
+280 *841:ZN *841:I 0.000552382
+281 *841:ZN *6:377 1.84127e-05
+282 *845:ZN *645:ZN 3.68254e-05
+283 *850:I *843:I 0.000184127
+284 *850:I *6:9 1.79013e-05
+285 *850:I *6:11 0
+286 *850:I *6:615 0.000171852
+287 *1:6 *6:36 0
+288 *1:6 *6:46 1.81328e-05
+289 *1:8 *6:46 8.15977e-05
+290 *1:19 *842:ZN 1.02293e-05
+291 *1:23 *842:ZN 0.000225045
+292 *1:25 *830:ZN 6.21429e-05
+293 *1:25 *842:ZN 3.68254e-05
+294 *1:32 *826:ZN 4.52646e-05
+295 *1:32 *6:139 4.89586e-05
+296 *1:32 *6:188 0.000310849
+297 *1:55 *830:ZN 0.000227955
+298 *1:93 *828:ZN 0.00042963
+299 *1:95 *828:ZN 0.000184127
+300 *1:95 *842:ZN 9.8457e-05
+301 *1:116 *828:ZN 8.05557e-05
+302 *1:116 *6:41 0.000552381
+303 *1:116 *6:59 0.000122751
+304 *1:116 *6:65 0.000368254
+305 *1:136 *652:I 0
+306 *1:136 *6:36 0
+307 *1:139 *848:ZN 0.00042963
+308 *1:139 *6:25 2.68519e-05
+309 *1:139 *6:65 7.59525e-05
+310 *1:149 *840:ZN 0
+311 *1:149 *6:19 1.79013e-05
+312 *1:149 *6:25 0.000613757
+313 *1:149 *6:27 0
+314 *1:149 *6:65 0
+315 *1:192 *6:19 0
+316 *1:198 *631:ZN 0
+317 *1:198 *645:ZN 0
+318 *1:198 *6:259 0.000204586
+319 *1:208 *645:ZN 0
+320 *1:210 *645:ZN 0
+321 *1:210 *841:I 0.000225045
+322 *1:210 *6:288 6.13757e-06
+323 *1:210 *6:304 1.79013e-05
+324 *1:222 *627:ZN 0
+325 *1:222 *629:I 0
+326 *1:222 *785:I 0.000388713
+327 *1:222 *787:I 0
+328 *1:222 *6:310 5.80512e-05
+329 *1:222 *6:318 0.000102293
+330 *1:222 *6:351 0
+331 *1:222 *6:371 0
+332 *1:222 *6:377 0
+333 *1:238 *627:ZN 2.07143e-05
+334 *1:253 *631:ZN 0
+335 *1:253 *6:262 0
+336 *1:253 *6:380 0.000103616
+337 *1:253 *6:405 6.21697e-05
+338 *1:253 *6:551 0
+339 *1:253 *6:562 0
+340 *1:289 *6:9 2.68519e-05
+341 *1:295 *6:9 2.27602e-05
+342 *1:301 *6:9 6.90477e-06
+343 *1:301 *6:615 0
+344 *1:311 *659:ZN 0
+345 *1:311 *6:615 0
+346 *1:317 *659:ZN 0
+347 *1:497 *652:I 0
+348 *1:502 *6:25 0.000122751
+349 *1:506 *6:25 0.000102293
+350 *1:506 *6:29 5.52382e-05
+351 *1:508 *6:29 1.22751e-05
+352 *1:508 *6:90 1.53439e-05
+353 *1:508 *6:94 2.45503e-05
+354 *1:508 *6:224 2.68519e-05
+355 *1:508 *6:239 6.13758e-05
+356 *1:508 *6:253 8.28573e-05
+357 *1:508 *6:259 0
+358 *1:508 *6:288 3.06879e-06
+359 *1:508 *6:290 2.45503e-05
+360 *1:510 *814:ZN 6.90477e-06
+361 *1:526 *791:I 4.91006e-05
+362 *1:558 *6:245 2.07143e-05
+363 *1:558 *6:290 3.68254e-05
+364 *1:558 *6:310 6.44267e-05
+365 *1:566 *818:I 9.20636e-06
+366 *1:566 *6:310 8.18343e-05
+367 *1:566 *6:318 6.13758e-05
+368 *1:584 *6:25 0.000204586
+369 *1:602 *652:I 0
+370 *3:25 *562:I 6.90477e-06
+371 *3:29 *562:I 3.06879e-05
+372 *3:40 *6:464 0.000227955
+373 *3:40 *6:477 6.21697e-05
+374 *3:55 *570:I 3.06879e-05
+375 *3:142 *574:I 6.21697e-05
+376 *3:142 *6:477 0.000248642
+377 *3:143 *558:I 4.91006e-05
+378 *3:143 *562:I 0.000306879
+379 *3:163 *558:I 0
+380 *3:167 *558:I 0
+381 *5:21 *785:I 0.000102293
+382 *5:27 *785:I 0.00014321
+383 *5:32 *791:I 4.53321e-05
+384 *5:34 *791:I 4.53321e-05
+385 *5:39 *791:I 1.81328e-05
+386 *5:39 *6:139 1.81328e-05
+387 *5:39 *6:146 5.43985e-05
+388 *5:39 *6:163 0.000145063
+389 *5:70 pbusin_pshunt 4.89586e-05
+390 *5:70 *6:188 4.19646e-05
+391 *5:143 *789:I 0.000184127
+392 *5:143 *836:ZN 0
+393 *5:146 *791:I 3.73018e-05
+394 *5:146 *6:163 7.46036e-05
+395 *5:148 *6:163 9.94715e-05
+396 *5:153 *783:I 0.000306879
+397 *5:153 *6:132 0
+398 *5:153 *6:136 0
+399 *5:153 *6:146 3.73018e-05
+400 *5:153 *6:163 3.73018e-05
+401 *5:155 *6:120 0
+402 *5:167 *6:120 0
+403 *5:230 *785:I 0.000102293
+404 *5:260 *797:I 0.000675133
+*RES
+1 *850:ZN *6:4 4.5 
+2 *6:4 *6:9 1.53 
+3 *6:9 *6:11 0.45 
+4 *6:11 *6:15 1.98 
+5 *6:15 *6:19 1.8 
+6 *6:19 *6:25 2.79 
+7 *6:25 *6:27 0.63 
+8 *6:27 *6:29 1.17 
+9 *6:29 *6:31 0.27 
+10 *6:31 *6:33 4.5 
+11 *6:33 *6:36 5.49 
+12 *6:36 *655:ZN 4.5 
+13 *6:36 *6:41 0.99 
+14 *6:41 *6:46 9.99 
+15 *6:46 *846:ZN 4.5 
+16 *6:46 *828:ZN 6.12 
+17 *6:41 *6:59 0.27 
+18 *6:59 *849:I 4.5 
+19 *6:59 *6:65 1.89 
+20 *6:65 *651:ZN 4.5 
+21 *6:65 *840:ZN 5.4 
+22 *6:33 *652:I 10.17 
+23 *6:31 *623:I 4.5 
+24 *6:29 *6:90 0.45 
+25 *6:90 *6:94 5.31 
+26 *6:94 *6:95 1.53 
+27 *6:95 *6:97 1.53 
+28 *6:97 *830:ZN 11.34 
+29 *6:97 *842:ZN 11.34 
+30 *6:95 *6:120 6.3 
+31 *6:120 *6:125 10.17 
+32 *6:125 *6:132 2.52 
+33 *6:132 *6:136 1.26 
+34 *6:136 *6:139 5.67 
+35 *6:139 *834:ZN 9 
+36 *6:139 *6:146 0.63 
+37 *6:146 *6:148 4.5 
+38 *6:148 *836:ZN 6.12 
+39 *6:148 *783:I 5.49 
+40 *6:146 *6:163 1.53 
+41 *6:163 *789:I 9.27 
+42 *6:163 *791:I 10.71 
+43 *6:136 *838:ZN 4.5 
+44 *6:132 *6:188 6.03 
+45 *6:188 pbusin_pshunt 3.285 
+46 *6:188 *826:ZN 10.62 
+47 *6:132 *824:ZN 4.5 
+48 *6:125 *795:I 4.5 
+49 *6:120 *793:I 4.5 
+50 *6:94 *6:221 0.45 
+51 *6:221 *6:224 4.77 
+52 *6:224 *814:I 4.5 
+53 *6:224 *814:ZN 4.77 
+54 *6:221 *6:239 5.94 
+55 *6:239 *820:I 4.5 
+56 *6:239 *6:245 0.27 
+57 *6:245 *820:ZN 4.5 
+58 *6:245 *6:251 0.45 
+59 *6:251 *6:253 1.35 
+60 *6:253 *6:259 10.98 
+61 *6:259 *6:262 5.67 
+62 *6:262 *643:ZN 9 
+63 *6:262 *631:ZN 10.98 
+64 *6:259 *637:ZN 4.5 
+65 *6:253 *654:I 4.5 
+66 *6:251 *6:288 0.54 
+67 *6:288 *6:290 0.99 
+68 *6:290 *818:I 4.77 
+69 *6:290 *818:ZN 4.5 
+70 *6:288 *6:302 0.45 
+71 *6:302 *6:304 0.99 
+72 *6:304 *6:310 1.53 
+73 *6:310 *844:ZN 4.5 
+74 *6:310 *6:318 0.72 
+75 *6:318 *785:I 7.38 
+76 *6:318 *6:329 5.31 
+77 *6:329 *6:331 4.5 
+78 *6:331 *627:I 4.5 
+79 *6:331 *627:ZN 4.77 
+80 *6:329 *6:342 1.35 
+81 *6:342 *6:344 4.5 
+82 *6:344 *816:I 4.77 
+83 *6:344 *6:351 0.99 
+84 *6:351 *629:I 5.04 
+85 *6:351 *787:I 6.21 
+86 *6:351 *629:ZN 4.5 
+87 *6:344 *6:371 0.45 
+88 *6:371 *816:ZN 4.5 
+89 *6:371 *6:377 2.25 
+90 *6:377 *6:380 4.95 
+91 *6:380 *6:382 4.5 
+92 *6:382 *656:I 5.67 
+93 *6:382 *6:389 1.35 
+94 *6:389 *647:ZN 5.76 
+95 *6:389 *560:I 4.77 
+96 *6:380 *6:405 0.81 
+97 *6:405 *639:ZN 9 
+98 *6:405 *6:412 1.17 
+99 *6:412 *6:414 4.5 
+100 *6:414 *6:415 0.27 
+101 *6:415 *641:ZN 5.76 
+102 *6:415 *564:I 4.5 
+103 *6:414 *570:I 5.85 
+104 *6:412 *6:435 0.99 
+105 *6:435 *6:437 4.5 
+106 *6:437 *6:440 1.26 
+107 *6:440 *6:442 1.35 
+108 *6:442 *801:I 6.3 
+109 *6:442 *633:ZN 4.5 
+110 *6:440 *635:ZN 4.5 
+111 *6:437 *568:I 4.5 
+112 *6:435 *6:464 1.17 
+113 *6:464 *6:466 4.5 
+114 *6:466 *556:I 5.67 
+115 *6:466 *566:I 4.5 
+116 *6:464 *6:477 1.35 
+117 *6:477 *6:479 4.5 
+118 *6:479 *6:480 0.27 
+119 *6:480 *558:I 6.21 
+120 *6:480 *572:I 4.5 
+121 *6:479 *562:I 5.85 
+122 *6:477 *574:I 9.99 
+123 *6:377 *649:ZN 4.5 
+124 *6:342 *6:513 0.99 
+125 *6:513 *6:515 4.5 
+126 *6:515 *625:I 4.5 
+127 *6:515 *625:ZN 4.77 
+128 *6:513 *6:531 6.93 
+129 *6:531 *797:I 6.03 
+130 *6:531 *799:I 4.5 
+131 *6:304 *6:544 5.13 
+132 *6:544 *847:I 9 
+133 *6:544 *6:551 0.63 
+134 *6:551 *841:I 9.99 
+135 *6:551 *6:562 5.13 
+136 *6:562 *845:I 4.5 
+137 *6:562 *645:ZN 7.02 
+138 *6:302 *658:I 4.5 
+139 *6:90 *623:ZN 4.5 
+140 *6:27 *848:ZN 5.67 
+141 *6:25 *660:I 4.5 
+142 *6:19 *653:ZN 4.5 
+143 *6:15 *822:ZN 4.5 
+144 *6:11 *657:ZN 4.5 
+145 *6:9 *832:ZN 4.77 
+146 *6:4 *6:615 2.25 
+147 *6:615 *843:I 5.31 
+148 *6:615 *659:ZN 4.77 
+*END
+
+*D_NET *7 0.0238165
+*CONN
+*P pbusout I
+*I *665:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *698:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *573:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *671:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *663:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *663:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *667:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *667:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *693:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *696:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *555:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *661:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *567:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *689:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *563:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *661:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *675:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *665:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *694:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *679:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *691:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *692:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *685:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *677:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *681:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *695:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *557:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *561:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *687:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *690:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *559:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *565:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *669:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *571:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *673:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *569:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *683:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *697:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 pbusout 0.00105651
+2 *665:ZN 0
+3 *698:I 0
+4 *573:I 0
+5 *671:ZN 0
+6 *663:ZN 0
+7 *663:I 2.3609e-05
+8 *667:ZN 2.67812e-05
+9 *667:I 0
+10 *693:ZN 0
+11 *696:I 1.79779e-05
+12 *555:I 0
+13 *661:ZN 2.67812e-05
+14 *567:I 0
+15 *689:ZN 7.15021e-05
+16 *563:I 0
+17 *661:I 2.41272e-05
+18 *675:ZN 0
+19 *665:I 0
+20 *694:I 3.34804e-05
+21 *679:ZN 7.01727e-05
+22 *691:ZN 0
+23 *692:I 4.7808e-05
+24 *685:ZN 8.35139e-05
+25 *677:ZN 8.14536e-05
+26 *681:ZN 0.000314759
+27 *695:ZN 0
+28 *557:I 0
+29 *561:I 0
+30 *687:ZN 0
+31 *690:I 9.50164e-05
+32 *559:I 0
+33 *565:I 0
+34 *669:ZN 2.67812e-05
+35 *571:I 7.5618e-05
+36 *673:ZN 0
+37 *569:I 0.000180333
+38 *683:ZN 7.64434e-05
+39 *697:ZN 0
+40 *7:273 0.00112475
+41 *7:271 0.000228439
+42 *7:266 0.000295451
+43 *7:261 0.000506759
+44 *7:247 2.67812e-05
+45 *7:245 0.000551104
+46 *7:242 0.000178719
+47 *7:208 0.000150756
+48 *7:202 0.000169043
+49 *7:194 0.000239939
+50 *7:188 0.00016884
+51 *7:184 0.000148259
+52 *7:180 0.000147953
+53 *7:178 0.000129603
+54 *7:176 0.0001276
+55 *7:174 4.71448e-05
+56 *7:166 8.30503e-05
+57 *7:122 0.000242864
+58 *7:112 0.000500272
+59 *7:110 0.000226857
+60 *7:108 0.000101515
+61 *7:106 0.000157356
+62 *7:104 0.000173705
+63 *7:99 0.000170477
+64 *7:93 0.000105161
+65 *7:69 0.000162764
+66 *7:31 0.000337648
+67 *7:28 0.000197446
+68 *7:23 0.000121276
+69 *7:21 7.22088e-05
+70 *7:20 0.000121634
+71 *7:13 0.000100854
+72 *7:9 0.000105231
+73 *7:7 0.000177271
+74 *7:4 0.000217975
+75 *661:ZN *573:ZN 0
+76 *681:ZN *670:I 0
+77 *681:ZN *684:I 0
+78 *7:9 *8:825 0.000552382
+79 *7:13 *8:739 6.13757e-05
+80 *7:13 *8:820 0.00042963
+81 *7:13 *8:825 0.00042963
+82 *7:20 *8:721 0.000186509
+83 *7:20 *8:736 0.000497358
+84 *7:20 *8:739 4.09172e-05
+85 *7:20 *8:820 3.62657e-05
+86 *7:21 *8:739 2.07143e-05
+87 *7:23 *8:739 7.59525e-05
+88 *7:69 *559:ZN 0.00042963
+89 *7:69 *614:ZN 4.83334e-05
+90 *7:69 *8:739 1.38095e-05
+91 *7:184 *8:840 8.18344e-05
+92 *7:188 *8:825 4.83334e-05
+93 *7:188 *8:840 0.000306879
+94 *7:202 *8:840 3.45239e-05
+95 *7:208 *8:840 2.76191e-05
+96 *7:208 *8:845 0.00042963
+97 *597:ZN *681:ZN 0.000161641
+98 *603:I *7:122 0.000122752
+99 *607:ZN *690:I 2.76191e-05
+100 *669:I *7:28 0.000136773
+101 *671:I *7:245 0
+102 *671:I *7:261 2.76191e-05
+103 *671:I *7:266 0.000117863
+104 *671:I *7:271 6.13757e-05
+105 *673:I *683:ZN 0.000122751
+106 *673:I *7:31 6.13757e-05
+107 *675:I *7:13 3.45239e-05
+108 *675:I *7:20 2.68519e-05
+109 *675:I *7:184 0
+110 *675:I *7:188 2.04586e-05
+111 *677:I *677:ZN 0.000122751
+112 *677:I *7:122 0.000920636
+113 *679:I *679:ZN 6.13757e-05
+114 *679:I *692:I 1.22751e-05
+115 *679:I *7:108 3.73018e-05
+116 *679:I *7:110 0.000136773
+117 *679:I *7:112 2.48679e-05
+118 *685:I *677:ZN 2.07143e-05
+119 *685:I *692:I 0.000306879
+120 *685:I *7:122 9.66668e-05
+121 *689:I *689:ZN 0.000552382
+122 *689:I *7:180 6.13758e-05
+123 *689:I *7:184 2.04586e-05
+124 *689:I *7:261 0
+125 *690:ZN *7:7 0
+126 *692:ZN *679:ZN 1.22751e-05
+127 *692:ZN *692:I 0.00042963
+128 *692:ZN *694:I 0
+129 *697:I *7:7 0.000184127
+130 *697:I *7:93 0.000613757
+131 *753:I pbusout 0.000920636
+132 *759:I pbusout 0
+133 *759:ZN pbusout 0
+134 *2:9 *7:104 4.7822e-05
+135 *2:9 *7:174 0.000122751
+136 *2:9 *7:176 0.00014321
+137 *2:9 *7:242 6.13757e-06
+138 *2:15 *679:ZN 4.47532e-05
+139 *2:15 *7:104 8.26283e-05
+140 *2:17 *694:I 0.000306879
+141 *2:17 *7:93 6.13758e-05
+142 *2:17 *7:99 0.000163669
+143 *2:17 *7:104 0.000122752
+144 *2:19 *7:93 0.000327337
+145 *2:38 *7:180 0.000204586
+146 *2:67 *7:104 0
+147 *2:67 *7:106 0
+148 *2:67 *7:108 0
+149 *2:225 *694:I 0
+150 *3:502 *569:I 0
+151 *3:507 *7:31 0
+152 *3:612 *683:ZN 0.000552382
+153 *3:612 *7:31 0
+154 *3:778 *569:I 0
+155 *3:822 *692:I 7.36509e-05
+156 *3:822 *7:122 8.5926e-05
+157 *3:823 *681:ZN 2.48679e-05
+158 *3:823 *7:112 8.70153e-05
+159 *3:843 *7:112 4.97357e-05
+160 *3:906 *569:I 0
+161 *3:913 *571:I 1.53439e-05
+162 *3:913 *690:I 6.13757e-06
+163 *3:913 *7:21 0
+164 *3:913 *7:31 0
+165 *3:913 *7:69 1.53439e-05
+166 *3:925 *7:20 0.000808207
+167 *3:925 *7:28 7.6935e-05
+168 *3:934 *7:20 0.000186509
+169 *4:244 pbusout 0.00104339
+*RES
+1 *697:ZN *7:4 4.5 
+2 *7:4 *7:7 1.98 
+3 *7:7 *7:9 1.17 
+4 *7:9 *7:13 1.44 
+5 *7:13 *7:20 10.62 
+6 *7:20 *7:21 0.27 
+7 *7:21 *7:23 0.99 
+8 *7:23 *7:28 9.99 
+9 *7:28 *7:31 0.9 
+10 *7:31 *683:ZN 5.49 
+11 *7:31 *569:I 15.21 
+12 *7:28 *673:ZN 4.5 
+13 *7:28 *571:I 5.58 
+14 *7:23 *669:ZN 4.77 
+15 *7:21 *565:I 4.5 
+16 *7:20 *7:69 1.17 
+17 *7:69 *559:I 4.5 
+18 *7:69 *690:I 5.67 
+19 *7:13 *687:ZN 4.5 
+20 *7:9 *561:I 4.5 
+21 *7:7 *557:I 4.5 
+22 *7:4 *7:93 2.61 
+23 *7:93 *695:ZN 4.5 
+24 *7:93 *7:99 0.81 
+25 *7:99 *7:104 5.76 
+26 *7:104 *7:106 0.63 
+27 *7:106 *7:108 0.45 
+28 *7:108 *7:110 0.99 
+29 *7:110 *7:112 1.17 
+30 *7:112 *681:ZN 12.51 
+31 *7:112 *7:122 6.39 
+32 *7:122 *677:ZN 5.58 
+33 *7:122 *685:ZN 5.31 
+34 *7:110 *692:I 9.99 
+35 *7:108 *691:ZN 9 
+36 *7:106 *679:ZN 9.72 
+37 *7:104 *694:I 9.45 
+38 *7:99 *7:166 0.63 
+39 *7:166 *665:I 4.5 
+40 *7:166 *7:174 0.54 
+41 *7:174 *7:176 0.81 
+42 *7:176 *7:178 1.17 
+43 *7:178 *7:180 1.53 
+44 *7:180 *7:184 1.8 
+45 *7:184 *7:188 1.26 
+46 *7:188 *675:ZN 4.5 
+47 *7:188 *7:194 0.99 
+48 *7:194 *661:I 4.77 
+49 *7:194 *7:202 0.99 
+50 *7:202 *563:I 4.5 
+51 *7:202 *7:208 1.53 
+52 *7:208 *689:ZN 5.58 
+53 *7:208 *567:I 4.5 
+54 *7:194 *661:ZN 4.77 
+55 *7:184 *555:I 4.5 
+56 *7:180 *696:I 4.77 
+57 *7:178 *693:ZN 4.5 
+58 *7:176 *7:242 0.27 
+59 *7:242 *7:245 5.67 
+60 *7:245 *7:247 4.5 
+61 *7:247 *667:I 4.5 
+62 *7:247 *667:ZN 4.77 
+63 *7:245 *7:261 8.28 
+64 *7:261 *7:266 10.35 
+65 *7:266 *7:271 1.53 
+66 *7:271 *7:273 0.45 
+67 *7:273 *663:I 4.77 
+68 *7:273 pbusout 14.895 
+69 *7:271 *663:ZN 4.5 
+70 *7:266 *671:ZN 4.5 
+71 *7:261 *573:I 4.5 
+72 *7:242 *698:I 4.5 
+73 *7:174 *665:ZN 4.5 
+*END
+
+*D_NET *8 0.0599199
+*CONN
+*P pseries_gy I
+*I *622:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *768:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *557:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *573:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *567:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *563:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *555:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *561:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *719:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *711:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *707:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *715:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *725:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *721:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *713:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *746:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *717:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *754:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *559:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *565:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *614:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *571:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *770:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *682:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *678:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *684:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *680:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *583:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *772:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *581:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *582:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *579:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *577:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *620:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *580:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *613:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *771:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *674:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *676:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *670:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *672:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *590:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *590:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *616:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *765:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *619:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *618:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *723:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *709:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *764:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *752:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *760:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *762:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *758:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *575:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *617:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *750:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *748:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *584:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *586:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *586:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *767:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *578:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *576:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *592:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *592:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *744:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *744:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *688:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *588:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *588:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *686:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *738:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *738:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *549:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *549:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *551:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *551:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *553:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *553:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *740:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *740:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *742:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *742:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *547:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *547:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *766:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *594:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *598:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *606:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *596:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *600:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *610:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *608:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *602:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *604:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *631:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *612:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *643:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *637:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *647:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *649:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *639:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *635:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *633:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *641:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *645:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *769:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *773:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *621:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *756:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *615:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *569:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *774:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 pseries_gy 0.000657204
+2 *622:ZN 8.38564e-05
+3 *768:ZN 0
+4 *557:ZN 0
+5 *573:ZN 0.000116052
+6 *567:ZN 0
+7 *563:ZN 0
+8 *555:ZN 0
+9 *561:ZN 0
+10 *719:I 0
+11 *711:I 0.000108951
+12 *707:I 0
+13 *715:I 0
+14 *725:I 0
+15 *721:I 8.37786e-06
+16 *713:I 0
+17 *746:ZN 0
+18 *717:I 7.71859e-05
+19 *754:ZN 2.67812e-05
+20 *559:ZN 2.08108e-05
+21 *565:ZN 0
+22 *614:ZN 3.33939e-05
+23 *571:ZN 0
+24 *770:ZN 0
+25 *682:I 3.86433e-05
+26 *678:I 0
+27 *684:I 0.000141322
+28 *680:I 0
+29 *583:ZN 0
+30 *772:ZN 0
+31 *581:ZN 0
+32 *582:I 0
+33 *579:ZN 0.000104995
+34 *577:ZN 2.67812e-05
+35 *620:ZN 0
+36 *580:I 7.6328e-05
+37 *613:I 4.10346e-05
+38 *771:I 0
+39 *674:I 4.27544e-05
+40 *676:I 0
+41 *670:I 0.000126425
+42 *672:I 0
+43 *590:ZN 0
+44 *590:I 0
+45 *616:ZN 2.33419e-05
+46 *765:I 0
+47 *619:I 0
+48 *618:ZN 0
+49 *723:I 6.24895e-05
+50 *709:I 6.30172e-05
+51 *764:ZN 0
+52 *752:ZN 0
+53 *760:ZN 0
+54 *762:ZN 0
+55 *758:ZN 2.84321e-05
+56 *575:ZN 0
+57 *617:I 0
+58 *750:ZN 4.49814e-05
+59 *748:ZN 2.67812e-05
+60 *584:I 0
+61 *586:ZN 2.67812e-05
+62 *586:I 0
+63 *767:I 0
+64 *578:I 1.91948e-05
+65 *576:I 3.58881e-05
+66 *592:ZN 1.33906e-05
+67 *592:I 0
+68 *744:ZN 0
+69 *744:I 0
+70 *688:I 3.47385e-05
+71 *588:ZN 0
+72 *588:I 0
+73 *686:I 0.000216418
+74 *738:ZN 0
+75 *738:I 0
+76 *549:ZN 1.33906e-05
+77 *549:I 3.87401e-06
+78 *551:ZN 0
+79 *551:I 0
+80 *553:ZN 1.33906e-05
+81 *553:I 1.33906e-05
+82 *740:ZN 0
+83 *740:I 0
+84 *742:ZN 0
+85 *742:I 2.04797e-05
+86 *547:ZN 0
+87 *547:I 2.10995e-05
+88 *766:ZN 3.43175e-05
+89 *594:ZN 5.37832e-05
+90 *598:ZN 0.000146973
+91 *606:ZN 0
+92 *596:ZN 0
+93 *600:ZN 9.54344e-05
+94 *610:ZN 0
+95 *608:ZN 2.5812e-05
+96 *602:ZN 0
+97 *604:ZN 0.000124736
+98 *631:I 5.95336e-05
+99 *612:ZN 0
+100 *643:I 3.61944e-05
+101 *637:I 0.000162547
+102 *647:I 0
+103 *649:I 0
+104 *639:I 0
+105 *635:I 0
+106 *633:I 0
+107 *641:I 0
+108 *645:I 4.32399e-05
+109 *769:I 0
+110 *773:I 0
+111 *621:I 0
+112 *756:ZN 0.000245315
+113 *615:I 0
+114 *569:ZN 0.000144883
+115 *774:ZN 0
+116 *8:845 0.000172776
+117 *8:840 0.000226119
+118 *8:830 0.000310705
+119 *8:825 0.000200924
+120 *8:820 0.000122853
+121 *8:799 0.000196453
+122 *8:791 0.000156807
+123 *8:761 0.000178839
+124 *8:755 0.000147588
+125 *8:747 0.000144132
+126 *8:745 0.000136146
+127 *8:741 0.000246763
+128 *8:739 0.00029906
+129 *8:736 0.000285816
+130 *8:723 2.08108e-05
+131 *8:721 0.000122455
+132 *8:710 3.33939e-05
+133 *8:708 0.000179326
+134 *8:701 0.00018067
+135 *8:681 0.000241193
+136 *8:675 0.00015025
+137 *8:669 0.000226484
+138 *8:661 0.00018173
+139 *8:655 9.79979e-05
+140 *8:633 0.000201755
+141 *8:631 9.00487e-05
+142 *8:630 7.38005e-05
+143 *8:615 7.6328e-05
+144 *8:585 0.000225118
+145 *8:579 0.000117676
+146 *8:573 8.85191e-05
+147 *8:567 0.000101439
+148 *8:557 0.000180733
+149 *8:547 0.000170192
+150 *8:544 0.000205055
+151 *8:514 0.000162823
+152 *8:505 0.000156318
+153 *8:503 0.000177028
+154 *8:497 0.000169794
+155 *8:491 0.000245324
+156 *8:481 0.000283984
+157 *8:479 0.000233806
+158 *8:471 0.000213986
+159 *8:467 0.000124636
+160 *8:466 9.90202e-05
+161 *8:448 0.000110192
+162 *8:446 0.000116602
+163 *8:438 0.000124181
+164 *8:425 8.23393e-05
+165 *8:419 9.82187e-05
+166 *8:412 6.18554e-05
+167 *8:394 6.71423e-05
+168 *8:374 5.9811e-05
+169 *8:368 0.000129331
+170 *8:356 0.000347457
+171 *8:350 6.71329e-05
+172 *8:336 4.88052e-05
+173 *8:334 0.000109148
+174 *8:328 6.40373e-05
+175 *8:322 0.000102841
+176 *8:308 8.19653e-05
+177 *8:302 0.000150646
+178 *8:296 8.49596e-05
+179 *8:284 0.00010967
+180 *8:282 0.000185311
+181 *8:274 4.72963e-05
+182 *8:266 9.67492e-05
+183 *8:253 8.81007e-05
+184 *8:237 0.000207465
+185 *8:231 0.000110368
+186 *8:214 0.000146535
+187 *8:181 0.000163487
+188 *8:168 0.000140148
+189 *8:157 0.000256234
+190 *8:156 0.000218423
+191 *8:126 0.000709244
+192 *8:125 0.00014665
+193 *8:116 0.000318016
+194 *8:112 0.000323238
+195 *8:107 0.000158887
+196 *8:99 0.000202678
+197 *8:95 0.000117744
+198 *8:93 0.00010068
+199 *8:90 0.000130946
+200 *8:86 0.000174917
+201 *8:84 0.000335409
+202 *8:82 0.000481743
+203 *8:80 0.000405714
+204 *8:77 0.000278765
+205 *8:73 8.12829e-05
+206 *8:71 0.000130096
+207 *8:63 0.000188016
+208 *8:61 0.000244131
+209 *8:43 0.000432409
+210 *8:39 0.000218943
+211 *8:38 0.000238188
+212 *8:34 0.000175596
+213 *8:32 0.000141842
+214 *8:30 0.000101859
+215 *8:28 0.000130441
+216 *8:26 0.000166356
+217 *8:25 0.000168834
+218 *8:11 0.000183224
+219 *8:9 8.94634e-05
+220 *8:5 9.88186e-05
+221 *8:4 0.000131553
+222 *709:I *9:225 0.000621698
+223 *717:I *754:I 0
+224 *717:I *9:225 0.000675133
+225 *721:I *754:I 6.13757e-06
+226 *748:ZN *750:I 0
+227 *750:ZN *748:I 0.000225045
+228 *756:ZN *756:I 0
+229 *8:491 *9:205 8.05237e-05
+230 *8:514 *9:215 0.000683868
+231 *8:514 *9:225 0.000186509
+232 *8:755 *754:I 0.000152416
+233 *8:761 *754:I 6.13757e-05
+234 *8:761 *9:225 0.000245503
+235 *554:I *8:481 3.68254e-05
+236 *560:ZN *8:95 4.47532e-05
+237 *560:ZN *8:99 6.90477e-06
+238 *564:ZN *8:125 7.6935e-05
+239 *575:I *8:446 0.000225045
+240 *575:I *8:471 0.000102293
+241 *575:I *8:479 6.90477e-05
+242 *576:ZN *578:I 5.60053e-05
+243 *576:ZN *8:39 3.83598e-05
+244 *576:ZN *8:43 0
+245 *576:ZN *8:61 8.5926e-05
+246 *576:ZN *8:419 4.14286e-05
+247 *579:I *569:ZN 6.21429e-05
+248 *579:I *579:ZN 9.20636e-06
+249 *579:I *8:11 6.90477e-06
+250 *579:I *8:631 0.000184127
+251 *579:I *8:633 0.000675133
+252 *580:ZN *8:479 7.36509e-05
+253 *580:ZN *8:633 6.26544e-05
+254 *583:I *8:567 0.000116358
+255 *583:I *8:579 2.04586e-05
+256 *583:I *8:669 9.8457e-05
+257 *583:I *8:675 3.58025e-05
+258 *587:I *8:491 6.13757e-05
+259 *587:I *8:497 2.07143e-05
+260 *587:I *8:514 3.06879e-06
+261 *593:I *8:675 3.37566e-05
+262 *593:I *8:681 6.13757e-06
+263 *594:I *547:I 0
+264 *594:I *594:ZN 6.13757e-05
+265 *597:I *682:I 0.000122751
+266 *598:I *598:ZN 0.000122752
+267 *598:I *8:237 2.76191e-05
+268 *600:I *600:ZN 0.000777207
+269 *606:I *598:ZN 1.38095e-05
+270 *606:I *600:ZN 6.90231e-05
+271 *606:I *8:237 0.000675133
+272 *621:ZN *578:I 1.22751e-05
+273 *621:ZN *8:39 2.07143e-05
+274 *621:ZN *8:43 6.21429e-05
+275 *631:ZN *637:I 9.06641e-06
+276 *631:ZN *643:I 2.68519e-05
+277 *631:ZN *8:93 0.000122752
+278 *631:ZN *8:95 0.000122752
+279 *631:ZN *8:99 0.000184127
+280 *631:ZN *8:157 5.43985e-05
+281 *631:ZN *8:181 9.82012e-05
+282 *641:ZN *8:116 2.76081e-05
+283 *644:I *8:231 3.45239e-05
+284 *644:I *8:237 3.45239e-05
+285 *645:ZN *8:107 0.000797884
+286 *647:ZN *8:99 0.000122751
+287 *648:I *8:93 0.000135027
+288 *648:I *8:95 2.45503e-05
+289 *648:ZN *8:93 6.26544e-05
+290 *654:ZN *637:I 6.13757e-05
+291 *656:I *8:116 2.45503e-05
+292 *656:ZN *8:116 0.000184127
+293 *661:ZN *573:ZN 0
+294 *669:I *8:739 6.90477e-06
+295 *669:I *8:741 6.13757e-06
+296 *671:I *8:840 0
+297 *674:ZN *674:I 0.000675133
+298 *674:ZN *682:I 6.90477e-05
+299 *674:ZN *8:585 0.000245503
+300 *674:ZN *8:681 3.45239e-05
+301 *675:I *8:739 6.13757e-06
+302 *675:I *8:825 4.47532e-05
+303 *681:I *674:I 0.000107408
+304 *681:I *686:I 0
+305 *681:I *688:I 0.000265889
+306 *681:I *8:567 0.000306879
+307 *681:I *8:579 0.000107408
+308 *681:I *8:585 0.00014321
+309 *681:ZN *670:I 0
+310 *681:ZN *684:I 0
+311 *686:ZN *670:I 6.21697e-05
+312 *689:I *8:840 2.17539e-05
+313 *699:ZN *711:I 6.90477e-06
+314 *707:ZN *711:I 4.09172e-05
+315 *707:ZN *8:799 0.00042963
+316 *709:ZN *723:I 0
+317 *710:I *723:I 0
+318 *710:I *8:503 0
+319 *719:ZN *8:741 0.000675133
+320 *719:ZN *8:799 0.000135027
+321 *737:I *756:ZN 1.22751e-05
+322 *737:I *8:43 2.04586e-05
+323 *739:I *8:61 0
+324 *761:I *723:I 0
+325 *766:I *766:ZN 3.68254e-05
+326 *766:I *8:71 0
+327 *767:ZN *578:I 0.000245503
+328 *767:ZN *8:419 0.00042963
+329 *767:ZN *8:438 0.000306879
+330 *767:ZN *8:544 4.14286e-05
+331 *769:ZN *8:39 6.13757e-05
+332 *769:ZN *8:61 7.36509e-05
+333 *771:ZN *613:I 0.000552382
+334 *774:I *8:5 0.000675133
+335 *774:I *8:661 6.21429e-05
+336 *774:I *8:669 6.13758e-05
+337 *801:I pseries_gy 8.5926e-05
+338 *801:I *8:126 0.000306879
+339 *801:ZN pseries_gy 9.8457e-05
+340 *835:I pseries_gy 0.00104339
+341 *835:ZN pseries_gy 2.04586e-05
+342 *835:ZN *8:116 0
+343 *835:ZN *8:126 9.8457e-05
+344 *1:192 *8:181 2.45503e-05
+345 *1:198 *637:I 7.77426e-05
+346 *1:198 *643:I 4.91006e-05
+347 *1:198 *8:99 0
+348 *1:198 *8:107 0
+349 *1:198 *8:181 8.9762e-05
+350 *1:253 *8:112 2.48679e-05
+351 *1:311 *631:I 0
+352 *1:321 *8:93 2.04586e-05
+353 *1:327 *8:93 4.09172e-05
+354 *1:329 *600:ZN 2.68519e-05
+355 *1:329 *8:214 0.00042963
+356 *1:343 *600:ZN 6.90477e-06
+357 *1:351 *600:ZN 2.76191e-05
+358 *1:359 *600:ZN 2.68519e-05
+359 *1:361 *600:ZN 3.45239e-05
+360 *1:361 *8:214 0
+361 *1:361 *8:231 0.000306879
+362 *1:361 *8:237 0.000245503
+363 *1:449 *594:ZN 1.84127e-05
+364 *2:85 *684:I 0
+365 *2:91 *670:I 0
+366 *2:96 *686:I 0
+367 *2:115 *8:585 0.000675133
+368 *2:115 *8:681 7.59525e-05
+369 *2:132 *8:681 0.000675133
+370 *2:138 *682:I 0.000675133
+371 *2:138 *8:681 0.000245503
+372 *3:8 *8:38 6.21697e-05
+373 *3:9 *8:63 0
+374 *3:76 *604:ZN 0.000435189
+375 *3:163 *756:ZN 2.14815e-05
+376 *3:207 *756:ZN 4.60318e-05
+377 *3:287 *8:38 0.000186509
+378 *3:306 *8:34 4.14464e-05
+379 *3:306 *8:38 0.000145063
+380 *3:311 *578:I 6.13757e-05
+381 *3:311 *756:ZN 2.07143e-05
+382 *3:311 *8:43 0
+383 *3:311 *8:438 0.000797884
+384 *3:311 *8:446 9.82012e-05
+385 *3:316 *756:ZN 0
+386 *3:316 *8:446 0.000552382
+387 *3:336 *8:446 2.68519e-05
+388 *3:336 *8:481 6.13757e-05
+389 *3:338 *8:446 8.95063e-06
+390 *3:338 *8:448 8.95063e-05
+391 *3:338 *8:481 0.000134983
+392 *3:340 *750:ZN 1.79013e-05
+393 *3:340 *8:448 8.95063e-06
+394 *3:340 *8:481 3.68254e-05
+395 *3:344 *750:ZN 0.000265962
+396 *3:344 *8:481 8.28573e-05
+397 *3:344 *8:491 0
+398 *3:358 *8:497 0
+399 *3:374 *8:497 0
+400 *3:374 *8:503 0
+401 *3:415 *8:479 1.22751e-05
+402 *3:415 *8:481 4.91006e-05
+403 *3:415 *8:633 8.95063e-06
+404 *3:417 *8:481 0.000122751
+405 *3:433 *8:481 7.59525e-05
+406 *3:447 *577:ZN 0
+407 *3:447 *579:ZN 0
+408 *3:455 *579:ZN 0
+409 *3:463 *579:ZN 1.22751e-05
+410 *3:475 *569:ZN 0
+411 *3:491 *569:ZN 0
+412 *3:515 *717:I 1.22751e-05
+413 *3:532 *8:761 0
+414 *3:662 *8:30 4.14464e-05
+415 *3:662 *8:32 0.000165786
+416 *3:662 *8:34 6.21697e-05
+417 *3:669 *8:30 0.000227955
+418 *3:680 *580:I 0.000194357
+419 *3:680 *613:I 0
+420 *3:680 *8:467 1.53439e-05
+421 *3:680 *8:471 3.06879e-06
+422 *3:680 *8:544 2.14815e-05
+423 *3:680 *8:557 0.000306879
+424 *3:684 *616:ZN 1.22751e-05
+425 *3:684 *8:557 0.000122752
+426 *3:684 *8:567 8.18344e-05
+427 *3:714 *8:28 0.000165786
+428 *3:714 *8:30 6.21697e-05
+429 *3:719 *580:I 5.80512e-05
+430 *3:719 *8:557 3.68254e-05
+431 *3:719 *8:631 0.000306879
+432 *3:719 *8:655 0.000380529
+433 *3:719 *8:661 0.000102293
+434 *3:725 *8:557 7.16051e-05
+435 *3:725 *8:567 4.47532e-05
+436 *3:725 *8:661 0.000552382
+437 *3:725 *8:669 3.58025e-05
+438 *3:739 *8:26 4.14464e-05
+439 *3:739 *8:28 6.21697e-05
+440 *3:754 *8:26 0.000186509
+441 *3:759 *8:5 6.13758e-05
+442 *3:759 *8:9 0.000388713
+443 *3:759 *8:11 0.000306879
+444 *3:759 *8:631 2.76191e-05
+445 *3:759 *8:655 4.14286e-05
+446 *3:759 *8:661 4.47532e-05
+447 *3:771 *8:26 6.21697e-05
+448 *3:771 *8:701 4.14464e-05
+449 *3:778 *8:701 0.000227955
+450 *3:785 *8:5 0.000103572
+451 *3:785 *8:9 1.84127e-05
+452 *3:785 *8:11 1.53439e-05
+453 *3:789 *8:669 3.68254e-05
+454 *3:789 *8:675 3.06879e-06
+455 *3:792 *622:ZN 0
+456 *3:906 *8:701 6.21697e-05
+457 *3:906 *8:708 0.000165786
+458 *3:913 *614:ZN 0.00042963
+459 *3:925 *8:708 0.000103616
+460 *3:925 *8:721 0.000186509
+461 *3:943 *8:799 0
+462 *4:44 *8:791 0.000306879
+463 *4:54 *717:I 8.5926e-05
+464 *4:54 *8:761 0.000347674
+465 *4:62 *717:I 2.76191e-05
+466 *4:62 *754:ZN 0
+467 *4:124 *8:791 0.000245503
+468 *4:126 *8:791 0.000613757
+469 *4:126 *8:799 0.000184127
+470 *4:145 *8:799 0.000245503
+471 *4:294 *8:799 0
+472 *5:260 pseries_gy 0.000675133
+473 *6:259 *637:I 0
+474 *6:262 *637:I 0.000117863
+475 *6:377 *8:107 0.000184127
+476 *6:377 *8:116 1.38095e-05
+477 *6:380 *8:112 0.000310849
+478 *6:389 *8:99 1.22751e-05
+479 *6:389 *8:107 0.000171852
+480 *6:405 *8:112 0.000373019
+481 *6:412 *8:116 0
+482 *6:412 *8:125 0
+483 *6:440 pseries_gy 0
+484 *6:442 *8:126 0.000613757
+485 *6:531 pseries_gy 2.45503e-05
+486 *6:531 *8:116 0
+487 *7:9 *8:825 0.000552382
+488 *7:13 *8:739 6.13757e-05
+489 *7:13 *8:820 0.00042963
+490 *7:13 *8:825 0.00042963
+491 *7:20 *8:721 0.000186509
+492 *7:20 *8:736 0.000497358
+493 *7:20 *8:739 4.09172e-05
+494 *7:20 *8:820 3.62657e-05
+495 *7:21 *8:739 2.07143e-05
+496 *7:23 *8:739 7.59525e-05
+497 *7:69 *559:ZN 0.00042963
+498 *7:69 *614:ZN 4.83334e-05
+499 *7:69 *8:739 1.38095e-05
+500 *7:184 *8:840 8.18344e-05
+501 *7:188 *8:825 4.83334e-05
+502 *7:188 *8:840 0.000306879
+503 *7:202 *8:840 3.45239e-05
+504 *7:208 *8:840 2.76191e-05
+505 *7:208 *8:845 0.00042963
+*RES
+1 *774:ZN *8:4 4.5 
+2 *8:4 *8:5 1.35 
+3 *8:5 *8:9 0.9 
+4 *8:9 *8:11 0.63 
+5 *8:11 *569:ZN 5.94 
+6 *8:11 *615:I 4.5 
+7 *8:9 *8:25 4.5 
+8 *8:25 *8:26 1.17 
+9 *8:26 *8:28 0.99 
+10 *8:28 *8:30 1.35 
+11 *8:30 *8:32 0.81 
+12 *8:32 *8:34 0.45 
+13 *8:34 *8:38 6.03 
+14 *8:38 *8:39 0.63 
+15 *8:39 *8:43 1.98 
+16 *8:43 *756:ZN 7.02 
+17 *8:43 *621:I 4.5 
+18 *8:39 *773:I 4.5 
+19 *8:38 *8:61 1.17 
+20 *8:61 *8:63 0.81 
+21 *8:63 *769:I 4.5 
+22 *8:63 *8:71 1.44 
+23 *8:71 *8:73 0.27 
+24 *8:73 *8:77 0.72 
+25 *8:77 *8:80 5.67 
+26 *8:80 *8:82 2.25 
+27 *8:82 *8:84 1.71 
+28 *8:84 *8:86 0.81 
+29 *8:86 *8:90 5.13 
+30 *8:90 *8:93 2.16 
+31 *8:93 *8:95 0.63 
+32 *8:95 *8:99 1.44 
+33 *8:99 *645:I 4.95 
+34 *8:99 *8:107 1.53 
+35 *8:107 *8:112 10.17 
+36 *8:112 *8:116 6.84 
+37 *8:116 *641:I 9 
+38 *8:116 *8:125 5.67 
+39 *8:125 *8:126 1.35 
+40 *8:126 pseries_gy 7.875 
+41 *8:126 *633:I 4.5 
+42 *8:125 *635:I 4.5 
+43 *8:112 *639:I 4.5 
+44 *8:107 *649:I 4.5 
+45 *8:95 *647:I 4.5 
+46 *8:93 *8:156 4.5 
+47 *8:156 *8:157 0.99 
+48 *8:157 *637:I 10.8 
+49 *8:157 *8:168 4.5 
+50 *8:168 *643:I 5.13 
+51 *8:168 *8:181 1.98 
+52 *8:181 *612:ZN 4.5 
+53 *8:181 *631:I 5.76 
+54 *8:156 *604:ZN 10.35 
+55 *8:90 *602:ZN 4.5 
+56 *8:86 *608:ZN 9.63 
+57 *8:84 *8:214 5.13 
+58 *8:214 *610:ZN 4.5 
+59 *8:214 *600:ZN 6.48 
+60 *8:82 *8:231 5.22 
+61 *8:231 *596:ZN 4.5 
+62 *8:231 *8:237 1.35 
+63 *8:237 *606:ZN 4.5 
+64 *8:237 *598:ZN 6.39 
+65 *8:80 *8:253 4.5 
+66 *8:253 *594:ZN 5.13 
+67 *8:253 *766:ZN 4.95 
+68 *8:77 *8:266 0.63 
+69 *8:266 *547:I 4.95 
+70 *8:266 *8:274 0.27 
+71 *8:274 *547:ZN 4.5 
+72 *8:274 *8:282 0.72 
+73 *8:282 *8:284 1.17 
+74 *8:284 *742:I 4.77 
+75 *8:284 *742:ZN 4.5 
+76 *8:282 *8:296 0.81 
+77 *8:296 *740:I 4.5 
+78 *8:296 *8:302 0.27 
+79 *8:302 *740:ZN 4.5 
+80 *8:302 *8:308 0.99 
+81 *8:308 *553:I 4.77 
+82 *8:308 *553:ZN 4.77 
+83 *8:302 *8:322 0.99 
+84 *8:322 *551:I 4.5 
+85 *8:322 *8:328 0.27 
+86 *8:328 *551:ZN 4.5 
+87 *8:328 *8:334 0.45 
+88 *8:334 *8:336 0.99 
+89 *8:336 *549:I 4.77 
+90 *8:336 *549:ZN 4.77 
+91 *8:334 *8:350 0.63 
+92 *8:350 *738:I 4.5 
+93 *8:350 *8:356 0.27 
+94 *8:356 *738:ZN 4.5 
+95 *8:356 *686:I 7.11 
+96 *8:356 *8:368 0.99 
+97 *8:368 *588:I 4.5 
+98 *8:368 *8:374 0.27 
+99 *8:374 *588:ZN 4.5 
+100 *8:374 *688:I 5.67 
+101 *8:73 *744:I 4.5 
+102 *8:71 *744:ZN 4.5 
+103 *8:61 *8:394 0.99 
+104 *8:394 *592:I 4.5 
+105 *8:394 *592:ZN 4.77 
+106 *8:61 *576:I 4.95 
+107 *8:34 *8:412 4.5 
+108 *8:412 *578:I 4.95 
+109 *8:412 *8:419 0.99 
+110 *8:419 *767:I 4.5 
+111 *8:419 *8:425 1.17 
+112 *8:425 *586:I 4.5 
+113 *8:425 *586:ZN 4.77 
+114 *8:32 *8:438 6.03 
+115 *8:438 *584:I 4.5 
+116 *8:438 *8:446 1.98 
+117 *8:446 *8:448 0.99 
+118 *8:448 *748:ZN 4.77 
+119 *8:448 *750:ZN 5.85 
+120 *8:446 *617:I 4.5 
+121 *8:30 *8:466 4.5 
+122 *8:466 *8:467 0.45 
+123 *8:467 *8:471 1.62 
+124 *8:471 *575:ZN 4.5 
+125 *8:471 *8:479 1.8 
+126 *8:479 *8:481 2.61 
+127 *8:481 *758:ZN 4.77 
+128 *8:481 *8:491 1.8 
+129 *8:491 *762:ZN 4.5 
+130 *8:491 *8:497 1.17 
+131 *8:497 *760:ZN 4.5 
+132 *8:497 *8:503 0.63 
+133 *8:503 *8:505 0.63 
+134 *8:505 *752:ZN 4.5 
+135 *8:505 *8:514 6.12 
+136 *8:514 *764:ZN 9 
+137 *8:514 *709:I 9.99 
+138 *8:503 *723:I 5.22 
+139 *8:479 *618:ZN 4.5 
+140 *8:467 *619:I 4.5 
+141 *8:466 *8:544 0.99 
+142 *8:544 *8:547 5.67 
+143 *8:547 *765:I 9 
+144 *8:547 *8:557 5.94 
+145 *8:557 *616:ZN 4.77 
+146 *8:557 *8:567 1.98 
+147 *8:567 *590:I 4.5 
+148 *8:567 *8:573 0.27 
+149 *8:573 *590:ZN 4.5 
+150 *8:573 *8:579 1.17 
+151 *8:579 *672:I 4.5 
+152 *8:579 *8:585 1.53 
+153 *8:585 *670:I 14.67 
+154 *8:585 *676:I 4.5 
+155 *8:585 *674:I 5.67 
+156 *8:544 *771:I 4.5 
+157 *8:544 *613:I 5.67 
+158 *8:28 *8:615 4.5 
+159 *8:615 *580:I 6.39 
+160 *8:615 *620:ZN 4.5 
+161 *8:26 *8:630 4.5 
+162 *8:630 *8:631 0.63 
+163 *8:631 *8:633 2.07 
+164 *8:633 *577:ZN 4.77 
+165 *8:633 *579:ZN 5.76 
+166 *8:631 *582:I 4.5 
+167 *8:630 *8:655 0.9 
+168 *8:655 *581:ZN 4.5 
+169 *8:655 *8:661 1.35 
+170 *8:661 *772:ZN 4.5 
+171 *8:661 *8:669 1.98 
+172 *8:669 *583:ZN 4.5 
+173 *8:669 *8:675 1.53 
+174 *8:675 *680:I 4.5 
+175 *8:675 *8:681 1.53 
+176 *8:681 *684:I 14.67 
+177 *8:681 *678:I 4.5 
+178 *8:681 *682:I 5.67 
+179 *8:25 *8:701 1.35 
+180 *8:701 *770:ZN 9 
+181 *8:701 *8:708 1.17 
+182 *8:708 *8:710 4.5 
+183 *8:710 *571:ZN 4.5 
+184 *8:710 *614:ZN 5.13 
+185 *8:708 *8:721 1.17 
+186 *8:721 *8:723 4.5 
+187 *8:723 *565:ZN 4.5 
+188 *8:723 *559:ZN 5.13 
+189 *8:721 *8:736 5.31 
+190 *8:736 *8:739 1.98 
+191 *8:739 *8:741 2.43 
+192 *8:741 *8:745 1.26 
+193 *8:745 *8:747 0.81 
+194 *8:747 *754:ZN 4.77 
+195 *8:747 *8:755 0.99 
+196 *8:755 *8:761 10.44 
+197 *8:761 *717:I 5.94 
+198 *8:761 *746:ZN 4.5 
+199 *8:755 *713:I 4.5 
+200 *8:745 *721:I 4.77 
+201 *8:741 *725:I 4.5 
+202 *8:741 *8:791 1.8 
+203 *8:791 *715:I 4.5 
+204 *8:791 *8:799 1.98 
+205 *8:799 *707:I 4.5 
+206 *8:799 *711:I 5.67 
+207 *8:739 *719:I 4.5 
+208 *8:736 *8:820 10.08 
+209 *8:820 *561:ZN 4.5 
+210 *8:820 *8:825 1.35 
+211 *8:825 *8:830 10.17 
+212 *8:830 *555:ZN 4.5 
+213 *8:830 *8:840 10.98 
+214 *8:840 *563:ZN 4.5 
+215 *8:840 *8:845 0.63 
+216 *8:845 *567:ZN 4.5 
+217 *8:845 *573:ZN 5.67 
+218 *8:825 *557:ZN 4.5 
+219 *8:5 *768:ZN 4.5 
+220 *8:4 *622:ZN 14.67 
+*END
+
+*D_NET *9 0.0190681
+*CONN
+*P pseries_gygy I
+*I *733:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *731:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *729:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *727:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *732:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *735:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *728:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *730:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *710:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *720:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *760:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *762:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *758:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *754:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *746:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *764:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *752:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *726:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *712:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *722:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *700:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *750:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *748:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *724:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *708:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *756:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *716:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *714:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *704:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *702:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *702:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *704:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *706:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *706:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *700:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *718:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *734:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *736:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 pseries_gygy 0.000464085
+2 *733:I 0
+3 *731:I 0
+4 *729:I 0
+5 *727:I 0
+6 *732:ZN 0
+7 *735:I 6.0761e-05
+8 *728:ZN 0
+9 *730:ZN 0
+10 *710:ZN 0
+11 *720:ZN 0
+12 *760:I 0
+13 *762:I 0
+14 *758:I 0
+15 *754:I 0.000129477
+16 *746:I 0
+17 *764:I 0
+18 *752:I 0
+19 *726:ZN 4.34875e-05
+20 *712:ZN 0
+21 *722:ZN 0
+22 *700:ZN 0
+23 *750:I 2.23177e-05
+24 *748:I 3.38343e-05
+25 *724:ZN 0
+26 *708:ZN 0
+27 *756:I 0.000123031
+28 *716:ZN 5.81626e-05
+29 *714:ZN 0
+30 *704:ZN 0
+31 *702:ZN 0
+32 *702:I 2.67812e-05
+33 *704:I 0
+34 *706:I 0
+35 *706:ZN 0
+36 *700:I 0
+37 *718:ZN 8.65503e-05
+38 *734:ZN 0
+39 *736:ZN 8.04587e-05
+40 *9:225 0.00023934
+41 *9:215 0.000169538
+42 *9:208 0.000223729
+43 *9:205 0.000230327
+44 *9:195 0.000135209
+45 *9:193 7.32148e-05
+46 *9:190 0.0002087
+47 *9:161 0.000148416
+48 *9:134 0.000214247
+49 *9:129 0.000119943
+50 *9:111 0.000175412
+51 *9:100 0.000196697
+52 *9:96 7.03834e-05
+53 *9:94 0.00018842
+54 *9:88 0.000143902
+55 *9:81 0.000179713
+56 *9:77 0.000238951
+57 *9:74 0.000146245
+58 *9:72 0.000170874
+59 *9:66 7.85054e-05
+60 *9:65 0.000132799
+61 *9:61 0.000220012
+62 *9:59 0.000173058
+63 *9:57 0.000303872
+64 *9:55 0.000188998
+65 *9:53 0.000305024
+66 *9:51 0.000741754
+67 *9:49 0.000185852
+68 *9:47 0.000150242
+69 *9:46 0.000183416
+70 *9:42 0.000182359
+71 *9:37 0.000248767
+72 *9:32 0.000174103
+73 *9:19 0.000142439
+74 *9:14 0.000150186
+75 *9:12 0.000198413
+76 *9:9 0.000216342
+77 nseries_gy *9:66 8.95063e-06
+78 nseries_gy *9:72 0.000265962
+79 nseries_gy *9:74 0
+80 nseries_gy *9:161 8.18344e-05
+81 *701:I *9:46 0
+82 *709:I *9:225 0.000621698
+83 *710:I *9:190 4.09172e-05
+84 *714:I *716:ZN 6.13758e-05
+85 *717:I *754:I 0
+86 *717:I *9:225 0.000675133
+87 *718:I *718:ZN 0.000920636
+88 *720:I *9:190 6.13758e-05
+89 *721:I *754:I 6.13757e-06
+90 *722:I *9:72 9.20636e-06
+91 *723:ZN *9:53 0
+92 *723:ZN *9:55 0
+93 *723:ZN *9:215 3.49705e-05
+94 *723:ZN *9:225 0.000125894
+95 *728:I *9:42 4.91006e-05
+96 *728:I *9:46 0.000135027
+97 *748:ZN *750:I 0
+98 *750:ZN *748:I 0.000225045
+99 *753:ZN *9:9 6.13757e-05
+100 *753:ZN *9:12 2.48679e-05
+101 *756:ZN *756:I 0
+102 *775:I *9:94 0
+103 *3:167 *716:ZN 0.00057284
+104 *3:167 *756:I 1.22751e-05
+105 *3:167 *9:100 8.95063e-06
+106 *3:167 *9:111 2.68519e-05
+107 *3:167 *9:134 3.68254e-05
+108 *3:171 *716:ZN 0
+109 *3:171 *756:I 0
+110 *3:171 *9:88 2.04586e-05
+111 *3:171 *9:94 0.000122751
+112 *3:171 *9:100 6.90477e-06
+113 *3:171 *9:134 6.13758e-05
+114 *3:177 *756:I 0
+115 *3:344 *748:I 5.37038e-05
+116 *3:344 *9:161 8.95063e-05
+117 *3:344 *9:205 0.000135027
+118 *3:350 *9:72 6.57232e-05
+119 *3:350 *9:161 6.26544e-05
+120 *3:350 *9:205 3.68254e-05
+121 *3:374 *9:190 0.000184127
+122 *3:509 *754:I 0.000293836
+123 *3:509 *9:225 0.000920636
+124 *3:515 *9:225 0.000184127
+125 *3:532 *9:225 0.000186509
+126 *3:561 *718:ZN 4.14286e-05
+127 *3:561 *9:19 2.07143e-05
+128 *3:564 *9:19 9.32547e-06
+129 *3:573 *9:14 9.32547e-06
+130 *3:573 *9:19 6.21698e-06
+131 *3:580 *9:12 2.79764e-05
+132 *3:580 *9:14 1.2434e-05
+133 *3:612 *754:I 1.79013e-05
+134 *4:7 *9:42 4.47532e-05
+135 *4:7 *9:46 6.26544e-05
+136 *4:16 *9:42 0
+137 *4:21 *9:42 0
+138 *4:40 *718:ZN 0
+139 *4:62 *754:I 0
+140 *4:62 *9:225 6.13757e-06
+141 *4:65 *9:49 0
+142 *4:65 *9:51 0
+143 *4:67 *9:51 0
+144 *4:67 *9:53 0
+145 *4:67 *9:225 6.99409e-06
+146 *4:124 *718:ZN 2.07143e-05
+147 *4:126 *718:ZN 6.21429e-05
+148 *4:172 *9:19 0.000184127
+149 *4:172 *9:32 0.000208634
+150 *4:172 *9:37 0.000184127
+151 *4:190 *9:32 0.000184127
+152 *4:190 *9:37 0.000184127
+153 *4:214 *9:9 1.38095e-05
+154 *4:244 *9:9 0.000736509
+155 *4:258 *9:9 4.83334e-05
+156 *4:280 *718:ZN 0.000122752
+157 *4:280 *9:19 8.18343e-05
+158 *4:280 *9:32 0.000491006
+159 *8:491 *9:205 8.05237e-05
+160 *8:514 *9:215 0.000683868
+161 *8:514 *9:225 0.000186509
+162 *8:755 *754:I 0.000152416
+163 *8:761 *754:I 6.13757e-05
+164 *8:761 *9:225 0.000245503
+*RES
+1 *736:ZN *9:9 6.03 
+2 *9:9 *9:12 6.03 
+3 *9:12 *9:14 0.63 
+4 *9:14 *9:19 5.58 
+5 *9:19 *734:ZN 4.5 
+6 *9:19 *718:ZN 6.39 
+7 *9:14 *9:32 5.49 
+8 *9:32 *9:37 5.94 
+9 *9:37 *9:42 5.94 
+10 *9:42 *9:46 5.67 
+11 *9:46 *9:47 0.45 
+12 *9:47 *9:49 1.17 
+13 *9:49 *9:51 0.81 
+14 *9:51 *9:53 1.89 
+15 *9:53 *9:55 1.17 
+16 *9:55 *9:57 0.63 
+17 *9:57 *9:59 0.63 
+18 *9:59 *9:61 1.17 
+19 *9:61 *9:65 5.67 
+20 *9:65 *9:66 0.27 
+21 *9:66 *700:I 4.5 
+22 *9:66 *9:72 1.17 
+23 *9:72 *9:74 0.27 
+24 *9:74 *9:77 5.67 
+25 *9:77 *9:81 5.67 
+26 *9:81 *706:ZN 4.5 
+27 *9:81 *9:88 0.72 
+28 *9:88 *706:I 4.5 
+29 *9:88 *9:94 0.99 
+30 *9:94 *9:96 0.27 
+31 *9:96 *9:100 0.54 
+32 *9:100 *704:I 4.5 
+33 *9:100 *9:111 10.26 
+34 *9:111 *702:I 4.77 
+35 *9:111 *702:ZN 4.5 
+36 *9:96 *704:ZN 4.5 
+37 *9:94 *9:129 9.99 
+38 *9:129 *714:ZN 4.5 
+39 *9:129 *9:134 0.63 
+40 *9:134 *716:ZN 5.76 
+41 *9:134 *756:I 6.3 
+42 *9:77 *708:ZN 9 
+43 *9:74 *724:ZN 4.5 
+44 *9:72 *9:161 1.53 
+45 *9:161 *748:I 6.03 
+46 *9:161 *750:I 4.77 
+47 *9:65 *700:ZN 4.5 
+48 *9:61 *722:ZN 9 
+49 *9:59 *712:ZN 9 
+50 *9:57 *9:190 6.03 
+51 *9:190 *9:193 5.67 
+52 *9:193 *9:195 0.63 
+53 *9:195 *726:ZN 9.45 
+54 *9:195 *9:205 5.67 
+55 *9:205 *9:208 6.75 
+56 *9:208 *752:I 9 
+57 *9:208 *9:215 1.17 
+58 *9:215 *764:I 9 
+59 *9:215 *9:225 7.74 
+60 *9:225 *746:I 4.5 
+61 *9:225 *754:I 6.57 
+62 *9:205 *758:I 4.5 
+63 *9:193 *762:I 9 
+64 *9:190 *760:I 4.5 
+65 *9:55 *720:ZN 9 
+66 *9:53 *710:ZN 9 
+67 *9:51 pseries_gygy 8.865 
+68 *9:49 *730:ZN 9 
+69 *9:47 *728:ZN 9 
+70 *9:46 *735:I 9.63 
+71 *9:42 *732:ZN 4.5 
+72 *9:37 *727:I 9 
+73 *9:32 *729:I 4.5 
+74 *9:12 *731:I 9 
+75 *9:9 *733:I 4.5 
+*END
+
+*D_NET *10 0.0241857
+*CONN
+*P pshunt_gy I
+*I *798:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *776:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *780:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *782:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *778:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *832:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *778:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *822:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *782:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *840:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *780:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *828:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *776:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *805:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *830:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *807:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *826:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *806:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *810:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *788:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *834:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *811:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *809:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *794:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *790:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *800:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *836:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *838:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *808:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *796:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *786:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *802:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *784:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *824:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *804:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *803:I I *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *792:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*I *812:ZN O *D gf180mcu_fd_sc_mcu7t5v0__inv_1
+*CAP
+1 pshunt_gy 0.000597497
+2 *798:ZN 6.38418e-05
+3 *776:ZN 0
+4 *780:ZN 0
+5 *782:ZN 0
+6 *778:I 0
+7 *832:I 0.000139825
+8 *778:ZN 0
+9 *822:I 0
+10 *782:I 0
+11 *840:I 0
+12 *780:I 0
+13 *828:I 0
+14 *776:I 0
+15 *805:I 0
+16 *830:I 0
+17 *807:I 0.000116869
+18 *826:I 0
+19 *806:ZN 0
+20 *810:ZN 0
+21 *788:ZN 0.000100525
+22 *834:I 0
+23 *811:I 7.6254e-05
+24 *809:I 0
+25 *794:ZN 6.5961e-05
+26 *790:ZN 0
+27 *800:ZN 8.49621e-05
+28 *836:I 0
+29 *838:I 0
+30 *808:ZN 0.000107108
+31 *796:ZN 0.000106735
+32 *786:ZN 2.16695e-05
+33 *802:ZN 0
+34 *784:ZN 0
+35 *824:I 0
+36 *804:ZN 0
+37 *803:I 0
+38 *792:ZN 3.78415e-05
+39 *812:ZN 2.48265e-05
+40 *10:267 0.000163434
+41 *10:261 0.000135006
+42 *10:256 0.000209004
+43 *10:251 0.000124388
+44 *10:245 0.000306538
+45 *10:235 0.000369683
+46 *10:232 0.000115154
+47 *10:226 0.000155788
+48 *10:219 0.000240215
+49 *10:214 0.000131972
+50 *10:208 0.000208562
+51 *10:200 0.000269963
+52 *10:184 0.000311717
+53 *10:178 0.000252437
+54 *10:142 0.000487734
+55 *10:131 0.000628158
+56 *10:124 0.00023339
+57 *10:115 0.000223995
+58 *10:108 0.000205075
+59 *10:104 0.000336292
+60 *10:89 0.000107108
+61 *10:87 0.000129954
+62 *10:71 0.000184236
+63 *10:65 0.000127873
+64 *10:57 0.000109531
+65 *10:51 0.000100789
+66 *10:48 0.000157218
+67 *10:41 9.58043e-05
+68 *10:25 0.000694973
+69 *10:22 0.000153731
+70 *10:19 0.000112823
+71 *10:13 0.000159588
+72 *10:5 0.000198367
+73 nbusin_nshunt *10:208 0.000265962
+74 nbusin_nshunt *10:226 8.9762e-05
+75 nshunt_gy *794:ZN 1.38095e-05
+76 nshunt_gy *800:ZN 0
+77 *779:I *798:ZN 0
+78 *779:I *10:13 9.20636e-06
+79 *779:I *10:19 3.06879e-06
+80 *779:I *10:51 1.38095e-05
+81 *783:I *788:ZN 4.47532e-05
+82 *790:I *800:ZN 2.14815e-05
+83 *791:I *794:ZN 6.90477e-06
+84 *792:I *807:I 0
+85 *794:I *794:ZN 0.000116102
+86 *802:I *786:ZN 3.06879e-06
+87 *802:I *10:65 0
+88 *805:ZN *10:184 0.000306879
+89 *805:ZN *10:200 0.000527831
+90 *826:ZN *798:ZN 2.45503e-05
+91 *826:ZN *10:13 8.74605e-05
+92 *826:ZN *10:178 0.000122751
+93 *828:ZN *10:226 1.22751e-05
+94 *828:ZN *10:232 0
+95 *830:ZN *796:ZN 2.71992e-05
+96 *830:ZN *10:184 0.000552382
+97 *832:ZN *10:261 0
+98 *833:I *10:65 6.90477e-05
+99 *833:I *10:71 2.07143e-05
+100 *836:ZN *788:ZN 4.47532e-05
+101 *836:ZN *800:ZN 8.5926e-05
+102 *836:ZN *10:108 9.8457e-05
+103 *839:I *794:ZN 0
+104 *842:ZN *786:ZN 0
+105 *842:ZN *10:71 0.000552382
+106 *1:12 *10:219 2.79764e-05
+107 *1:19 *10:208 0.000306879
+108 *1:19 *10:214 0
+109 *1:23 *786:ZN 2.04586e-05
+110 *1:23 *10:200 7.59525e-05
+111 *1:23 *10:208 6.44445e-05
+112 *1:25 *10:71 0.000265962
+113 *1:25 *10:184 1.84127e-05
+114 *1:25 *10:200 8.95063e-06
+115 *1:27 *798:ZN 8.95063e-05
+116 *1:27 *10:65 0.000225045
+117 *1:27 *10:71 4.09172e-05
+118 *1:27 *10:184 6.13757e-06
+119 *1:32 *798:ZN 8.95063e-06
+120 *1:32 *10:57 0.000675133
+121 *1:32 *10:65 8.18344e-05
+122 *1:32 *10:87 0
+123 *1:32 *10:104 0
+124 *1:32 *10:178 9.20636e-06
+125 *1:152 *10:256 0
+126 *5:6 *811:I 0.000621698
+127 *5:8 *811:I 0.000186509
+128 *5:8 *10:142 0.000746038
+129 *5:10 *10:142 0.000497358
+130 *5:12 *10:142 0.000248679
+131 *5:14 *10:142 0.00136774
+132 *5:16 *10:142 0.000746038
+133 *5:21 *794:ZN 4.47532e-05
+134 *5:21 *10:142 0.000808207
+135 *5:30 *10:131 6.21143e-06
+136 *5:30 *10:142 2.48624e-05
+137 *5:32 *10:131 2.48679e-05
+138 *5:34 *10:131 1.2434e-05
+139 *5:39 *808:ZN 4.14286e-05
+140 *5:39 *10:104 6.21697e-05
+141 *5:39 *10:108 0.000457606
+142 *5:39 *10:115 2.17594e-05
+143 *5:39 *10:124 3.41934e-05
+144 *5:39 *10:131 9.32547e-06
+145 *5:43 *808:ZN 6.90477e-06
+146 *5:43 *10:108 0.000306879
+147 *5:46 *10:48 0
+148 *5:46 *10:87 0
+149 *5:46 *10:104 0
+150 *5:51 *808:ZN 3.06879e-06
+151 *5:51 *10:25 0.000102293
+152 *5:51 *10:41 0
+153 *5:51 *10:48 0
+154 *5:59 *808:ZN 3.06879e-05
+155 *5:59 *10:25 0.000204586
+156 *5:59 *10:51 8.95063e-06
+157 *5:65 *10:19 1.38095e-05
+158 *5:65 *10:51 2.68519e-05
+159 *5:70 pshunt_gy 0
+160 *5:70 *10:22 0.000435189
+161 *5:70 *10:41 0.000310849
+162 *5:73 *10:13 0.000122751
+163 *5:73 *10:19 0.000294603
+164 *5:77 *792:ZN 8.18344e-05
+165 *5:77 *10:5 3.06879e-06
+166 *5:77 *10:13 0.000245503
+167 *5:83 *792:ZN 0.000225045
+168 *5:83 *10:184 3.98942e-05
+169 *5:111 *10:19 4.14286e-05
+170 *5:111 *10:51 8.05557e-05
+171 *5:143 *800:ZN 3.06879e-06
+172 *5:153 *788:ZN 1.22751e-05
+173 *5:155 *788:ZN 0
+174 *6:11 *10:261 0
+175 *6:15 *10:245 0
+176 *6:15 *10:261 0.000184127
+177 *6:15 *10:267 8.95063e-06
+178 *6:19 *10:245 0
+179 *6:65 *10:226 9.20636e-06
+180 *6:97 *796:ZN 8.15977e-05
+181 *6:120 *10:71 0
+182 *6:132 *10:57 0.000225045
+183 *6:132 *10:65 0.000205097
+184 *6:136 *788:ZN 0
+185 *6:136 *808:ZN 0
+186 *6:136 *10:51 0.000552381
+187 *6:136 *10:57 6.13757e-05
+188 *6:139 *10:104 0.000227955
+189 *6:188 *10:41 6.21698e-06
+190 *6:188 *10:48 2.17594e-05
+191 *6:188 *10:87 9.32547e-06
+*RES
+1 *812:ZN *10:5 4.77 
+2 *10:5 *792:ZN 5.85 
+3 *10:5 *10:13 1.35 
+4 *10:13 *10:19 1.53 
+5 *10:19 *10:22 5.13 
+6 *10:22 *10:25 5.85 
+7 *10:25 pshunt_gy 14.715 
+8 *10:25 *803:I 4.5 
+9 *10:22 *10:41 0.63 
+10 *10:41 *804:ZN 9 
+11 *10:41 *10:48 0.63 
+12 *10:48 *10:51 5.67 
+13 *10:51 *824:I 4.5 
+14 *10:51 *10:57 1.17 
+15 *10:57 *784:ZN 4.5 
+16 *10:57 *10:65 1.62 
+17 *10:65 *802:ZN 4.5 
+18 *10:65 *10:71 1.35 
+19 *10:71 *786:ZN 4.77 
+20 *10:71 *796:ZN 14.49 
+21 *10:48 *10:87 0.45 
+22 *10:87 *10:89 4.5 
+23 *10:89 *808:ZN 5.76 
+24 *10:89 *838:I 4.5 
+25 *10:87 *10:104 5.67 
+26 *10:104 *10:108 6.84 
+27 *10:108 *836:I 9 
+28 *10:108 *10:115 0.63 
+29 *10:115 *800:ZN 10.17 
+30 *10:115 *10:124 0.99 
+31 *10:124 *790:ZN 9 
+32 *10:124 *10:131 1.53 
+33 *10:131 *794:ZN 10.08 
+34 *10:131 *10:142 7.11 
+35 *10:142 *809:I 9 
+36 *10:142 *811:I 10.35 
+37 *10:104 *834:I 4.5 
+38 *10:104 *788:ZN 5.76 
+39 *10:19 *810:ZN 4.5 
+40 *10:13 *806:ZN 4.5 
+41 *10:5 *10:178 1.26 
+42 *10:178 *826:I 4.5 
+43 *10:178 *10:184 2.61 
+44 *10:184 *807:I 14.49 
+45 *10:184 *830:I 4.5 
+46 *10:184 *10:200 1.62 
+47 *10:200 *805:I 4.5 
+48 *10:200 *10:208 2.52 
+49 *10:208 *776:I 4.5 
+50 *10:208 *10:214 0.27 
+51 *10:214 *10:219 9.99 
+52 *10:219 *828:I 4.5 
+53 *10:219 *10:226 1.44 
+54 *10:226 *780:I 4.5 
+55 *10:226 *10:232 0.27 
+56 *10:232 *10:235 5.49 
+57 *10:235 *840:I 9 
+58 *10:235 *10:245 7.02 
+59 *10:245 *782:I 4.5 
+60 *10:245 *10:251 0.27 
+61 *10:251 *10:256 9.99 
+62 *10:256 *822:I 4.5 
+63 *10:256 *10:261 0.99 
+64 *10:261 *778:ZN 4.5 
+65 *10:261 *10:267 0.27 
+66 *10:267 *832:I 14.85 
+67 *10:267 *778:I 4.5 
+68 *10:251 *782:ZN 4.5 
+69 *10:232 *780:ZN 4.5 
+70 *10:214 *776:ZN 4.5 
+71 *10:178 *798:ZN 5.94 
+*END

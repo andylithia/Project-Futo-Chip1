@@ -1,0 +1,591 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO captune_1p
+  CLASS BLOCK ;
+  FOREIGN captune_1p ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 60.000 ;
+  PIN cap
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 49.280 56.000 49.840 60.000 ;
+    END
+  END cap
+  PIN tune[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 14.000 0.000 14.560 4.000 ;
+    END
+  END tune[0]
+  PIN tune[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 25.200 0.000 25.760 4.000 ;
+    END
+  END tune[10]
+  PIN tune[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 26.320 0.000 26.880 4.000 ;
+    END
+  END tune[11]
+  PIN tune[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 27.440 0.000 28.000 4.000 ;
+    END
+  END tune[12]
+  PIN tune[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 28.560 0.000 29.120 4.000 ;
+    END
+  END tune[13]
+  PIN tune[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 29.680 0.000 30.240 4.000 ;
+    END
+  END tune[14]
+  PIN tune[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 30.800 0.000 31.360 4.000 ;
+    END
+  END tune[15]
+  PIN tune[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 31.920 0.000 32.480 4.000 ;
+    END
+  END tune[16]
+  PIN tune[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 33.040 0.000 33.600 4.000 ;
+    END
+  END tune[17]
+  PIN tune[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 34.160 0.000 34.720 4.000 ;
+    END
+  END tune[18]
+  PIN tune[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 35.280 0.000 35.840 4.000 ;
+    END
+  END tune[19]
+  PIN tune[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 15.120 0.000 15.680 4.000 ;
+    END
+  END tune[1]
+  PIN tune[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.400 0.000 36.960 4.000 ;
+    END
+  END tune[20]
+  PIN tune[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 37.520 0.000 38.080 4.000 ;
+    END
+  END tune[21]
+  PIN tune[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 38.640 0.000 39.200 4.000 ;
+    END
+  END tune[22]
+  PIN tune[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 39.760 0.000 40.320 4.000 ;
+    END
+  END tune[23]
+  PIN tune[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 40.880 0.000 41.440 4.000 ;
+    END
+  END tune[24]
+  PIN tune[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 42.000 0.000 42.560 4.000 ;
+    END
+  END tune[25]
+  PIN tune[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 43.120 0.000 43.680 4.000 ;
+    END
+  END tune[26]
+  PIN tune[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 44.240 0.000 44.800 4.000 ;
+    END
+  END tune[27]
+  PIN tune[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 45.360 0.000 45.920 4.000 ;
+    END
+  END tune[28]
+  PIN tune[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 46.480 0.000 47.040 4.000 ;
+    END
+  END tune[29]
+  PIN tune[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 16.240 0.000 16.800 4.000 ;
+    END
+  END tune[2]
+  PIN tune[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 47.600 0.000 48.160 4.000 ;
+    END
+  END tune[30]
+  PIN tune[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 48.720 0.000 49.280 4.000 ;
+    END
+  END tune[31]
+  PIN tune[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 49.840 0.000 50.400 4.000 ;
+    END
+  END tune[32]
+  PIN tune[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 50.960 0.000 51.520 4.000 ;
+    END
+  END tune[33]
+  PIN tune[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 52.080 0.000 52.640 4.000 ;
+    END
+  END tune[34]
+  PIN tune[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 53.200 0.000 53.760 4.000 ;
+    END
+  END tune[35]
+  PIN tune[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 54.320 0.000 54.880 4.000 ;
+    END
+  END tune[36]
+  PIN tune[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 55.440 0.000 56.000 4.000 ;
+    END
+  END tune[37]
+  PIN tune[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 56.560 0.000 57.120 4.000 ;
+    END
+  END tune[38]
+  PIN tune[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 57.680 0.000 58.240 4.000 ;
+    END
+  END tune[39]
+  PIN tune[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 17.360 0.000 17.920 4.000 ;
+    END
+  END tune[3]
+  PIN tune[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 58.800 0.000 59.360 4.000 ;
+    END
+  END tune[40]
+  PIN tune[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 59.920 0.000 60.480 4.000 ;
+    END
+  END tune[41]
+  PIN tune[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 61.040 0.000 61.600 4.000 ;
+    END
+  END tune[42]
+  PIN tune[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 62.160 0.000 62.720 4.000 ;
+    END
+  END tune[43]
+  PIN tune[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 63.280 0.000 63.840 4.000 ;
+    END
+  END tune[44]
+  PIN tune[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 64.400 0.000 64.960 4.000 ;
+    END
+  END tune[45]
+  PIN tune[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 65.520 0.000 66.080 4.000 ;
+    END
+  END tune[46]
+  PIN tune[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 66.640 0.000 67.200 4.000 ;
+    END
+  END tune[47]
+  PIN tune[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 67.760 0.000 68.320 4.000 ;
+    END
+  END tune[48]
+  PIN tune[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 68.880 0.000 69.440 4.000 ;
+    END
+  END tune[49]
+  PIN tune[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 18.480 0.000 19.040 4.000 ;
+    END
+  END tune[4]
+  PIN tune[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 70.000 0.000 70.560 4.000 ;
+    END
+  END tune[50]
+  PIN tune[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 71.120 0.000 71.680 4.000 ;
+    END
+  END tune[51]
+  PIN tune[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 72.240 0.000 72.800 4.000 ;
+    END
+  END tune[52]
+  PIN tune[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 73.360 0.000 73.920 4.000 ;
+    END
+  END tune[53]
+  PIN tune[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 74.480 0.000 75.040 4.000 ;
+    END
+  END tune[54]
+  PIN tune[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 75.600 0.000 76.160 4.000 ;
+    END
+  END tune[55]
+  PIN tune[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 76.720 0.000 77.280 4.000 ;
+    END
+  END tune[56]
+  PIN tune[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 77.840 0.000 78.400 4.000 ;
+    END
+  END tune[57]
+  PIN tune[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 78.960 0.000 79.520 4.000 ;
+    END
+  END tune[58]
+  PIN tune[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 80.080 0.000 80.640 4.000 ;
+    END
+  END tune[59]
+  PIN tune[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 19.600 0.000 20.160 4.000 ;
+    END
+  END tune[5]
+  PIN tune[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 81.200 0.000 81.760 4.000 ;
+    END
+  END tune[60]
+  PIN tune[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 82.320 0.000 82.880 4.000 ;
+    END
+  END tune[61]
+  PIN tune[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 83.440 0.000 84.000 4.000 ;
+    END
+  END tune[62]
+  PIN tune[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 84.560 0.000 85.120 4.000 ;
+    END
+  END tune[63]
+  PIN tune[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 20.720 0.000 21.280 4.000 ;
+    END
+  END tune[6]
+  PIN tune[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 21.840 0.000 22.400 4.000 ;
+    END
+  END tune[7]
+  PIN tune[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 22.960 0.000 23.520 4.000 ;
+    END
+  END tune[8]
+  PIN tune[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 24.080 0.000 24.640 4.000 ;
+    END
+  END tune[9]
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 16.700 15.380 18.300 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 38.260 15.380 39.860 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 59.820 15.380 61.420 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 81.380 15.380 82.980 43.420 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 27.480 15.380 29.080 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 49.040 15.380 50.640 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 70.600 15.380 72.200 43.420 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 92.160 15.380 93.760 43.420 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 93.760 43.420 ;
+      LAYER Metal2 ;
+        RECT 10.780 55.700 48.980 56.000 ;
+        RECT 50.140 55.700 93.620 56.000 ;
+        RECT 10.780 4.300 93.620 55.700 ;
+        RECT 10.780 4.000 13.700 4.300 ;
+        RECT 85.420 4.000 93.620 4.300 ;
+      LAYER Metal3 ;
+        RECT 10.730 10.220 93.670 43.260 ;
+      LAYER Metal4 ;
+        RECT 20.860 15.770 27.180 33.510 ;
+        RECT 29.380 15.770 37.960 33.510 ;
+        RECT 40.160 15.770 48.740 33.510 ;
+        RECT 50.940 15.770 59.520 33.510 ;
+        RECT 61.720 15.770 70.300 33.510 ;
+        RECT 72.500 15.770 73.780 33.510 ;
+  END
+END captune_1p
+END LIBRARY
+

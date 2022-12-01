@@ -1,0 +1,690 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x a_8301_4728# vdd _13_ vdd l=100 w=244 x=8301 y=5176 pmos_6p0
+x a_9644_7080# a_9556_7124# vdd vdd l=200 w=244 x=9644 y=7124 pmos_6p0
+x a_2612_3229# vdd a_3055_3728# vdd l=100 w=124 x=2955 y=3728 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=15712 y=6744 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=8880 y=6744 pmos_6p0
+x trim_p[0] a_2388_7933# vdd vdd l=100 w=124 x=2476 y=8400 pmos_6p0
+x a_6285_4728# vdd _09_ vdd l=100 w=244 x=6285 y=5176 pmos_6p0
+x a_3036_5079# a_2948_5176# vdd vdd l=200 w=244 x=3036 y=5176 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=13696 y=6744 pmos_6p0
+x a_5860_7124# vss a_5948_7080# vss l=200 w=164 x=5948 y=7608 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=9644 y=4772 nmos_6p0
+x _20_ outp vdd vdd l=100 w=244 x=13644 y=3608 pmos_6p0
+x trim_p[1] a_7204_7933# vss vss l=120 w=72 x=7292 y=7933 nmos_6p0
+x trim_p[3] vdd a_15496_8308# vdd l=100 w=124 x=15904 y=8400 pmos_6p0
+x _18_ vdd outp vdd l=100 w=244 x=15712 y=5556 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=8880 y=5556 pmos_6p0
+x a_3732_5556# vss a_3820_5512# vss l=200 w=164 x=3820 y=6040 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=9552 y=6744 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=13696 y=5556 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=14368 y=6744 pmos_6p0
+x a_5052_7080# a_4964_7124# vdd vdd l=200 w=244 x=5052 y=7124 pmos_6p0
+x _00_ vss a_8573_7889# vss l=120 w=72 x=8828 y=7933 nmos_6p0
+x a_15496_8308# a_14723_7933# a_14703_8432# vdd l=100 w=124 x=15496 y=8400 pmos_6p0
+x a_3844_6744# vss a_3932_6647# vss l=200 w=164 x=3932 y=6340 nmos_6p0
+x a_7204_7156# vss a_7636_7675# vss l=120 w=72 x=7516 y=7675 nmos_6p0
+x a_14237_3944# vdd _06_ vdd l=100 w=244 x=14237 y=3988 pmos_6p0
+x a_3484_5079# a_3396_5176# vdd vdd l=200 w=244 x=3484 y=5176 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=11680 y=5556 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=13676 y=4772 nmos_6p0
+x _15_ outn vdd vdd l=100 w=244 x=6252 y=5556 pmos_6p0
+x a_9869_3160# vss a_9869_3160# vss l=120 w=164 x=9869 y=3204 nmos_6p0
+x trim_n[3] vss a_16280_3604# vss l=120 w=72 x=16668 y=3229 nmos_6p0
+x a_6621_3160# vss a_6621_3160# vss l=120 w=164 x=6621 y=3204 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=14368 y=5556 pmos_6p0
+x _26_ a_11124_3229# vdd vdd l=100 w=124 x=11232 y=3728 pmos_6p0
+x a_2140_3944# a_2052_3988# vdd vdd l=200 w=244 x=2140 y=3988 pmos_6p0
+x a_3981_4417# a_3004_4020# vdd vdd l=100 w=124 x=4001 y=3988 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=11660 y=4772 nmos_6p0
+x signal_n a_2161_6296# vss vss l=120 w=72 x=2657 y=6365 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=14348 y=4772 nmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=12352 y=5556 pmos_6p0
+x a_14703_8432# vdd outp vdd l=100 w=219 x=15034 y=8337 pmos_6p0
+x trim_n[3] vdd a_16280_3604# vdd l=100 w=124 x=16688 y=3696 pmos_6p0
+x a_7555_4539# vss outn vss l=120 w=164 x=7803 y=4472 nmos_6p0
+x a_16612_3988# vss a_16700_3944# vss l=200 w=164 x=16700 y=4472 nmos_6p0
+x a_2140_5079# a_2052_5176# vdd vdd l=200 w=244 x=2140 y=5176 pmos_6p0
+x a_3757_7889# a_2820_7933# vss vss l=120 w=72 x=3757 y=7933 nmos_6p0
+x _00_ vss outp vss l=120 w=164 x=12332 y=4772 nmos_6p0
+x a_8573_7553# a_7596_7156# vdd vdd l=100 w=124 x=8593 y=7124 pmos_6p0
+x a_16388_4797# vss a_16851_4797# vss l=120 w=72 x=16731 y=4797 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=13024 y=5556 pmos_6p0
+x a_16280_3604# a_15507_3229# a_15487_3728# vdd l=100 w=124 x=16280 y=3696 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=12240 y=6744 pmos_6p0
+x a_3004_4020# outn vdd vdd l=100 w=219 x=3570 y=3988 pmos_6p0
+x a_12020_4539# vdd a_12463_3988# vdd l=100 w=124 x=12363 y=3988 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=10988 y=6040 nmos_6p0
+x a_4828_6647# a_4740_6744# vdd vdd l=200 w=244 x=4828 y=6744 pmos_6p0
+x _22_ a_2612_3229# vss vss l=120 w=72 x=2700 y=3229 nmos_6p0
+x signal a_1924_6040# vss vss l=120 w=73 x=1988 y=6040 nmos_6p0
+x _07_ outn vss vss l=120 w=164 x=7708 y=4772 nmos_6p0
+x trim_p[2] vss a_12360_8308# vss l=120 w=72 x=12748 y=7933 nmos_6p0
+x a_10093_3944# vdd _10_ vdd l=100 w=244 x=10093 y=3988 pmos_6p0
+x a_6060_8215# a_5972_8312# vdd vdd l=200 w=244 x=6060 y=8312 pmos_6p0
+x a_1716_6040# vdd _03_ vdd l=100 w=243 x=2276 y=5557 pmos_6p0
+x a_12692_5176# vss a_12780_5079# vss l=200 w=164 x=12780 y=4772 nmos_6p0
+x a_17932_8215# a_17844_8312# vdd vdd l=200 w=244 x=17932 y=8312 pmos_6p0
+x a_1716_6040# vss _03_ vss l=120 w=163 x=2256 y=6040 nmos_6p0
+x a_8573_7889# a_7596_8400# vdd vdd l=100 w=124 x=8593 y=8432 pmos_6p0
+x trim_n[1] a_7647_3728# a_7667_3229# vss l=120 w=72 x=8380 y=3229 nmos_6p0
+x a_10541_3160# vss a_10541_3160# vss l=120 w=164 x=10541 y=3204 nmos_6p0
+x a_4180_5556# vss a_4268_5512# vss l=200 w=164 x=4268 y=6040 nmos_6p0
+x _09_ vss outn vss l=120 w=164 x=7516 y=6040 nmos_6p0
+x a_12020_4539# vss a_12483_4539# vss l=120 w=72 x=12363 y=4539 nmos_6p0
+x a_7204_3229# vss a_7667_3229# vss l=120 w=72 x=7547 y=3229 nmos_6p0
+x _25_ a_12020_4539# vss vss l=120 w=72 x=12108 y=4539 nmos_6p0
+x trim_n[0] vdd a_3004_4020# vdd l=100 w=124 x=2904 y=4020 pmos_6p0
+x a_1604_6744# vss a_1692_6647# vss l=200 w=164 x=1692 y=6340 nmos_6p0
+x trim_p[2] a_12020_7156# vss vss l=120 w=72 x=12108 y=7675 nmos_6p0
+x a_16280_3604# a_15507_3229# vss vss l=120 w=72 x=16444 y=3229 nmos_6p0
+x a_3848_3604# a_3075_3229# a_3055_3728# vdd l=100 w=124 x=3848 y=3696 pmos_6p0
+x a_5501_5512# vdd _28_ vdd l=100 w=244 x=5501 y=5556 pmos_6p0
+x _00_ outn vss vss l=120 w=164 x=10844 y=4472 nmos_6p0
+x a_8189_5512# vss a_8189_5512# vss l=120 w=164 x=8189 y=6040 nmos_6p0
+x _00_ vss a_3757_7889# vss l=120 w=72 x=4012 y=7933 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10316 y=6040 nmos_6p0
+x _00_ vdd a_8573_7553# vdd l=100 w=124 x=8828 y=7124 pmos_6p0
+x _00_ vss a_2161_6296# vss l=120 w=72 x=2433 y=6365 nmos_6p0
+x a_14835_7675# vss outn vss l=120 w=164 x=15083 y=7608 nmos_6p0
+x a_6756_7124# vss a_6844_7080# vss l=200 w=164 x=6844 y=7608 nmos_6p0
+x a_9644_3944# a_9556_3988# vdd vdd l=200 w=244 x=9644 y=3988 pmos_6p0
+x a_4716_5512# a_4628_5556# vdd vdd l=200 w=244 x=4716 y=5556 pmos_6p0
+x a_5524_6744# vss a_5612_6647# vss l=200 w=164 x=5612 y=6340 nmos_6p0
+x a_15608_7112# a_14835_7675# a_14815_7124# vdd l=100 w=124 x=15608 y=7156 pmos_6p0
+x trim_p[1] a_7636_7675# a_7596_7156# vss l=120 w=72 x=7740 y=7675 nmos_6p0
+x _00_ outn vss vss l=120 w=164 x=11516 y=4472 nmos_6p0
+x a_3932_6647# a_3844_6744# vdd vdd l=200 w=244 x=3932 y=6744 pmos_6p0
+x a_2820_7675# outp vss vss l=120 w=164 x=3389 y=7608 nmos_6p0
+x trim_n[1] a_7535_3988# vdd vdd l=100 w=124 x=8532 y=4020 pmos_6p0
+x signal a_1716_6040# vdd vdd l=100 w=120 x=2008 y=5557 pmos_6p0
+x trim_p[2] a_12452_7675# a_12412_7156# vss l=120 w=72 x=12556 y=7675 nmos_6p0
+x a_9869_3160# vdd _05_ vdd l=100 w=244 x=9869 y=3608 pmos_6p0
+x a_6621_3160# vdd _25_ vdd l=100 w=244 x=6621 y=3608 pmos_6p0
+x a_17624_5172# a_16851_4797# a_16831_5296# vdd l=100 w=124 x=17624 y=5264 pmos_6p0
+x a_7596_7156# outn vdd vdd l=100 w=219 x=8162 y=7124 pmos_6p0
+x a_17699_6040# a_17699_6040# vss vss l=120 w=164 x=17787 y=6040 nmos_6p0
+x trim_n[1] a_7647_3728# vdd vdd l=100 w=124 x=8644 y=3696 pmos_6p0
+x trim_p[0] vdd a_2780_7156# vdd l=100 w=124 x=2680 y=7156 pmos_6p0
+x _00_ outp vdd vdd l=100 w=244 x=6700 y=8312 pmos_6p0
+x a_14012_7080# a_13924_7124# vdd vdd l=200 w=244 x=14012 y=7124 pmos_6p0
+x a_5412_7124# vss a_5500_7080# vss l=200 w=164 x=5500 y=7608 nmos_6p0
+x _00_ vss outp vss l=120 w=164 x=7516 y=6340 nmos_6p0
+x _00_ vdd a_8573_7889# vdd l=100 w=124 x=8828 y=8432 pmos_6p0
+x a_3296_6296# _02_ vdd vdd l=100 w=244 x=3316 y=6744 pmos_6p0
+x a_3284_5556# vss a_3372_5512# vss l=200 w=164 x=3372 y=6040 nmos_6p0
+x a_12360_8308# a_11587_7933# vss vss l=120 w=72 x=12524 y=7933 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10876 y=6340 nmos_6p0
+x a_2388_7933# a_2780_8400# a_2820_7933# vdd l=100 w=124 x=2884 y=8400 pmos_6p0
+x a_5524_8312# vss a_5612_8215# vss l=200 w=164 x=5612 y=7908 nmos_6p0
+x signal_n a_2553_6875# a_2161_6296# vdd l=100 w=113 x=2657 y=6875 pmos_6p0
+x a_11124_3229# vss a_11587_3229# vss l=120 w=72 x=11467 y=3229 nmos_6p0
+x trim_n[0] a_3055_3728# vdd vdd l=100 w=124 x=4052 y=3696 pmos_6p0
+x signal signal_n vdd vdd l=100 w=244 x=4684 y=7124 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=11548 y=6340 nmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=9888 y=8312 pmos_6p0
+x trim_n[3] a_15487_3728# a_15507_3229# vss l=120 w=72 x=16220 y=3229 nmos_6p0
+x a_2820_7933# outn vss vss l=120 w=164 x=3389 y=7908 nmos_6p0
+x _10_ vss outp vss l=120 w=164 x=15580 y=4472 nmos_6p0
+x a_3820_5512# a_3732_5556# vdd vdd l=200 w=244 x=3820 y=5556 pmos_6p0
+x _06_ vdd outp vdd l=100 w=244 x=16384 y=6744 pmos_6p0
+x a_7596_8400# outp vdd vdd l=100 w=219 x=8162 y=8337 pmos_6p0
+x a_14237_3160# vss a_14237_3160# vss l=120 w=164 x=14237 y=3204 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=10784 y=7124 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=10764 y=7608 nmos_6p0
+x _03_ vss a_3296_6296# vss l=120 w=72 x=3564 y=6432 nmos_6p0
+x a_16388_4797# vdd a_16831_5296# vdd l=100 w=124 x=16731 y=5296 pmos_6p0
+x _05_ vss outn vss l=120 w=164 x=16252 y=4472 nmos_6p0
+x a_6947_4772# _11_ vdd vdd l=100 w=244 x=7055 y=5176 pmos_6p0
+x _12_ vdd outp vdd l=100 w=244 x=17056 y=6744 pmos_6p0
+x a_12483_4539# vss outn vss l=120 w=164 x=12731 y=4472 nmos_6p0
+x a_10541_3160# vdd _16_ vdd l=100 w=244 x=10541 y=3608 pmos_6p0
+x a_4829_4728# vss a_4829_4728# vss l=120 w=164 x=4829 y=4772 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=11456 y=7124 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=11436 y=7608 nmos_6p0
+x a_7204_3229# vdd a_7647_3728# vdd l=100 w=124 x=7547 y=3728 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10204 y=6340 nmos_6p0
+x a_12020_7156# vss a_12452_7675# vss l=120 w=72 x=12332 y=7675 nmos_6p0
+x trim_n[2] a_11567_3728# vdd vdd l=100 w=124 x=12564 y=3696 pmos_6p0
+x a_1692_6647# a_1604_6744# vdd vdd l=200 w=244 x=1692 y=6744 pmos_6p0
+x _00_ outp vdd vdd l=100 w=244 x=10620 y=8312 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=15040 y=6744 pmos_6p0
+x _00_ vdd a_3757_7553# vdd l=100 w=124 x=4012 y=7124 pmos_6p0
+x _07_ outn vdd vdd l=100 w=244 x=7708 y=5176 pmos_6p0
+x a_12580_6744# vss a_12668_6647# vss l=200 w=164 x=12668 y=6340 nmos_6p0
+x a_12780_5079# a_12692_5176# vdd vdd l=200 w=244 x=12780 y=5176 pmos_6p0
+x _27_ a_15044_3229# vdd vdd l=100 w=124 x=15152 y=3728 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=15040 y=5556 pmos_6p0
+x a_16700_3944# a_16612_3988# vdd vdd l=200 w=244 x=16700 y=3988 pmos_6p0
+x a_5612_6647# a_5524_6744# vdd vdd l=200 w=244 x=5612 y=6744 pmos_6p0
+x trim_p[2] a_11567_8432# a_11587_7933# vss l=120 w=72 x=12300 y=7933 nmos_6p0
+x a_9556_5556# vss a_9644_5512# vss l=200 w=164 x=9644 y=6040 nmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=10112 y=7124 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=16608 y=7124 pmos_6p0
+x a_5837_3944# vss a_5837_3944# vss l=120 w=164 x=5837 y=4472 nmos_6p0
+x _28_ a_16388_4797# vss vss l=120 w=72 x=16476 y=4797 nmos_6p0
+x trim_p[0] a_2820_7933# a_2780_8400# vss l=120 w=72 x=2924 y=7933 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=9868 y=7908 nmos_6p0
+x a_6835_6340# _15_ vdd vdd l=100 w=244 x=6943 y=6744 pmos_6p0
+x a_6509_3944# vss a_6509_3944# vss l=120 w=164 x=6509 y=4472 nmos_6p0
+x _00_ vdd a_3757_7889# vdd l=100 w=124 x=4012 y=8432 pmos_6p0
+x enable vdd a_1716_6040# vdd l=100 w=120 x=1804 y=5557 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=8860 y=6040 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=13676 y=6040 nmos_6p0
+x _08_ vdd outp vdd l=100 w=244 x=14928 y=3988 pmos_6p0
+x a_16365_5512# vss a_16365_5512# vss l=120 w=164 x=16365 y=6040 nmos_6p0
+x trim_p[3] a_14703_8432# a_14723_7933# vss l=120 w=72 x=15436 y=7933 nmos_6p0
+x a_6308_7124# vss a_6396_7080# vss l=200 w=164 x=6396 y=7608 nmos_6p0
+x a_11124_3229# vdd a_11567_3728# vdd l=100 w=124 x=11467 y=3728 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=11660 y=6040 nmos_6p0
+x _04_ vss a_4640_7864# vss l=120 w=72 x=4908 y=8000 nmos_6p0
+x a_4268_5512# a_4180_5556# vdd vdd l=200 w=244 x=4268 y=5556 pmos_6p0
+x a_9556_7124# vss a_9644_7080# vss l=200 w=164 x=9644 y=7608 nmos_6p0
+x a_17475_3204# a_17475_3204# vss vss l=120 w=164 x=17563 y=3204 nmos_6p0
+x trim_p[1] a_7204_7156# vss vss l=120 w=72 x=7292 y=7675 nmos_6p0
+x _21_ vdd a_3981_4417# vdd l=100 w=124 x=4236 y=3988 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=14348 y=6040 nmos_6p0
+x a_7636_7675# outn vss vss l=120 w=164 x=8205 y=7608 nmos_6p0
+x trim_n[2] a_12463_3988# vdd vdd l=100 w=124 x=13460 y=4020 pmos_6p0
+x _17_ vdd outn vdd l=100 w=244 x=17728 y=7124 pmos_6p0
+x _17_ vss outn vss l=120 w=164 x=17708 y=7608 nmos_6p0
+x _00_ vss a_8573_7553# vss l=120 w=72 x=8828 y=7675 nmos_6p0
+x trim_p[1] vdd a_7596_7156# vdd l=100 w=124 x=7496 y=7156 pmos_6p0
+x _00_ outp vdd vdd l=100 w=244 x=13644 y=8312 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=12332 y=6040 nmos_6p0
+x _00_ outn vdd vdd l=100 w=244 x=10844 y=3988 pmos_6p0
+x a_8189_5512# vdd _08_ vdd l=100 w=244 x=8189 y=5556 pmos_6p0
+x a_4292_6744# vss a_4380_6647# vss l=200 w=164 x=4380 y=6340 nmos_6p0
+x a_14237_3160# vdd _18_ vdd l=100 w=244 x=14237 y=3608 pmos_6p0
+x _16_ vss outp vss l=120 w=164 x=17708 y=6340 nmos_6p0
+x trim_p[2] vdd a_12412_7156# vdd l=100 w=124 x=12312 y=7156 pmos_6p0
+x a_4964_7124# vss a_5052_7080# vss l=200 w=164 x=5052 y=7608 nmos_6p0
+x trim_p[3] vss a_15496_8308# vss l=120 w=72 x=15884 y=7933 nmos_6p0
+x a_2161_6296# _04_ vss vss l=120 w=164 x=2161 y=6340 nmos_6p0
+x a_16724_5556# vss a_16812_5512# vss l=200 w=164 x=16812 y=6040 nmos_6p0
+x _00_ vss outp vss l=120 w=164 x=13004 y=6040 nmos_6p0
+x _00_ vdd a_13389_7553# vdd l=100 w=124 x=13644 y=7124 pmos_6p0
+x _00_ outn vdd vdd l=100 w=244 x=11516 y=3988 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=8860 y=6340 nmos_6p0
+x _21_ vss a_3981_4417# vss l=120 w=72 x=4236 y=4539 nmos_6p0
+x a_7204_7933# a_7596_8400# a_7636_7933# vdd l=100 w=124 x=7700 y=8400 pmos_6p0
+x a_8328_3976# a_7555_4539# a_7535_3988# vdd l=100 w=124 x=8328 y=4020 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=10336 y=5176 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=13676 y=6340 nmos_6p0
+x _23_ a_7092_4539# vss vss l=120 w=72 x=7180 y=4539 nmos_6p0
+x trim_p[1] a_7204_7933# vdd vdd l=100 w=124 x=7292 y=8400 pmos_6p0
+x _00_ a_11124_7933# vdd vdd l=100 w=124 x=11232 y=8432 pmos_6p0
+x trim_n[1] vss a_8328_3976# vss l=120 w=72 x=8716 y=4539 nmos_6p0
+x a_3757_7553# a_2820_7675# vss vss l=120 w=72 x=3757 y=7675 nmos_6p0
+x a_2388_7933# vss a_2820_7933# vss l=120 w=72 x=2700 y=7933 nmos_6p0
+x _00_ vss outp vss l=120 w=164 x=9532 y=6340 nmos_6p0
+x trim_p[0] a_2388_7156# vdd vdd l=100 w=124 x=2476 y=7156 pmos_6p0
+x trim_p[2] a_11567_8432# vdd vdd l=100 w=124 x=12564 y=8400 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=11008 y=5176 pmos_6p0
+x a_7636_7933# outp vss vss l=120 w=164 x=8205 y=7908 nmos_6p0
+x _00_ vss outp vss l=120 w=164 x=14348 y=6340 nmos_6p0
+x a_3372_5512# a_3284_5556# vdd vdd l=200 w=244 x=3372 y=5556 pmos_6p0
+x a_7647_3728# vdd outp vdd l=100 w=219 x=7978 y=3633 pmos_6p0
+x _11_ outn vss vss l=120 w=164 x=6924 y=6040 nmos_6p0
+x a_12668_6647# a_12580_6744# vdd vdd l=200 w=244 x=12668 y=6744 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=17504 y=8312 pmos_6p0
+x _00_ a_14372_7675# vss vss l=120 w=72 x=14460 y=7675 nmos_6p0
+x a_4829_4728# vdd _17_ vdd l=100 w=244 x=4829 y=5176 pmos_6p0
+x enable vdd _00_ vdd l=100 w=244 x=2944 y=5556 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=8188 y=6340 nmos_6p0
+x a_15683_4772# _14_ vdd vdd l=100 w=244 x=15791 y=5176 pmos_6p0
+x _26_ a_11124_3229# vss vss l=120 w=72 x=11212 y=3229 nmos_6p0
+x a_7667_3229# vss outp vss l=120 w=164 x=7915 y=3204 nmos_6p0
+x _00_ a_14260_7933# vdd vdd l=100 w=124 x=14368 y=8432 pmos_6p0
+x _25_ a_12020_4539# vdd vdd l=100 w=124 x=12128 y=3988 pmos_6p0
+x a_3055_3728# vdd outp vdd l=100 w=219 x=3386 y=3633 pmos_6p0
+x a_15044_3229# vss a_15507_3229# vss l=120 w=72 x=15387 y=3229 nmos_6p0
+x trim_p[3] a_14703_8432# vdd vdd l=100 w=124 x=15700 y=8400 pmos_6p0
+x a_15496_8308# a_14723_7933# vss vss l=120 w=72 x=15660 y=7933 nmos_6p0
+x a_3075_3229# vss outp vss l=120 w=164 x=3323 y=3204 nmos_6p0
+x a_8573_7889# a_7636_7933# vss vss l=120 w=72 x=8573 y=7933 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=12220 y=6340 nmos_6p0
+x _00_ vss a_3757_7553# vss l=120 w=72 x=4012 y=7675 nmos_6p0
+x _23_ a_7092_4539# vdd vdd l=100 w=124 x=7200 y=3988 pmos_6p0
+x a_16831_5296# vdd outp vdd l=100 w=219 x=17162 y=5201 pmos_6p0
+x trim_p[0] a_2388_7933# vss vss l=120 w=72 x=2476 y=7933 nmos_6p0
+x a_5972_6744# vss a_6060_6647# vss l=200 w=164 x=6060 y=6340 nmos_6p0
+x a_11567_3728# vdd outp vdd l=100 w=219 x=11898 y=3633 pmos_6p0
+x a_14596_3608# vss a_14684_3511# vss l=200 w=164 x=14684 y=3204 nmos_6p0
+x a_4380_6647# a_4292_6744# vdd vdd l=200 w=244 x=4380 y=6744 pmos_6p0
+x trim_n[0] a_3055_3728# a_3075_3229# vss l=120 w=72 x=3788 y=3229 nmos_6p0
+x a_17844_3608# vss a_17932_3511# vss l=200 w=164 x=17932 y=3204 nmos_6p0
+x a_4516_3988# vss a_4604_3944# vss l=200 w=164 x=4604 y=4472 nmos_6p0
+x trim_n[3] a_15487_3728# vdd vdd l=100 w=124 x=16484 y=3696 pmos_6p0
+x _13_ vdd outn vdd l=100 w=244 x=8992 y=5176 pmos_6p0
+x a_9644_5512# a_9556_5556# vdd vdd l=200 w=244 x=9644 y=5556 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10092 y=7608 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=16588 y=7608 nmos_6p0
+x a_5837_3944# vdd _23_ vdd l=100 w=244 x=5837 y=3988 pmos_6p0
+x a_11124_7933# vss a_11587_7933# vss l=120 w=72 x=11467 y=7933 nmos_6p0
+x _19_ vdd outn vdd l=100 w=244 x=17728 y=3988 pmos_6p0
+x a_11587_3229# vss outp vss l=120 w=164 x=11835 y=3204 nmos_6p0
+x a_15487_3728# vdd outn vdd l=100 w=219 x=15818 y=3633 pmos_6p0
+x a_5948_7080# a_5860_7124# vdd vdd l=200 w=244 x=5948 y=7124 pmos_6p0
+x a_4157_4728# vss a_4157_4728# vss l=120 w=164 x=4157 y=4772 nmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=9664 y=5176 pmos_6p0
+x a_3981_4417# a_3044_4539# vss vss l=120 w=72 x=3981 y=4539 nmos_6p0
+x a_17699_6040# _20_ vdd vdd l=100 w=244 x=17807 y=5556 pmos_6p0
+x a_6509_3944# vdd _19_ vdd l=100 w=244 x=6509 y=3988 pmos_6p0
+x _18_ vss outp vss l=120 w=164 x=15692 y=6040 nmos_6p0
+x a_13924_7124# vss a_14012_7080# vss l=200 w=164 x=14012 y=7608 nmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=16496 y=8312 pmos_6p0
+x a_5972_8312# vss a_6060_8215# vss l=200 w=164 x=6060 y=7908 nmos_6p0
+x a_3757_7553# a_2780_7156# vdd vdd l=100 w=124 x=3777 y=7124 pmos_6p0
+x a_3044_4539# outn vss vss l=120 w=164 x=3613 y=4472 nmos_6p0
+x a_17844_8312# vss a_17932_8215# vss l=200 w=164 x=17932 y=7908 nmos_6p0
+x a_16365_5512# vdd _12_ vdd l=100 w=244 x=16365 y=5556 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=13696 y=5176 pmos_6p0
+x signal signal_n vss vss l=120 w=164 x=4684 y=7608 nmos_6p0
+x a_11587_7933# vss outn vss l=120 w=164 x=11835 y=7908 nmos_6p0
+x a_14260_7933# vss a_14723_7933# vss l=120 w=72 x=14603 y=7933 nmos_6p0
+x a_13256_3976# a_12483_4539# a_12463_3988# vdd l=100 w=124 x=13256 y=4020 pmos_6p0
+x _22_ a_2612_3229# vdd vdd l=100 w=124 x=2720 y=3728 pmos_6p0
+x a_5165_3944# vss a_5165_3944# vss l=120 w=164 x=5165 y=4472 nmos_6p0
+x a_7204_7933# vss a_7636_7933# vss l=120 w=72 x=7516 y=7933 nmos_6p0
+x _00_ a_14372_7675# vdd vdd l=100 w=124 x=14480 y=7124 pmos_6p0
+x trim_n[0] a_2612_4020# vdd vdd l=100 w=124 x=2700 y=4020 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=11680 y=5176 pmos_6p0
+x a_12452_7675# outp vss vss l=120 w=164 x=13021 y=7608 nmos_6p0
+x _24_ a_7204_3229# vss vss l=120 w=72 x=7292 y=3229 nmos_6p0
+x a_2500_5176# vss a_2588_5079# vss l=200 w=164 x=2588 y=4772 nmos_6p0
+x _10_ vdd outp vdd l=100 w=244 x=15600 y=3988 pmos_6p0
+x trim_n[1] a_7535_3988# a_7555_4539# vss l=120 w=72 x=8268 y=4539 nmos_6p0
+x a_15044_3229# vdd a_15487_3728# vdd l=100 w=124 x=15387 y=3728 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=14368 y=5176 pmos_6p0
+x _00_ vss a_13389_7553# vss l=120 w=72 x=13644 y=7675 nmos_6p0
+x a_11567_8432# vdd outn vdd l=100 w=219 x=11898 y=8337 pmos_6p0
+x trim_n[2] vss a_13256_3976# vss l=120 w=72 x=13644 y=4539 nmos_6p0
+x trim_n[1] vss a_8440_3604# vss l=120 w=72 x=8828 y=3229 nmos_6p0
+x a_1604_3988# vss a_1692_3944# vss l=200 w=164 x=1692 y=4472 nmos_6p0
+x trim_p[2] a_12020_7156# vdd vdd l=100 w=124 x=12108 y=7156 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=15020 y=6040 nmos_6p0
+x a_3757_7889# a_2780_8400# vdd vdd l=100 w=124 x=3777 y=8432 pmos_6p0
+x trim_n[1] vdd a_8328_3976# vdd l=100 w=124 x=8736 y=4020 pmos_6p0
+x a_16812_5512# a_16724_5556# vdd vdd l=200 w=244 x=16812 y=5556 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=12352 y=5176 pmos_6p0
+x a_6947_4772# a_6947_4772# vss vss l=120 w=164 x=7035 y=4772 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=15692 y=6340 nmos_6p0
+x a_4829_3160# vss a_4829_3160# vss l=120 w=164 x=4829 y=3204 nmos_6p0
+x trim_n[3] a_16831_5296# vdd vdd l=100 w=124 x=17828 y=5264 pmos_6p0
+x trim_n[1] vdd a_8440_3604# vdd l=100 w=124 x=8848 y=3696 pmos_6p0
+x a_2388_7156# a_2780_7156# a_2820_7675# vdd l=100 w=124 x=2884 y=7156 pmos_6p0
+x _14_ outp vss vss l=120 w=164 x=15100 y=4772 nmos_6p0
+x trim_n[0] vss a_3848_3604# vss l=120 w=72 x=4236 y=3229 nmos_6p0
+x a_17624_5172# a_16851_4797# vss vss l=120 w=72 x=17788 y=4797 nmos_6p0
+x trim_p[3] a_14815_7124# a_14835_7675# vss l=120 w=72 x=15548 y=7675 nmos_6p0
+x _06_ vss outp vss l=120 w=164 x=16364 y=6340 nmos_6p0
+x _00_ outp vss vss l=120 w=164 x=6700 y=7908 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=16476 y=7908 nmos_6p0
+x a_6060_6647# a_5972_6744# vdd vdd l=200 w=244 x=6060 y=6744 pmos_6p0
+x a_14684_3511# a_14596_3608# vdd vdd l=200 w=244 x=14684 y=3608 pmos_6p0
+x a_8440_3604# a_7667_3229# a_7647_3728# vdd l=100 w=124 x=8440 y=3696 pmos_6p0
+x a_17932_3511# a_17844_3608# vdd vdd l=200 w=244 x=17932 y=3608 pmos_6p0
+x _11_ outn vdd vdd l=100 w=244 x=6924 y=5556 pmos_6p0
+x _08_ vss outp vss l=120 w=164 x=14908 y=4472 nmos_6p0
+x a_2612_4020# vss a_3044_4539# vss l=120 w=72 x=2924 y=4539 nmos_6p0
+x trim_p[0] a_2820_7675# a_2780_7156# vss l=120 w=72 x=2924 y=7675 nmos_6p0
+x a_5612_8215# a_5524_8312# vdd vdd l=200 w=244 x=5612 y=8312 pmos_6p0
+x trim_n[0] vdd a_3848_3604# vdd l=100 w=124 x=4256 y=3696 pmos_6p0
+x _12_ vss outp vss l=120 w=164 x=17036 y=6340 nmos_6p0
+x a_14372_7675# vdd a_14815_7124# vdd l=100 w=124 x=14715 y=7124 pmos_6p0
+x trim_p[0] vdd a_2780_8400# vdd l=100 w=124 x=2680 y=8400 pmos_6p0
+x a_1604_5176# vss a_1692_5079# vss l=200 w=164 x=1692 y=4772 nmos_6p0
+x _00_ vdd a_2553_6875# vdd l=100 w=113 x=2453 y=6875 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=15020 y=6340 nmos_6p0
+x trim_p[3] vss a_15608_7112# vss l=120 w=72 x=15996 y=7675 nmos_6p0
+x a_2780_7156# outp vdd vdd l=100 w=219 x=3346 y=7124 pmos_6p0
+x a_5949_3160# vss a_5949_3160# vss l=120 w=164 x=5949 y=3204 nmos_6p0
+x trim_n[2] vss a_12360_3604# vss l=120 w=72 x=12748 y=3229 nmos_6p0
+x a_7535_3988# vdd outn vdd l=100 w=219 x=7866 y=3988 pmos_6p0
+x trim_p[3] vdd a_15608_7112# vdd l=100 w=124 x=16016 y=7156 pmos_6p0
+x a_16851_4797# vss outp vss l=120 w=164 x=17099 y=4772 nmos_6p0
+x enable a_1716_6040# a_1924_6040# vss l=120 w=73 x=1804 y=6040 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=7536 y=6744 pmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10988 y=4772 nmos_6p0
+x a_5524_5176# vss a_5612_5079# vss l=200 w=164 x=5612 y=4772 nmos_6p0
+x a_6844_7080# a_6756_7124# vdd vdd l=200 w=244 x=6844 y=7124 pmos_6p0
+x a_13256_3976# a_12483_4539# vss vss l=120 w=72 x=13420 y=4539 nmos_6p0
+x a_8440_3604# a_7667_3229# vss vss l=120 w=72 x=8604 y=3229 nmos_6p0
+x _27_ a_15044_3229# vss vss l=120 w=72 x=15132 y=3229 nmos_6p0
+x trim_n[3] vdd a_17624_5172# vdd l=100 w=124 x=18032 y=5264 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=10896 y=6744 pmos_6p0
+x a_8301_4728# vss a_8301_4728# vss l=120 w=164 x=8301 y=4772 nmos_6p0
+x a_14237_3944# vss a_14237_3944# vss l=120 w=164 x=14237 y=4472 nmos_6p0
+x a_11124_7933# vdd a_11567_8432# vdd l=100 w=124 x=11467 y=8432 pmos_6p0
+x _15_ outn vss vss l=120 w=164 x=6252 y=6040 nmos_6p0
+x trim_n[2] vdd a_12360_3604# vdd l=100 w=124 x=12768 y=3696 pmos_6p0
+x a_6285_4728# vss a_6285_4728# vss l=120 w=164 x=6285 y=4772 nmos_6p0
+x a_2948_5176# vss a_3036_5079# vss l=200 w=164 x=3036 y=4772 nmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=8208 y=6744 pmos_6p0
+x _09_ vdd outn vdd l=100 w=244 x=7536 y=5556 pmos_6p0
+x _01_ vdd outp vdd l=100 w=244 x=1824 y=8312 pmos_6p0
+x a_2052_3988# vss a_2140_3944# vss l=200 w=164 x=2140 y=4472 nmos_6p0
+x _00_ outp vss vss l=120 w=164 x=10620 y=7908 nmos_6p0
+x a_6835_6340# a_6835_6340# vss vss l=120 w=164 x=6923 y=6340 nmos_6p0
+x trim_p[1] a_7636_7933# a_7596_8400# vss l=120 w=72 x=7740 y=7933 nmos_6p0
+x a_4157_4728# vdd _21_ vdd l=100 w=244 x=4157 y=5176 pmos_6p0
+x a_2780_8400# outn vdd vdd l=100 w=219 x=3346 y=8337 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=11568 y=6744 pmos_6p0
+x a_12360_3604# a_11587_3229# a_11567_3728# vdd l=100 w=124 x=12360 y=3696 pmos_6p0
+x a_3848_3604# a_3075_3229# vss vss l=120 w=72 x=4012 y=3229 nmos_6p0
+x trim_n[3] a_16831_5296# a_16851_4797# vss l=120 w=72 x=17564 y=4797 nmos_6p0
+x a_8328_3976# a_7555_4539# vss vss l=120 w=72 x=8492 y=4539 nmos_6p0
+x a_5500_7080# a_5412_7124# vdd vdd l=200 w=244 x=5500 y=7124 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=10336 y=5556 pmos_6p0
+x a_2029_3160# vss a_2029_3160# vss l=120 w=164 x=2029 y=3204 nmos_6p0
+x _02_ vdd outn vdd l=100 w=244 x=1824 y=7124 pmos_6p0
+x _02_ vss outn vss l=120 w=164 x=1804 y=7608 nmos_6p0
+x a_4604_3944# a_4516_3988# vdd vdd l=200 w=244 x=4604 y=3988 pmos_6p0
+x _00_ vss outp vss l=120 w=164 x=17484 y=7908 nmos_6p0
+x trim_n[0] a_2612_4020# vss vss l=120 w=72 x=2700 y=4539 nmos_6p0
+x _00_ vss outn vss l=120 w=164 x=10316 y=4772 nmos_6p0
+x a_3396_5176# vss a_3484_5079# vss l=200 w=164 x=3484 y=4772 nmos_6p0
+x a_2388_7156# vss a_2820_7675# vss l=120 w=72 x=2700 y=7675 nmos_6p0
+x enable vss _00_ vss l=120 w=164 x=2924 y=6040 nmos_6p0
+x a_13389_7553# a_12412_7156# vdd vdd l=100 w=124 x=13409 y=7124 pmos_6p0
+x a_4640_7864# _01_ vdd vdd l=100 w=244 x=4660 y=8312 pmos_6p0
+x _00_ vdd outp vdd l=100 w=244 x=11008 y=5556 pmos_6p0
+x a_2612_3229# vss a_3075_3229# vss l=120 w=72 x=2955 y=3229 nmos_6p0
+x a_4829_3160# vdd _24_ vdd l=100 w=244 x=4829 y=3608 pmos_6p0
+x a_14260_7933# vdd a_14703_8432# vdd l=100 w=124 x=14603 y=8432 pmos_6p0
+x _00_ vdd outn vdd l=100 w=244 x=10224 y=6744 pmos_6p0
+x _20_ outp vss vss l=120 w=164 x=13644 y=3204 nmos_6p0
+x _00_ a_11124_7933# vss vss l=120 w=72 x=11212 y=7933 nmos_6p0
+x _03_ vdd a_3296_6296# vdd l=100 w=113 x=3564 y=6875 pmos_6p0
+x a_15608_7112# a_14835_7675# vss vss l=120 w=72 x=15772 y=7675 nmos_6p0
+x a_2588_5079# a_2500_5176# vdd vdd l=200 w=244 x=2588 y=5176 pmos_6p0
+x a_10093_3944# vss a_10093_3944# vss l=120 w=164 x=10093 y=4472 nmos_6p0
+x a_12360_3604# a_11587_3229# vss vss l=120 w=72 x=12524 y=3229 nmos_6p0
+x a_15507_3229# vss outn vss l=120 w=164 x=15755 y=3204 nmos_6p0
+x a_12412_7156# outp vdd vdd l=100 w=219 x=12978 y=7124 pmos_6p0
+x trim_n[2] a_12463_3988# a_12483_4539# vss l=120 w=72 x=13196 y=4539 nmos_6p0
+x a_2052_5176# vss a_2140_5079# vss l=200 w=164 x=2140 y=4772 nmos_6p0
+x a_7092_4539# vdd a_7535_3988# vdd l=100 w=124 x=7435 y=3988 pmos_6p0
+x trim_n[2] vdd a_13256_3976# vdd l=100 w=124 x=13664 y=4020 pmos_6p0
+x a_15683_4772# a_15683_4772# vss vss l=120 w=164 x=15771 y=4772 nmos_6p0
+x _01_ vss outp vss l=120 w=164 x=1804 y=7908 nmos_6p0
+x a_5165_3944# vdd _27_ vdd l=100 w=244 x=5165 y=3988 pmos_6p0
+x _14_ outp vdd vdd l=100 w=244 x=15100 y=5176 pmos_6p0
+x a_5501_5512# vss a_5501_5512# vss l=120 w=164 x=5501 y=6040 nmos_6p0
+x a_7204_7156# a_7596_7156# a_7636_7675# vdd l=100 w=124 x=7700 y=7156 pmos_6p0
+x _00_ a_14260_7933# vss vss l=120 w=72 x=14348 y=7933 nmos_6p0
+x _00_ outp vss vss l=120 w=164 x=13644 y=7908 nmos_6p0
+x a_12020_7156# a_12412_7156# a_12452_7675# vdd l=100 w=124 x=12516 y=7156 pmos_6p0
+x a_5949_3160# vdd _26_ vdd l=100 w=244 x=5949 y=3608 pmos_6p0
+x trim_p[1] a_7204_7156# vdd vdd l=100 w=124 x=7292 y=7156 pmos_6p0
+x a_8573_7553# a_7636_7675# vss vss l=120 w=72 x=8573 y=7675 nmos_6p0
+x a_3296_6296# _02_ vss vss l=120 w=164 x=3296 y=6340 nmos_6p0
+x a_1692_3944# a_1604_3988# vdd vdd l=200 w=244 x=1692 y=3988 pmos_6p0
+x a_13389_7553# a_12452_7675# vss vss l=120 w=72 x=13389 y=7675 nmos_6p0
+x a_9556_3988# vss a_9644_3944# vss l=200 w=164 x=9644 y=4472 nmos_6p0
+x a_4628_5556# vss a_4716_5512# vss l=200 w=164 x=4716 y=6040 nmos_6p0
+x a_7092_4539# vss a_7555_4539# vss l=120 w=72 x=7435 y=4539 nmos_6p0
+x _28_ a_16388_4797# vdd vdd l=100 w=124 x=16496 y=5296 pmos_6p0
+x trim_p[3] a_14815_7124# vdd vdd l=100 w=124 x=15812 y=7156 pmos_6p0
+x trim_p[0] a_2388_7156# vss vss l=120 w=72 x=2476 y=7675 nmos_6p0
+x _05_ vdd outn vdd l=100 w=244 x=16272 y=3988 pmos_6p0
+x trim_p[1] vdd a_7596_8400# vdd l=100 w=124 x=7496 y=8400 pmos_6p0
+x a_4640_7864# _01_ vss vss l=120 w=164 x=4640 y=7908 nmos_6p0
+x _19_ vss outn vss l=120 w=164 x=17708 y=4472 nmos_6p0
+x a_17475_3204# _07_ vdd vdd l=100 w=244 x=17583 y=3608 pmos_6p0
+x trim_n[3] vss a_17624_5172# vss l=120 w=72 x=18012 y=4797 nmos_6p0
+x a_1692_5079# a_1604_5176# vdd vdd l=200 w=244 x=1692 y=5176 pmos_6p0
+x a_4740_6744# vss a_4828_6647# vss l=200 w=164 x=4828 y=6340 nmos_6p0
+x trim_p[2] vdd a_12360_8308# vdd l=100 w=124 x=12768 y=8400 pmos_6p0
+x a_14815_7124# vdd outn vdd l=100 w=219 x=15146 y=7124 pmos_6p0
+x _24_ a_7204_3229# vdd vdd l=100 w=124 x=7312 y=3728 pmos_6p0
+x a_14723_7933# vss outp vss l=120 w=164 x=14971 y=7908 nmos_6p0
+x trim_n[0] a_3044_4539# a_3004_4020# vss l=120 w=72 x=3148 y=4539 nmos_6p0
+x _04_ vdd a_4640_7864# vdd l=100 w=113 x=4908 y=8443 pmos_6p0
+x a_12360_8308# a_11587_7933# a_11567_8432# vdd l=100 w=124 x=12360 y=8400 pmos_6p0
+x a_2029_3160# vdd _22_ vdd l=100 w=244 x=2029 y=3608 pmos_6p0
+x _16_ vdd outp vdd l=100 w=244 x=17728 y=6744 pmos_6p0
+x a_12463_3988# vdd outn vdd l=100 w=219 x=12794 y=3988 pmos_6p0
+x _13_ vss outn vss l=120 w=164 x=8972 y=4772 nmos_6p0
+x a_5612_5079# a_5524_5176# vdd vdd l=200 w=244 x=5612 y=5176 pmos_6p0
+x a_14372_7675# vss a_14835_7675# vss l=120 w=72 x=14715 y=7675 nmos_6p0
+x trim_n[2] a_11567_3728# a_11587_3229# vss l=120 w=72 x=12300 y=3229 nmos_6p0
+x a_2612_4020# a_3004_4020# a_3044_4539# vdd l=100 w=124 x=3108 y=4020 pmos_6p0
+x a_2161_6296# _04_ vdd vdd l=100 w=244 x=2181 y=6744 pmos_6p0
+x a_6396_7080# a_6308_7124# vdd vdd l=200 w=244 x=6396 y=7124 pmos_6p0
+C outn vdd 5.93
+C outn _08_ 3.45
+C _00_ vdd 3.45
+C _00_ _16_ 2.42
+C _00_ _17_ 2.81
+C outp outn 5.06
+C _19_ _10_ 3.02
+C outn _28_ 2.17
+C outp _00_ 6.12
+C outn _00_ 6.24
+C _27_ _07_ 2.90
+C _00_ _28_ 2.35
+C outp vdd 5.81
+C trim_n[2] GND 2.73
+R trim_n[2] 289
+C trim_n[1] GND 2.75
+R trim_n[1] 289
+C trim_n[0] GND 2.69
+R trim_n[0] 289
+C trim_n[3] GND 2.90
+R trim_n[3] 291
+R enable 125
+R signal 127
+C trim_p[3] GND 2.63
+R trim_p[3] 290
+C trim_p[2] GND 2.71
+R trim_p[2] 287
+C trim_p[1] GND 2.58
+R trim_p[1] 287
+C outn GND 7.10
+R outn 2426
+C trim_p[0] GND 2.57
+R trim_p[0] 287
+C outp GND 7.76
+R outp 2429
+C vdd GND 178.33
+R vdd 104528
+R vss 5851
+R a_17844_3608# 32
+R a_15507_3229# 73
+R a_17932_3511# 27
+R a_17475_3204# 64
+R a_16280_3604# 74
+R a_14596_3608# 32
+R a_11587_3229# 73
+R a_15487_3728# 92
+R a_15044_3229# 71
+R a_14684_3511# 27
+R a_14237_3160# 64
+R a_12360_3604# 74
+R a_7667_3229# 73
+R a_11567_3728# 92
+R a_11124_3229# 71
+R a_10541_3160# 64
+R a_9869_3160# 64
+R a_8440_3604# 74
+R _26_ 80
+R a_3075_3229# 73
+R a_7647_3728# 92
+R a_7204_3229# 71
+R _24_ 75
+R a_6621_3160# 64
+R a_5949_3160# 64
+R a_4829_3160# 64
+R a_3848_3604# 74
+R a_3055_3728# 92
+R a_2612_3229# 71
+R _22_ 72
+R a_2029_3160# 64
+R a_16700_3944# 27
+R a_12463_3988# 92
+R a_16612_3988# 32
+R _05_ 82
+R a_14237_3944# 64
+R a_13256_3976# 74
+R _10_ 80
+R a_12483_4539# 73
+R a_12020_4539# 71
+R _25_ 82
+R a_9644_3944# 27
+R a_7535_3988# 92
+R a_10093_3944# 64
+R a_9556_3988# 32
+R a_8328_3976# 74
+R _19_ 89
+R _27_ 89
+R a_7555_4539# 73
+R a_7092_4539# 71
+R _23_ 73
+R a_4604_3944# 27
+R a_6509_3944# 64
+R a_5837_3944# 64
+R a_5165_3944# 64
+R a_4516_3988# 32
+R a_3981_4417# 71
+R a_3004_4020# 92
+R a_3044_4539# 73
+R a_2612_4020# 74
+R a_2140_3944# 27
+R a_1692_3944# 27
+R a_2052_3988# 32
+R a_1604_3988# 32
+R a_16851_4797# 73
+R a_17624_5172# 74
+R a_12692_5176# 32
+R a_5524_5176# 32
+R _21_ 72
+R a_3396_5176# 32
+R a_2948_5176# 32
+R a_2500_5176# 32
+R a_2052_5176# 32
+R a_1604_5176# 32
+R a_16831_5296# 92
+R a_16388_4797# 71
+R a_15683_4772# 64
+R _14_ 72
+R a_12780_5079# 27
+R _13_ 72
+R a_8301_4728# 64
+R _07_ 89
+R a_6947_4772# 64
+R a_6285_4728# 64
+R a_5612_5079# 27
+R a_4829_4728# 64
+R a_4157_4728# 64
+R a_3484_5079# 27
+R a_3036_5079# 27
+R a_2588_5079# 27
+R a_2140_5079# 27
+R a_1692_5079# 27
+R _20_ 82
+R _08_ 84
+R _28_ 90
+R a_17699_6040# 64
+R a_16812_5512# 27
+R a_9644_5512# 27
+R a_16724_5556# 32
+R a_16365_5512# 64
+R _18_ 77
+R a_9556_5556# 32
+R a_4716_5512# 27
+R a_4268_5512# 27
+R a_3820_5512# 27
+R a_3372_5512# 27
+R a_8189_5512# 64
+R _09_ 74
+R _11_ 72
+R a_5501_5512# 64
+R a_4628_5556# 32
+R a_4180_5556# 32
+R a_3732_5556# 32
+R a_3284_5556# 32
+R a_1716_6040# 68
+R a_12580_6744# 32
+R _15_ 73
+R a_5972_6744# 32
+R a_5524_6744# 32
+R a_4740_6744# 32
+R a_4292_6744# 32
+R a_3844_6744# 32
+R a_1604_6744# 32
+R _16_ 87
+R _12_ 73
+R _06_ 79
+R a_12668_6647# 27
+R a_6835_6340# 64
+R a_6060_6647# 27
+R a_5612_6647# 27
+R a_4828_6647# 27
+R a_4380_6647# 27
+R a_3932_6647# 27
+R _03_ 80
+R a_3296_6296# 71
+R a_2161_6296# 72
+R a_1692_6647# 27
+R _17_ 95
+R a_14815_7124# 92
+R a_15608_7112# 74
+R a_14835_7675# 73
+R a_14372_7675# 71
+R a_14012_7080# 27
+R a_13924_7124# 32
+R a_13389_7553# 71
+R a_12412_7156# 92
+R a_12452_7675# 73
+R a_12020_7156# 74
+R a_9644_7080# 27
+R a_9556_7124# 32
+R a_8573_7553# 71
+R a_7596_7156# 92
+R a_7636_7675# 73
+R a_7204_7156# 74
+R a_6844_7080# 27
+R a_6396_7080# 27
+R a_5948_7080# 27
+R a_5500_7080# 27
+R a_5052_7080# 27
+R signal_n 87
+R a_6756_7124# 32
+R a_6308_7124# 32
+R a_5860_7124# 32
+R a_5412_7124# 32
+R a_4964_7124# 32
+R a_3757_7553# 71
+R a_2780_7156# 92
+R a_2820_7675# 73
+R a_2388_7156# 74
+R _02_ 87
+R a_17844_8312# 32
+R a_14723_7933# 73
+R a_17932_8215# 27
+R a_15496_8308# 74
+R a_11587_7933# 73
+R a_14703_8432# 92
+R a_14260_7933# 71
+R a_12360_8308# 74
+R a_7636_7933# 73
+R a_11567_8432# 92
+R a_11124_7933# 71
+R a_8573_7889# 71
+R a_7596_8400# 92
+R a_7204_7933# 74
+R a_5972_8312# 32
+R a_5524_8312# 32
+R a_2820_7933# 73
+R a_6060_8215# 27
+R a_5612_8215# 27
+R _04_ 84
+R a_4640_7864# 71
+C _00_ GND 22.42
+R _00_ 3361
+R a_3757_7889# 71
+R a_2780_8400# 92
+R a_2388_7933# 74
+R _01_ 88

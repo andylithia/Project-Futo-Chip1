@@ -1,0 +1,312 @@
+library (captune_1p) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1ohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 30;
+  slew_lower_threshold_pct_fall : 30;
+  slew_upper_threshold_pct_rise : 70;
+  slew_upper_threshold_pct_fall : 70;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 3.30;
+
+  type ("tune") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 64;
+    bit_from : 63;
+    bit_to : 0;
+  }
+
+  cell ("captune_1p") {
+    pin("cap") {
+      direction : inout;
+      capacitance : 0.3237;
+    }
+    pin("vdd") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("vss") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    bus("tune") {
+      bus_type : tune;
+      direction : input;
+      capacitance : 0.0000;
+    pin("tune[63]") {
+      direction : input;
+      capacitance : 0.0147;
+    }
+    pin("tune[62]") {
+      direction : input;
+      capacitance : 0.0192;
+    }
+    pin("tune[61]") {
+      direction : input;
+      capacitance : 0.0150;
+    }
+    pin("tune[60]") {
+      direction : input;
+      capacitance : 0.0179;
+    }
+    pin("tune[59]") {
+      direction : input;
+      capacitance : 0.0175;
+    }
+    pin("tune[58]") {
+      direction : input;
+      capacitance : 0.0182;
+    }
+    pin("tune[57]") {
+      direction : input;
+      capacitance : 0.0154;
+    }
+    pin("tune[56]") {
+      direction : input;
+      capacitance : 0.0169;
+    }
+    pin("tune[55]") {
+      direction : input;
+      capacitance : 0.0162;
+    }
+    pin("tune[54]") {
+      direction : input;
+      capacitance : 0.0154;
+    }
+    pin("tune[53]") {
+      direction : input;
+      capacitance : 0.0162;
+    }
+    pin("tune[52]") {
+      direction : input;
+      capacitance : 0.0169;
+    }
+    pin("tune[51]") {
+      direction : input;
+      capacitance : 0.0133;
+    }
+    pin("tune[50]") {
+      direction : input;
+      capacitance : 0.0148;
+    }
+    pin("tune[49]") {
+      direction : input;
+      capacitance : 0.0154;
+    }
+    pin("tune[48]") {
+      direction : input;
+      capacitance : 0.0139;
+    }
+    pin("tune[47]") {
+      direction : input;
+      capacitance : 0.0171;
+    }
+    pin("tune[46]") {
+      direction : input;
+      capacitance : 0.0144;
+    }
+    pin("tune[45]") {
+      direction : input;
+      capacitance : 0.0137;
+    }
+    pin("tune[44]") {
+      direction : input;
+      capacitance : 0.0161;
+    }
+    pin("tune[43]") {
+      direction : input;
+      capacitance : 0.0146;
+    }
+    pin("tune[42]") {
+      direction : input;
+      capacitance : 0.0145;
+    }
+    pin("tune[41]") {
+      direction : input;
+      capacitance : 0.0142;
+    }
+    pin("tune[40]") {
+      direction : input;
+      capacitance : 0.0129;
+    }
+    pin("tune[39]") {
+      direction : input;
+      capacitance : 0.0117;
+    }
+    pin("tune[38]") {
+      direction : input;
+      capacitance : 0.0121;
+    }
+    pin("tune[37]") {
+      direction : input;
+      capacitance : 0.0118;
+    }
+    pin("tune[36]") {
+      direction : input;
+      capacitance : 0.0126;
+    }
+    pin("tune[35]") {
+      direction : input;
+      capacitance : 0.0129;
+    }
+    pin("tune[34]") {
+      direction : input;
+      capacitance : 0.0137;
+    }
+    pin("tune[33]") {
+      direction : input;
+      capacitance : 0.0137;
+    }
+    pin("tune[32]") {
+      direction : input;
+      capacitance : 0.0154;
+    }
+    pin("tune[31]") {
+      direction : input;
+      capacitance : 0.0165;
+    }
+    pin("tune[30]") {
+      direction : input;
+      capacitance : 0.0148;
+    }
+    pin("tune[29]") {
+      direction : input;
+      capacitance : 0.0165;
+    }
+    pin("tune[28]") {
+      direction : input;
+      capacitance : 0.0168;
+    }
+    pin("tune[27]") {
+      direction : input;
+      capacitance : 0.0141;
+    }
+    pin("tune[26]") {
+      direction : input;
+      capacitance : 0.0134;
+    }
+    pin("tune[25]") {
+      direction : input;
+      capacitance : 0.0145;
+    }
+    pin("tune[24]") {
+      direction : input;
+      capacitance : 0.0150;
+    }
+    pin("tune[23]") {
+      direction : input;
+      capacitance : 0.0139;
+    }
+    pin("tune[22]") {
+      direction : input;
+      capacitance : 0.0164;
+    }
+    pin("tune[21]") {
+      direction : input;
+      capacitance : 0.0140;
+    }
+    pin("tune[20]") {
+      direction : input;
+      capacitance : 0.0148;
+    }
+    pin("tune[19]") {
+      direction : input;
+      capacitance : 0.0156;
+    }
+    pin("tune[18]") {
+      direction : input;
+      capacitance : 0.0136;
+    }
+    pin("tune[17]") {
+      direction : input;
+      capacitance : 0.0163;
+    }
+    pin("tune[16]") {
+      direction : input;
+      capacitance : 0.0147;
+    }
+    pin("tune[15]") {
+      direction : input;
+      capacitance : 0.0175;
+    }
+    pin("tune[14]") {
+      direction : input;
+      capacitance : 0.0160;
+    }
+    pin("tune[13]") {
+      direction : input;
+      capacitance : 0.0166;
+    }
+    pin("tune[12]") {
+      direction : input;
+      capacitance : 0.0145;
+    }
+    pin("tune[11]") {
+      direction : input;
+      capacitance : 0.0160;
+    }
+    pin("tune[10]") {
+      direction : input;
+      capacitance : 0.0163;
+    }
+    pin("tune[9]") {
+      direction : input;
+      capacitance : 0.0166;
+    }
+    pin("tune[8]") {
+      direction : input;
+      capacitance : 0.0170;
+    }
+    pin("tune[7]") {
+      direction : input;
+      capacitance : 0.0155;
+    }
+    pin("tune[6]") {
+      direction : input;
+      capacitance : 0.0136;
+    }
+    pin("tune[5]") {
+      direction : input;
+      capacitance : 0.0166;
+    }
+    pin("tune[4]") {
+      direction : input;
+      capacitance : 0.0149;
+    }
+    pin("tune[3]") {
+      direction : input;
+      capacitance : 0.0175;
+    }
+    pin("tune[2]") {
+      direction : input;
+      capacitance : 0.0190;
+    }
+    pin("tune[1]") {
+      direction : input;
+      capacitance : 0.0174;
+    }
+    pin("tune[0]") {
+      direction : input;
+      capacitance : 0.0189;
+    }
+    }
+  }
+
+}

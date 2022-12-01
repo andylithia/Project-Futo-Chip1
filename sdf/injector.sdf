@@ -1,0 +1,928 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "injector")
+ (DATE "Wed Nov 30 17:40:57 2022")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.3.2")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "injector")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT enable _29_.I (0.133:0.133:0.133) (0.072:0.072:0.072))
+    (INTERCONNECT enable _32_.A1 (0.133:0.133:0.133) (0.072:0.072:0.072))
+    (INTERCONNECT signal _32_.A2 (0.188:0.188:0.188) (0.102:0.102:0.102))
+    (INTERCONNECT signal siginv.I (0.188:0.188:0.188) (0.102:0.102:0.102))
+    (INTERCONNECT trim_n[0] gen_TRIM\[0\]\.ntrimn.EN (0.185:0.185:0.185) (0.101:0.101:0.101))
+    (INTERCONNECT trim_n[0] gen_TRIM\[0\]\.ntrimp.EN (0.185:0.185:0.185) (0.101:0.101:0.101))
+    (INTERCONNECT trim_n[1] gen_TRIM\[1\]\.ntrimn.EN (0.206:0.206:0.206) (0.112:0.112:0.112))
+    (INTERCONNECT trim_n[1] gen_TRIM\[1\]\.ntrimp.EN (0.206:0.206:0.206) (0.112:0.112:0.112))
+    (INTERCONNECT trim_n[2] gen_TRIM\[2\]\.ntrimn.EN (0.216:0.216:0.216) (0.118:0.118:0.118))
+    (INTERCONNECT trim_n[2] gen_TRIM\[2\]\.ntrimp.EN (0.216:0.216:0.216) (0.118:0.118:0.118))
+    (INTERCONNECT trim_n[3] gen_TRIM\[3\]\.ntrimn.EN (0.206:0.206:0.206) (0.112:0.112:0.112))
+    (INTERCONNECT trim_n[3] gen_TRIM\[3\]\.ntrimp.EN (0.207:0.207:0.207) (0.113:0.113:0.113))
+    (INTERCONNECT trim_p[0] gen_TRIM\[0\]\.ptrimn.EN (0.179:0.179:0.179) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[0] gen_TRIM\[0\]\.ptrimp.EN (0.180:0.180:0.180) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[1] gen_TRIM\[1\]\.ptrimn.EN (0.181:0.181:0.181) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[1] gen_TRIM\[1\]\.ptrimp.EN (0.181:0.181:0.181) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[2] gen_TRIM\[2\]\.ptrimn.EN (0.180:0.180:0.180) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[2] gen_TRIM\[2\]\.ptrimp.EN (0.180:0.180:0.180) (0.098:0.098:0.098))
+    (INTERCONNECT trim_p[3] gen_TRIM\[3\]\.ptrimn.EN (0.217:0.217:0.217) (0.118:0.118:0.118))
+    (INTERCONNECT trim_p[3] gen_TRIM\[3\]\.ptrimp.EN (0.217:0.217:0.217) (0.118:0.118:0.118))
+    (INTERCONNECT _29_.ZN _30_.A2 (0.002:0.002:0.002))
+    (INTERCONNECT _29_.ZN gen_PU\[0\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[0\]\.pup.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT _29_.ZN gen_PU\[10\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[10\]\.pup.I (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT _29_.ZN gen_PU\[11\]\.pun.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT _29_.ZN gen_PU\[11\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[12\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[12\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[13\]\.pun.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[13\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[14\]\.pun.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT _29_.ZN gen_PU\[14\]\.pup.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT _29_.ZN gen_PU\[15\]\.pun.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT _29_.ZN gen_PU\[15\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[16\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[16\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[17\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[17\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[18\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[18\]\.pup.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[19\]\.pun.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[19\]\.pup.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT _29_.ZN gen_PU\[1\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[1\]\.pup.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[2\]\.pun.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT _29_.ZN gen_PU\[2\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[3\]\.pun.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[3\]\.pup.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT _29_.ZN gen_PU\[4\]\.pun.I (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT _29_.ZN gen_PU\[4\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[5\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[5\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[6\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[6\]\.pup.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[7\]\.pun.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_PU\[7\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[8\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[8\]\.pup.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[9\]\.pun.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_PU\[9\]\.pup.I (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT _29_.ZN gen_TRIM\[0\]\.ptrimn.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT _29_.ZN gen_TRIM\[0\]\.ptrimp.I (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT _29_.ZN gen_TRIM\[1\]\.ptrimn.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT _29_.ZN gen_TRIM\[1\]\.ptrimp.I (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT _29_.ZN gen_TRIM\[2\]\.ptrimn.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_TRIM\[2\]\.ptrimp.I (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT _29_.ZN gen_TRIM\[3\]\.ptrimn.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _29_.ZN gen_TRIM\[3\]\.ptrimp.I (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT _30_.Z _31_.I (0.000:0.000:0.000))
+    (INTERCONNECT _31_.Z psijp.I (0.000:0.000:0.000))
+    (INTERCONNECT _32_.Z _33_.I (0.000:0.000:0.000))
+    (INTERCONNECT _33_.Z nsijn.I (0.000:0.000:0.000))
+    (INTERCONNECT _34_.Z gen_PD\[0\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _35_.Z gen_PD\[0\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _36_.Z gen_PD\[1\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _37_.Z gen_PD\[1\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _38_.Z gen_PD\[2\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _39_.Z gen_PD\[2\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _40_.Z gen_PD\[3\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _41_.Z gen_PD\[3\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _42_.Z gen_PD\[4\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _43_.Z gen_PD\[4\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _44_.Z gen_PD\[5\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _45_.Z gen_PD\[5\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _46_.Z gen_PD\[6\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _47_.Z gen_PD\[6\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _48_.Z gen_PD\[7\]\.pdn.I (0.000:0.000:0.000))
+    (INTERCONNECT _49_.Z gen_PD\[7\]\.pdp.I (0.000:0.000:0.000))
+    (INTERCONNECT _50_.Z gen_TRIM\[0\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT _51_.Z gen_TRIM\[0\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT _52_.Z gen_TRIM\[1\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT _53_.Z gen_TRIM\[1\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT _54_.Z gen_TRIM\[2\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT _55_.Z gen_TRIM\[2\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT _56_.Z gen_TRIM\[3\]\.ntrimn.I (0.000:0.000:0.000))
+    (INTERCONNECT _57_.Z gen_TRIM\[3\]\.ntrimp.I (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[0\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[0\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[1\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[1\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[2\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[2\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[3\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[3\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[4\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[4\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[5\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[5\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[6\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[6\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[7\]\.pdn.ZN outn (0.000:0.000:0.000))
+    (INTERCONNECT gen_PD\[7\]\.pdp.ZN outp (0.000:0.000:0.000))
+    (INTERCONNECT gen_PU\[0\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[0\]\.pup.ZN outp (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[10\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[10\]\.pup.ZN outp (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT gen_PU\[11\]\.pun.ZN outn (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT gen_PU\[11\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[12\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[12\]\.pup.ZN outp (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[13\]\.pun.ZN outn (0.002:0.002:0.002))
+    (INTERCONNECT gen_PU\[13\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[14\]\.pun.ZN outn (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[14\]\.pup.ZN outp (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[15\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[15\]\.pup.ZN outp (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT gen_PU\[16\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[16\]\.pup.ZN outp (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[17\]\.pun.ZN outn (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[17\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[18\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[18\]\.pup.ZN outp (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[19\]\.pun.ZN outn (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[19\]\.pup.ZN outp (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT gen_PU\[1\]\.pun.ZN outn (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT gen_PU\[1\]\.pup.ZN outp (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[2\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[2\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[3\]\.pun.ZN outn (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[3\]\.pup.ZN outp (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[4\]\.pun.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[4\]\.pup.ZN outp (0.006:0.006:0.006) (0.006:0.006:0.006))
+    (INTERCONNECT gen_PU\[5\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[5\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[6\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[6\]\.pup.ZN outp (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[7\]\.pun.ZN outn (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[7\]\.pup.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_PU\[8\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[8\]\.pup.ZN outp (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT gen_PU\[9\]\.pun.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_PU\[9\]\.pup.ZN outp (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT gen_TRIM\[0\]\.ntrimn.ZN outn (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT gen_TRIM\[0\]\.ntrimp.ZN outp (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT gen_TRIM\[0\]\.ptrimn.ZN outn (0.009:0.009:0.009) (0.009:0.009:0.009))
+    (INTERCONNECT gen_TRIM\[0\]\.ptrimp.ZN outp (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT gen_TRIM\[1\]\.ntrimn.ZN outn (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT gen_TRIM\[1\]\.ntrimp.ZN outp (0.008:0.008:0.008) (0.008:0.008:0.008))
+    (INTERCONNECT gen_TRIM\[1\]\.ptrimn.ZN outn (0.007:0.007:0.007) (0.007:0.007:0.007))
+    (INTERCONNECT gen_TRIM\[1\]\.ptrimp.ZN outp (0.011:0.011:0.011) (0.010:0.011:0.011))
+    (INTERCONNECT gen_TRIM\[2\]\.ntrimn.ZN outn (0.004:0.004:0.004) (0.004:0.004:0.004))
+    (INTERCONNECT gen_TRIM\[2\]\.ntrimp.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_TRIM\[2\]\.ptrimn.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_TRIM\[2\]\.ptrimp.ZN outp (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_TRIM\[3\]\.ntrimn.ZN outn (0.005:0.005:0.005) (0.005:0.005:0.005))
+    (INTERCONNECT gen_TRIM\[3\]\.ntrimp.ZN outp (0.001:0.001:0.001))
+    (INTERCONNECT gen_TRIM\[3\]\.ptrimn.ZN outn (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT gen_TRIM\[3\]\.ptrimp.ZN outp (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT nsijn.ZN outn (0.011:0.011:0.011) (0.011:0.011:0.011))
+    (INTERCONNECT psijp.ZN outp (0.012:0.012:0.012) (0.012:0.012:0.012))
+    (INTERCONNECT siginv.ZN _30_.A1 (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE _29_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (3.564:3.564:3.564) (2.009:2.009:2.009))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__or2_1")
+  (INSTANCE _30_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 Z (0.409:0.409:0.409) (0.650:0.650:0.650))
+    (IOPATH A2 Z (0.348:0.348:0.348) (1.389:1.389:1.389))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE _31_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.375:0.380:0.384) (0.438:0.446:0.455))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__and2_1")
+  (INSTANCE _32_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A1 Z (0.410:0.410:0.410) (0.352:0.352:0.352))
+    (IOPATH A2 Z (0.411:0.411:0.411) (0.393:0.393:0.393))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__buf_1")
+  (INSTANCE _33_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (0.320:0.321:0.321) (0.364:0.365:0.366))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[0\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[0\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[1\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[1\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[2\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[2\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[3\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[3\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[4\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[4\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[5\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[5\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[6\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[6\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[7\]\.pdn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PD\[7\]\.pdp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[0\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[0\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[10\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[10\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[11\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[11\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[12\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[12\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[13\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[13\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[14\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[14\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[15\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[15\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[16\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[16\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[17\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[17\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[18\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[18\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[19\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[19\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[1\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[1\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[2\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[2\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[3\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[3\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[4\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[4\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[5\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[5\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[6\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[6\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[7\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[7\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[8\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[8\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[9\]\.pun)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE gen_PU\[9\]\.pup)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.570:0.570:0.570) (-0.333:-0.333:-0.333))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[0\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.296:0.296:0.296))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[0\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.296:0.296:0.296))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[0\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[0\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[1\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.248:0.248:0.248) (0.303:0.303:0.303))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[1\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.248:0.248:0.248) (0.303:0.303:0.303))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[1\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.245:0.245:0.245) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[1\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.245:0.245:0.245) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[2\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.307:0.307:0.307))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[2\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.307:0.307:0.307))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[2\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[2\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.244:0.244:0.244) (0.297:0.297:0.297))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[3\]\.ntrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.248:0.248:0.248) (0.304:0.304:0.304))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[3\]\.ntrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.248:0.248:0.248) (0.304:0.304:0.304))
+    (IOPATH I ZN (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[3\]\.ptrimn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.307:0.307:0.307))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__invz_1")
+  (INSTANCE gen_TRIM\[3\]\.ptrimp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH EN ZN (0.250:0.250:0.250) (0.307:0.307:0.307))
+    (IOPATH I ZN (1.282:1.282:1.282) (0.436:0.436:0.436))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE nsijn)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.098:0.098:0.098) (0.061:0.061:0.061))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE psijp)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.104:0.105:0.105) (0.064:0.064:0.064))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__inv_1")
+  (INSTANCE siginv)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I ZN (0.191:0.191:0.191) (0.136:0.136:0.136))
+   )
+  )
+ )
+)

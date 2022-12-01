@@ -1,0 +1,96 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gyrator
+  CLASS BLOCK ;
+  FOREIGN gyrator ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 70.000 BY 70.000 ;
+  PIN nbus
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 25.760 0.000 26.320 4.000 ;
+    END
+  END nbus
+  PIN nload
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 60.480 0.000 61.040 4.000 ;
+    END
+  END nload
+  PIN pbus
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 8.400 0.000 8.960 4.000 ;
+    END
+  END pbus
+  PIN pload
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 43.120 0.000 43.680 4.000 ;
+    END
+  END pload
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 12.990 15.380 14.590 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 27.130 15.380 28.730 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 41.270 15.380 42.870 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 55.410 15.380 57.010 51.260 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 20.060 15.380 21.660 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 34.200 15.380 35.800 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 48.340 15.380 49.940 51.260 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 62.480 15.380 64.080 51.260 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 64.080 51.260 ;
+      LAYER Metal2 ;
+        RECT 8.540 4.300 63.940 51.150 ;
+        RECT 9.260 3.500 25.460 4.300 ;
+        RECT 26.620 3.500 42.820 4.300 ;
+        RECT 43.980 3.500 60.180 4.300 ;
+        RECT 61.340 3.500 63.940 4.300 ;
+      LAYER Metal3 ;
+        RECT 11.290 15.540 63.990 51.100 ;
+  END
+END gyrator
+END LIBRARY
+

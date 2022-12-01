@@ -33,20 +33,15 @@ module injector#(
     input       enable,     // 1: output active, vout=0.5*VDD; 0: output disabled, vout=0
     input [3:0] trim_p,     // Pull up trimmer, 0=weakest
     input [3:0] trim_n,     // Pull down trimmer, 0=weakest
-    input       latch,      // Posedge latch of trim signals
+    // input       latch,      // Posedge latch of trim signals
     input       signal,     // Inject signal
-    output      outp,       // Positive output
-    output      outn        // Negative output
+    inout      outp,       // Positive output
+    inout      outn        // Negative output
 );
     wire signal_n;
-    reg [3:0] trim_p_r;
-    reg [3:0] trim_n_r;
 
-    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_2 siginv(.I(signal),.ZN(signal_n));
-    always @(posedge latch) begin
-        trim_p_r <= trim_p;
-        trim_n_r <= trim_n;
-    end
+    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 siginv(.I(signal),.ZN(signal_n));
+
     genvar gi;
     generate
         // Master Pull Up
@@ -56,21 +51,19 @@ module injector#(
         end
         // Master Pull Down
         for(gi=0;gi<NSTRENGTH;gi=gi+1) begin : gen_PD
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 pdp (.I(1'b0),.ZN(outp));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 pdn (.I(1'b0),.ZN(outn));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 pdp (.I(1'b1),.ZN(outp));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 pdn (.I(1'b1),.ZN(outn));
         end
         // Trimmable inputs
         for(gi=0;gi<4;gi=gi+1) begin : gen_TRIM
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ptrimp (.I(enable?1'b0:1'b1),.EN(trim_p_r[gi]),.ZN(outp));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ptrimn (.I(enable?1'b0:1'b1),.EN(trim_p_r[gi]),.ZN(outn));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ntrimp (.I(1'b0),            .EN(trim_n_r[gi]),.ZN(outp));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ntrimn (.I(1'b0),            .EN(trim_n_r[gi]),.ZN(outn));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ptrimp (.I(enable?1'b0:1'b1),.EN(trim_p[gi]),.ZN(outp));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ptrimn (.I(enable?1'b0:1'b1),.EN(trim_p[gi]),.ZN(outn));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ntrimp (.I(1'b1),            .EN(trim_n[gi]),.ZN(outp));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__invz_1 ntrimn (.I(1'b1),            .EN(trim_n[gi]),.ZN(outn));
         end
     endgenerate
     // Injector
     (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 psijp (.I(enable?signal_n:1'b1),.ZN(outp));
-    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 psijn (.I(enable?signal:1'b1),  .ZN(outn));
-    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 nsijp (.I(enable?signal:1'b1),  .ZN(outp));
-    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 nsijn (.I(enable?signal_n:1'b1),.ZN(outn));
+    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 nsijn (.I(enable?signal:  1'b0),.ZN(outn));
 
 endmodule /* injector */
