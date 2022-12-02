@@ -1,0 +1,10 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x Z VSS a_168_69# VSUBS l=120 w=164 x=720 y=68 nmos_6p0
+x a_168_69# Z VDD w_n86_352# l=400 w=64 x=168 y=507 pmos_6p0
+x Z VDD a_168_69# w_n86_352# l=100 w=244 x=720 y=472 pmos_6p0
+x a_168_69# Z VSS VSUBS l=400 w=64 x=168 y=113 nmos_6p0
+R VSS 19
+R VDD 27
+R Z 82
+R a_168_69# 101
+R w_n86_352# 2278

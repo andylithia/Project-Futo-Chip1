@@ -1,0 +1,8 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x I VSS ZN VSUBS l=120 w=164 x=124 y=68 nmos_6p0
+x I VDD ZN w_n86_352# l=100 w=244 x=144 y=472 pmos_6p0
+R VSS 12
+R ZN 32
+R VDD 20
+R I 51
+R w_n86_352# 1197

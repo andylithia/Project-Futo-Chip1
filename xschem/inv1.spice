@@ -1,0 +1,6 @@
+* NGSPICE file created from f1.ext - technology: gf180mcuC
+
+.subckt inv1 I ZN VDD VSS
+X0 ZN I VSS VSS nmos_6p0 w=0.82u l=0.6u
+X1 ZN I VDD VDD pmos_6p0 w=1.22u l=0.5u
+.ends

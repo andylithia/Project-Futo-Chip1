@@ -2,11 +2,12 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+# Project-Futo
 
-## Please fill in your project documentation in this README.md file 
+Playing with Nauta Transconductors
 
-Refer to [README](docs/source/index.rst#section-quickstart) for a quickstart of how to use caravel_user_project
+Is it possible to implement an analog BPF using only digital cells?
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+![Mononobe no Futo](res/600px-Th155Futo.png "Mononobe no Futo (TH15.5)")
+
+Yinyang

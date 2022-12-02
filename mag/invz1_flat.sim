@@ -1,0 +1,24 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x a_1405_49# a_468_93# VSS VSUBS l=120 w=72 x=1405 y=93 nmos_6p0
+x a_428_560# ZN VDD w_n86_352# l=100 w=219 x=994 y=497 pmos_6p0
+x I VDD a_1405_49# w_n86_352# l=100 w=124 x=1660 y=592 pmos_6p0
+x a_468_93# ZN VSS VSUBS l=120 w=164 x=1037 y=68 nmos_6p0
+x EN a_36_93# VDD w_n86_352# l=100 w=124 x=124 y=560 pmos_6p0
+x a_36_93# VSS a_468_93# VSUBS l=120 w=72 x=348 y=93 nmos_6p0
+x EN VDD a_428_560# w_n86_352# l=100 w=124 x=328 y=560 pmos_6p0
+x a_1405_49# a_428_560# VDD w_n86_352# l=100 w=124 x=1425 y=592 pmos_6p0
+x a_36_93# a_428_560# a_468_93# w_n86_352# l=100 w=124 x=532 y=560 pmos_6p0
+x I VSS a_1405_49# VSUBS l=120 w=72 x=1660 y=93 nmos_6p0
+x EN a_468_93# a_428_560# VSUBS l=120 w=72 x=572 y=93 nmos_6p0
+x EN a_36_93# VSS VSUBS l=120 w=72 x=124 y=93 nmos_6p0
+R VSS 69
+R ZN 29
+R VDD 78
+R I 51
+R EN 133
+R a_468_93# 73
+R a_1405_49# 71
+R a_428_560# 92
+R a_36_93# 74
+C w_n86_352# GND 3.20
+R w_n86_352# 4196

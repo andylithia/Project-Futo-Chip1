@@ -1,0 +1,52 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -110 -30 150 -30 {}
+L 4 -110 110 150 110 {}
+L 4 -110 -30 -110 110 {}
+L 4 150 -30 150 110 {}
+L 7 -130 0 -110 0 {}
+L 7 -130 20 -110 20 {}
+L 7 150 0 170 0 {}
+L 7 150 20 170 20 {}
+L 7 -90 110 -90 130 {}
+L 7 -50 110 -50 130 {}
+L 7 -10 110 -10 130 {}
+L 7 30 110 30 130 {}
+L 7 70 110 70 130 {}
+L 7 110 110 110 130 {}
+L 7 -30 -50 -30 -30 {}
+L 7 0 -50 0 -30 {}
+B 5 -32.5 -52.5 -27.5 -47.5 {name=vdd dir=inout }
+B 5 -2.5 -52.5 2.5 -47.5 {name=vss dir=inout }
+B 5 -132.5 -2.5 -127.5 2.5 {name=nbusin_nshunt dir=inout }
+B 5 -132.5 17.5 -127.5 22.5 {name=pbusin_pshunt dir=inout }
+B 5 -52.5 127.5 -47.5 132.5 {name=nshunt_gy dir=inout }
+B 5 -92.5 127.5 -87.5 132.5 {name=pshunt_gy dir=inout }
+B 5 167.5 -2.5 172.5 2.5 {name=nbusout dir=inout }
+B 5 167.5 17.5 172.5 22.5 {name=pbusout dir=inout }
+B 5 -12.5 127.5 -7.5 132.5 {name=pseries_gy dir=inout }
+B 5 27.5 127.5 32.5 132.5 {name=nseries_gy dir=inout }
+B 5 67.5 127.5 72.5 132.5 {name=pseries_gygy dir=inout }
+B 5 107.5 127.5 112.5 132.5 {name=nseries_gygy dir=inout }
+T {@symname} -5.5 14 0 0 0.3 0.3 {}
+T {@name} -5 -2 0 0 0.2 0.2 {}
+T {vdd} -15 -24 0 1 0.2 0.2 {}
+T {vss} 15 -24 0 1 0.2 0.2 {}
+T {nbusin_nshunt} -25 -4 0 1 0.2 0.2 {}
+T {pbusin_pshunt} -25 16 0 1 0.2 0.2 {}
+T {nshunt_gy} -45 106 1 1 0.2 0.2 {}
+T {pshunt_gy} -85 106 1 1 0.2 0.2 {}
+T {nbusout} 145 -4 0 1 0.2 0.2 {}
+T {pbusout} 145 16 0 1 0.2 0.2 {}
+T {pseries_gy} -5 106 1 1 0.2 0.2 {}
+T {nseries_gy} 35 106 1 1 0.2 0.2 {}
+T {pseries_gygy} 75 106 1 1 0.2 0.2 {}
+T {nseries_gygy} 115 106 1 1 0.2 0.2 {}

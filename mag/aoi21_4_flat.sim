@@ -1,0 +1,38 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x A2 VSS a_288_68# VSUBS l=120 w=164 x=168 y=68 nmos_6p0
+x A2 VSS a_1072_68# VSUBS l=120 w=164 x=952 y=68 nmos_6p0
+x B ZN VSS VSUBS l=120 w=102 x=2444 y=130 nmos_6p0
+x A1 ZN a_76_476# w_n86_352# l=100 w=240 x=1184 y=476 pmos_6p0
+x A1 a_288_68# ZN VSUBS l=120 w=164 x=336 y=68 nmos_6p0
+x A1 a_76_476# ZN w_n86_352# l=100 w=240 x=1388 y=476 pmos_6p0
+x A2 ZN a_76_476# w_n86_352# l=100 w=240 x=1592 y=476 pmos_6p0
+x B VDD a_76_476# w_n86_352# l=100 w=240 x=2056 y=476 pmos_6p0
+x B VSS ZN VSUBS l=120 w=102 x=1772 y=130 nmos_6p0
+x A1 ZN a_680_68# VSUBS l=120 w=164 x=560 y=68 nmos_6p0
+x B a_76_476# VDD w_n86_352# l=100 w=240 x=2260 y=476 pmos_6p0
+x B a_76_476# VDD w_n86_352# l=100 w=240 x=1852 y=476 pmos_6p0
+x B VDD a_76_476# w_n86_352# l=100 w=240 x=2464 y=476 pmos_6p0
+x B VSS ZN VSUBS l=120 w=102 x=2220 y=130 nmos_6p0
+x A2 a_76_476# ZN w_n86_352# l=100 w=240 x=164 y=476 pmos_6p0
+x A1 ZN a_76_476# w_n86_352# l=100 w=240 x=368 y=476 pmos_6p0
+x A1 ZN a_1464_68# VSUBS l=120 w=164 x=1344 y=68 nmos_6p0
+x A1 a_76_476# ZN w_n86_352# l=100 w=240 x=572 y=476 pmos_6p0
+x A2 a_1464_68# VSS VSUBS l=120 w=164 x=1512 y=68 nmos_6p0
+x A2 ZN a_76_476# w_n86_352# l=100 w=240 x=776 y=476 pmos_6p0
+x A2 a_680_68# VSS VSUBS l=120 w=164 x=728 y=68 nmos_6p0
+x A2 a_76_476# ZN w_n86_352# l=100 w=240 x=980 y=476 pmos_6p0
+x B ZN VSS VSUBS l=120 w=102 x=1996 y=130 nmos_6p0
+x A1 a_1072_68# ZN VSUBS l=120 w=164 x=1120 y=68 nmos_6p0
+R VSS 123
+R VDD 54
+R ZN 214
+R B 254
+R A1 271
+R A2 275
+R a_1464_68# 22
+R a_1072_68# 22
+R a_680_68# 22
+R a_288_68# 22
+R a_76_476# 221
+C w_n86_352# GND 4.44
+R w_n86_352# 5521

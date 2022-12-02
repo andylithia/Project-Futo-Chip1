@@ -1,0 +1,127 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -270 130 -270 {}
+L 4 -130 330 130 330 {}
+L 4 -150 -90 -130 -90 {}
+L 4 -150 -260 -130 -260 {}
+L 4 -150 200 -130 200 {}
+L 4 -150 60 -130 60 {}
+L 4 -150 -240 -130 -240 {}
+L 4 -150 80 -130 80 {}
+L 4 -150 -70 -130 -70 {}
+L 4 -150 220 -130 220 {}
+L 4 -150 100 -130 100 {}
+L 4 -150 240 -130 240 {}
+L 4 -150 -220 -130 -220 {}
+L 4 -150 -50 -130 -50 {}
+L 4 -150 120 -130 120 {}
+L 4 -150 -200 -130 -200 {}
+L 4 -150 -30 -130 -30 {}
+L 4 -150 260 -130 260 {}
+L 4 -150 140 -130 140 {}
+L 4 -150 -180 -130 -180 {}
+L 4 -150 280 -130 280 {}
+L 4 -150 -10 -130 -10 {}
+L 4 -150 160 -130 160 {}
+L 4 -150 10 -130 10 {}
+L 4 -150 -160 -130 -160 {}
+L 4 -150 300 -130 300 {}
+L 4 -150 -140 -130 -140 {}
+L 4 -150 30 -130 30 {}
+L 4 -150 -120 -130 -120 {}
+L 4 -130 -270 -130 330 {}
+L 4 130 -270 130 330 {}
+L 7 130 -260 150 -260 {}
+L 7 130 -240 150 -240 {}
+L 7 130 -100 150 -100 {}
+L 7 130 -180 150 -180 {}
+L 7 130 -140 150 -140 {}
+L 7 130 -220 150 -220 {}
+L 7 130 -200 150 -200 {}
+L 7 130 -80 150 -80 {}
+L 7 130 -160 150 -160 {}
+L 7 130 -120 150 -120 {}
+B 5 147.5 -262.5 152.5 -257.5 {name=vdd dir=inout }
+B 5 147.5 -242.5 152.5 -237.5 {name=vss dir=inout }
+B 5 147.5 -102.5 152.5 -97.5 {name=cap_series_gygyp dir=inout }
+B 5 147.5 -182.5 152.5 -177.5 {name=cap_shunt_gyp dir=inout }
+B 5 147.5 -142.5 152.5 -137.5 {name=cap_series_gyp dir=inout }
+B 5 147.5 -222.5 152.5 -217.5 {name=cap_shunt_p dir=inout }
+B 5 147.5 -202.5 152.5 -197.5 {name=cap_shunt_n dir=inout }
+B 5 147.5 -82.5 152.5 -77.5 {name=cap_series_gygyn dir=inout }
+B 5 147.5 -162.5 152.5 -157.5 {name=cap_shunt_gyn dir=inout }
+B 5 147.5 -122.5 152.5 -117.5 {name=cap_series_gyn dir=inout }
+B 5 -152.5 -92.5 -147.5 -87.5 {name=tune_shunt_gy[0] dir=in }
+B 5 -152.5 -262.5 -147.5 -257.5 {name=tune_shunt[0] dir=in }
+B 5 -152.5 197.5 -147.5 202.5 {name=tune_series_gygy[0] dir=in }
+B 5 -152.5 57.5 -147.5 62.5 {name=tune_series_gy[0] dir=in }
+B 5 -152.5 -242.5 -147.5 -237.5 {name=tune_shunt[1] dir=in }
+B 5 -152.5 77.5 -147.5 82.5 {name=tune_series_gy[1] dir=in }
+B 5 -152.5 -72.5 -147.5 -67.5 {name=tune_shunt_gy[1] dir=in }
+B 5 -152.5 217.5 -147.5 222.5 {name=tune_series_gygy[1] dir=in }
+B 5 -152.5 97.5 -147.5 102.5 {name=tune_series_gy[2] dir=in }
+B 5 -152.5 237.5 -147.5 242.5 {name=tune_series_gygy[2] dir=in }
+B 5 -152.5 -222.5 -147.5 -217.5 {name=tune_shunt[2] dir=in }
+B 5 -152.5 -52.5 -147.5 -47.5 {name=tune_shunt_gy[2] dir=in }
+B 5 -152.5 117.5 -147.5 122.5 {name=tune_series_gy[3] dir=in }
+B 5 -152.5 -202.5 -147.5 -197.5 {name=tune_shunt[3] dir=in }
+B 5 -152.5 -32.5 -147.5 -27.5 {name=tune_shunt_gy[3] dir=in }
+B 5 -152.5 257.5 -147.5 262.5 {name=tune_series_gygy[3] dir=in }
+B 5 -152.5 137.5 -147.5 142.5 {name=tune_series_gy[4] dir=in }
+B 5 -152.5 -182.5 -147.5 -177.5 {name=tune_shunt[4] dir=in }
+B 5 -152.5 277.5 -147.5 282.5 {name=tune_series_gygy[4] dir=in }
+B 5 -152.5 -12.5 -147.5 -7.5 {name=tune_shunt_gy[4] dir=in }
+B 5 -152.5 157.5 -147.5 162.5 {name=tune_series_gy[5] dir=in }
+B 5 -152.5 7.5 -147.5 12.5 {name=tune_shunt_gy[5] dir=in }
+B 5 -152.5 -162.5 -147.5 -157.5 {name=tune_shunt[5] dir=in }
+B 5 -152.5 297.5 -147.5 302.5 {name=tune_series_gygy[5] dir=in }
+B 5 -152.5 -142.5 -147.5 -137.5 {name=tune_shunt[6] dir=in }
+B 5 -152.5 27.5 -147.5 32.5 {name=tune_shunt_gy[6] dir=in }
+B 5 -152.5 -122.5 -147.5 -117.5 {name=tune_shunt[7] dir=in }
+T {@symname} 24.5 144 0 0 0.3 0.3 {}
+T {@name} 25 128 0 0 0.2 0.2 {}
+T {vdd} 125 -264 0 1 0.2 0.2 {}
+T {vss} 125 -244 0 1 0.2 0.2 {}
+T {cap_series_gygyp} 125 -104 0 1 0.2 0.2 {}
+T {cap_shunt_gyp} 125 -184 0 1 0.2 0.2 {}
+T {cap_series_gyp} 125 -144 0 1 0.2 0.2 {}
+T {cap_shunt_p} 125 -224 0 1 0.2 0.2 {}
+T {cap_shunt_n} 125 -204 0 1 0.2 0.2 {}
+T {cap_series_gygyn} 125 -84 0 1 0.2 0.2 {}
+T {cap_shunt_gyn} 125 -164 0 1 0.2 0.2 {}
+T {cap_series_gyn} 125 -124 0 1 0.2 0.2 {}
+T {tune_shunt_gy[0]} -125 -94 0 0 0.2 0.2 {}
+T {tune_shunt[0]} -125 -264 0 0 0.2 0.2 {}
+T {tune_series_gygy[0]} -125 196 0 0 0.2 0.2 {}
+T {tune_series_gy[0]} -125 56 0 0 0.2 0.2 {}
+T {tune_shunt[1]} -125 -244 0 0 0.2 0.2 {}
+T {tune_series_gy[1]} -125 76 0 0 0.2 0.2 {}
+T {tune_shunt_gy[1]} -125 -74 0 0 0.2 0.2 {}
+T {tune_series_gygy[1]} -125 216 0 0 0.2 0.2 {}
+T {tune_series_gy[2]} -125 96 0 0 0.2 0.2 {}
+T {tune_series_gygy[2]} -125 236 0 0 0.2 0.2 {}
+T {tune_shunt[2]} -125 -224 0 0 0.2 0.2 {}
+T {tune_shunt_gy[2]} -125 -54 0 0 0.2 0.2 {}
+T {tune_series_gy[3]} -125 116 0 0 0.2 0.2 {}
+T {tune_shunt[3]} -125 -204 0 0 0.2 0.2 {}
+T {tune_shunt_gy[3]} -125 -34 0 0 0.2 0.2 {}
+T {tune_series_gygy[3]} -125 256 0 0 0.2 0.2 {}
+T {tune_series_gy[4]} -125 136 0 0 0.2 0.2 {}
+T {tune_shunt[4]} -125 -184 0 0 0.2 0.2 {}
+T {tune_series_gygy[4]} -125 276 0 0 0.2 0.2 {}
+T {tune_shunt_gy[4]} -125 -14 0 0 0.2 0.2 {}
+T {tune_series_gy[5]} -125 156 0 0 0.2 0.2 {}
+T {tune_shunt_gy[5]} -125 6 0 0 0.2 0.2 {}
+T {tune_shunt[5]} -125 -164 0 0 0.2 0.2 {}
+T {tune_series_gygy[5]} -125 296 0 0 0.2 0.2 {}
+T {tune_shunt[6]} -125 -144 0 0 0.2 0.2 {}
+T {tune_shunt_gy[6]} -125 26 0 0 0.2 0.2 {}
+T {tune_shunt[7]} -125 -124 0 0 0.2 0.2 {}
