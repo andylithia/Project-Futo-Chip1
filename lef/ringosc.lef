@@ -1,0 +1,70 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ringosc
+  CLASS BLOCK ;
+  FOREIGN ringosc ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 70.000 BY 80.000 ;
+  PIN Y
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 39.760 4.000 40.320 ;
+    END
+  END Y
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 12.990 15.380 14.590 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 27.130 15.380 28.730 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 41.270 15.380 42.870 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 55.410 15.380 57.010 63.020 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 20.060 15.380 21.660 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 34.200 15.380 35.800 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 48.340 15.380 49.940 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 62.480 15.380 64.080 63.020 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 64.080 63.020 ;
+      LAYER Metal2 ;
+        RECT 9.100 15.490 63.940 62.910 ;
+      LAYER Metal3 ;
+        RECT 4.000 40.620 63.990 62.860 ;
+        RECT 4.300 39.460 63.990 40.620 ;
+        RECT 4.000 15.540 63.990 39.460 ;
+  END
+END ringosc
+END LIBRARY
+

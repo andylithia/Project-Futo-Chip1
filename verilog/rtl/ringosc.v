@@ -21,20 +21,20 @@
 // SOFTWARE.
 //==============================================================================
 //
-// Tunable Cap Array for stage 1
+// Ring Oscillator
 // 
-module caparray_41p7p(
-    inout cap_shunt_p,
-    inout cap_shunt_n
-    // inout cap_shunt_gyp,
-    // inout cap_shunt_gyn,
-    // inout cap_series_gyp,
-    // inout cap_series_gyn,
-    // inout cap_series_gygyp,
-    // inout cap_series_gygyn
-
+module ringosc#(
+    parameter N = 127 // Must be odd
+)(
+    output Y
 );
-
-    caparray_s1 u_cap()
-
-endmodule /* caparray_41p7p */
+    (* keep *) wire [N-1:0] con;
+    (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 u_uinv_init(.I(con[N-1]),.ZN(con[0]));
+    genvar gi;
+    generate
+        for(gi=0;gi<N-1;gi=gi+1) begin: gen_ring
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__inv_1 u_uinv(.I(con[gi]),.ZN(con[gi+1]));
+        end
+    endgenerate
+    assign Y = con[N-2];
+endmodule /* ringosc */

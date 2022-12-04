@@ -7,6 +7,7 @@
 + tune_series_gygy[5] tune_shunt[0] tune_shunt[1] tune_shunt[2] tune_shunt[3] tune_shunt[4]
 + tune_shunt[5] tune_shunt[6] tune_shunt[7] tune_shunt_gy[0] tune_shunt_gy[1] tune_shunt_gy[2]
 + tune_shunt_gy[3] tune_shunt_gy[4] tune_shunt_gy[5] tune_shunt_gy[6] vss vdd
+
 X0 a_32604_48983# a_32516_49080# vss vss nmos_6p0 w=0.82u l=1u
 X1 a_3828_24856# tune_shunt[7] vss vss nmos_6p0 w=0.51u l=0.6u
 X2 a_2500_50652# cap_shunt_n a_2708_50306# vdd pmos_6p0 w=1.2u l=0.5u
