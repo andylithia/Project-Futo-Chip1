@@ -65,11 +65,11 @@ library (caparray_s1) {
     }
     pin("cap_series_gyn") {
       direction : inout;
-      capacitance : 1.8707;
+      capacitance : 2.4827;
     }
     pin("cap_series_gyp") {
       direction : inout;
-      capacitance : 1.8707;
+      capacitance : 2.4827;
     }
     pin("cap_shunt_gyn") {
       direction : inout;
@@ -81,11 +81,11 @@ library (caparray_s1) {
     }
     pin("cap_shunt_n") {
       direction : inout;
-      capacitance : 7.4169;
+      capacitance : 9.8267;
     }
     pin("cap_shunt_p") {
       direction : inout;
-      capacitance : 7.4169;
+      capacitance : 9.8267;
     }
     pin("vdd") {
       direction : input;
@@ -101,27 +101,27 @@ library (caparray_s1) {
       capacitance : 0.0000;
     pin("tune_series_gy[5]") {
       direction : input;
-      capacitance : 0.5063;
+      capacitance : 1.0097;
     }
     pin("tune_series_gy[4]") {
       direction : input;
-      capacitance : 0.5093;
+      capacitance : 0.5185;
     }
     pin("tune_series_gy[3]") {
       direction : input;
-      capacitance : 0.2665;
+      capacitance : 0.2617;
     }
     pin("tune_series_gy[2]") {
       direction : input;
-      capacitance : 0.1307;
+      capacitance : 0.1291;
     }
     pin("tune_series_gy[1]") {
       direction : input;
-      capacitance : 0.0634;
+      capacitance : 0.0626;
     }
     pin("tune_series_gy[0]") {
       direction : input;
-      capacitance : 0.0479;
+      capacitance : 0.0316;
     }
     }
     bus("tune_series_gygy") {
@@ -130,27 +130,27 @@ library (caparray_s1) {
       capacitance : 0.0000;
     pin("tune_series_gygy[5]") {
       direction : input;
-      capacitance : 0.2581;
+      capacitance : 0.2460;
     }
     pin("tune_series_gygy[4]") {
       direction : input;
-      capacitance : 0.1522;
+      capacitance : 0.1279;
     }
     pin("tune_series_gygy[3]") {
       direction : input;
-      capacitance : 0.0675;
+      capacitance : 0.0650;
     }
     pin("tune_series_gygy[2]") {
       direction : input;
-      capacitance : 0.0351;
+      capacitance : 0.0312;
     }
     pin("tune_series_gygy[1]") {
       direction : input;
-      capacitance : 0.0334;
+      capacitance : 0.0341;
     }
     pin("tune_series_gygy[0]") {
       direction : input;
-      capacitance : 0.0333;
+      capacitance : 0.0362;
     }
     }
     bus("tune_shunt") {
@@ -159,35 +159,35 @@ library (caparray_s1) {
       capacitance : 0.0000;
     pin("tune_shunt[7]") {
       direction : input;
-      capacitance : 3.0036;
+      capacitance : 4.0184;
     }
     pin("tune_shunt[6]") {
       direction : input;
-      capacitance : 1.5032;
+      capacitance : 2.0129;
     }
     pin("tune_shunt[5]") {
       direction : input;
-      capacitance : 0.7882;
+      capacitance : 1.0246;
     }
     pin("tune_shunt[4]") {
       direction : input;
-      capacitance : 0.4209;
+      capacitance : 0.5270;
     }
     pin("tune_shunt[3]") {
       direction : input;
-      capacitance : 0.2140;
+      capacitance : 0.2797;
     }
     pin("tune_shunt[2]") {
       direction : input;
-      capacitance : 0.1025;
+      capacitance : 0.1299;
     }
     pin("tune_shunt[1]") {
       direction : input;
-      capacitance : 0.0902;
+      capacitance : 0.0641;
     }
     pin("tune_shunt[0]") {
       direction : input;
-      capacitance : 0.0522;
+      capacitance : 0.0307;
     }
     }
     bus("tune_shunt_gy") {
@@ -196,27 +196,27 @@ library (caparray_s1) {
       capacitance : 0.0000;
     pin("tune_shunt_gy[6]") {
       direction : input;
-      capacitance : 0.0824;
+      capacitance : 0.0859;
     }
     pin("tune_shunt_gy[5]") {
       direction : input;
-      capacitance : 0.0787;
+      capacitance : 0.0831;
     }
     pin("tune_shunt_gy[4]") {
       direction : input;
-      capacitance : 0.0449;
+      capacitance : 0.0461;
     }
     pin("tune_shunt_gy[3]") {
       direction : input;
-      capacitance : 0.0415;
+      capacitance : 0.0369;
     }
     pin("tune_shunt_gy[2]") {
       direction : input;
-      capacitance : 0.0214;
+      capacitance : 0.0209;
     }
     pin("tune_shunt_gy[1]") {
       direction : input;
-      capacitance : 0.0219;
+      capacitance : 0.0214;
     }
     pin("tune_shunt_gy[0]") {
       direction : input;
