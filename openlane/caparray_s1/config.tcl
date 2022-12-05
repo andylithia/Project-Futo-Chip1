@@ -44,7 +44,7 @@ set ::env(DESIGN_IS_CORE) 0
 
 # -- Floorplan
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 200 300"
+set ::env(DIE_AREA) "0 0 250 350"
 set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 set ::env(FP_CORE_UTIL) 80
 

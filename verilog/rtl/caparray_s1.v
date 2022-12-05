@@ -47,6 +47,7 @@ module caparray_s1(
         // Shunt Caps are 41.67pF
         // for(gi=0;gi<1201;gi=gi+1) begin: gen_shunt
         // 192 -> 96 48 24 12 6 3 2 1
+        // 256 -> 128 64 32 16 8 4 2 1
         /*
         for(gi=0;gi<192;gi=gi+1) begin: gen_shunt_g1
             (* keep *) wire d1, d2;
@@ -54,32 +55,32 @@ module caparray_s1(
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(1'b0),.ZN(d2));
         end
         */
-        for(gi=0;gi<96;gi=gi+1) begin: gen_shunt_g1
+        for(gi=0;gi<128;gi=gi+1) begin: gen_shunt_g1
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[7]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[7]),.ZN(d2));
         end
-        for(gi=0;gi<48;gi=gi+1) begin: gen_shunt_g2
+        for(gi=0;gi<64;gi=gi+1) begin: gen_shunt_g2
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[6]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[6]),.ZN(d2));
         end
-        for(gi=0;gi<24;gi=gi+1) begin: gen_shunt_g3
+        for(gi=0;gi<32;gi=gi+1) begin: gen_shunt_g3
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[5]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[5]),.ZN(d2));
         end
-        for(gi=0;gi<12;gi=gi+1) begin: gen_shunt_g4
+        for(gi=0;gi<16;gi=gi+1) begin: gen_shunt_g4
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[4]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[4]),.ZN(d2));
         end
-        for(gi=0;gi<6;gi=gi+1) begin: gen_shunt_g5
+        for(gi=0;gi<8;gi=gi+1) begin: gen_shunt_g5
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[3]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[3]),.ZN(d2));
         end
-        for(gi=0;gi<3;gi=gi+1) begin: gen_shunt_g6
+        for(gi=0;gi<4;gi=gi+1) begin: gen_shunt_g6
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_p(.A1(cap_shunt_p),.A2(cap_shunt_p),.B(tune_shunt[2]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_shunt_n(.A1(cap_shunt_n),.A2(cap_shunt_n),.B(tune_shunt[2]),.ZN(d2));
@@ -125,13 +126,19 @@ module caparray_s1(
         end
         // Series Gy Caps are 10.32pF
         // 47 -> 16 16 8 4 2 1
-        for(gi=0;gi<16;gi=gi+1) begin: gen_series_gy_g1
-            (* keep *) wire d1, d2, d3, d4;
+        // 64 -> 32 16 8 4 2 1
+        for(gi=0;gi<32;gi=gi+1) begin: gen_series_gy_g1
+            (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyp1(.A1(cap_series_gyp),.A2(cap_series_gyp),.B(tune_series_gy[5]),.ZN(d1));
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyn1(.A1(cap_series_gyn),.A2(cap_series_gyn),.B(tune_series_gy[5]),.ZN(d2));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyp2(.A1(cap_series_gyp),.A2(cap_series_gyp),.B(tune_series_gy[4]),.ZN(d3));
-            (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyn2(.A1(cap_series_gyn),.A2(cap_series_gyn),.B(tune_series_gy[4]),.ZN(d4));
         end
+        
+        for(gi=0;gi<16;gi=gi+1) begin: gen_series_gy_g11
+            (* keep *) wire d1, d2;
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyp1(.A1(cap_series_gyp),.A2(cap_series_gyp),.B(tune_series_gy[4]),.ZN(d1));
+            (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyn1(.A1(cap_series_gyn),.A2(cap_series_gyn),.B(tune_series_gy[4]),.ZN(d2));
+        end
+
         for(gi=0;gi<8;gi=gi+1) begin: gen_series_gy_g2
             (* keep *) wire d1, d2;
             (* keep *) gf180mcu_fd_sc_mcu7t5v0__aoi21_4 u_series_gyp1(.A1(cap_series_gyp),.A2(cap_series_gyp),.B(tune_series_gy[3]),.ZN(d1));
