@@ -1,0 +1,627 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO shiftreg
+  CLASS BLOCK ;
+  FOREIGN shiftreg ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 800.000 BY 50.000 ;
+  PIN latch
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 40.880 4.000 41.440 ;
+    END
+  END latch
+  PIN sclk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 8.400 4.000 8.960 ;
+    END
+  END sclk
+  PIN sdin
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 24.640 4.000 25.200 ;
+    END
+  END sdin
+  PIN sr_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal3 ;
+        RECT 796.000 24.640 800.000 25.200 ;
+    END
+  END sr_out
+  PIN tune_s1_series_gy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 117.040 46.000 117.600 50.000 ;
+    END
+  END tune_s1_series_gy[0]
+  PIN tune_s1_series_gy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 130.480 46.000 131.040 50.000 ;
+    END
+  END tune_s1_series_gy[1]
+  PIN tune_s1_series_gy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 143.920 46.000 144.480 50.000 ;
+    END
+  END tune_s1_series_gy[2]
+  PIN tune_s1_series_gy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 157.360 46.000 157.920 50.000 ;
+    END
+  END tune_s1_series_gy[3]
+  PIN tune_s1_series_gy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 170.800 46.000 171.360 50.000 ;
+    END
+  END tune_s1_series_gy[4]
+  PIN tune_s1_series_gy[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 184.240 46.000 184.800 50.000 ;
+    END
+  END tune_s1_series_gy[5]
+  PIN tune_s1_series_gygy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 197.680 46.000 198.240 50.000 ;
+    END
+  END tune_s1_series_gygy[0]
+  PIN tune_s1_series_gygy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 211.120 46.000 211.680 50.000 ;
+    END
+  END tune_s1_series_gygy[1]
+  PIN tune_s1_series_gygy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 224.560 46.000 225.120 50.000 ;
+    END
+  END tune_s1_series_gygy[2]
+  PIN tune_s1_series_gygy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 238.000 46.000 238.560 50.000 ;
+    END
+  END tune_s1_series_gygy[3]
+  PIN tune_s1_series_gygy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 251.440 46.000 252.000 50.000 ;
+    END
+  END tune_s1_series_gygy[4]
+  PIN tune_s1_series_gygy[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 264.880 46.000 265.440 50.000 ;
+    END
+  END tune_s1_series_gygy[5]
+  PIN tune_s1_shunt[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 9.520 46.000 10.080 50.000 ;
+    END
+  END tune_s1_shunt[0]
+  PIN tune_s1_shunt[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 22.960 46.000 23.520 50.000 ;
+    END
+  END tune_s1_shunt[1]
+  PIN tune_s1_shunt[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.400 46.000 36.960 50.000 ;
+    END
+  END tune_s1_shunt[2]
+  PIN tune_s1_shunt[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 49.840 46.000 50.400 50.000 ;
+    END
+  END tune_s1_shunt[3]
+  PIN tune_s1_shunt[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 63.280 46.000 63.840 50.000 ;
+    END
+  END tune_s1_shunt[4]
+  PIN tune_s1_shunt[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 76.720 46.000 77.280 50.000 ;
+    END
+  END tune_s1_shunt[5]
+  PIN tune_s1_shunt[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 90.160 46.000 90.720 50.000 ;
+    END
+  END tune_s1_shunt[6]
+  PIN tune_s1_shunt[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 103.600 46.000 104.160 50.000 ;
+    END
+  END tune_s1_shunt[7]
+  PIN tune_s1_shunt_gy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 278.320 46.000 278.880 50.000 ;
+    END
+  END tune_s1_shunt_gy[0]
+  PIN tune_s1_shunt_gy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 291.760 46.000 292.320 50.000 ;
+    END
+  END tune_s1_shunt_gy[1]
+  PIN tune_s1_shunt_gy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 305.200 46.000 305.760 50.000 ;
+    END
+  END tune_s1_shunt_gy[2]
+  PIN tune_s1_shunt_gy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 318.640 46.000 319.200 50.000 ;
+    END
+  END tune_s1_shunt_gy[3]
+  PIN tune_s1_shunt_gy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 332.080 46.000 332.640 50.000 ;
+    END
+  END tune_s1_shunt_gy[4]
+  PIN tune_s1_shunt_gy[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 345.520 46.000 346.080 50.000 ;
+    END
+  END tune_s1_shunt_gy[5]
+  PIN tune_s1_shunt_gy[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 358.960 46.000 359.520 50.000 ;
+    END
+  END tune_s1_shunt_gy[6]
+  PIN tune_s2_series_gy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 520.240 46.000 520.800 50.000 ;
+    END
+  END tune_s2_series_gy[0]
+  PIN tune_s2_series_gy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 533.680 46.000 534.240 50.000 ;
+    END
+  END tune_s2_series_gy[1]
+  PIN tune_s2_series_gy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 547.120 46.000 547.680 50.000 ;
+    END
+  END tune_s2_series_gy[2]
+  PIN tune_s2_series_gy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 560.560 46.000 561.120 50.000 ;
+    END
+  END tune_s2_series_gy[3]
+  PIN tune_s2_series_gy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 574.000 46.000 574.560 50.000 ;
+    END
+  END tune_s2_series_gy[4]
+  PIN tune_s2_series_gy[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 587.440 46.000 588.000 50.000 ;
+    END
+  END tune_s2_series_gy[5]
+  PIN tune_s2_series_gy[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 600.880 46.000 601.440 50.000 ;
+    END
+  END tune_s2_series_gy[6]
+  PIN tune_s2_series_gy[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 614.320 46.000 614.880 50.000 ;
+    END
+  END tune_s2_series_gy[7]
+  PIN tune_s2_series_gygy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 627.760 46.000 628.320 50.000 ;
+    END
+  END tune_s2_series_gygy[0]
+  PIN tune_s2_series_gygy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 641.200 46.000 641.760 50.000 ;
+    END
+  END tune_s2_series_gygy[1]
+  PIN tune_s2_series_gygy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 654.640 46.000 655.200 50.000 ;
+    END
+  END tune_s2_series_gygy[2]
+  PIN tune_s2_series_gygy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 668.080 46.000 668.640 50.000 ;
+    END
+  END tune_s2_series_gygy[3]
+  PIN tune_s2_series_gygy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 681.520 46.000 682.080 50.000 ;
+    END
+  END tune_s2_series_gygy[4]
+  PIN tune_s2_series_gygy[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 694.960 46.000 695.520 50.000 ;
+    END
+  END tune_s2_series_gygy[5]
+  PIN tune_s2_series_gygy[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 708.400 46.000 708.960 50.000 ;
+    END
+  END tune_s2_series_gygy[6]
+  PIN tune_s2_series_gygy[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 721.840 46.000 722.400 50.000 ;
+    END
+  END tune_s2_series_gygy[7]
+  PIN tune_s2_shunt[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 372.400 46.000 372.960 50.000 ;
+    END
+  END tune_s2_shunt[0]
+  PIN tune_s2_shunt[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 506.800 46.000 507.360 50.000 ;
+    END
+  END tune_s2_shunt[10]
+  PIN tune_s2_shunt[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 385.840 46.000 386.400 50.000 ;
+    END
+  END tune_s2_shunt[1]
+  PIN tune_s2_shunt[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 399.280 46.000 399.840 50.000 ;
+    END
+  END tune_s2_shunt[2]
+  PIN tune_s2_shunt[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 412.720 46.000 413.280 50.000 ;
+    END
+  END tune_s2_shunt[3]
+  PIN tune_s2_shunt[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 426.160 46.000 426.720 50.000 ;
+    END
+  END tune_s2_shunt[4]
+  PIN tune_s2_shunt[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 439.600 46.000 440.160 50.000 ;
+    END
+  END tune_s2_shunt[5]
+  PIN tune_s2_shunt[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 453.040 46.000 453.600 50.000 ;
+    END
+  END tune_s2_shunt[6]
+  PIN tune_s2_shunt[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 466.480 46.000 467.040 50.000 ;
+    END
+  END tune_s2_shunt[7]
+  PIN tune_s2_shunt[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 479.920 46.000 480.480 50.000 ;
+    END
+  END tune_s2_shunt[8]
+  PIN tune_s2_shunt[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 493.360 46.000 493.920 50.000 ;
+    END
+  END tune_s2_shunt[9]
+  PIN tune_s2_shunt_gy[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 735.280 46.000 735.840 50.000 ;
+    END
+  END tune_s2_shunt_gy[0]
+  PIN tune_s2_shunt_gy[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 748.720 46.000 749.280 50.000 ;
+    END
+  END tune_s2_shunt_gy[1]
+  PIN tune_s2_shunt_gy[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 762.160 46.000 762.720 50.000 ;
+    END
+  END tune_s2_shunt_gy[2]
+  PIN tune_s2_shunt_gy[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 775.600 46.000 776.160 50.000 ;
+    END
+  END tune_s2_shunt_gy[3]
+  PIN tune_s2_shunt_gy[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 789.040 46.000 789.600 50.000 ;
+    END
+  END tune_s2_shunt_gy[4]
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 102.500 15.380 107.500 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 299.060 15.380 304.060 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 495.620 15.380 500.620 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 692.180 15.380 697.180 31.660 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 200.780 15.380 205.780 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 397.340 15.380 402.340 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 593.900 15.380 598.900 31.660 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 790.460 15.380 795.460 31.660 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 795.460 33.450 ;
+      LAYER Metal2 ;
+        RECT 10.380 45.700 22.660 46.000 ;
+        RECT 23.820 45.700 36.100 46.000 ;
+        RECT 37.260 45.700 49.540 46.000 ;
+        RECT 50.700 45.700 62.980 46.000 ;
+        RECT 64.140 45.700 76.420 46.000 ;
+        RECT 77.580 45.700 89.860 46.000 ;
+        RECT 91.020 45.700 103.300 46.000 ;
+        RECT 104.460 45.700 116.740 46.000 ;
+        RECT 117.900 45.700 130.180 46.000 ;
+        RECT 131.340 45.700 143.620 46.000 ;
+        RECT 144.780 45.700 157.060 46.000 ;
+        RECT 158.220 45.700 170.500 46.000 ;
+        RECT 171.660 45.700 183.940 46.000 ;
+        RECT 185.100 45.700 197.380 46.000 ;
+        RECT 198.540 45.700 210.820 46.000 ;
+        RECT 211.980 45.700 224.260 46.000 ;
+        RECT 225.420 45.700 237.700 46.000 ;
+        RECT 238.860 45.700 251.140 46.000 ;
+        RECT 252.300 45.700 264.580 46.000 ;
+        RECT 265.740 45.700 278.020 46.000 ;
+        RECT 279.180 45.700 291.460 46.000 ;
+        RECT 292.620 45.700 304.900 46.000 ;
+        RECT 306.060 45.700 318.340 46.000 ;
+        RECT 319.500 45.700 331.780 46.000 ;
+        RECT 332.940 45.700 345.220 46.000 ;
+        RECT 346.380 45.700 358.660 46.000 ;
+        RECT 359.820 45.700 372.100 46.000 ;
+        RECT 373.260 45.700 385.540 46.000 ;
+        RECT 386.700 45.700 398.980 46.000 ;
+        RECT 400.140 45.700 412.420 46.000 ;
+        RECT 413.580 45.700 425.860 46.000 ;
+        RECT 427.020 45.700 439.300 46.000 ;
+        RECT 440.460 45.700 452.740 46.000 ;
+        RECT 453.900 45.700 466.180 46.000 ;
+        RECT 467.340 45.700 479.620 46.000 ;
+        RECT 480.780 45.700 493.060 46.000 ;
+        RECT 494.220 45.700 506.500 46.000 ;
+        RECT 507.660 45.700 519.940 46.000 ;
+        RECT 521.100 45.700 533.380 46.000 ;
+        RECT 534.540 45.700 546.820 46.000 ;
+        RECT 547.980 45.700 560.260 46.000 ;
+        RECT 561.420 45.700 573.700 46.000 ;
+        RECT 574.860 45.700 587.140 46.000 ;
+        RECT 588.300 45.700 600.580 46.000 ;
+        RECT 601.740 45.700 614.020 46.000 ;
+        RECT 615.180 45.700 627.460 46.000 ;
+        RECT 628.620 45.700 640.900 46.000 ;
+        RECT 642.060 45.700 654.340 46.000 ;
+        RECT 655.500 45.700 667.780 46.000 ;
+        RECT 668.940 45.700 681.220 46.000 ;
+        RECT 682.380 45.700 694.660 46.000 ;
+        RECT 695.820 45.700 708.100 46.000 ;
+        RECT 709.260 45.700 721.540 46.000 ;
+        RECT 722.700 45.700 734.980 46.000 ;
+        RECT 736.140 45.700 748.420 46.000 ;
+        RECT 749.580 45.700 761.860 46.000 ;
+        RECT 763.020 45.700 775.300 46.000 ;
+        RECT 776.460 45.700 788.740 46.000 ;
+        RECT 789.900 45.700 795.270 46.000 ;
+        RECT 9.660 8.490 795.270 45.700 ;
+      LAYER Metal3 ;
+        RECT 4.300 40.580 796.000 41.300 ;
+        RECT 3.500 25.500 796.000 40.580 ;
+        RECT 4.300 24.340 795.700 25.500 ;
+        RECT 3.500 9.260 796.000 24.340 ;
+        RECT 4.300 8.540 796.000 9.260 ;
+  END
+END shiftreg
+END LIBRARY
+

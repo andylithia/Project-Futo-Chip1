@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO caparray_s1
+MACRO caparray_s2
   CLASS BLOCK ;
-  FOREIGN caparray_s1 ;
+  FOREIGN caparray_s2 ;
   ORIGIN 0.000 0.000 ;
   SIZE 400.000 BY 200.000 ;
   PIN cap_series_gygyn
@@ -76,7 +76,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 126.560 0.000 127.120 4.000 ;
+        RECT 143.920 0.000 144.480 4.000 ;
     END
   END tune_series_gy[0]
   PIN tune_series_gy[1]
@@ -84,7 +84,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 141.120 0.000 141.680 4.000 ;
+        RECT 156.240 0.000 156.800 4.000 ;
     END
   END tune_series_gy[1]
   PIN tune_series_gy[2]
@@ -92,7 +92,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 155.680 0.000 156.240 4.000 ;
+        RECT 168.560 0.000 169.120 4.000 ;
     END
   END tune_series_gy[2]
   PIN tune_series_gy[3]
@@ -100,7 +100,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 170.240 0.000 170.800 4.000 ;
+        RECT 180.880 0.000 181.440 4.000 ;
     END
   END tune_series_gy[3]
   PIN tune_series_gy[4]
@@ -108,7 +108,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 184.800 0.000 185.360 4.000 ;
+        RECT 193.200 0.000 193.760 4.000 ;
     END
   END tune_series_gy[4]
   PIN tune_series_gy[5]
@@ -116,15 +116,31 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 199.360 0.000 199.920 4.000 ;
+        RECT 205.520 0.000 206.080 4.000 ;
     END
   END tune_series_gy[5]
+  PIN tune_series_gy[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 217.840 0.000 218.400 4.000 ;
+    END
+  END tune_series_gy[6]
+  PIN tune_series_gy[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 230.160 0.000 230.720 4.000 ;
+    END
+  END tune_series_gy[7]
   PIN tune_series_gygy[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 213.920 0.000 214.480 4.000 ;
+        RECT 242.480 0.000 243.040 4.000 ;
     END
   END tune_series_gygy[0]
   PIN tune_series_gygy[1]
@@ -132,7 +148,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 228.480 0.000 229.040 4.000 ;
+        RECT 254.800 0.000 255.360 4.000 ;
     END
   END tune_series_gygy[1]
   PIN tune_series_gygy[2]
@@ -140,7 +156,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 243.040 0.000 243.600 4.000 ;
+        RECT 267.120 0.000 267.680 4.000 ;
     END
   END tune_series_gygy[2]
   PIN tune_series_gygy[3]
@@ -148,7 +164,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 257.600 0.000 258.160 4.000 ;
+        RECT 279.440 0.000 280.000 4.000 ;
     END
   END tune_series_gygy[3]
   PIN tune_series_gygy[4]
@@ -156,7 +172,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 272.160 0.000 272.720 4.000 ;
+        RECT 291.760 0.000 292.320 4.000 ;
     END
   END tune_series_gygy[4]
   PIN tune_series_gygy[5]
@@ -164,23 +180,47 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 286.720 0.000 287.280 4.000 ;
+        RECT 304.080 0.000 304.640 4.000 ;
     END
   END tune_series_gygy[5]
+  PIN tune_series_gygy[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 316.400 0.000 316.960 4.000 ;
+    END
+  END tune_series_gygy[6]
+  PIN tune_series_gygy[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 328.720 0.000 329.280 4.000 ;
+    END
+  END tune_series_gygy[7]
   PIN tune_shunt[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 10.080 0.000 10.640 4.000 ;
+        RECT 8.400 0.000 8.960 4.000 ;
     END
   END tune_shunt[0]
+  PIN tune_shunt[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 131.600 0.000 132.160 4.000 ;
+    END
+  END tune_shunt[10]
   PIN tune_shunt[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 24.640 0.000 25.200 4.000 ;
+        RECT 20.720 0.000 21.280 4.000 ;
     END
   END tune_shunt[1]
   PIN tune_shunt[2]
@@ -188,7 +228,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 39.200 0.000 39.760 4.000 ;
+        RECT 33.040 0.000 33.600 4.000 ;
     END
   END tune_shunt[2]
   PIN tune_shunt[3]
@@ -196,7 +236,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 53.760 0.000 54.320 4.000 ;
+        RECT 45.360 0.000 45.920 4.000 ;
     END
   END tune_shunt[3]
   PIN tune_shunt[4]
@@ -204,7 +244,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 68.320 0.000 68.880 4.000 ;
+        RECT 57.680 0.000 58.240 4.000 ;
     END
   END tune_shunt[4]
   PIN tune_shunt[5]
@@ -212,7 +252,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 82.880 0.000 83.440 4.000 ;
+        RECT 70.000 0.000 70.560 4.000 ;
     END
   END tune_shunt[5]
   PIN tune_shunt[6]
@@ -220,7 +260,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 97.440 0.000 98.000 4.000 ;
+        RECT 82.320 0.000 82.880 4.000 ;
     END
   END tune_shunt[6]
   PIN tune_shunt[7]
@@ -228,15 +268,31 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 112.000 0.000 112.560 4.000 ;
+        RECT 94.640 0.000 95.200 4.000 ;
     END
   END tune_shunt[7]
+  PIN tune_shunt[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 106.960 0.000 107.520 4.000 ;
+    END
+  END tune_shunt[8]
+  PIN tune_shunt[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal2 ;
+        RECT 119.280 0.000 119.840 4.000 ;
+    END
+  END tune_shunt[9]
   PIN tune_shunt_gy[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 301.280 0.000 301.840 4.000 ;
+        RECT 341.040 0.000 341.600 4.000 ;
     END
   END tune_shunt_gy[0]
   PIN tune_shunt_gy[1]
@@ -244,7 +300,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 315.840 0.000 316.400 4.000 ;
+        RECT 353.360 0.000 353.920 4.000 ;
     END
   END tune_shunt_gy[1]
   PIN tune_shunt_gy[2]
@@ -252,7 +308,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 330.400 0.000 330.960 4.000 ;
+        RECT 365.680 0.000 366.240 4.000 ;
     END
   END tune_shunt_gy[2]
   PIN tune_shunt_gy[3]
@@ -260,7 +316,7 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 344.960 0.000 345.520 4.000 ;
+        RECT 378.000 0.000 378.560 4.000 ;
     END
   END tune_shunt_gy[3]
   PIN tune_shunt_gy[4]
@@ -268,25 +324,9 @@ MACRO caparray_s1
     USE SIGNAL ;
     PORT
       LAYER Metal2 ;
-        RECT 359.520 0.000 360.080 4.000 ;
+        RECT 390.320 0.000 390.880 4.000 ;
     END
   END tune_shunt_gy[4]
-  PIN tune_shunt_gy[5]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER Metal2 ;
-        RECT 374.080 0.000 374.640 4.000 ;
-    END
-  END tune_shunt_gy[5]
-  PIN tune_shunt_gy[6]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER Metal2 ;
-        RECT 388.640 0.000 389.200 4.000 ;
-    END
-  END tune_shunt_gy[6]
   PIN vdd
     DIRECTION INOUT ;
     USE POWER ;
@@ -359,7 +399,7 @@ MACRO caparray_s1
       LAYER Metal1 ;
         RECT 6.720 15.380 393.120 184.540 ;
       LAYER Metal2 ;
-        RECT 10.220 195.700 24.900 196.420 ;
+        RECT 8.540 195.700 24.900 196.420 ;
         RECT 26.060 195.700 74.740 196.420 ;
         RECT 75.900 195.700 124.580 196.420 ;
         RECT 125.740 195.700 174.420 196.420 ;
@@ -367,48 +407,47 @@ MACRO caparray_s1
         RECT 225.420 195.700 274.100 196.420 ;
         RECT 275.260 195.700 323.940 196.420 ;
         RECT 325.100 195.700 373.780 196.420 ;
-        RECT 374.940 195.700 390.740 196.420 ;
-        RECT 10.220 4.300 390.740 195.700 ;
-        RECT 10.940 3.500 24.340 4.300 ;
-        RECT 25.500 3.500 38.900 4.300 ;
-        RECT 40.060 3.500 53.460 4.300 ;
-        RECT 54.620 3.500 68.020 4.300 ;
-        RECT 69.180 3.500 82.580 4.300 ;
-        RECT 83.740 3.500 97.140 4.300 ;
-        RECT 98.300 3.500 111.700 4.300 ;
-        RECT 112.860 3.500 126.260 4.300 ;
-        RECT 127.420 3.500 140.820 4.300 ;
-        RECT 141.980 3.500 155.380 4.300 ;
-        RECT 156.540 3.500 169.940 4.300 ;
-        RECT 171.100 3.500 184.500 4.300 ;
-        RECT 185.660 3.500 199.060 4.300 ;
-        RECT 200.220 3.500 213.620 4.300 ;
-        RECT 214.780 3.500 228.180 4.300 ;
-        RECT 229.340 3.500 242.740 4.300 ;
-        RECT 243.900 3.500 257.300 4.300 ;
-        RECT 258.460 3.500 271.860 4.300 ;
-        RECT 273.020 3.500 286.420 4.300 ;
-        RECT 287.580 3.500 300.980 4.300 ;
-        RECT 302.140 3.500 315.540 4.300 ;
-        RECT 316.700 3.500 330.100 4.300 ;
-        RECT 331.260 3.500 344.660 4.300 ;
-        RECT 345.820 3.500 359.220 4.300 ;
-        RECT 360.380 3.500 373.780 4.300 ;
-        RECT 374.940 3.500 388.340 4.300 ;
-        RECT 389.500 3.500 390.740 4.300 ;
+        RECT 374.940 195.700 391.300 196.420 ;
+        RECT 8.540 4.300 391.300 195.700 ;
+        RECT 9.260 3.500 20.420 4.300 ;
+        RECT 21.580 3.500 32.740 4.300 ;
+        RECT 33.900 3.500 45.060 4.300 ;
+        RECT 46.220 3.500 57.380 4.300 ;
+        RECT 58.540 3.500 69.700 4.300 ;
+        RECT 70.860 3.500 82.020 4.300 ;
+        RECT 83.180 3.500 94.340 4.300 ;
+        RECT 95.500 3.500 106.660 4.300 ;
+        RECT 107.820 3.500 118.980 4.300 ;
+        RECT 120.140 3.500 131.300 4.300 ;
+        RECT 132.460 3.500 143.620 4.300 ;
+        RECT 144.780 3.500 155.940 4.300 ;
+        RECT 157.100 3.500 168.260 4.300 ;
+        RECT 169.420 3.500 180.580 4.300 ;
+        RECT 181.740 3.500 192.900 4.300 ;
+        RECT 194.060 3.500 205.220 4.300 ;
+        RECT 206.380 3.500 217.540 4.300 ;
+        RECT 218.700 3.500 229.860 4.300 ;
+        RECT 231.020 3.500 242.180 4.300 ;
+        RECT 243.340 3.500 254.500 4.300 ;
+        RECT 255.660 3.500 266.820 4.300 ;
+        RECT 267.980 3.500 279.140 4.300 ;
+        RECT 280.300 3.500 291.460 4.300 ;
+        RECT 292.620 3.500 303.780 4.300 ;
+        RECT 304.940 3.500 316.100 4.300 ;
+        RECT 317.260 3.500 328.420 4.300 ;
+        RECT 329.580 3.500 340.740 4.300 ;
+        RECT 341.900 3.500 353.060 4.300 ;
+        RECT 354.220 3.500 365.380 4.300 ;
+        RECT 366.540 3.500 377.700 4.300 ;
+        RECT 378.860 3.500 390.020 4.300 ;
+        RECT 391.180 3.500 391.300 4.300 ;
       LAYER Metal3 ;
-        RECT 10.170 14.140 390.230 184.380 ;
+        RECT 11.850 15.540 391.350 184.380 ;
       LAYER Metal4 ;
-        RECT 100.940 33.130 120.240 162.870 ;
-        RECT 125.840 33.130 145.240 162.870 ;
-        RECT 150.840 33.130 170.240 162.870 ;
-        RECT 175.840 33.130 195.240 162.870 ;
-        RECT 200.840 33.130 220.240 162.870 ;
-        RECT 225.840 33.130 245.240 162.870 ;
-        RECT 250.840 33.130 270.240 162.870 ;
-        RECT 275.840 33.130 295.240 162.870 ;
-        RECT 300.840 33.130 320.180 162.870 ;
+        RECT 319.900 21.930 320.240 44.710 ;
+        RECT 325.840 21.930 345.240 44.710 ;
+        RECT 350.840 21.930 369.460 44.710 ;
   END
-END caparray_s1
+END caparray_s2
 END LIBRARY
 

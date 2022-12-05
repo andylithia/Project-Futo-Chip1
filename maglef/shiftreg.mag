@@ -1,0 +1,299 @@
+magic
+tech gf180mcuC
+magscale 1 5
+timestamp 1670231071
+<< obsm1 >>
+rect 672 1538 79546 3345
+<< metal2 >>
+rect 952 4600 1008 5000
+rect 2296 4600 2352 5000
+rect 3640 4600 3696 5000
+rect 4984 4600 5040 5000
+rect 6328 4600 6384 5000
+rect 7672 4600 7728 5000
+rect 9016 4600 9072 5000
+rect 10360 4600 10416 5000
+rect 11704 4600 11760 5000
+rect 13048 4600 13104 5000
+rect 14392 4600 14448 5000
+rect 15736 4600 15792 5000
+rect 17080 4600 17136 5000
+rect 18424 4600 18480 5000
+rect 19768 4600 19824 5000
+rect 21112 4600 21168 5000
+rect 22456 4600 22512 5000
+rect 23800 4600 23856 5000
+rect 25144 4600 25200 5000
+rect 26488 4600 26544 5000
+rect 27832 4600 27888 5000
+rect 29176 4600 29232 5000
+rect 30520 4600 30576 5000
+rect 31864 4600 31920 5000
+rect 33208 4600 33264 5000
+rect 34552 4600 34608 5000
+rect 35896 4600 35952 5000
+rect 37240 4600 37296 5000
+rect 38584 4600 38640 5000
+rect 39928 4600 39984 5000
+rect 41272 4600 41328 5000
+rect 42616 4600 42672 5000
+rect 43960 4600 44016 5000
+rect 45304 4600 45360 5000
+rect 46648 4600 46704 5000
+rect 47992 4600 48048 5000
+rect 49336 4600 49392 5000
+rect 50680 4600 50736 5000
+rect 52024 4600 52080 5000
+rect 53368 4600 53424 5000
+rect 54712 4600 54768 5000
+rect 56056 4600 56112 5000
+rect 57400 4600 57456 5000
+rect 58744 4600 58800 5000
+rect 60088 4600 60144 5000
+rect 61432 4600 61488 5000
+rect 62776 4600 62832 5000
+rect 64120 4600 64176 5000
+rect 65464 4600 65520 5000
+rect 66808 4600 66864 5000
+rect 68152 4600 68208 5000
+rect 69496 4600 69552 5000
+rect 70840 4600 70896 5000
+rect 72184 4600 72240 5000
+rect 73528 4600 73584 5000
+rect 74872 4600 74928 5000
+rect 76216 4600 76272 5000
+rect 77560 4600 77616 5000
+rect 78904 4600 78960 5000
+<< obsm2 >>
+rect 1038 4570 2266 4600
+rect 2382 4570 3610 4600
+rect 3726 4570 4954 4600
+rect 5070 4570 6298 4600
+rect 6414 4570 7642 4600
+rect 7758 4570 8986 4600
+rect 9102 4570 10330 4600
+rect 10446 4570 11674 4600
+rect 11790 4570 13018 4600
+rect 13134 4570 14362 4600
+rect 14478 4570 15706 4600
+rect 15822 4570 17050 4600
+rect 17166 4570 18394 4600
+rect 18510 4570 19738 4600
+rect 19854 4570 21082 4600
+rect 21198 4570 22426 4600
+rect 22542 4570 23770 4600
+rect 23886 4570 25114 4600
+rect 25230 4570 26458 4600
+rect 26574 4570 27802 4600
+rect 27918 4570 29146 4600
+rect 29262 4570 30490 4600
+rect 30606 4570 31834 4600
+rect 31950 4570 33178 4600
+rect 33294 4570 34522 4600
+rect 34638 4570 35866 4600
+rect 35982 4570 37210 4600
+rect 37326 4570 38554 4600
+rect 38670 4570 39898 4600
+rect 40014 4570 41242 4600
+rect 41358 4570 42586 4600
+rect 42702 4570 43930 4600
+rect 44046 4570 45274 4600
+rect 45390 4570 46618 4600
+rect 46734 4570 47962 4600
+rect 48078 4570 49306 4600
+rect 49422 4570 50650 4600
+rect 50766 4570 51994 4600
+rect 52110 4570 53338 4600
+rect 53454 4570 54682 4600
+rect 54798 4570 56026 4600
+rect 56142 4570 57370 4600
+rect 57486 4570 58714 4600
+rect 58830 4570 60058 4600
+rect 60174 4570 61402 4600
+rect 61518 4570 62746 4600
+rect 62862 4570 64090 4600
+rect 64206 4570 65434 4600
+rect 65550 4570 66778 4600
+rect 66894 4570 68122 4600
+rect 68238 4570 69466 4600
+rect 69582 4570 70810 4600
+rect 70926 4570 72154 4600
+rect 72270 4570 73498 4600
+rect 73614 4570 74842 4600
+rect 74958 4570 76186 4600
+rect 76302 4570 77530 4600
+rect 77646 4570 78874 4600
+rect 78990 4570 79527 4600
+rect 966 849 79527 4570
+<< metal3 >>
+rect 0 4088 400 4144
+rect 0 2464 400 2520
+rect 79600 2464 80000 2520
+rect 0 840 400 896
+<< obsm3 >>
+rect 430 4058 79600 4130
+rect 350 2550 79600 4058
+rect 430 2434 79570 2550
+rect 350 926 79600 2434
+rect 430 854 79600 926
+<< metal4 >>
+rect 10250 1538 10750 3166
+rect 20078 1538 20578 3166
+rect 29906 1538 30406 3166
+rect 39734 1538 40234 3166
+rect 49562 1538 50062 3166
+rect 59390 1538 59890 3166
+rect 69218 1538 69718 3166
+rect 79046 1538 79546 3166
+<< labels >>
+rlabel metal3 s 0 4088 400 4144 6 latch
+port 1 nsew signal input
+rlabel metal3 s 0 840 400 896 6 sclk
+port 2 nsew signal input
+rlabel metal3 s 0 2464 400 2520 6 sdin
+port 3 nsew signal input
+rlabel metal3 s 79600 2464 80000 2520 6 sr_out
+port 4 nsew signal output
+rlabel metal2 s 11704 4600 11760 5000 6 tune_s1_series_gy[0]
+port 5 nsew signal output
+rlabel metal2 s 13048 4600 13104 5000 6 tune_s1_series_gy[1]
+port 6 nsew signal output
+rlabel metal2 s 14392 4600 14448 5000 6 tune_s1_series_gy[2]
+port 7 nsew signal output
+rlabel metal2 s 15736 4600 15792 5000 6 tune_s1_series_gy[3]
+port 8 nsew signal output
+rlabel metal2 s 17080 4600 17136 5000 6 tune_s1_series_gy[4]
+port 9 nsew signal output
+rlabel metal2 s 18424 4600 18480 5000 6 tune_s1_series_gy[5]
+port 10 nsew signal output
+rlabel metal2 s 19768 4600 19824 5000 6 tune_s1_series_gygy[0]
+port 11 nsew signal output
+rlabel metal2 s 21112 4600 21168 5000 6 tune_s1_series_gygy[1]
+port 12 nsew signal output
+rlabel metal2 s 22456 4600 22512 5000 6 tune_s1_series_gygy[2]
+port 13 nsew signal output
+rlabel metal2 s 23800 4600 23856 5000 6 tune_s1_series_gygy[3]
+port 14 nsew signal output
+rlabel metal2 s 25144 4600 25200 5000 6 tune_s1_series_gygy[4]
+port 15 nsew signal output
+rlabel metal2 s 26488 4600 26544 5000 6 tune_s1_series_gygy[5]
+port 16 nsew signal output
+rlabel metal2 s 952 4600 1008 5000 6 tune_s1_shunt[0]
+port 17 nsew signal output
+rlabel metal2 s 2296 4600 2352 5000 6 tune_s1_shunt[1]
+port 18 nsew signal output
+rlabel metal2 s 3640 4600 3696 5000 6 tune_s1_shunt[2]
+port 19 nsew signal output
+rlabel metal2 s 4984 4600 5040 5000 6 tune_s1_shunt[3]
+port 20 nsew signal output
+rlabel metal2 s 6328 4600 6384 5000 6 tune_s1_shunt[4]
+port 21 nsew signal output
+rlabel metal2 s 7672 4600 7728 5000 6 tune_s1_shunt[5]
+port 22 nsew signal output
+rlabel metal2 s 9016 4600 9072 5000 6 tune_s1_shunt[6]
+port 23 nsew signal output
+rlabel metal2 s 10360 4600 10416 5000 6 tune_s1_shunt[7]
+port 24 nsew signal output
+rlabel metal2 s 27832 4600 27888 5000 6 tune_s1_shunt_gy[0]
+port 25 nsew signal output
+rlabel metal2 s 29176 4600 29232 5000 6 tune_s1_shunt_gy[1]
+port 26 nsew signal output
+rlabel metal2 s 30520 4600 30576 5000 6 tune_s1_shunt_gy[2]
+port 27 nsew signal output
+rlabel metal2 s 31864 4600 31920 5000 6 tune_s1_shunt_gy[3]
+port 28 nsew signal output
+rlabel metal2 s 33208 4600 33264 5000 6 tune_s1_shunt_gy[4]
+port 29 nsew signal output
+rlabel metal2 s 34552 4600 34608 5000 6 tune_s1_shunt_gy[5]
+port 30 nsew signal output
+rlabel metal2 s 35896 4600 35952 5000 6 tune_s1_shunt_gy[6]
+port 31 nsew signal output
+rlabel metal2 s 52024 4600 52080 5000 6 tune_s2_series_gy[0]
+port 32 nsew signal output
+rlabel metal2 s 53368 4600 53424 5000 6 tune_s2_series_gy[1]
+port 33 nsew signal output
+rlabel metal2 s 54712 4600 54768 5000 6 tune_s2_series_gy[2]
+port 34 nsew signal output
+rlabel metal2 s 56056 4600 56112 5000 6 tune_s2_series_gy[3]
+port 35 nsew signal output
+rlabel metal2 s 57400 4600 57456 5000 6 tune_s2_series_gy[4]
+port 36 nsew signal output
+rlabel metal2 s 58744 4600 58800 5000 6 tune_s2_series_gy[5]
+port 37 nsew signal output
+rlabel metal2 s 60088 4600 60144 5000 6 tune_s2_series_gy[6]
+port 38 nsew signal output
+rlabel metal2 s 61432 4600 61488 5000 6 tune_s2_series_gy[7]
+port 39 nsew signal output
+rlabel metal2 s 62776 4600 62832 5000 6 tune_s2_series_gygy[0]
+port 40 nsew signal output
+rlabel metal2 s 64120 4600 64176 5000 6 tune_s2_series_gygy[1]
+port 41 nsew signal output
+rlabel metal2 s 65464 4600 65520 5000 6 tune_s2_series_gygy[2]
+port 42 nsew signal output
+rlabel metal2 s 66808 4600 66864 5000 6 tune_s2_series_gygy[3]
+port 43 nsew signal output
+rlabel metal2 s 68152 4600 68208 5000 6 tune_s2_series_gygy[4]
+port 44 nsew signal output
+rlabel metal2 s 69496 4600 69552 5000 6 tune_s2_series_gygy[5]
+port 45 nsew signal output
+rlabel metal2 s 70840 4600 70896 5000 6 tune_s2_series_gygy[6]
+port 46 nsew signal output
+rlabel metal2 s 72184 4600 72240 5000 6 tune_s2_series_gygy[7]
+port 47 nsew signal output
+rlabel metal2 s 37240 4600 37296 5000 6 tune_s2_shunt[0]
+port 48 nsew signal output
+rlabel metal2 s 50680 4600 50736 5000 6 tune_s2_shunt[10]
+port 49 nsew signal output
+rlabel metal2 s 38584 4600 38640 5000 6 tune_s2_shunt[1]
+port 50 nsew signal output
+rlabel metal2 s 39928 4600 39984 5000 6 tune_s2_shunt[2]
+port 51 nsew signal output
+rlabel metal2 s 41272 4600 41328 5000 6 tune_s2_shunt[3]
+port 52 nsew signal output
+rlabel metal2 s 42616 4600 42672 5000 6 tune_s2_shunt[4]
+port 53 nsew signal output
+rlabel metal2 s 43960 4600 44016 5000 6 tune_s2_shunt[5]
+port 54 nsew signal output
+rlabel metal2 s 45304 4600 45360 5000 6 tune_s2_shunt[6]
+port 55 nsew signal output
+rlabel metal2 s 46648 4600 46704 5000 6 tune_s2_shunt[7]
+port 56 nsew signal output
+rlabel metal2 s 47992 4600 48048 5000 6 tune_s2_shunt[8]
+port 57 nsew signal output
+rlabel metal2 s 49336 4600 49392 5000 6 tune_s2_shunt[9]
+port 58 nsew signal output
+rlabel metal2 s 73528 4600 73584 5000 6 tune_s2_shunt_gy[0]
+port 59 nsew signal output
+rlabel metal2 s 74872 4600 74928 5000 6 tune_s2_shunt_gy[1]
+port 60 nsew signal output
+rlabel metal2 s 76216 4600 76272 5000 6 tune_s2_shunt_gy[2]
+port 61 nsew signal output
+rlabel metal2 s 77560 4600 77616 5000 6 tune_s2_shunt_gy[3]
+port 62 nsew signal output
+rlabel metal2 s 78904 4600 78960 5000 6 tune_s2_shunt_gy[4]
+port 63 nsew signal output
+rlabel metal4 s 10250 1538 10750 3166 6 vdd
+port 64 nsew power bidirectional
+rlabel metal4 s 29906 1538 30406 3166 6 vdd
+port 64 nsew power bidirectional
+rlabel metal4 s 49562 1538 50062 3166 6 vdd
+port 64 nsew power bidirectional
+rlabel metal4 s 69218 1538 69718 3166 6 vdd
+port 64 nsew power bidirectional
+rlabel metal4 s 20078 1538 20578 3166 6 vss
+port 65 nsew ground bidirectional
+rlabel metal4 s 39734 1538 40234 3166 6 vss
+port 65 nsew ground bidirectional
+rlabel metal4 s 59390 1538 59890 3166 6 vss
+port 65 nsew ground bidirectional
+rlabel metal4 s 79046 1538 79546 3166 6 vss
+port 65 nsew ground bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 80000 5000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 296770
+string GDS_FILE /home/andylithia/openmpw/Project-Futo-Chip1/openlane/shiftreg/runs/22_12_05_04_03/results/signoff/shiftreg.magic.gds
+string GDS_START 64604
+<< end >>
+

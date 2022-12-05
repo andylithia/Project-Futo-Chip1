@@ -16,7 +16,7 @@ set script_dir [file dirname [file normalize [info script]]]
 set ::env(PDK) "gf180mcuC"
 set ::env(STD_CELL_LIBRARY) "gf180mcu_fd_sc_mcu7t5v0"
 set ::env(ROUTING_CORES) 16
-set ::env(DESIGN_NAME) caparray_s1
+set ::env(DESIGN_NAME) shiftreg
 
 #set ::env(EXTRA_LEFS) "\
 #	/home/andylithia/openmpw/pdk_1/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef"
@@ -26,16 +26,16 @@ set ::env(DESIGN_NAME) caparray_s1
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/caparray_s1.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/shiftreg.v"
 
 # -- Clocking
 # set ::env(CLOCK_PORT) "rst"
 # set ::env(CLOCK_NET) "counter.clk"
-set ::env(CLOCK_PORT) ""
-set ::env(CLOCK_TREE_SYNTH) 0
-# set ::env(CLOCK_PERIOD) "24.0"
+set ::env(CLOCK_PORT) "sclk"
+set ::env(CLOCK_TREE_SYNTH) 1
+set ::env(CLOCK_PERIOD) "24.0"
 # -- Synthesis
-set ::env(SYNTH_READ_BLACKBOX_LIB) 1
+set ::env(SYNTH_READ_BLACKBOX_LIB) 0
 set ::env(SYNTH_USE_PG_PINS_DEFINES) "USE_POWER_PINS"
 # set ::env(SYNTH_STRATEGY) "DELAY 0"
 # set ::env(SYNTH_EXTRA_MAPPING_FILE) $script_dir/yosys_mapping.v
@@ -44,7 +44,7 @@ set ::env(DESIGN_IS_CORE) 0
 
 # -- Floorplan
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 400 200"
+set ::env(DIE_AREA) "0 0 800 50"
 set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 set ::env(FP_CORE_UTIL) 80
 set ::env(FP_PDN_VWIDTH) 5

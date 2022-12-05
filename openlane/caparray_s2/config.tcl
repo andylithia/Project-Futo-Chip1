@@ -16,7 +16,7 @@ set script_dir [file dirname [file normalize [info script]]]
 set ::env(PDK) "gf180mcuC"
 set ::env(STD_CELL_LIBRARY) "gf180mcu_fd_sc_mcu7t5v0"
 set ::env(ROUTING_CORES) 16
-set ::env(DESIGN_NAME) caparray_s1
+set ::env(DESIGN_NAME) caparray_s2
 
 #set ::env(EXTRA_LEFS) "\
 #	/home/andylithia/openmpw/pdk_1/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef"
@@ -26,7 +26,7 @@ set ::env(DESIGN_NAME) caparray_s1
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/caparray_s1.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/caparray_s2.v"
 
 # -- Clocking
 # set ::env(CLOCK_PORT) "rst"
