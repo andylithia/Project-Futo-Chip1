@@ -1,0 +1,51 @@
+magic
+tech gf180mcuC
+magscale 1 10
+timestamp 1670875428
+<< nwell >>
+rect -258 -324 258 324
+<< nsubdiff >>
+rect -234 228 234 300
+rect -234 184 -162 228
+rect -234 -184 -221 184
+rect -175 -184 -162 184
+rect 162 184 234 228
+rect -234 -228 -162 -184
+rect 162 -184 175 184
+rect 221 -184 234 184
+rect 162 -228 234 -184
+rect -234 -300 234 -228
+<< nsubdiffcont >>
+rect -221 -184 -175 184
+rect 175 -184 221 184
+<< polysilicon >>
+rect -80 159 80 172
+rect -80 113 -67 159
+rect 67 113 80 159
+rect -80 100 80 113
+rect -80 -113 80 -100
+rect -80 -159 -67 -113
+rect 67 -159 80 -113
+rect -80 -172 80 -159
+<< polycontact >>
+rect -67 113 67 159
+rect -67 -159 67 -113
+<< ppolysilicide >>
+rect -80 -100 80 100
+<< metal1 >>
+rect -221 241 221 287
+rect -221 184 -175 241
+rect 175 184 221 241
+rect -78 113 -67 159
+rect 67 113 78 159
+rect -78 -159 -67 -113
+rect 67 -159 78 -113
+rect -221 -241 -175 -184
+rect 175 -241 221 -184
+rect -221 -287 221 -241
+<< properties >>
+string FIXED_BBOX -198 -264 198 264
+string gencell ppolyf_s
+string library gf180mcu
+string parameters w 0.80 l 1.00 m 1 nx 1 wmin 0.80 lmin 1.00 rho 7 val 8.86 dummy 0 dw 0.01 term 0.0 sterm 0.0 caplen 0.4 snake 0 glc 1 grc 1 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 1
+<< end >>
