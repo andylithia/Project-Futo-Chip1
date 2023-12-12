@@ -202,8 +202,8 @@ plot vop_buf von_buf voxor
 C {devices/code_shown.sym} 420 -540 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
-.include $::180MCU_MODELS/design.spice
-.lib $::180MCU_MODELS/sm141064.spice typical
+.include $::180MCU_MODELS/design.ngspice
+.lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {devices/capa.sym} 280 390 0 1 {name=C10
 m=1
