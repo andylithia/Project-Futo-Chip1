@@ -1,0 +1,819 @@
+| units: 0.5 tech: gf180mcuC format: MIT
+x SL VSS a_11617_50285# VSS s=26400,776 d=26400,776 l=140 w=300 x=11477 y=50285 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVSS s=10617088,14192 l=0 w=0 x=5500 y=60711 diode_nd2ps_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A a_8850_42732# DVSS DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=9426 y=46929 nfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=11728 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVDD a_4157_63027# DVDD s=26400,776 d=15600,404 l=140 w=300 x=4017 y=63027 pfet_06v0
+x a_2031_53931# a_2031_61071# a_1751_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=2031 y=53931 ppolyf_u
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A a_12966_56686# VSS s=52800,1376 d=31200,704 l=140 w=600 x=12826 y=56686 nfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=2728 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A VDD s=52800,1376 d=31200,704 l=140 w=600 x=12826 y=58038 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_x_<0> GF_NI_BI_T_BASE_0.ndrive_y_<0> DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=1514 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.ZB DVDD DVDD s=31200,704 d=52800,1376 l=140 w=600 x=5728 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_y_<0> GF_NI_BI_T_BASE_0.ndrive_x_<0> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=1270 y=42732 pfet_06v0
+x IE VDD s=2881692,6826 l=0 w=0 x=2306 y=66858 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.ZB DVDD s=31200,704 d=31200,704 l=140 w=600 x=5484 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_y_<0> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=4087 y=29214 pfet_06v0_dss
+x DVDD GF_NI_BI_T_BASE_0.pdrive_x_<1> GF_NI_BI_T_BASE_0.pdrive_y_<1> DVSS s=21120,656 d=21120,656 l=140 w=240 x=4286 y=46171 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_4235_64204# a_5463_64256# DVSS s=27560,634 d=27560,634 l=140 w=530 x=5795 y=64256 nfet_06v0
+x DVSS GF_NI_BI_T_BASE_0.ndrive_x_<0> GF_NI_BI_T_BASE_0.ndrive_y_<0> DVDD s=21120,656 d=21120,656 l=140 w=240 x=1270 y=45871 pfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_x_<1> DVSS PAD DVSS s=425600,15312 d=5745600,16712 l=230 w=7600 x=5252 y=15138 nfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB a_11294_42688# DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=13102 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_y_<0> GF_NI_BI_T_BASE_0.pdrive_x_<0> DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=3566 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_5463_64256# DVSS s=31200,704 d=52800,1376 l=140 w=600 x=7403 y=64256 nfet_06v0
+x a_12527_59749# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z PU VSS s=26400,776 d=26400,776 l=140 w=300 x=13219 y=61181 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB DVDD s=62400,1304 d=105600,2576 l=140 w=1200 x=8253 y=51289 pfet_06v0
+x PU a_12715_59749# VDD VDD s=52800,1376 d=52800,1376 l=140 w=600 x=13635 y=59749 pfet_06v0
+x a_3891_66144# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS DVSS s=15600,404 d=15600,404 l=140 w=300 x=5240 y=66144 nfet_06v0
+x a_2591_53931# a_2591_61071# a_2311_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=2591 y=53931 ppolyf_u
+x GF_NI_BI_T_BASE_0.pdrive_x_<2> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=7623 y=29214 pfet_06v0_dss
+x a_12354_42732# DVSS GF_NI_BI_T_BASE_0.ndrive_x_<3> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=13834 y=46929 nfet_06v0
+x a_5346_42732# DVDD GF_NI_BI_T_BASE_0.ndrive_Y_<1> DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=7070 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD s=20800,504 d=35200,976 l=140 w=400 x=5201 y=62927 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VSS Y VSS s=15600,404 d=15600,404 l=140 w=300 x=13251 y=64554 nfet_06v0
+x PDRV0 VDD a_1260_51889# VDD s=52800,1376 d=31200,704 l=140 w=600 x=1120 y=51889 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVDD a_7790_42688# DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=9426 y=42732 pfet_06v0
+x a_11294_42688# GF_NI_BI_T_BASE_0.pdrive_y_<3> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=12198 y=46929 nfet_06v0
+x a_4157_63027# DVSS a_5575_63014# DVDD s=19760,484 d=33440,936 l=140 w=380 x=7407 y=63014 pfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_x_<0> DVSS PAD DVSS s=425600,15312 d=5745600,16712 l=230 w=7600 x=2904 y=15138 nfet_06v0_dss
+x a_12354_42732# GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=13590 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A VDD a_9135_66144# VDD s=52800,1376 d=52800,1376 l=140 w=600 x=8995 y=67276 pfet_06v0
+x a_4157_63027# a_5575_63014# DVSS DVDD s=33440,936 d=19760,484 l=140 w=380 x=7163 y=63014 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB DVDD s=31200,704 d=31200,704 l=140 w=600 x=13253 y=51553 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_7790_42688# DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=9182 y=42732 pfet_06v0
+x a_6824_66100# DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVDD s=31200,704 d=31200,704 l=140 w=600 x=6824 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB DVDD s=31200,704 d=31200,704 l=140 w=600 x=10728 y=67412 pfet_06v0
+x a_7790_42688# GF_NI_BI_T_BASE_0.ndrive_y_<2> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=8522 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.ZB DVDD DVDD s=31200,704 d=31200,704 l=140 w=600 x=6580 y=67412 pfet_06v0
+x a_9135_66144# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVDD DVDD s=31200,704 d=31200,704 l=140 w=600 x=10484 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<3> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=11159 y=29214 pfet_06v0_dss
+x IE VSS a_3891_66144# VSS s=26400,776 d=26400,776 l=140 w=300 x=3751 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VDD VDD s=36400,804 d=36400,804 l=140 w=700 x=12519 y=62902 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD Y VDD s=61600,1576 d=36400,804 l=140 w=700 x=12275 y=62902 pfet_06v0
+x a_12068_66100# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVSS DVSS s=15600,404 d=26400,776 l=140 w=300 x=12312 y=66144 nfet_06v0
+x a_4286_42688# DVSS GF_NI_BI_T_BASE_0.pdrive_y_<1> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=4946 y=46929 nfet_06v0
+x a_1842_42732# GF_NI_BI_T_BASE_0.pdrive_x_<0> DVDD DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=3566 y=42732 pfet_06v0
+x a_9135_66144# DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVSS s=26400,776 d=15600,404 l=140 w=300 x=10240 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVDD a_1191_61071# DVDD s=52800,1376 d=52800,1376 l=140 w=600 x=11059 y=59703 pfet_06v0
+x a_8850_42732# GF_NI_BI_T_BASE_0.pdrive_y_<2> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=10086 y=42732 pfet_06v0
+x a_2947_62989# a_3430_64204# DVSS DVSS s=26400,776 d=26400,776 l=140 w=300 x=3518 y=64204 nfet_06v0
+x a_8953_50157# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVSS DVSS s=52800,1376 d=31200,704 l=140 w=600 x=8953 y=50201 nfet_06v0
+x a_1842_42732# GF_NI_BI_T_BASE_0.pdrive_y_<0> DVSS DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=2906 y=46929 nfet_06v0
+x VSS OE s=278784,2112 l=0 w=0 x=2529 y=49436 diode_pd2nw_06v0
+x a_1842_42732# DVSS GF_NI_BI_T_BASE_0.pdrive_y_<0> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=2662 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN DVDD a_5346_42732# DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=5678 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.ZB DVDD DVDD s=31200,704 d=31200,704 l=140 w=600 x=11824 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z a_4157_63027# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVSS s=26400,776 d=26400,776 l=140 w=300 x=8179 y=64093 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN a_1842_42732# a_782_42688# DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=2002 y=46929 nfet_06v0
+x a_12354_42732# GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=13834 y=42732 pfet_06v0
+x a_4286_42688# GF_NI_BI_T_BASE_0.pdrive_y_<1> DVDD DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=5018 y=42732 pfet_06v0
+x CS a_6824_66100# VDD VDD s=52800,1376 d=52800,1376 l=140 w=600 x=8313 y=67276 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB DVSS DVSS s=15600,404 d=26400,776 l=140 w=300 x=10972 y=66144 nfet_06v0
+x a_3430_64204# DVDD a_5463_64256# DVSS s=22880,696 d=22880,696 l=140 w=260 x=7791 y=64256 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_x_<3> GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=13590 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.ZB DVDD s=52800,1376 d=31200,704 l=140 w=600 x=11580 y=67412 pfet_06v0
+x a_2311_53931# a_2031_61071# a_2311_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=2311 y=53931 ppolyf_u
+x OE a_6504_50201# a_6504_51889# VSS s=31200,704 d=52800,1376 l=140 w=600 x=6608 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_y_<2> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=9391 y=29214 pfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_y_<3> GF_NI_BI_T_BASE_0.pdrive_x_<3> DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=11538 y=46929 nfet_06v0
+x DVSS GF_NI_BI_T_BASE_0.ndrive_Y_<3> GF_NI_BI_T_BASE_0.ndrive_x_<3> DVDD s=21120,656 d=21120,656 l=140 w=240 x=13590 y=45871 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_x_<3> GF_NI_BI_T_BASE_0.pdrive_y_<3> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=11294 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS a_4235_64204# DVSS s=33280,744 d=56320,1456 l=140 w=640 x=5071 y=64204 nfet_06v0
+x VDD VSS a_6504_50201# VSS s=52800,1376 d=31200,704 l=140 w=600 x=6364 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_x_<2> GF_NI_BI_T_BASE_0.ndrive_y_<2> DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=8522 y=42732 pfet_06v0
+x PDRV1 a_3961_50157# VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=5606 y=51889 pfet_06v0
+x a_12527_59749# a_12715_59749# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z VDD s=52800,1376 d=52800,1376 l=140 w=600 x=12803 y=59749 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB DVSS DVSS s=52800,1376 d=31200,704 l=140 w=600 x=3717 y=50201 nfet_06v0
+x a_1842_42732# DVDD GF_NI_BI_T_BASE_0.pdrive_y_<0> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=2834 y=42732 pfet_06v0
+x OE VDD a_3961_50157# VDD s=52800,1376 d=31200,704 l=140 w=600 x=5362 y=51889 pfet_06v0
+x OE a_9197_50157# VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=10824 y=51889 pfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=942 y=68919 cap_nmos_06v0
+x A VDD a_9197_50157# VDD s=52800,1376 d=31200,704 l=140 w=600 x=10580 y=51889 pfet_06v0
+x DVDD GF_NI_BI_T_BASE_0.pdrive_y_<0> GF_NI_BI_T_BASE_0.pdrive_x_<0> DVSS s=21120,656 d=21120,656 l=140 w=240 x=3566 y=46171 nfet_06v0
+x PU a_12966_56686# VSS VSS s=31200,704 d=52800,1376 l=140 w=600 x=13070 y=56686 nfet_06v0
+x SL VDD a_11617_50285# VDD s=52800,1376 d=52800,1376 l=140 w=600 x=11477 y=51553 pfet_06v0
+x a_2871_53931# a_2591_61071# a_2871_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=2871 y=53931 ppolyf_u
+x GF_NI_BI_T_BASE_0.ndrive_Y_<3> PAD DVSS DVSS s=5745600,16712 d=425600,15312 l=230 w=7600 x=11822 y=15138 nfet_06v0_dss
+x PU GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=13070 y=58038 pfet_06v0
+x a_5346_42732# DVSS GF_NI_BI_T_BASE_0.ndrive_Y_<1> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=6338 y=46929 nfet_06v0
+x a_9536_64061# VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD s=44000,1176 d=26000,604 l=140 w=500 x=11127 y=63102 pfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_y_<3> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=10775 y=29214 pfet_06v0_dss
+x a_11294_42688# GF_NI_BI_T_BASE_0.pdrive_x_<3> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=11538 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVSS a_9536_64061# DVSS s=41600,904 d=70400,1776 l=140 w=800 x=9868 y=64061 nfet_06v0
+x VSS OE s=278784,2112 l=0 w=0 x=4241 y=49436 diode_pd2nw_06v0
+x VSS VDD s=278784,2112 l=0 w=0 x=6895 y=49436 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB a_4286_42688# DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=6094 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB a_12354_42732# a_11294_42688# DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=12930 y=42732 pfet_06v0
+x a_4286_42688# DVDD GF_NI_BI_T_BASE_0.pdrive_y_<1> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=4774 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_4235_64204# a_5463_64256# DVSS s=27560,634 d=46640,1236 l=140 w=530 x=6283 y=64256 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5463_64256# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVSS s=31200,704 d=31200,704 l=140 w=600 x=7159 y=64256 nfet_06v0
+x a_11294_42688# DVDD GF_NI_BI_T_BASE_0.pdrive_x_<3> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=11294 y=42732 pfet_06v0
+x OE a_1260_50201# a_1260_51889# VSS s=31200,704 d=52800,1376 l=140 w=600 x=1364 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_y_<0> PAD DVSS DVSS s=5745600,16712 d=425600,15312 l=230 w=7600 x=4778 y=15138 nfet_06v0_dss
+x a_6824_66100# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVSS DVSS s=15600,404 d=26400,776 l=140 w=300 x=7068 y=66144 nfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=7228 y=68919 cap_nmos_06v0
+x a_9536_64061# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD VDD s=26000,604 d=44000,1176 l=140 w=500 x=11859 y=63102 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB a_1842_42732# a_782_42688# DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=1930 y=42732 pfet_06v0
+x a_8850_42732# GF_NI_BI_T_BASE_0.pdrive_y_<2> DVSS DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=9914 y=46929 nfet_06v0
+x a_7790_42688# DVSS GF_NI_BI_T_BASE_0.ndrive_y_<2> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=8278 y=46929 nfet_06v0
+x a_3891_66144# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD DVDD s=31200,704 d=31200,704 l=140 w=600 x=5240 y=67412 pfet_06v0
+x A VDD s=692672,3456 l=0 w=0 x=11426 y=53593 diode_pd2nw_06v0
+x a_8850_42732# DVSS GF_NI_BI_T_BASE_0.pdrive_y_<2> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=9670 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_8850_42732# a_7790_42688# DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=9010 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z a_4157_63027# DVDD DVDD s=15600,404 d=26400,776 l=140 w=300 x=4261 y=63027 pfet_06v0
+x a_2947_62989# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_3430_64204# DVDD s=35200,976 d=35200,976 l=140 w=400 x=8567 y=63087 pfet_06v0
+x a_3151_53931# GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_2871_53829# DVDD s=16320,524 d=16320,524 l=4600 w=160 x=3151 y=53931 ppolyf_u
+x a_11617_50285# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVSS DVSS s=15600,404 d=15600,404 l=140 w=300 x=13009 y=50285 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5463_64256# a_4235_64204# DVSS s=46640,1236 d=27560,634 l=140 w=530 x=5551 y=64256 nfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=13228 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VDD VDD s=36400,804 d=36400,804 l=140 w=700 x=13007 y=62902 pfet_06v0
+x PU a_12715_59749# VSS VSS s=26400,776 d=26400,776 l=140 w=300 x=13635 y=61181 nfet_06v0
+x a_6504_51889# GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVSS DVSS s=52800,1376 d=31200,704 l=140 w=600 x=8009 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_x_<0> GF_NI_BI_T_BASE_0.pdrive_y_<0> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=3322 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<1> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=7239 y=29214 pfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_Y_<1> GF_NI_BI_T_BASE_0.ndrive_x_<1> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=6338 y=42732 pfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=4228 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.ZB DVSS s=26400,776 d=15600,404 l=140 w=300 x=6336 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VSS VSS s=15600,404 d=15600,404 l=140 w=300 x=12519 y=64554 nfet_06v0
+x a_12068_66100# DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVSS s=15600,404 d=15600,404 l=140 w=300 x=12068 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VSS Y VSS s=26400,776 d=15600,404 l=140 w=300 x=12275 y=64554 nfet_06v0
+x a_8953_50157# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVDD DVDD s=105600,2576 d=62400,1304 l=140 w=1200 x=8953 y=51289 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN a_12354_42732# a_11294_42688# DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=12858 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVSS a_4286_42688# DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=5434 y=46929 nfet_06v0
+x DVDD GF_NI_BI_T_BASE_0.pdrive_x_<3> GF_NI_BI_T_BASE_0.pdrive_y_<3> DVSS s=21120,656 d=21120,656 l=140 w=240 x=11294 y=46171 nfet_06v0
+x a_4286_42688# GF_NI_BI_T_BASE_0.pdrive_y_<1> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=5190 y=46929 nfet_06v0
+x a_8850_42732# DVDD GF_NI_BI_T_BASE_0.pdrive_y_<2> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=9842 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB DVSS DVSS s=15600,404 d=26400,776 l=140 w=300 x=13497 y=50285 nfet_06v0
+x a_3891_66144# DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS s=26400,776 d=15600,404 l=140 w=300 x=4996 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VDD VDD s=36400,804 d=61600,1576 l=140 w=700 x=13495 y=62902 pfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_x_<2> DVSS PAD DVSS s=425600,15312 d=5745600,16712 l=230 w=7600 x=7600 y=15138 nfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_y_<2> GF_NI_BI_T_BASE_0.pdrive_x_<2> DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=10574 y=46929 nfet_06v0
+x a_12068_66100# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVDD DVDD s=31200,704 d=52800,1376 l=140 w=600 x=12312 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD DVDD s=20800,504 d=20800,504 l=140 w=400 x=4957 y=62927 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_5575_63014# DVDD s=22360,534 d=37840,1036 l=140 w=430 x=6775 y=62964 pfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=10228 y=68919 cap_nmos_06v0
+x a_9135_66144# DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVDD s=52800,1376 d=31200,704 l=140 w=600 x=10240 y=67412 pfet_06v0
+x a_1191_53931# a_1191_61071# a_1191_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=1191 y=53931 ppolyf_u
+x VSS OE s=278784,2112 l=0 w=0 x=7773 y=49436 diode_pd2nw_06v0
+x SL VDD s=692672,3456 l=0 w=0 x=11426 y=54057 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_y_<2> GF_NI_BI_T_BASE_0.ndrive_x_<2> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=8278 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A a_12068_66100# VSS VSS s=26400,776 d=26400,776 l=140 w=300 x=13557 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB DVDD DVDD s=105600,2576 d=62400,1304 l=140 w=1200 x=3717 y=51289 pfet_06v0
+x DVSS GF_NI_BI_T_BASE_0.ndrive_x_<2> GF_NI_BI_T_BASE_0.ndrive_y_<2> DVDD s=21120,656 d=21120,656 l=140 w=240 x=8278 y=45871 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB DVDD DVDD s=31200,704 d=52800,1376 l=140 w=600 x=10972 y=67412 pfet_06v0
+x a_1842_42732# DVDD GF_NI_BI_T_BASE_0.pdrive_x_<0> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=3322 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB DVSS s=31200,704 d=52800,1376 l=140 w=600 x=3009 y=50201 nfet_06v0
+x a_11617_50285# DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVSS s=26400,776 d=15600,404 l=140 w=300 x=12765 y=50285 nfet_06v0
+x a_782_42688# GF_NI_BI_T_BASE_0.ndrive_x_<0> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=1026 y=46929 nfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=942 y=68363 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD Y VDD s=36400,804 d=36400,804 l=140 w=700 x=12763 y=62902 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A a_5346_42732# DVDD DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=5434 y=42732 pfet_06v0
+x PU VDD s=2881692,6826 l=0 w=0 x=1057 y=65958 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z a_4235_64204# DVSS DVSS s=33280,744 d=33280,744 l=140 w=640 x=4339 y=64204 nfet_06v0
+x PD VDD a_12527_59749# VDD s=52800,1376 d=52800,1376 l=140 w=600 x=12387 y=59749 pfet_06v0
+x a_11294_42688# DVSS GF_NI_BI_T_BASE_0.pdrive_y_<3> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=11954 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_y_<1> GF_NI_BI_T_BASE_0.pdrive_x_<1> DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=4530 y=46929 nfet_06v0
+x a_8850_42732# GF_NI_BI_T_BASE_0.pdrive_x_<2> DVDD DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=10574 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS a_4235_64204# DVSS s=56320,1456 d=33280,744 l=140 w=640 x=4095 y=64204 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB DVSS a_1842_42732# DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=1758 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<0> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=3703 y=29214 pfet_06v0_dss
+x IE VDD a_3891_66144# VDD s=52800,1376 d=52800,1376 l=140 w=600 x=3751 y=67276 pfet_06v0
+x PD a_12715_59749# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z VSS s=26400,776 d=26400,776 l=140 w=300 x=12803 y=61181 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVDD a_12354_42732# DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=12686 y=42732 pfet_06v0
+x a_11294_42688# GF_NI_BI_T_BASE_0.pdrive_y_<3> DVDD DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=12026 y=42732 pfet_06v0
+x OE a_6504_51889# VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=6608 y=51889 pfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<1> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=5855 y=29214 pfet_06v0_dss
+x VDD VDD a_6504_51889# VDD s=52800,1376 d=31200,704 l=140 w=600 x=6364 y=51889 pfet_06v0
+x a_12354_42732# GF_NI_BI_T_BASE_0.ndrive_x_<3> DVSS DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=14078 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVSS a_2947_62989# DVSS s=35200,976 d=20800,504 l=140 w=400 x=2807 y=64444 nfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_Y_<1> PAD DVSS DVSS s=5745600,16712 d=425600,15312 l=230 w=7600 x=7126 y=15138 nfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVDD s=10598760,14228 l=0 w=0 x=5500 y=57474 diode_pd2nw_06v0
+x a_3961_50157# DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN DVSS s=31200,704 d=52800,1376 l=140 w=600 x=3961 y=50201 nfet_06v0
+x a_782_42688# DVDD GF_NI_BI_T_BASE_0.ndrive_y_<0> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=1026 y=42732 pfet_06v0
+x a_6824_66100# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVDD DVDD s=31200,704 d=52800,1376 l=140 w=600 x=7068 y=67412 pfet_06v0
+x a_8180_54140# GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN PAD DVDD s=51000,1204 d=51000,1204 l=560 w=500 x=8180 y=54140 ppolyf_u
+x DVDD DVSS s=52800,1376 l=600 w=600 x=13590 y=53978 cap_nmos_06v0
+x a_1260_51889# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN DVSS DVSS s=52800,1376 d=31200,704 l=140 w=600 x=2765 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVDD a_2947_62989# DVDD s=70400,1776 d=41600,904 l=140 w=800 x=2807 y=62989 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A VSS a_9135_66144# VSS s=26400,776 d=26400,776 l=140 w=300 x=8995 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_3430_64204# DVSS s=26400,776 d=26400,776 l=140 w=300 x=8567 y=64093 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_9536_64061# DVSS DVSS s=70400,1776 d=41600,904 l=140 w=800 x=9624 y=64061 nfet_06v0
+x a_6504_51889# GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVDD DVDD s=105600,2576 d=62400,1304 l=140 w=1200 x=8009 y=51289 pfet_06v0
+x DVDD GF_NI_BI_T_BASE_0.pdrive_y_<2> GF_NI_BI_T_BASE_0.pdrive_x_<2> DVSS s=21120,656 d=21120,656 l=140 w=240 x=10574 y=46171 nfet_06v0
+x a_4286_42688# GF_NI_BI_T_BASE_0.pdrive_x_<1> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=4530 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVDD a_5575_63014# DVDD s=19760,484 d=33440,936 l=140 w=380 x=5907 y=63014 pfet_06v0
+x a_1471_53931# a_1471_61071# a_1191_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=1471 y=53931 ppolyf_u
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVSS s=10617088,14192 l=0 w=0 x=5500 y=59777 diode_nd2ps_06v0
+x PDRV0 VSS a_1260_50201# VSS s=52800,1376 d=31200,704 l=140 w=600 x=1120 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VSS VSS s=15600,404 d=15600,404 l=140 w=300 x=13007 y=64554 nfet_06v0
+x a_9536_64061# VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD s=26000,604 d=26000,604 l=140 w=500 x=11615 y=63102 pfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_y_<2> PAD DVSS DVSS s=5745600,16712 d=425600,15312 l=230 w=7600 x=9474 y=15138 nfet_06v0_dss
+x GF_NI_BI_T_BASE_0.pdrive_y_<1> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=5471 y=29214 pfet_06v0_dss
+x a_5346_42732# DVSS GF_NI_BI_T_BASE_0.ndrive_x_<1> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=6826 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5575_63014# DVDD DVDD s=33440,936 d=19760,484 l=140 w=380 x=5663 y=63014 pfet_06v0
+x a_12354_42732# DVSS GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=13346 y=46929 nfet_06v0
+x a_5346_42732# GF_NI_BI_T_BASE_0.ndrive_Y_<1> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=6582 y=46929 nfet_06v0
+x a_9536_64061# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD VDD s=26000,604 d=26000,604 l=140 w=500 x=11371 y=63102 pfet_06v0
+x a_9197_50157# DVSS a_8953_50157# DVSS s=31200,704 d=52800,1376 l=140 w=600 x=9197 y=50201 nfet_06v0
+x a_11617_50285# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVDD DVDD s=31200,704 d=31200,704 l=140 w=600 x=13009 y=51553 pfet_06v0
+x a_11294_42688# DVDD GF_NI_BI_T_BASE_0.pdrive_y_<3> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=11782 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z a_12000_56686# VSS VSS s=31200,704 d=52800,1376 l=140 w=600 x=12104 y=56686 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.ZB DVDD s=52800,1376 d=31200,704 l=140 w=600 x=6336 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.ZB DVSS DVSS s=15600,404 d=26400,776 l=140 w=300 x=5728 y=66144 nfet_06v0
+x PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z PU VDD s=52800,1376 d=52800,1376 l=140 w=600 x=13219 y=59749 pfet_06v0
+x VSS PDRV1 s=278784,2112 l=0 w=0 x=5119 y=49436 diode_pd2nw_06v0
+x a_12354_42732# DVDD GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=14078 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.ZB DVSS s=15600,404 d=15600,404 l=140 w=300 x=5484 y=66144 nfet_06v0
+x a_12068_66100# DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVDD s=31200,704 d=31200,704 l=140 w=600 x=12068 y=67412 pfet_06v0
+x DVDD DVSS s=52800,1376 l=600 w=600 x=12450 y=53978 cap_nmos_06v0
+x a_782_42688# DVSS GF_NI_BI_T_BASE_0.ndrive_x_<0> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=782 y=46929 nfet_06v0
+x a_7790_42688# GF_NI_BI_T_BASE_0.ndrive_x_<2> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=8034 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y VSS VSS s=15600,404 d=26400,776 l=140 w=300 x=13495 y=64554 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=12104 y=58038 pfet_06v0
+x OE a_1260_51889# VDD VDD s=31200,704 d=52800,1376 l=140 w=600 x=1364 y=51889 pfet_06v0
+x CS a_6824_66100# VSS VSS s=26400,776 d=26400,776 l=140 w=300 x=8313 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB DVDD DVDD s=31200,704 d=52800,1376 l=140 w=600 x=13497 y=51553 pfet_06v0
+x a_3891_66144# DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD s=52800,1376 d=31200,704 l=140 w=600 x=4996 y=67412 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB DVSS a_8850_42732# DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=8766 y=46929 nfet_06v0
+x PD VDD s=2881692,6826 l=0 w=0 x=2306 y=65958 diode_pd2nw_06v0
+x a_9536_64061# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VSS VSS s=13000,354 d=22000,676 l=140 w=250 x=11615 y=64604 nfet_06v0
+x GF_NI_BI_T_BASE_0.ndrive_x_<3> DVSS PAD DVSS s=425600,15312 d=5745600,16712 l=230 w=7600 x=9948 y=15138 nfet_06v0_dss
+x GF_NI_BI_T_BASE_0.pdrive_x_<3> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=12543 y=29214 pfet_06v0_dss
+x a_9536_64061# VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VSS s=22000,676 d=13000,354 l=140 w=250 x=11371 y=64604 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB DVDD s=62400,1304 d=105600,2576 l=140 w=1200 x=3009 y=51289 pfet_06v0
+x VSS PDRV0 s=278784,2112 l=0 w=0 x=1651 y=49436 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_5346_42732# a_4286_42688# DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=5850 y=46929 nfet_06v0
+x a_1842_42732# GF_NI_BI_T_BASE_0.pdrive_y_<0> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=3078 y=42732 pfet_06v0
+x a_7560_54140# GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN PAD DVDD s=51000,1204 d=51000,1204 l=560 w=500 x=7560 y=54140 ppolyf_u
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A a_1842_42732# DVSS DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=2418 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_5463_64256# DVSS s=31200,704 d=31200,704 l=140 w=600 x=6915 y=64256 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB DVSS s=15600,404 d=15600,404 l=140 w=300 x=13253 y=50285 nfet_06v0
+x a_5346_42732# GF_NI_BI_T_BASE_0.ndrive_Y_<1> DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=6826 y=42732 pfet_06v0
+x a_6824_66100# DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVSS s=15600,404 d=15600,404 l=140 w=300 x=6824 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB DVSS s=15600,404 d=15600,404 l=140 w=300 x=10728 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5463_64256# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVSS s=52800,1376 d=31200,704 l=140 w=600 x=6671 y=64256 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_Y_<3> GF_NI_BI_T_BASE_0.ndrive_x_<3> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=13346 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_x_<2> GF_NI_BI_T_BASE_0.pdrive_y_<2> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=10330 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD Y VDD s=36400,804 d=36400,804 l=140 w=700 x=13251 y=62902 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB DVSS s=31200,704 d=52800,1376 l=140 w=600 x=8253 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.ndrive_x_<1> GF_NI_BI_T_BASE_0.ndrive_Y_<1> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=6582 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.ZB DVSS DVSS s=15600,404 d=15600,404 l=140 w=300 x=6580 y=66144 nfet_06v0
+x a_9135_66144# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z DVSS DVSS s=15600,404 d=15600,404 l=140 w=300 x=10484 y=66144 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD s=35200,976 d=20800,504 l=140 w=400 x=4713 y=62927 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5575_63014# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD s=37840,1036 d=22360,534 l=140 w=430 x=6531 y=62964 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VSS Y VSS s=15600,404 d=15600,404 l=140 w=300 x=12763 y=64554 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB a_8850_42732# a_7790_42688# DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=8938 y=42732 pfet_06v0
+x CS VDD s=2881692,6826 l=0 w=0 x=1057 y=66858 diode_pd2nw_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.pdrive_x_<1> GF_NI_BI_T_BASE_0.pdrive_y_<1> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=4286 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVSS a_11294_42688# DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=12442 y=46929 nfet_06v0
+x DVSS GF_NI_BI_T_BASE_0.ndrive_Y_<1> GF_NI_BI_T_BASE_0.ndrive_x_<1> DVDD s=21120,656 d=21120,656 l=140 w=240 x=6582 y=45871 pfet_06v0
+x PDRV1 a_5502_50201# VSS VSS s=31200,704 d=52800,1376 l=140 w=600 x=5606 y=50201 nfet_06v0
+x a_11617_50285# DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL DVDD s=52800,1376 d=31200,704 l=140 w=600 x=12765 y=51553 pfet_06v0
+x a_7790_42688# DVDD GF_NI_BI_T_BASE_0.ndrive_y_<2> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=8034 y=42732 pfet_06v0
+x a_782_42688# GF_NI_BI_T_BASE_0.ndrive_y_<0> DVDD DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=782 y=42732 pfet_06v0
+x PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A a_12000_56686# VSS s=52800,1376 d=31200,704 l=140 w=600 x=11860 y=56686 nfet_06v0
+x OE a_3961_50157# a_5502_50201# VSS s=52800,1376 d=31200,704 l=140 w=600 x=5362 y=50201 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD a_9536_64061# DVDD s=35200,976 d=35200,976 l=140 w=400 x=9868 y=62913 pfet_06v0
+x OE a_10720_50201# VSS VSS s=31200,704 d=52800,1376 l=140 w=600 x=10824 y=50201 nfet_06v0
+x DVDD DVSS s=52800,1376 l=600 w=600 x=13590 y=54946 cap_nmos_06v0
+x A a_9197_50157# a_10720_50201# VSS s=52800,1376 d=31200,704 l=140 w=600 x=10580 y=50201 nfet_06v0
+x a_7790_42688# DVSS GF_NI_BI_T_BASE_0.ndrive_x_<2> DVSS s=105600,2576 d=62400,1304 l=140 w=1200 x=7790 y=46929 nfet_06v0
+x PD VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A VDD s=52800,1376 d=31200,704 l=140 w=600 x=11860 y=58038 pfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=8728 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<2> PAD DVDD DVDD s=4448000,17112 d=448000,16112 l=140 w=8000 x=9007 y=29214 pfet_06v0_dss
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.ZB DVSS DVSS s=15600,404 d=15600,404 l=140 w=300 x=11824 y=66144 nfet_06v0
+x a_1751_53931# a_1471_61071# a_1751_53829# DVDD s=16320,524 d=16320,524 l=7140 w=160 x=1751 y=53931 ppolyf_u
+x PD VSS a_12527_59749# VSS s=26400,776 d=26400,776 l=140 w=300 x=12387 y=61181 nfet_06v0
+x a_3961_50157# DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN DVDD s=62400,1304 d=105600,2576 l=140 w=1200 x=3961 y=51289 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVDD a_782_42688# DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=2418 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.ZB DVSS s=26400,776 d=15600,404 l=140 w=300 x=11580 y=66144 nfet_06v0
+x a_1260_51889# GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN DVDD DVDD s=105600,2576 d=62400,1304 l=140 w=1200 x=2765 y=51289 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN a_782_42688# DVDD DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=2174 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z a_2947_62989# DVSS DVSS s=20800,504 d=35200,976 l=140 w=400 x=3051 y=64444 nfet_06v0
+x GF_NI_BI_T_BASE_0.pdrive_x_<0> DVDD PAD DVDD s=448000,16112 d=4448000,17112 l=140 w=8000 x=2319 y=29214 pfet_06v0_dss
+x a_8850_42732# DVDD GF_NI_BI_T_BASE_0.pdrive_x_<2> DVDD s=124800,2504 d=124800,2504 l=140 w=2400 x=10330 y=42732 pfet_06v0
+x a_2947_62989# a_4157_63027# GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A DVDD s=35200,976 d=35200,976 l=140 w=400 x=8179 y=63087 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB DVSS a_1191_61071# DVSS s=26400,776 d=26400,776 l=140 w=300 x=11059 y=61243 nfet_06v0
+x a_782_42688# GF_NI_BI_T_BASE_0.ndrive_y_<0> DVSS DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=1514 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5463_64256# a_4235_64204# DVSS s=27560,634 d=27560,634 l=140 w=530 x=6039 y=64256 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVDD s=10598760,14228 l=0 w=0 x=5500 y=56540 diode_pd2nw_06v0
+x a_782_42688# DVSS GF_NI_BI_T_BASE_0.ndrive_y_<0> DVSS s=62400,1304 d=62400,1304 l=140 w=1200 x=1270 y=46929 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB a_5346_42732# a_4286_42688# DVDD s=124800,2504 d=211200,4976 l=140 w=2400 x=5922 y=42732 pfet_06v0
+x a_4286_42688# DVDD GF_NI_BI_T_BASE_0.pdrive_x_<1> DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=4286 y=42732 pfet_06v0
+x DVDD DVSS s=88000,2176 l=300 w=1000 x=5728 y=68919 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A a_12068_66100# VDD VDD s=52800,1376 d=52800,1376 l=140 w=600 x=13557 y=67276 pfet_06v0
+x a_6940_54140# GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN PAD DVDD s=51000,1204 d=51000,1204 l=560 w=500 x=6940 y=54140 ppolyf_u
+x GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A a_12354_42732# DVDD DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=12442 y=42732 pfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z a_4235_64204# DVSS DVSS s=33280,744 d=33280,744 l=140 w=640 x=4827 y=64204 nfet_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z a_2947_62989# DVDD DVDD s=41600,904 d=70400,1776 l=140 w=800 x=3051 y=62989 pfet_06v0
+x DVDD DVSS s=52800,1376 l=600 w=600 x=12450 y=54946 cap_nmos_06v0
+x GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS a_4235_64204# DVSS s=33280,744 d=33280,744 l=140 w=640 x=4583 y=64204 nfet_06v0
+x a_7790_42688# GF_NI_BI_T_BASE_0.ndrive_y_<2> DVDD DVDD s=211200,4976 d=124800,2504 l=140 w=2400 x=7790 y=42732 pfet_06v0
+x a_6320_54140# GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN PAD DVDD s=51000,1204 d=51000,1204 l=560 w=500 x=6320 y=54140 ppolyf_u
+x a_9197_50157# DVDD a_8953_50157# DVDD s=62400,1304 d=105600,2576 l=140 w=1200 x=9197 y=51289 pfet_06v0
+x a_5346_42732# GF_NI_BI_T_BASE_0.ndrive_x_<1> DVSS DVSS s=62400,1304 d=105600,2576 l=140 w=1200 x=7070 y=46929 nfet_06v0
+C GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN a_5463_64256# 2.1
+C GF_NI_BI_T_BASE_0.ndrive_y_<0> GF_NI_BI_T_BASE_0.ndrive_x_<1> 10.0
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z PD 2.6
+C DVDD a_12354_42732# 5.6
+C PDRV1 PDRV0 6.9
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z PU 2.6
+C DVDD OE 7.8
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z Y 2.4
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVDD 3.5
+C GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z 2.2
+C SL VDD 3.4
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL 9.6
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN a_1842_42732# 2.2
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A a_2947_62989# 3.4
+C GF_NI_BI_T_BASE_0.ndrive_y_<0> DVSS 12.2
+C SL DVSS 3.5
+C DVSS a_1842_42732# 4.6
+C DVDD GF_NI_BI_T_BASE_0.pdrive_y_<3> 17.9
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB a_1842_42732# 2.4
+C DVDD a_782_42688# 5.5
+C PDRV0 VDD 2.4
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z DVSS 4.9
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB 5.4
+C PDRV0 DVSS 2.2
+C DVDD a_4286_42688# 3.9
+C GF_NI_BI_T_BASE_0.ndrive_x_<3> GF_NI_BI_T_BASE_0.ndrive_Y_<3> 10.3
+C GF_NI_BI_T_BASE_0.ndrive_x_<3> PAD 6.1
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z VDD 3.0
+C DVDD a_8850_42732# 3.9
+C a_11294_42688# DVSS 4.6
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN a_12354_42732# 2.3
+C DVDD GF_NI_BI_T_BASE_0.ndrive_x_<2> 15.3
+C OE A 7.5
+C GF_NI_BI_T_BASE_0.ndrive_x_<3> GF_NI_BI_T_BASE_0.ndrive_y_<2> 10.0
+C DVDD a_1191_61071# 5.2
+C DVDD GF_NI_BI_T_BASE_0.pdrive_y_<0> 18.0
+C PAD GF_NI_BI_T_BASE_0.ndrive_x_<0> 5.1
+C DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A 3.8
+C DVDD A 4.1
+C a_3430_64204# DVSS 2.0
+C PAD GF_NI_BI_T_BASE_0.pdrive_x_<3> 20.2
+C DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL 9.6
+C DVDD GF_NI_BI_T_BASE_0.ndrive_Y_<1> 17.8
+C DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z 4.8
+C DVDD a_7790_42688# 5.2
+C GF_NI_BI_T_BASE_0.ndrive_x_<3> DVSS 12.0
+C DVDD GF_NI_BI_T_BASE_0.pdrive_x_<0> 29.7
+C Y OE 2.5
+C GF_NI_BI_T_BASE_0.ndrive_x_<0> DVSS 17.8
+C DVDD GF_NI_BI_T_BASE_0.ndrive_Y_<3> 12.4
+C GF_NI_BI_T_BASE_0.pdrive_y_<3> PAD 10.2
+C DVDD PAD 312.0
+C GF_NI_BI_T_BASE_0.pdrive_x_<3> DVSS 5.6
+C PDRV1 OE 2.7
+C DVDD GF_NI_BI_T_BASE_0.ndrive_y_<2> 11.7
+C DVDD Y 2.1
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A 3.4
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB DVSS 2.6
+C DVDD PD 2.9
+C DVDD PDRV1 5.0
+C DVDD GF_NI_BI_T_BASE_0.ndrive_x_<1> 9.4
+C PAD GF_NI_BI_T_BASE_0.ndrive_x_<2> 7.4
+C DVDD PU 3.6
+C GF_NI_BI_T_BASE_0.pdrive_x_<0> GF_NI_BI_T_BASE_0.pdrive_y_<0> 2.3
+C OE VDD 9.9
+C a_12354_42732# DVSS 2.8
+C GF_NI_BI_T_BASE_0.ndrive_x_<2> GF_NI_BI_T_BASE_0.ndrive_y_<2> 14.7
+C DVDD GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN 50.7
+C DVDD GF_NI_BI_T_BASE_0.pdrive_x_<1> 30.2
+C DVDD a_5346_42732# 5.2
+C PAD GF_NI_BI_T_BASE_0.pdrive_y_<0> 10.2
+C OE DVSS 3.5
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z DVSS 5.6
+C DVDD GF_NI_BI_T_BASE_0.pdrive_y_<1> 16.8
+C GF_NI_BI_T_BASE_0.ndrive_y_<0> GF_NI_BI_T_BASE_0.ndrive_x_<0> 10.4
+C DVDD VDD 49.7
+C DVDD GF_NI_BI_T_BASE_0.pdrive_y_<2> 16.8
+C DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN 2.4
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN a_782_42688# 2.3
+C DVDD DVSS 360.6
+C GF_NI_BI_T_BASE_0.pdrive_y_<3> DVSS 2.5
+C DVSS a_782_42688# 2.9
+C PAD GF_NI_BI_T_BASE_0.ndrive_Y_<1> 8.0
+C DVDD GF_NI_BI_T_BASE_0.pdrive_x_<2> 30.2
+C a_4286_42688# GF_NI_BI_T_BASE_0.pdrive_y_<1> 2.8
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_4286_42688# 2.2
+C a_8850_42732# GF_NI_BI_T_BASE_0.pdrive_y_<2> 2.8
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_8850_42732# 2.2
+C a_4286_42688# DVSS 4.6
+C DVSS a_8850_42732# 4.6
+C DVSS GF_NI_BI_T_BASE_0.ndrive_x_<2> 11.0
+C GF_NI_BI_T_BASE_0.ndrive_x_<1> GF_NI_BI_T_BASE_0.ndrive_Y_<1> 14.8
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB a_4286_42688# 2.4
+C A VDD 3.8
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A VDD 2.0
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB a_8850_42732# 2.4
+C OE SL 2.1
+C DVSS GF_NI_BI_T_BASE_0.pdrive_y_<0> 2.4
+C GF_NI_BI_T_BASE_0.pdrive_x_<0> PAD 20.2
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB a_11294_42688# 2.4
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A DVSS 11.0
+C A DVSS 2.1
+C GF_NI_BI_T_BASE_0.ndrive_Y_<3> PAD 5.1
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN DVSS 2.7
+C GF_NI_BI_T_BASE_0.ndrive_y_<0> DVDD 8.5
+C DVDD SL 3.8
+C PAD GF_NI_BI_T_BASE_0.ndrive_y_<2> 6.4
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A 4.4
+C DVDD a_1842_42732# 4.0
+C DVSS GF_NI_BI_T_BASE_0.ndrive_Y_<1> 10.8
+C DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z 3.1
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_7790_42688# 2.3
+C PAD GF_NI_BI_T_BASE_0.ndrive_x_<1> 5.9
+C DVDD PDRV0 3.3
+C DVSS a_7790_42688# 2.8
+C GF_NI_BI_T_BASE_0.pdrive_y_<3> a_11294_42688# 2.9
+C DVDD a_11294_42688# 4.0
+C GF_NI_BI_T_BASE_0.pdrive_x_<1> PAD 20.9
+C PAD GF_NI_BI_T_BASE_0.pdrive_y_<1> 10.2
+C GF_NI_BI_T_BASE_0.pdrive_y_<0> a_1842_42732# 2.9
+C GF_NI_BI_T_BASE_0.pdrive_x_<0> DVSS 5.5
+C PAD GF_NI_BI_T_BASE_0.pdrive_y_<2> 10.2
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB DVSS 17.3
+C A SL 8.9
+C GF_NI_BI_T_BASE_0.ndrive_Y_<3> DVSS 16.1
+C PAD DVSS 239.0
+C DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A 2.4
+C DVSS GF_NI_BI_T_BASE_0.ndrive_y_<2> 9.6
+C DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL 7.0
+C PAD GF_NI_BI_T_BASE_0.pdrive_x_<2> 20.9
+C PD VDD 4.7
+C PDRV1 VDD 3.1
+C DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z 2.3
+C CS PD 4.8
+C DVSS PD 6.5
+C VDD PU 3.3
+C PDRV1 DVSS 3.2
+C DVSS GF_NI_BI_T_BASE_0.ndrive_x_<1> 9.8
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A PD 2.4
+C GF_NI_BI_T_BASE_0.pdrive_x_<1> GF_NI_BI_T_BASE_0.pdrive_y_<1> 2.3
+C DVSS PU 6.9
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN a_11294_42688# 2.2
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN a_5346_42732# 2.3
+C DVDD GF_NI_BI_T_BASE_0.ndrive_x_<3> 5.8
+C GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN DVSS 33.9
+C a_5346_42732# DVSS 2.8
+C GF_NI_BI_T_BASE_0.pdrive_x_<1> DVSS 4.8
+C DVSS GF_NI_BI_T_BASE_0.pdrive_y_<1> 2.6
+C CS VDD 2.8
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z 2.5
+C DVSS VDD 31.8
+C DVSS GF_NI_BI_T_BASE_0.pdrive_y_<2> 2.5
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN DVSS 3.8
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN DVSS 2.3
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL 8.5
+C DVDD GF_NI_BI_T_BASE_0.ndrive_x_<0> 7.9
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A VDD 3.3
+C GF_NI_BI_T_BASE_0.ndrive_y_<0> PAD 5.9
+C CS DVSS 4.3
+C GF_NI_BI_T_BASE_0.pdrive_x_<2> GF_NI_BI_T_BASE_0.pdrive_y_<2> 2.3
+C DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB 2.7
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A DVSS 2.4
+C DVDD GF_NI_BI_T_BASE_0.pdrive_x_<3> 29.8
+C GF_NI_BI_T_BASE_0.pdrive_y_<3> GF_NI_BI_T_BASE_0.pdrive_x_<3> 2.3
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN 5.4
+C GF_NI_BI_T_BASE_0.pdrive_x_<2> DVSS 4.8
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB DVSS 4.9
+C A0 2.6
+R A 152
+= A GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.A
+= A GF_NI_BI_T_BASE_0.A
+C SL0 2.9
+R SL 130
+= SL GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.A
+= SL GF_NI_BI_T_BASE_0.SL
+C Y0 2.9
+R Y 274
+= Y GF_NI_BI_T_BASE_0.Y
+C PD0 6.6
+R PD 356
+= PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_0.B
+= PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.B
+= PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.PD_IN
+= PD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.PD
+= PD GF_NI_BI_T_BASE_0.PD
+C PU0 9.8
+R PU 325
+= PU GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_1.A
+= PU GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.A
+= PU GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.PU
+= PU GF_NI_BI_T_BASE_0.PU
+C CS0 4.5
+R CS 112
+= CS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.A
+= CS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.CS
+= CS GF_NI_BI_T_BASE_0.CS
+R IE 101
+= IE GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.A
+= IE GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.IE
+= IE GF_NI_BI_T_BASE_0.IE
+C PDRV10 6.1
+R PDRV1 1269
+= PDRV1 GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.PDRV
+= PDRV1 GF_NI_BI_T_BASE_0.PDRV1
+C OE0 14.9
+R OE 10864
+= OE GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.OE
+= OE GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.OE
+= OE GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.OE
+= OE GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.OE
+= OE GF_NI_BI_T_BASE_0.OE
+C PDRV00 6.9
+R PDRV0 1263
+= PDRV0 GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.PDRV
+= PDRV0 GF_NI_BI_T_BASE_0.PDRV0
+C VDD0 148.7
+R VDD 50091
+= VDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.3LM_METAL_RAIL_0.VDD
+= VDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.VDD
+= VDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_1.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.PDRV
+= VDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.VDD
+= VDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.VDD
+R VSS 14066
+= VSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.3LM_METAL_RAIL_0.VSS
+= VSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.VSS
+= VSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_1.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.VSS
+= VSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.VSS
+C DVSS0 199.0
+R DVSS 581704
+= DVSS a_12052_15138#
+= DVSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.3LM_METAL_RAIL_0.DVSS
+= DVSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.DVSS
+= DVSS 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_pupd_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.DVSS
+= DVSS GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.DVSS
+= DVSS a_9892_15138#
+= DVSS a_9704_15138#
+= DVSS a_7544_15138#
+= DVSS a_7356_15138#
+= DVSS a_5196_15138#
+= DVSS a_5008_15138#
+= DVSS a_2848_15138#
+C PAD0 92.7
+R PAD 46431
+= PAD a_11066_15138#
+= PAD GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.PAD
+= PAD GF_NI_BI_T_BASE_0.PAD
+= PAD a_10178_15138#
+= PAD a_8718_15138#
+= PAD a_7830_15138#
+= PAD a_6370_15138#
+= PAD a_5482_15138#
+= PAD a_4022_15138#
+= PAD a_3134_15138#
+= PAD a_11987_29214#
+= PAD a_11299_29214#
+= PAD a_10219_29214#
+= PAD a_9531_29214#
+= PAD a_8451_29214#
+= PAD a_7763_29214#
+= PAD a_6683_29214#
+= PAD a_5995_29214#
+= PAD a_4915_29214#
+= PAD a_4227_29214#
+= PAD a_3147_29214#
+= PAD a_2459_29214#
+C DVDD0 1081.4
+R DVDD 411613
+= DVDD a_12683_29214#
+= DVDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.3LM_METAL_RAIL_0.DVDD
+= DVDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.4LM_METAL_RAIL_0.DVDD
+= DVDD 5LM_METAL_RAIL_PAD_60_0/5LM_METAL_RAIL_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_pupd_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.DVDD
+= DVDD GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.DVDD
+= DVDD a_11103_29214#
+= DVDD a_10915_29214#
+= DVDD a_9335_29214#
+= DVDD a_9147_29214#
+= DVDD a_7567_29214#
+= DVDD a_7379_29214#
+= DVDD a_5799_29214#
+= DVDD a_5611_29214#
+= DVDD a_4031_29214#
+= DVDD a_3843_29214#
+= DVDD a_2263_29214#
+R GF_NI_BI_T_BASE_0.ndrive_x_<3> 561
+= GF_NI_BI_T_BASE_0.ndrive_x_<3> GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.NDRIVE_X
+R GF_NI_BI_T_BASE_0.ndrive_Y_<3> 975
+= GF_NI_BI_T_BASE_0.ndrive_Y_<3> GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.NDRIVE_Y
+R GF_NI_BI_T_BASE_0.pdrive_y_<3> 820
+= GF_NI_BI_T_BASE_0.pdrive_y_<3> GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.PDRIVE_Y
+R GF_NI_BI_T_BASE_0.pdrive_x_<3> 1319
+= GF_NI_BI_T_BASE_0.pdrive_x_<3> GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.PDRIVE_X
+R a_12354_42732# 1088
+R a_11294_42688# 1126
+R GF_NI_BI_T_BASE_0.pdrive_x_<2> 1320
+= GF_NI_BI_T_BASE_0.pdrive_x_<2> GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.PDRIVE_X
+R GF_NI_BI_T_BASE_0.pdrive_y_<2> 818
+= GF_NI_BI_T_BASE_0.pdrive_y_<2> GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.PDRIVE_Y
+R GF_NI_BI_T_BASE_0.ndrive_y_<2> 980
+= GF_NI_BI_T_BASE_0.ndrive_y_<2> GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.NDRIVE_Y
+C GF_NI_BI_T_BASE_0.ndrive_x_<2>0 2.2
+R GF_NI_BI_T_BASE_0.ndrive_x_<2> 565
+= GF_NI_BI_T_BASE_0.ndrive_x_<2> GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.NDRIVE_X
+R a_8850_42732# 1126
+R a_7790_42688# 1088
+R GF_NI_BI_T_BASE_0.ndrive_x_<1> 566
+= GF_NI_BI_T_BASE_0.ndrive_x_<1> GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.NDRIVE_X
+C GF_NI_BI_T_BASE_0.ndrive_Y_<1>0 2.3
+R GF_NI_BI_T_BASE_0.ndrive_Y_<1> 980
+= GF_NI_BI_T_BASE_0.ndrive_Y_<1> GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.NDRIVE_Y
+R GF_NI_BI_T_BASE_0.pdrive_y_<1> 818
+= GF_NI_BI_T_BASE_0.pdrive_y_<1> GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.PDRIVE_Y
+R GF_NI_BI_T_BASE_0.pdrive_x_<1> 1320
+= GF_NI_BI_T_BASE_0.pdrive_x_<1> GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.PDRIVE_X
+R a_5346_42732# 1088
+R a_4286_42688# 1126
+R GF_NI_BI_T_BASE_0.pdrive_x_<0> 1319
+= GF_NI_BI_T_BASE_0.pdrive_x_<0> GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.PDRIVE_X
+R GF_NI_BI_T_BASE_0.pdrive_y_<0> 820
+= GF_NI_BI_T_BASE_0.pdrive_y_<0> GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.PDRIVE_Y
+R GF_NI_BI_T_BASE_0.ndrive_y_<0> 976
+= GF_NI_BI_T_BASE_0.ndrive_y_<0> GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.NDRIVE_Y
+R GF_NI_BI_T_BASE_0.ndrive_x_<0> 561
+= GF_NI_BI_T_BASE_0.ndrive_x_<0> GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.NDRIVE_X
+R a_1842_42732# 1126
+R a_782_42688# 1088
+R a_10720_50201# 38
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB0 2.9
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB 752
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.ZB
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.SLB
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.SLB
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SLB GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.SLB
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL0 4.4
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL 1540
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_sigbuf_1_0.Z
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.SL
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.SL
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.SL GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.SL
+R a_11617_50285# 270
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A0 4.9
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A 1170
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_a_0.AB
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.A
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.A
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.A GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.A
+R a_9197_50157# 215
+R a_8953_50157# 265
+R a_6504_50201# 38
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB0 2.8
+R GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB 392
+= GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.ENB GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.ENB
+C GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN0 2.5
+R GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN 532
+= GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_2.EN GF_NI_BI_T_BASE_0.comp018green_out_predrv_1.EN
+R a_5502_50201# 38
+R a_6504_51889# 215
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB0 2.4
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB 650
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.ENB
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.ENB GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.ENB
+R a_3961_50157# 215
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN0 4.7
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN 788
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN GF_NI_BI_T_BASE_0.comp018green_out_predrv_2.EN
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_3.EN GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_1.EN
+R a_1260_50201# 38
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB 388
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.ENB GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.ENB
+C GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN0 2.4
+R GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN 525
+= GF_NI_BI_T_BASE_0.comp018green_out_predrv_0.EN GF_NI_BI_T_BASE_0.comp018green_out_sigbuf_oe_0.EN
+R a_1260_51889# 215
+R a_8180_54140# 392
+R a_7560_54140# 392
+R a_6940_54140# 392
+R a_6320_54140# 392
+R a_12966_56686# 38
+R a_12000_56686# 38
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z 405
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_0.A
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_xor2_0.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_1.B
+R a_12715_59749# 176
+R a_12527_59749# 175
+R a_3151_53931# 10063
+R a_2871_53829# 46
+R a_2871_53931# 15619
+R a_2591_53931# 15619
+R a_2591_61071# 46
+R a_2311_53829# 46
+R a_2311_53931# 15619
+R a_2031_53931# 15619
+R a_2031_61071# 46
+R a_1751_53829# 46
+R a_1751_53931# 15619
+R a_1471_53931# 15619
+R a_1471_61071# 46
+R a_1191_53829# 46
+R a_1191_53931# 15619
+C a_1191_61071#0 3.4
+R a_1191_61071# 90
+R a_5575_63014# 274
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z0 6.4
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.Z 818
+C a_9536_64061#0 4.0
+R a_9536_64061# 504
+C a_4157_63027#0 2.7
+R a_4157_63027# 188
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A0 2.5
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A 569
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_drv_0.A GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.Z
+R a_5463_64256# 337
+R a_4235_64204# 249
+C a_3430_64204#0 2.9
+R a_3430_64204# 131
+R a_2947_62989# 228
+C GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN0 6.1
+R GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN 939
+= GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_pupd_0.A
+= GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.A
+= GF_NI_BI_T_BASE_0.comp018green_esd_cdm_0.IP_IN GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.PAD
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A0 3.5
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A 196
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_1.Z
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.A GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.PUB_OUT
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.ZB 61
+R a_12068_66100# 270
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z 331
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_2.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_pupd_0.PU_B
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB 106
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.ZB GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_pupd_0.PD
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.Z 260
+R a_9135_66144# 270
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A0 3.5
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A 198
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.comp018green_std_nand2_0.Z
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_0.A GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_logic_pupd_0.PDB_OUT
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.ZB 61
+R a_6824_66100# 270
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z0 4.1
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z 701
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_3.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.CS
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.ZB 61
+C GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z0 2.9
+R GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z 752
+= GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_sigbuf_1.Z GF_NI_BI_T_BASE_0.comp018green_inpath_cms_smt_0.comp018green_in_cms_smt_0.IE
+R a_3891_66144# 270

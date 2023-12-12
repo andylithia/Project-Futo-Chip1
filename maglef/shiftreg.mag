@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1670231071
+timestamp 1677390719
 << obsm1 >>
 rect 672 1538 79546 3345
 << metal2 >>
@@ -293,7 +293,7 @@ string FIXED_BBOX 0 0 80000 5000
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 296770
-string GDS_FILE /home/andylithia/openmpw/Project-Futo-Chip1/openlane/shiftreg/runs/22_12_05_04_03/results/signoff/shiftreg.magic.gds
+string GDS_FILE /home/andylithia/openmpw/Project-Futo-Chip1/openlane/shiftreg/runs/23_02_26_00_51/results/signoff/shiftreg.magic.gds
 string GDS_START 64604
 << end >>
 

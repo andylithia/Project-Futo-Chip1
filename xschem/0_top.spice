@@ -1,0 +1,252 @@
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/0_top.sch
+**.subckt 0_top
+x1 test_nfet_03v3
+x2 test_nfet_03v3_dss
+x3 test_pfet_03v3
+x4 test_pfet_03v3_dss
+x5 test_nfet_06v0
+x6 test_pfet_06v0
+x7 test_nfet_06v0_nvt
+x8 test_nplus_u
+x9 test_cap_nmos_03v3
+x10 test_cap_pmos_03v3
+x11 test_pplus_u
+x12 test_npn_10p00x10p00
+x13 test_pnp_10p00x10p00
+x14 test_diode_nd2ps_03v3
+x15 test_nwell
+x16 test_npolyf_u
+x17 test_ppolyf_u
+x18 test_cap_nmos_06v0
+x20 test_cap_pmos_06v0
+x21 test_diode_pw2dw
+x22 test_rm1
+x23 test_cap_mim_2f0fF
+x19 test_nfet_05v0
+**.ends
+
+* expanding   symbol:  test_nfet_03v3.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_03v3.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_03v3.sch
+.subckt test_nfet_03v3
+*  M1 -  nfet_03v3  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_nfet_03v3_dss.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_03v3_dss.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_03v3_dss.sch
+.subckt test_nfet_03v3_dss
+*  M1 -  nfet_03v3_dss  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_pfet_03v3.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_03v3.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_03v3.sch
+.subckt test_pfet_03v3
+*  M1 -  pfet_03v3  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_pfet_03v3_dss.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_03v3_dss.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_03v3_dss.sch
+.subckt test_pfet_03v3_dss
+*  M1 -  pfet_03v3_dss  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_nfet_06v0.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_06v0.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_06v0.sch
+.subckt test_nfet_06v0
+*  M1 -  nfet_06v0  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_pfet_06v0.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_06v0.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pfet_06v0.sch
+.subckt test_pfet_06v0
+*  M1 -  pfet_06v0  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_nfet_06v0_nvt.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_06v0_nvt.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_06v0_nvt.sch
+.subckt test_nfet_06v0_nvt
+*  M1 -  nfet_06v0_nvt  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_nplus_u.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nplus_u.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nplus_u.sch
+.subckt test_nplus_u
+*  R1 -  nplus_u  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_cap_nmos_03v3.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_nmos_03v3.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_nmos_03v3.sch
+.subckt test_cap_nmos_03v3
+*  C1 -  cap_nmos_03v3  IS MISSING !!!!
+V1 IN GND pwl 0 0 200n 3.3
+.save i(v1)
+R2 P IN 100k m=1
+.ends
+
+
+* expanding   symbol:  test_cap_pmos_03v3.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_pmos_03v3.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_pmos_03v3.sch
+.subckt test_cap_pmos_03v3
+*  C1 -  cap_pmos_03v3  IS MISSING !!!!
+V1 VDD IN pwl 0 0 200n 3.3
+.save i(v1)
+R2 IN M 100k m=1
+.ends
+
+
+* expanding   symbol:  test_pplus_u.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pplus_u.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pplus_u.sch
+.subckt test_pplus_u
+*  R1 -  pplus_u  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_npn_10p00x10p00.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_npn_10p00x10p00.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_npn_10p00x10p00.sch
+.subckt test_npn_10p00x10p00
+*  Q1 -  npn_10p00x10p00  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_pnp_10p00x10p00.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pnp_10p00x10p00.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_pnp_10p00x10p00.sch
+.subckt test_pnp_10p00x10p00
+*  Q1 -  pnp_10p00x10p00  IS MISSING !!!!
+Vb GND net1 0
+.save i(vb)
+.ends
+
+
+* expanding   symbol:  test_diode_nd2ps_03v3.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_diode_nd2ps_03v3.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_diode_nd2ps_03v3.sch
+.subckt test_diode_nd2ps_03v3
+*  D1 -  diode_nd2ps_03v3  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_nwell.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nwell.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nwell.sch
+.subckt test_nwell
+*  R1 -  nwell  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_npolyf_u.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_npolyf_u.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_npolyf_u.sch
+.subckt test_npolyf_u
+*  R1 -  npolyf_u  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_ppolyf_u.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_ppolyf_u.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_ppolyf_u.sch
+.subckt test_ppolyf_u
+*  R1 -  ppolyf_u  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_cap_nmos_06v0.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_nmos_06v0.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_nmos_06v0.sch
+.subckt test_cap_nmos_06v0
+*  C1 -  cap_nmos_06v0  IS MISSING !!!!
+V1 IN GND pwl 0 0 200n 6.0
+.save i(v1)
+R2 P IN 100k m=1
+.ends
+
+
+* expanding   symbol:  test_cap_pmos_06v0.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_pmos_06v0.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_pmos_06v0.sch
+.subckt test_cap_pmos_06v0
+*  C1 -  cap_pmos_06v0  IS MISSING !!!!
+V1 VDD IN pwl 0 0 200n 6.0
+.save i(v1)
+R2 IN M 100k m=1
+.ends
+
+
+* expanding   symbol:  test_diode_pw2dw.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_diode_pw2dw.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_diode_pw2dw.sch
+.subckt test_diode_pw2dw
+*  D1 -  diode_pw2dw  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_rm1.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_rm1.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_rm1.sch
+.subckt test_rm1
+*  R1 -  rm1  IS MISSING !!!!
+.ends
+
+
+* expanding   symbol:  test_cap_mim_2f0fF.sym # of pins=0
+** sym_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_mim_2f0fF.sym
+** sch_path:
+*+ /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_cap_mim_2f0fF.sch
+.subckt test_cap_mim_2f0fF
+*  C1 -  cap_mim_2p0fF  IS MISSING !!!!
+V1 IN GND pwl 0 0 200n 3.3
+.save i(v1)
+R2 P IN 100k m=1
+.ends
+
+
+* expanding   symbol:  test_nfet_05v0.sym # of pins=0
+** sym_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_05v0.sym
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/gf180mcu_tests/test_nfet_05v0.sch
+.subckt test_nfet_05v0
+*  M1 -  nfet_05v0  IS MISSING !!!!
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

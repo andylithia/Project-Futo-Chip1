@@ -1,0 +1,173 @@
+* NGSPICE file created from gf180mcu_fd_io__dvdd.ext - technology: gf180mcuC
+
+.subckt gf180mcu_fd_io__dvdd DVSS DVDD VSS
+X0 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X1 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X2 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X3 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X4 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X5 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D0 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X6 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X7 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=2.2p pd=10.9u as=1.3p ps=5.52u w=5u l=0.7u
+X8 a_1016_56225# a_13889_55945# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X9 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X10 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X11 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X12 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X13 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X14 a_1016_57345# a_13889_57065# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X15 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X16 a_4800_41464# a_3824_41464# DVDD DVDD pfet_06v0 ad=2.2p pd=10.9u as=1.3p ps=5.52u w=5u l=0.7u
+X17 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X18 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X19 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X20 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X21 a_1016_58465# a_13889_58185# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X22 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X23 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X24 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=22p pd=0.101m as=13p ps=50.5u w=50u l=0.7u
+X25 DVDD GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC a_3824_41464# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X26 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X27 a_3824_41464# GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X28 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X29 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X30 DVSS a_4800_41464# a_2256_15028# DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X31 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X32 a_2256_15028# a_4800_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X33 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X34 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X35 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X36 a_3824_41464# GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS DVSS nfet_06v0 ad=2.2p pd=10.9u as=2.2p ps=10.9u w=5u l=0.7u
+X37 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=22p ps=0.101m w=50u l=0.7u
+X38 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X39 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X40 a_4800_41464# a_3824_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=2.2p ps=10.9u w=5u l=0.7u
+X41 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X42 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X43 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X44 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC a_13889_55945# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X45 DVSS a_3824_41464# a_4800_41464# DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X46 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X47 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X48 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X49 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X50 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X51 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X52 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X53 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X54 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X55 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=22p pd=0.101m as=13p ps=50.5u w=50u l=0.7u
+X56 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X57 a_1016_56785# a_13889_57065# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X58 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X59 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X60 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X61 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X62 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X63 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X64 a_1016_57905# a_13889_58185# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X65 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=2.2p ps=10.9u w=5u l=0.7u
+X66 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X67 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X68 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X69 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X70 a_1016_57905# a_13889_57625# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X71 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X72 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X73 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X74 DVSS a_4800_41464# a_2256_15028# DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X75 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X76 a_2256_15028# a_4800_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X77 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X78 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X79 DVSS a_4800_41464# a_2256_15028# DVSS nfet_06v0 ad=2.2p pd=10.9u as=1.3p ps=5.52u w=5u l=0.7u
+D1 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X80 DVDD a_13889_58745# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X81 DVDD a_3824_41464# a_4800_41464# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X82 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X83 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X84 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X85 a_4800_41464# a_3824_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X86 a_4800_41464# a_3824_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X87 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X88 DVSS a_3824_41464# a_4800_41464# DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+D2 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X89 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X90 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X91 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X92 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X93 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X94 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X95 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X96 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X97 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X98 a_1016_56785# a_13889_56505# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X99 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X100 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X101 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X102 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=22p ps=0.101m w=50u l=0.7u
+X103 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=22p pd=0.101m as=13p ps=50.5u w=50u l=0.7u
+X104 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X105 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X106 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X107 a_2256_15028# a_4800_41464# DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+D3 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X108 a_1016_56225# a_13889_56505# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X109 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X110 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X111 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X112 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X113 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X114 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=22p ps=0.101m w=50u l=0.7u
+X115 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X116 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X117 a_1016_57345# a_13889_57625# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X118 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X119 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X120 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X121 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X122 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X123 a_1016_58465# a_13889_58745# DVDD ppolyf_u r_width=0.8u r_length=63.9u
+X124 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X125 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X126 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X127 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X128 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X129 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X130 a_4800_41464# a_3824_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X131 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X132 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X133 a_2256_15028# a_4800_41464# DVSS DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X134 DVDD GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC a_3824_41464# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X135 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS cap_nmos_06v0 c_width=25u c_length=10u
+X136 a_3824_41464# GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVDD DVDD pfet_06v0 ad=1.3p pd=5.52u as=2.2p ps=10.9u w=5u l=0.7u
+X137 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X138 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X139 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=22p ps=0.101m w=50u l=0.7u
+X140 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X141 DVSS a_3824_41464# a_4800_41464# DVSS nfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X142 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=22p pd=0.101m as=13p ps=50.5u w=50u l=0.7u
+X143 DVDD a_2256_15028# DVSS DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X144 DVDD a_4800_41464# a_2256_15028# DVDD pfet_06v0 ad=1.3p pd=5.52u as=1.3p ps=5.52u w=5u l=0.7u
+X145 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X146 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+X147 DVSS a_2256_15028# DVDD DVSS nfet_06v0 ad=13p pd=50.5u as=13p ps=50.5u w=50u l=0.7u
+C0 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC a_3824_41464# 2.26f
+C1 a_2256_15028# DVSS 0.227p
+C2 a_4800_41464# DVSS 11.3f
+C3 a_3824_41464# DVSS 4.85f
+C4 a_2256_15028# DVDD 0.251p
+C5 a_4800_41464# DVDD 14f
+C6 a_3824_41464# DVDD 4.91f
+C7 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVSS 61.7f
+C8 a_4800_41464# a_2256_15028# 10.2f
+C9 a_3824_41464# a_4800_41464# 2.94f
+C10 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC DVDD 0.112p
+C11 DVSS DVDD 1.48p
+C12 DVDD VSS 0.857p
+C13 DVSS VSS 0.179p
+C14 a_2256_15028# VSS 33.6f $ **FLOATING
+C15 a_4800_41464# VSS 2.91f $ **FLOATING
+C16 GF_NI_DVDD_BASE_0.comp018green_esd_clamp_v5p0_DVDD_0/comp018green_esd_rc_v5p0_0.VRC VSS 23.7f $ **FLOATING
+.ends

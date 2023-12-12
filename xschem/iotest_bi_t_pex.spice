@@ -1,0 +1,50 @@
+** sch_path: /home/andylithia/openmpw/Project-Futo-Chip1/xschem/iotest_bi_t_pex.sch
+**.subckt iotest_bi_t_pex
+V1 vdd GND 3
+.save i(v1)
+V2 vddio GND 3
+.save i(v2)
+V3 pdrv0 GND 3
+.save i(v3)
+V4 pdrv1 GND 3
+.save i(v4)
+V5 pu GND 0
+.save i(v5)
+V6 pd GND 0
+.save i(v6)
+V7 ie GND 3
+.save i(v7)
+V8 oe GND 3
+.save i(v8)
+V9 a GND PULSE(0 3 10n 100p 100p 10n 20n)
+.save i(v9)
+**** begin user architecture code
+
+
+.tran 100p 100n
+.save all
+.control
+run
+display
+plot a y pad
+.endc
+
+
+
+.include /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/design.ngspice
+.lib /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/sm141064.ngspice typical
+.lib /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/sm141064.ngspice diode_typical
+.lib /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.lib /home/andylithia/openmpw/pdk_1/gf180mcuC/libs.tech/ngspice/sm141064.ngspice moscap_typical
+
+
+
+.include ../mag/bi_t_flat.spice
+XDUT vdd GND pad pu sl a y pdrv1 pdrv0 pd cs oe ie vddio GND bi_t_flat
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

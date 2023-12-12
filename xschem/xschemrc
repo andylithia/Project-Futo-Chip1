@@ -60,7 +60,7 @@ set XSCHEM_START_WINDOW {gf180mcu_tests/0_top.sch}
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 # set netlist_dir $env(HOME)/.xschem/simulations
-
+set netlist_dir $env(PWD)
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
 ###########################################################################
@@ -309,7 +309,7 @@ set tabbed_interface 1
 
 set PDK_ROOT $env(PDK_ROOT)
 set PDKPATH $env(PDKPATH)
-set 180MCU_MODELS ${PDKPATH}/libs.tech/ngspice/models
+set 180MCU_MODELS ${PDKPATH}/libs.tech/ngspice
 
 # ## check if env var PDK_ROOT exists, and use it for building open_pdks paths
 # if { [info exists env(PDK_ROOT)] && $env(PDK_ROOT) ne {} } {
