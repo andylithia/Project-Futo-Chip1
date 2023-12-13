@@ -1,0 +1,121 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x556550e445c0 .scope module, "shiftreg_tb" "shiftreg_tb" 2 2;
+ .timescale 0 0;
+P_0x556550e59f50 .param/l "N" 1 2 7, +C4<00000000000000000000000000000000000000000111011>;
+v0x556550e72ca0_0 .var "clk_r", 0 0;
+v0x556550e72d60_0 .net "sdin", 0 0, L_0x556550e83040;  1 drivers
+v0x556550e72e00_0 .net "sr_out", 0 0, L_0x556550e83130;  1 drivers
+L_0x7fb1f45b7018 .functor BUFT 1, C4<11010101101101111101110111111111110111011011111101011001110>, C4<0>, C4<0>, C4<0>;
+v0x556550e72ea0_0 .net "sr_test_const", 58 0, L_0x7fb1f45b7018;  1 drivers
+v0x556550e72f40_0 .var "sr_test_sr", 58 0;
+L_0x556550e83040 .part v0x556550e72f40_0, 58, 1;
+S_0x556550e41320 .scope module, "u_dut" "shiftreg" 2 14, 3 27 0, S_0x556550e445c0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "sclk";
+    .port_info 1 /INPUT 1 "sdin";
+    .port_info 2 /INPUT 1 "latch";
+    .port_info 3 /OUTPUT 8 "tune_s1_shunt";
+    .port_info 4 /OUTPUT 7 "tune_s1_shunt_gy";
+    .port_info 5 /OUTPUT 6 "tune_s1_series_gy";
+    .port_info 6 /OUTPUT 6 "tune_s1_series_gygy";
+    .port_info 7 /OUTPUT 11 "tune_s2_shunt";
+    .port_info 8 /OUTPUT 5 "tune_s2_shunt_gy";
+    .port_info 9 /OUTPUT 8 "tune_s2_series_gy";
+    .port_info 10 /OUTPUT 8 "tune_s2_series_gygy";
+    .port_info 11 /OUTPUT 1 "sr_out";
+P_0x556550e458c0 .param/l "N" 1 3 42, +C4<00000000000000000000000000000000000000000111011>;
+L_0x7fb1f45b7060 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0x556550e48280_0 .net "latch", 0 0, L_0x7fb1f45b7060;  1 drivers
+v0x556550e71ff0_0 .net "sclk", 0 0, v0x556550e72ca0_0;  1 drivers
+v0x556550e720b0_0 .net "sdin", 0 0, L_0x556550e83040;  alias, 1 drivers
+v0x556550e72150_0 .var "sr", 58 0;
+v0x556550e72230_0 .var "sr_latch_r", 58 0;
+v0x556550e72360_0 .net "sr_out", 0 0, L_0x556550e83130;  alias, 1 drivers
+v0x556550e72420_0 .net "tune_s1_series_gy", 5 0, L_0x556550e83410;  1 drivers
+v0x556550e72500_0 .net "tune_s1_series_gygy", 5 0, L_0x556550e834e0;  1 drivers
+v0x556550e725e0_0 .net "tune_s1_shunt", 7 0, L_0x556550e83220;  1 drivers
+v0x556550e726c0_0 .net "tune_s1_shunt_gy", 6 0, L_0x556550e832f0;  1 drivers
+v0x556550e727a0_0 .net "tune_s2_series_gy", 7 0, L_0x556550e83760;  1 drivers
+v0x556550e72880_0 .net "tune_s2_series_gygy", 7 0, L_0x556550e83880;  1 drivers
+v0x556550e72960_0 .net "tune_s2_shunt", 10 0, L_0x556550e835b0;  1 drivers
+v0x556550e72a40_0 .net "tune_s2_shunt_gy", 4 0, L_0x556550e836c0;  1 drivers
+E_0x556550e561a0 .event posedge, v0x556550e48280_0;
+E_0x556550e3fa10 .event posedge, v0x556550e71ff0_0;
+L_0x556550e83130 .part v0x556550e72150_0, 58, 1;
+L_0x556550e83220 .part v0x556550e72230_0, 0, 8;
+L_0x556550e832f0 .part v0x556550e72230_0, 8, 7;
+L_0x556550e83410 .part v0x556550e72230_0, 15, 6;
+L_0x556550e834e0 .part v0x556550e72230_0, 21, 6;
+L_0x556550e835b0 .part v0x556550e72230_0, 27, 11;
+L_0x556550e836c0 .part v0x556550e72230_0, 38, 5;
+L_0x556550e83760 .part v0x556550e72230_0, 43, 8;
+L_0x556550e83880 .part v0x556550e72230_0, 51, 8;
+    .scope S_0x556550e41320;
+T_0 ;
+    %wait E_0x556550e3fa10;
+    %load/vec4 v0x556550e72150_0;
+    %load/vec4 v0x556550e720b0_0;
+    %concat/vec4; draw_concat_vec4
+    %pad/u 59;
+    %assign/vec4 v0x556550e72150_0, 0;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x556550e41320;
+T_1 ;
+    %wait E_0x556550e561a0;
+    %load/vec4 v0x556550e72150_0;
+    %assign/vec4 v0x556550e72230_0, 0;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x556550e445c0;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x556550e72ca0_0, 0, 1;
+    %end;
+    .thread T_2;
+    .scope S_0x556550e445c0;
+T_3 ;
+    %delay 5, 0;
+    %load/vec4 v0x556550e72ca0_0;
+    %inv;
+    %store/vec4 v0x556550e72ca0_0, 0, 1;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x556550e445c0;
+T_4 ;
+    %load/vec4 v0x556550e72ea0_0;
+    %store/vec4 v0x556550e72f40_0, 0, 59;
+    %end;
+    .thread T_4;
+    .scope S_0x556550e445c0;
+T_5 ;
+    %wait E_0x556550e3fa10;
+    %load/vec4 v0x556550e72f40_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftl 4;
+    %assign/vec4 v0x556550e72f40_0, 0;
+    %jmp T_5;
+    .thread T_5;
+    .scope S_0x556550e445c0;
+T_6 ;
+    %vpi_call 2 21 "$dumpfile", "shiftreg_tb.vcd" {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x556550e445c0 {0 0 0};
+    %delay 10000, 0;
+    %vpi_call 2 23 "$finish" {0 0 0};
+    %end;
+    .thread T_6;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "./shiftreg_tb.v";
+    "././shiftreg.v";

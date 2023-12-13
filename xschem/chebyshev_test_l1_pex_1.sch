@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -127,8 +127,6 @@ N -310 150 -310 170 {
 lab=vip}
 N -310 170 -290 170 {
 lab=vip}
-N -670 190 -670 400 {
-lab=GND}
 N 580 190 610 170 {
 lab=#net10}
 N 580 170 610 190 {
@@ -138,6 +136,12 @@ lab=vdd}
 N 690 -0 690 130 {
 lab=vdd}
 N 690 300 690 330 {
+lab=GND}
+N -670 190 -670 330 {
+lab=GND}
+N -670 330 -670 390 {
+lab=GND}
+N -790 390 -670 390 {
 lab=GND}
 C {devices/capa.sym} -140 330 0 0 {name=C1
 m=1
@@ -179,7 +183,8 @@ m=1
 value=3.8p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/vsource.sym} -100 40 0 0 {name=V1 value=2}
+C {devices/vsource.sym} -100 40 0 0 {name=V1 value=1.8
+}
 C {devices/lab_wire.sym} -80 0 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 770 230 0 1 {name=p2 sig_type=std_logic lab=von_buf}
 C {devices/lab_wire.sym} 770 210 0 1 {name=p3 sig_type=std_logic lab=vop_buf}
@@ -251,7 +256,7 @@ C {devices/gnd.sym} -100 120 0 0 {name=l1 lab=GND}
 C {filterstage_pex.sym} 410 170 0 0 {name=x1}
 C {devices/gnd.sym} 240 440 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 280 120 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} -790 350 0 0 {name=V2 value="PULSE(0 2 0 1n 1n \{tau/2\} \{tau\})"}
+C {devices/vsource.sym} -790 350 0 0 {name=V2 value="PULSE(0 1.8 0 1n 1n \{tau/2\} \{tau\})"}
 C {devices/lab_wire.sym} 770 170 0 1 {name=p6 sig_type=std_logic lab=vop}
 C {devices/lab_wire.sym} 770 190 0 1 {name=p8 sig_type=std_logic lab=von}
 C {devices/lab_wire.sym} -180 190 0 0 {name=p9 sig_type=std_logic lab=vin}
@@ -260,7 +265,6 @@ C {injector_pex.sym} -520 240 0 0 {name=x2}
 C {devices/gnd.sym} -790 410 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} -350 110 0 0 {name=p11 sig_type=std_logic lab=vdd}
 C {devices/gnd.sym} -350 390 0 0 {name=l10 lab=GND}
-C {devices/gnd.sym} -670 400 0 0 {name=l3 lab=GND}
 C {active_load_pex.sym} 690 240 0 0 {name=x3}
 C {devices/gnd.sym} 690 330 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 770 250 0 1 {name=p4 sig_type=std_logic lab=voxor}
